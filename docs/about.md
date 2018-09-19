@@ -1,6 +1,6 @@
 # About me
 
-![](../images/avatar-photo.jpg)
+![](images/avatar-photo.jpg)
 
 ## My background
 

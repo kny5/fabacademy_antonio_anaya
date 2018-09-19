@@ -9,8 +9,5 @@ I am ...
 
 This is my blog for the Fabricademy Course:
 
-- [About me](about.md)
+- [More about me](about.md)
 
-- [Assignments](assignments/index.md)
-
-- [Projects](projects/index.md)
