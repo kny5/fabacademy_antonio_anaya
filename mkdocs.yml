@@ -1,0 +1,16 @@
+# Replace the text below to customize your site
+site_name: Fabricademy Student Website
+site_description: My Fabricademy site
+site_url: http://fibasile.fabcloud.io/mkdocs
+repo_url: https://gitlab.fabcloud.org/fibasile/mkdocs
+site_author: Student's Name
+site_favicon: favicon.png
+docs_dir: docs 
+site_dir: _site
+copyright: Preferably a copyleft ;-)
+theme: yeti
+markdown_extensions:
+    - toc:
+        permalink: '#'
+    - extra
+    - smarty
