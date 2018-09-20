@@ -7,7 +7,7 @@ site_author: Student's Name
 docs_dir: docs 
 site_dir: _site
 copyright: Preferably a copyleft ;-)
-theme: yeti
+theme: flatly
 markdown_extensions:
     - toc:
         permalink: '#'
