@@ -11,4 +11,4 @@ This is my blog for the Fabricademy Course:
 
 - [More about me](about.md)
 
-![](images/fabricademy 2018-19.png)
+![](./images/fabricademy-2018-19.png)
