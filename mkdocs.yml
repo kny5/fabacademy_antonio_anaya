@@ -7,7 +7,10 @@ site_author: Student's Name
 docs_dir: docs 
 site_dir: _site
 copyright: Preferably a copyleft ;-)
-theme: flatly
+theme: 
+    name: cosmo # try also cerulean, cosmo, cyborg, amelia, darkly, spacelab, united
+    extra:
+        include_sidebar: false
 markdown_extensions:
     - toc:
         permalink: '#'

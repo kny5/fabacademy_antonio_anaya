@@ -13,7 +13,7 @@ This week I worked on defining my final project idea and started to getting used
 
 - [Jekyll](http://jekyll.org)
 - [Google](http://google.com)
-- [Markdown](http://markdown.org)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 
 ## Code Example

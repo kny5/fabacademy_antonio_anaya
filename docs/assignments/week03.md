@@ -1,4 +1,5 @@
-# 1. State of the art, project management and documentation
+# 3. Circular fashion
+
 
 This week I worked on defining my final project idea and started to getting used to the documentation process.
 

@@ -9,11 +9,23 @@ This week I worked on defining my final project idea and started to getting used
 
 > "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
+## Materials
+
+| Qty |  Description    |  Price  |           Link           | Notes  |
+|-----|-----------------|---------|--------------------------|--------|
+| 1   | Material one    |  22.00 $| http://amazon.com/test   |    Order many    |
+| 1   | Material two    |  22.00 $| http://amazon.com/test   |        |
+| 1   | Material three  |  22.00 $| http://amazon.com/test   |        |
+| 1   | Material five   |  22.00 $| http://amazon.com/test   |        |
+| 1   | Material eight  |  22.00 $| http://amazon.com/test   |        |
+| 1   | Material twelve |  22.00 $| http://amazon.com/test   |        |
+| 1   | Material eleven |  22.00 $| http://amazon.com/test   |        |
+
 ## Useful links
 
 - [Jekyll](http://jekyll.org)
 - [Google](http://google.com)
-- [Markdown](http://markdown.org)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 
 ## Code Example
