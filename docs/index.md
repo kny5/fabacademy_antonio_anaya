@@ -1,3 +1,4 @@
+![](https://gitlab.fabcloud.org/fibasile/mkdocs/raw/master/docs/images/sample-pic-2.jpeg)
 
 Hello!
 
