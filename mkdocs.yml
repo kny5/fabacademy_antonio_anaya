@@ -1,14 +1,14 @@
 # Replace the text below to customize your site
-site_name: Fabricademy Student Website
+site_name: Fiore Basile - Fabricademy 2018-2019
 site_description: My Fabricademy site
 site_url: http://fibasile.fabcloud.io/mkdocs
 repo_url: https://gitlab.fabcloud.org/fibasile/mkdocs
-site_author: Student's Name
+site_author: Fiore Basile
 docs_dir: docs 
 site_dir: _site
-copyright: Preferably a copyleft ;-)
+copyright: Creative Commons Attribution Non Commercial
 theme: 
-    name: cosmo # try also cerulean, cosmo, cyborg, amelia, darkly, spacelab, united
+    name: spacelab # try also cerulean, cosmo, cyborg, amelia, darkly, spacelab, united
     extra:
         include_sidebar: false
 markdown_extensions:
