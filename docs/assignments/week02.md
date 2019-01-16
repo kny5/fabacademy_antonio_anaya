@@ -1,5 +1,4 @@
-# 2. Digital bodies
-
+# 2. Project management
 
 This week I worked on defining my final project idea and started to getting used to the documentation process.
 
@@ -14,7 +13,6 @@ This week I worked on defining my final project idea and started to getting used
 - [Jekyll](http://jekyll.org)
 - [Google](http://google.com)
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
-
 
 ## Code Example
 
@@ -35,7 +33,6 @@ void loop() {
   delay(1000);                       // wait for a second
 }
 ```
-
 
 ## Gallery
 

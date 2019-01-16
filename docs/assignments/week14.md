@@ -1,4 +1,4 @@
-# 4. Computer controlled cutting
+# 14. Networking and communications
 
 This week I worked on defining my final project idea and started to getting used to the documentation process.
 

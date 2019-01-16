@@ -1,18 +1,39 @@
 # Replace the text below to customize your site
-site_name: Fiore Basile - Fab Academy 2019
+site_name: Fab Academy Student Name
 site_description: My Fabacademy site
-site_url: http://fibasile.fabcloud.io/mkdocs
-repo_url: https://gitlab.fabcloud.org/fibasile/mkdocs
-site_author: Fiore Basile
-docs_dir: docs 
+
+site_author: Your name here
+docs_dir: docs
 site_dir: _site
 copyright: Creative Commons Attribution Non Commercial
-theme: 
-    name: spacelab # try also cerulean, cosmo, cyborg, amelia, darkly, spacelab, united
-    extra:
-        include_sidebar: false
+theme:
+  name: material
+  # see https://squidfunk.github.io/mkdocs-material/getting-started/#color-palette
+  palette:
+    primary: "deep"
+    accent: "indigo"
+  font:
+    false
+    # text: "Ubuntu"
+    # code: "Ubuntu Mono"
+  feature:
+    tabs: true
+extra:
+  social:
+    - type: "github"
+      link: "https://github.com/academany"
+    - type: "twitter"
+      link: "https://twitter.com/fabacademany"
+    - type: "linkedin"
+      link: "https://linkedin.com/in/academany"
+    - type: "instagram"
+      link: "https://instagram.com/fabacademany"
+
 markdown_extensions:
-    - toc:
-        permalink: '#'
-    - extra
-    - smarty
+  - extra
+  - smarty
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
