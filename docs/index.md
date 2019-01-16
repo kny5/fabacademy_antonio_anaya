@@ -1,6 +1,6 @@
 Hello!
 
-This is an example blog for the Fabricademy Course.
+This is an example student blog for the Fab Academy.
 
 You can edit it on [Gitlab](http://gitlab.fabcloud.org). The software used turns simple text files
 written in [Markdown](https://en.wikipedia.org/wiki/Markdown) format, into the site you are navigating.
