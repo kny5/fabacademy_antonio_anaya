@@ -1,12 +1,12 @@
 image: python:alpine
 
 before_script:
-  - pip install -r requirements.txt
+  - time pip install -r requirements.txt
 
 pages:
   script:
-  - mkdocs build
-  - mv _site public
+  - time mkdocs build
+  - time mv _site public
   artifacts:
     paths:
     - public
