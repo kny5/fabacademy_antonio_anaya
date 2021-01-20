@@ -59,3 +59,53 @@ void loop() {
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
 </div>
+
+
+## Use HTML
+
+You may also embed HTML in your markdown files
+
+<hr />
+
+
+Try having a seperator line
+
+
+<hr />
+
+<table border="1">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>235312</td>
+			<td>John</td>
+			<td>Doe</td>
+		</tr>
+		<tr>
+			<td>453123</td>
+			<td>Mark</td>
+			<td>Jones</td>
+		</tr>
+		<tr>
+			<td>998332</td>
+			<td>Jonathan</td>
+			<td>Smith</td>
+		</tr>
+		<tr>
+			<td>345612</td>
+			<td>Andrew</td>
+			<td>McArthur</td>
+		</tr>
+		<tr>
+			<td>453123</td>
+			<td>Adam</td>
+			<td>Fuller</td>
+		</tr>
+	</tbody>
+</table>
