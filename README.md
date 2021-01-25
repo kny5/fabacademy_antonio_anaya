@@ -8,7 +8,7 @@ Visit [fabacademy.org](https://fabacademy.org/) for class and other information.
   * To change the looks of your website, use the theme options found in the `mkdocs.yml` file or see the names of the available themes
 * If you want to start a website from scratch, you can delete everything in this repository and push your own static website
 
-### Project layout
+## Project layout
 
     mkdocs.yml    # The site configuration file.
     docs/         # All site content/files should be in this folder.
