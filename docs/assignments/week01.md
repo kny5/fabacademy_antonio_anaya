@@ -1,111 +1,127 @@
 # 1. Principles and practices
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+For this week our assignments are to make a GIT tutorial following the quick review we had on Wednesday and define a final project. The final project is where, we individually or cooperatively apply our learned skills during the Fab-Academy.
 
-## Research
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+## Git tutorial
 
-## Useful links
+I'm right now using Fedora 33 as main OS. Based on my research over the work of students on previous years I've found that showing terminal sessions has been something that a lot had struggle with. For this reason I'd like to share ASCIINEMA and I hope that anyone looking at this founds this tutorial useful. Then I'd like to show how I'm using GIT and GitLab to manage my repository and for that my entire project. Finally, I've found also that having a defined nomenclature or norm while writing commits is really useful for project management and maintenance.
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-## Code Example
 
-Use the three backticks to separate code.
+### Setting up:
 
+I'm a big fan of the Python Conda distribution, having a separated environment for each project keeps everything clean and easy on the system, so first:
+
+Install Python Conda distribution. (instructions on this link)
+
+Conda is an environment manager for a variety of scientific languages and toolkits including Python.
+
+To create a Python evironment for your fab academy repository:
 ```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+conda create -n fabacademy
+```
+To access this environment:
+```
+conda activate fabacademy
+```
+To deactivate and use the "base" environment:
+```
+conda deactivate
+```
+The next steps are related to asciinema to share a terminal session but beautifully:
+(the conda environment should be activated already to keep everything in order)
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
+Asciinema is a platform for beautifully sharing of terminal sessions.
+
+Under Linux to install Asciinema I'm using Conda, and Python's PIP a package manager for the Python ecosystem.
+```
+pip install asciinema
+```
+Once asciinema is installed, you can start recording terminal sessions, to exit and finish the recording just write down "exit"
+```
+asciinema rec -t "fabacademy first assignment"
 ```
 
-## Gallery
-
-![](../images/sample-photo.jpg)
-
-## Video
-
-### From Vimeo
-
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-### From Youtube
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-## 3D Models
-
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
 
 
-## Use HTML
+### Result:
 
-You may also embed HTML in your markdown files
-
-<hr />
+<script id="asciicast-vzb1DXZk5KdnGWwGl1PL9mJt6" src="https://asciinema.org/a/vzb1DXZk5KdnGWwGl1PL9mJt6.js" async data-autoplay="true" data-size="medium" data-loop=1 data-t=23 data-speed=2  data-rows=10></script>
 
 
-Try having a seperator line
+
+### Using Git:
+
+Git is a Version Control Software, this means you can save different states of a repository, get back to one of those states with the pourpose of recovering from a bug, a crash a change of style while writting the code, change of paradigm or approach, these are things that happen while developing software.
+
+We as students from the Fab Academy started with a boilerplate bootstrapped repository with a basic information architecture and Continuos Integration that renders the changes on our Markdown code to an Online Static Generated site.
+
+But if you need a new repository managed with Git you just need to execute this on your terminal:
+```
+git init
+```
+I've made a recording showing the process of creating a directory, initianting a git repository, creating an empty file, add files to the git registry, commiting changes and trying to push. Since I don't have a remote repository it gave me a error. Which means I'd need to add a remote location on the following steps.
+
+<script id="asciicast-QRUGeTxDm9O8XSR2KMVx7SHHE" src="https://asciinema.org/a/QRUGeTxDm9O8XSR2KMVx7SHHE.js"  data-autoplay="true" data-size="medium" data-loop=1 data-t=23 data-speed=2  data-rows=10></script>
 
 
-<hr />
 
-<table border="1">
-	<thead>
-		<tr>
-			<th>ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>235312</td>
-			<td>John</td>
-			<td>Doe</td>
-		</tr>
-		<tr>
-			<td>453123</td>
-			<td>Mark</td>
-			<td>Jones</td>
-		</tr>
-		<tr>
-			<td>998332</td>
-			<td>Jonathan</td>
-			<td>Smith</td>
-		</tr>
-		<tr>
-			<td>345612</td>
-			<td>Andrew</td>
-			<td>McArthur</td>
-		</tr>
-		<tr>
-			<td>453123</td>
-			<td>Adam</td>
-			<td>Fuller</td>
-		</tr>
-	</tbody>
-</table>
+### Clonning our Fab Academy repository:
+
+The process of clonning a repository is just to create a new instance or copy of our MASTER repository in GitLab, this has the pourpose to avoid making changes everytime online and instead work on our local instance or copy and then syncronize the changes to the online repository, and this is the whole pourpose of Git, to manage changes simultaneously that happen when working colectively on big software projects.
+
+You can add a SSH key to GitLab's repository configuration or you can just make use of the http request logging system.
+
+During our Bootcamp we had the time to learn how to setup a SSH key on our systems and then copy the resulting string to the GitLab configuration to allow SSH clonning for ourselves.
+```
+ssh-keygen -t rsa -b 4096 -C "replace_with_@your_email.com"
+```
+After generating the key and saving it on a file, we proceed to copy the content of it it to our GitLab add SSH key input, we just need to be carefull to not add any space or any other content to it.
+
+[Follow this tutorial from GitLab for detailed instructions.](https://docs.gitlab.com/ee/ssh/ "Follow this tutorial from GitLab.")
+
+After this is setup You'll be able to excute succesuflly the next command:
+```
+git clone git@gitlab.fabcloud.org:your/project/path.git
+```
+Or using the http clonning approach:
+```
+git clone your_repository_url_on_fabcloud.git
+```
+
+
+
+### Serve mkdocs locally:
+
+Mkdocs is the current Markdown to site generator, and the default choice for the Fab Academy boostrap site, for developing pourposes it's better to serve the repository locally before pushing to production or MASTER branch in the actual online Gitlab repository.
+
+To install mkdocs we need also need two package dependencies:
+```
+pip install mkdocs mkdocs-material git-revision-date-localized
+```
+After those dependencies are installed we can render the Markdown files to html using, on terminal you need to access the directory where the mkdocs.yml, it means we need to access to our repository, in every system we can do it by using the "cd" command like this:
+```
+cd repository_name
+```
+To list all files inside the current location (Linux):
+```
+ls -ls
+```
+Then:
+```
+mkdocs build
+```
+I'd like to use Python's http server module instead of the default mkdoc serve, so ona second terminal or using TMUX and accessing the repository as we did before:
+```
+python -m http.server
+```
+And by default the page will be served at http://localhost:8000, and everytime we make a change at the site we need to execute mkdocs build as we did before.
+
+
+
+### Working with the files:
+
+I'm using Typora editor as I find it simple and aesthetic for Markdown editing.
+The workflow is just to edit the files as Markdown, execute mkdocs and commit the changes on git.
