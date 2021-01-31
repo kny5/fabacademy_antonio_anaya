@@ -14,7 +14,7 @@ I'm right now using Fedora 33 as main OS. Based on my research over the work of 
 
 I'm a big fan of the Python Conda distribution, having a separated environment for each project keeps everything clean and easy on the system, so first:
 
-Install Python Conda distribution. (instructions on this link)
+[Install Python Conda distribution, intructions following this link.](https://docs.conda.io/projects/conda/en/latest/user-guide/install/ "Follow this tutorial")
 
 Conda is an environment manager for a variety of scientific languages and toolkits including Python.
 
@@ -121,7 +121,31 @@ And by default the page will be served at http://localhost:8000, and everytime w
 
 
 
-### Working with the files:
+### Adding a .gitignore file to avoid large MB commits to GitLab remote repository:
+
+This is very important I've just realized my mistake and had to revert my commits to avoid pushing to many MB's to the server:
+
+To preserve the changes to my Week01 Markdown file I've just copy the content to a temporary file and then:
+
+To delete the last two commits from my git repository:
+```
+git reset --hard HEAD~2
+```
+After this I've create a .gitignore file:
+```
+touch .gitignore
+```
+[An then copied the content of this file I've found online into my .gitignore file.](https://github.com/mkdocs/mkdocs/blob/master/.gitignore "Follow this link")
+
+
+
+### Workflow:
 
 I'm using Typora editor as I find it simple and aesthetic for Markdown editing.
 The workflow is just to edit the files as Markdown, execute mkdocs and commit the changes on git.
+
+
+
+### Video recording of desktop:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EGWqjWqaV7M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

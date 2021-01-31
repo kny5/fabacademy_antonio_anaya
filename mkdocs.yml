@@ -1,8 +1,8 @@
 # Replace the text below to customize your site
-site_name: Your name - Fab Academy
-site_description: Fab Academy documentation site for Your Name
-site_author: Your name
-copyright: Copyright 2021 Your name - Creative Commons Attribution Non Commercial
+site_name: Antonio de Jesus Anaya Hernandez - Fab Academy
+site_description: Fab Academy documentation site for Antonio de Jesus Anaya Hernandez
+site_author: Antonio de Jesus Anaya Hernandez
+copyright: Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
 
 site_url: http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya
 
@@ -10,13 +10,13 @@ extra:
   social:
     # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/fabacademany
+      link: https://www.instagram.com/le_anayeau/
     - icon: fontawesome/brands/facebook
-      link: https://facebook.com/fabacademany
+      link: https://www.facebook.com/antonio.anayahernande
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/fabacademany
+      link: https://twitter.com/AnayaAntonio4
     - icon: fontawesome/brands/linkedin
-      link: "https://linkedin.com/in/academany"
+      link: https://www.linkedin.com/in/antonio-anaya-62586a1a8/
 
 theme:
   name: material
