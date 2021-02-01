@@ -1,4 +1,4 @@
-# 1. Principles and practices
+# 	1. Principles and practices
 
 For this week our assignments are to make a GIT tutorial following the quick review we had on Wednesday and define a final project. The final project is where, we individually or cooperatively apply our learned skills during the Fab-Academy.
 

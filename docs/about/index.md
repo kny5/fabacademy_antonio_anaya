@@ -1,25 +1,35 @@
 # About me
 
-![](../images/avatar-photo.jpg)
+![](../images/me_meme.jpg)
 
-Hi! I am Emma Brewer. I am an art director & graphic designer based in New York City working on branding, visual identities, editorial design and web design.
 
-Visit this website to see my work!
+
+Hi! I'm Antonio, I'm in road to become a product developer specialized in agriculture and technology transference, 
+
+[You can find my portfolio here.](https://kny5.github.io/personal_portfolio/ "personal website")
+
+
 
 ## My background
 
-I was born in a nice city called..
+I started my professional career as a CAD/CAM technician in the plastics manufacturing industry in 2007 while studying aeronautical engineering.
 
-## Previous work
+In 2014, I changed to developing control systems for greenhouses in southern Mexico as freelancer, and I got accepted to my first MIT program, the Global Startup Labs Bootcamp in 2015. I learned human-center design, and I've explored since then technology transference for agriculture.
 
-I'm a paragraph. Edit the page on Gitlab to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.​
+I've acquired skills in rapid prototyping while studying in Product design innovation programs and collaborating with international initiatives of the MIT in Mexico. I've been also a teacher for Jacaranda Education and the Access Education program of the U.S. Embassy in Mexico.
 
-### Project A
+I've volunteered to mentor technology-based social initiatives, government institutions, universities, and foreign organizations working in Mexico promoting education and gender equality for indigenous populations.
 
-This is an image from an external site:
+I've been a Linux user and evangelist since 2006, for the Ubuntu, Debian and Fedora distributions.
 
-![This is the image caption](https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ad25f4eb5444edddb0c5fb252a7f1dce&auto=format&fit=crop&w=900&q=80)
+In 2020, I was part of the [Hackaday Prize 2020 Dream teams](https://hackaday.com/2020/07/10/dream-team-members-announced-for-the-2020-hackaday-prize/). Where I worked to help [Field Ready]() an international NFP Organization to develop a remote quality control system for humanitarian aid products, that are made mostly in FabLabs in countries were disaster relief is very important.
 
-While this is an image from the assets/images folder. Never use absolute paths (starting with /) when linking local images, always relative.
+So, when someone asks me what do I do for a living, I say, I'm a product developer at the convergence between hacking, design, and the pyramid base economy.
 
-![This is another caption](../images/sample-photo.jpg)
+
+
+## Work on the Open Quality control standard document
+
+The main purpose of this project is to provide a quick and reliable traceability system for products made in Fab Labs, taking in consideration risk, supply chain, and tracking the: human-machine-material data of any product.
+
+![](../images/qc_doc.jpg)
