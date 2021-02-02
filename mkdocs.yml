@@ -48,3 +48,5 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+extra_css: [extra.css]
