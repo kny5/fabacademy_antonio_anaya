@@ -10,4 +10,4 @@
 
 [You can check my bio here](./about/index.md)
 
-[My portfolio](https://github.io/kny5/personal_portfolio)
+[My portfolio](https://docs.google.com/presentation/d/e/2PACX-1vQmyejE_FAWjtIBdAOacB1pdTpTRAXEbPqkuRE2p-DoZ6MzR95jXgPVaq3O7jFbN2KBzIOkTIO7qQ5o/embed?start=false&loop=true&delayms=3000#slide=id.p)
