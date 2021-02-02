@@ -23,10 +23,10 @@ theme:
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
     primary: black
-    accent: indigo
+    accent: pink
   font:
     # See available fonts at https://fonts.google.com/
-    text: Helvetica 
+    text: Helvetica
     code: Ubuntu Mono
   icon:
     logo: material/school
