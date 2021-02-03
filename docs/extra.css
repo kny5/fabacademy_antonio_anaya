@@ -1,8 +1,16 @@
 h1 {
-  color: black;
+  color: white;
 }
 
 h3 {
   background-color: magenta;
   color: white;
+}
+
+body {
+  background-color: #DADADA;
+}
+
+p {
+  color: black;
 }
