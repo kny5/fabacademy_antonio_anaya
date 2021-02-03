@@ -1,28 +1,30 @@
 # 2. Project management
 
+[You can find information about my project here.](/projects/final-project/)
+
 ## First sprint
 Expected time: 5 weeks.
 
 ### Research:
-General
-User
+1. General
+2. User
 
 ### Proposals:
-Software
-Hardware
-Interaction
+1. Software
+2. Hardware
+3. Interaction
 
 ### Concept design:
-Video demo
+1. Video demo
 
 ### First prototype:
-Workbench test
-Feedback and rework
+1. Workbench test
+2. Feedback and rework
 
 ### Second prototype:
-Workbench test
-Field test
-Feedback and rework
+1. Workbench test
+2. Field test
+3. Feedback and rework
 ...
 
 To define...

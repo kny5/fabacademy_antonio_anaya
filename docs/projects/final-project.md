@@ -28,10 +28,7 @@ So one of the steps in this research will be to measure a variety of milk sample
 The other important aspect I'm considering for this project is the interaction design. User-centered design for agriculture is an important topic, since most tools need an specialized trained professional to be used. In some places this will not be a problem, but in Mexico, in my region the technicians/animals is 3000 animals for each technician.
 
 ### A comparison of current methods in Mexico and a Experimental farm in France:
-<video width="320" height="240" controls>
-  <source src="/projects/videos/cow_mx.mp4" type="video/mp4">
-</video>
 
-<video width="320" height="240" controls>
-  <source src="/projects/videos/cow_fr.mp4" type="video/mp4">
-</video>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/CrMBq_2zi3U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">https://youtubeembedcode.com/es/</a></small></div><div><small><a href="https://mibew.org/">afforadablle targeted web traffic</a></small></div><div><small><a href="https://youtubeembedcode.com/es/">https://youtubeembedcode.com/es/</a></small></div><div><small><a href="https://mibew.org/">afforadablle targeted web traffic</a></small></div></iframe>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/UNGkzNqBQVc?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en/">https://youtubeembedcode.com/en/</a></small></div><div><small><a href="https://mibew.org/">increase visitors in your website</a></small></div></iframe>
