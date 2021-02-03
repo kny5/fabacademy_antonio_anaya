@@ -34,6 +34,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
+  extra_css:
+    - extra.css
+
 
 plugins:
   - search
@@ -48,6 +51,3 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
-
-extra_css:
-  - extra.css
