@@ -1,7 +1,8 @@
 h1 {
-  color: pink;
+  color: black;
 }
 
 h3 {
-  color: pink;
+  background-color: magenta;
+  color: white;
 }
