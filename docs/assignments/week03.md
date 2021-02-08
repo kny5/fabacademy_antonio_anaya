@@ -6,12 +6,12 @@
 
 ## Drafting:
 
-<img src="../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
+<img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
 
 
 ## Measuring objects:
 
-<img src="../images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
+<img src="../../images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
 <img src="../images/week03/photo_1.jpg" alt="photo_1" width="45%"/>
 
 
