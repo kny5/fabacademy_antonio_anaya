@@ -7,7 +7,7 @@
 ## Drafting:
 
 <img src="./images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
-![idea_1](./images/week03/sketch_1.jpg)
+![idea_1](../images/week03/sketch_1.jpg)
 
 
 ## Measuring objects:
