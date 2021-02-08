@@ -2,12 +2,12 @@
 
 - [Link to Xdesign model.]()
 
-[Download this](/images/week03/inkscape_1.jpg)
+[Download this](./images/week03/inkscape_1.jpg)
 
 ## Drafting:
 
-<img src="/images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
-![idea_1](/images/week03/sketch_1.jpg)
+<img src="./images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
+![idea_1](./images/week03/sketch_1.jpg)
 
 
 ## Measuring objects:
