@@ -27,14 +27,14 @@ theme:
     accent: magenta
   font:
     # See available fonts at https://fonts.google.com/
-    text: Helvetica
+    text: Montserrat
     code: Ubuntu Mono
   icon:
     logo: material/school
-  favicon: images/favicon.svg
+  favicon: images/logo.png
   features:
     - navigation.tabs
-    - navigation.instant
+    # - navigation.instant
 
 plugins:
   - search

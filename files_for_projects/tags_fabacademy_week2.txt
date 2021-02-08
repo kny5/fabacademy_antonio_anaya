@@ -1,0 +1,19 @@
+RFID tag dimensions
+
+code fr8703
+27 0808
+type FR 43
+57 mm width
+79 mm height
+
+code fr 8703
+27 0808
+type fr 27
+57 mm
+79 mm
+de 20 mm
+di_1 15 mm
+d1_2 14 mm
+di_3 12 mm
+di_plug 9 mm
+top_txt_size 3 mm

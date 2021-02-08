@@ -3,8 +3,10 @@ h1 {
 }
 
 h3 {
-  background-color: magenta;
+
   color: white;
+  font-weight: 900;
+  background: linear-gradient( 90deg, #FF0090, #FF0090, #DADADA ); "
 }
 
 body {
