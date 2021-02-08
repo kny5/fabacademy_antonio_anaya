@@ -2,7 +2,7 @@
 
 - [Link to Xdesign model.]()
 
-
+[Download this](/images/week03/inkscape_1.jpg)
 
 ## Drafting:
 
@@ -17,7 +17,7 @@
 
 
 
-## Image compression:
+## Image compression and improvement with InkScape:
 
 <img src="/images/week03/inkscape_1.jpg" alt="photo_0" width="45%"/>
 <img src="/images/week03/inkscape_2.jpg" alt="photo_0" width="45%"/>
@@ -36,17 +36,18 @@
 
 ## 3D modeling with FreeCad:
 
-![Capture_4, sketch]()
-![Capture_5, model]()
-![Capture_6, render]()
+<img src="/images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
+<img src="/images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
 
 
 
 ## 3D modeling with OpenScad:
 
-'''
+```
 Some_Code.scad
-'''
+
+
+```
 
 ![Capture_7, code]()
 ![Capture_8, code_python]()
