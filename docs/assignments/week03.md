@@ -32,6 +32,7 @@
 <img src="/images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
 <img src="/images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
 
+[Download XDesign file](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
 
 
 ## 3D modeling with FreeCad:
@@ -39,6 +40,13 @@
 <img src="/images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
 <img src="/images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
 
+
+## 3D modeling with Blender:
+
+<img src="/images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
+<img src="/images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
+
+[Download Blender files](/files/week03/blender_fabacademy.zip)
 
 
 ## 3D modeling with OpenScad:
