@@ -4,23 +4,33 @@
 
 
 
-## Drafting
+## Drafting:
 
-![Photo_1]()
+<img src="/images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
 
 
 
 ## Measuring objects:
 
-![Photo_2]()
+<img src="/images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
+<img src="/images/week03/photo_1.jpg" alt="photo_1" width="45%"/>
+
+
+
+## Image compression:
+
+<img src="/images/week03/inkscape_1.jpg" alt="photo_0" width="45%"/>
+<img src="/images/week03/inkscape_2.jpg" alt="photo_0" width="45%"/>
+<img src="/images/week03/inkscape_3.jpg" alt="photo_0" width="45%"/>
+<img src="/images/week03/inkscape_4.jpg" alt="photo_0" width="45%"/>
 
 
 
 ## 3D modeling with Xdesign:
 
-![Capture_1, sketch]()
-![Capture_2, extrusion and cut]()
-![Capture_3, render]()
+<img src="/images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
+<img src="/images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
+<img src="/images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
 
 
 
