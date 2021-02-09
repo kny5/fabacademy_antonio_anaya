@@ -15,13 +15,16 @@ The first thing I've made was this sort of ideation process to define the parts 
 
 ## Measuring objects:
 
-I give myself the challenge to draw one of the earrings we use
+I give myself the challenge to draw one of the earrings used for Cow identification in UniLaSalle:
+
 <img src="../../images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/photo_1.jpg" alt="photo_1" width="45%"/>
 
 
 
 ## Image compression and improvement with InkScape:
+
+I used Inkscape to crop, scale and compress all images shown in this assignment page.
 
 <img src="../../images/week03/inkscape_1.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_2.jpg" alt="photo_0" width="45%"/>
@@ -54,11 +57,21 @@ optirun chromium-browser
 
 ### 3D modeling:
 
+There are four basic operations as principles for 3D modeling:
+
+2D Drafting for sketching.
+Linear region extrusion.
+Linear region extraction.
+One axis profile revolution.
+Parametric scaling.
+
+I've used all this to produce the model shown:
+
 <img src="../../images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
 
-
+In order to used
 
 ### Model video:
 
