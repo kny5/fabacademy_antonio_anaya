@@ -4,12 +4,17 @@ Description: CAD stands for Computer Aided Design, there are different solutions
 
 There are also differences in licensing, for example proprietary software CATIA, but there are also Open Sourced and Libre solutions like Blender, FreeCAD and OpenScad, that are driven by their communities.
 
+So, for this week the goal is to learn and use Raster or Vector drafting software.
 
 ## Ideation:
 
 The first thing I've made was this sort of ideation process to define the parts of my project an this is the end-result.
 
 <img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
+
+ My Photo is sort of Pixelated so I've use InkScape to make a vectorized and then compressed again as JPG image:
+
+<img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
 
 
 
@@ -65,11 +70,6 @@ There are four basic operations as principles for 3D modeling:
 <li>One axis profile revolution.</li>
 <li>Parametric scaling.</li>
 </ol>
-
-
-
-
-
 
 I've used all this to produce the model shown:
 
