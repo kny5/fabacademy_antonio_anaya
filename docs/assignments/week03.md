@@ -5,7 +5,9 @@ Description: CAD stands for Computer Aided Design, there are different solutions
 There are also differences in licensing, for example proprietary software CATIA, but there are also Open Sourced and Libre solutions like Blender, FreeCAD and OpenScad, that are driven by their communities.
 
 
-## Drafting:
+## Ideation:
+
+The first thing I've made was this sort of ideation process to define the parts of my project an this is the end-result.
 
 <img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
 
@@ -13,6 +15,7 @@ There are also differences in licensing, for example proprietary software CATIA,
 
 ## Measuring objects:
 
+I give myself the challenge to draw one of the earrings we use
 <img src="../../images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/photo_1.jpg" alt="photo_1" width="45%"/>
 
@@ -87,7 +90,9 @@ Linux conf:
 
 ## Render with blender
 
+<img src="../../images/week03/blender_render.jpg" alt="drawing" width="90%"/>
 
+<img src="../../images/week03/blender_render_2.jpg" alt="drawing" width="90%"/>
 
 ## 3D modeling with OpenScad:
 
