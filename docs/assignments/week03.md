@@ -1,12 +1,14 @@
 # 3. Computer Aided design
 
-- [Link to Xdesign model.]()
+Description: CAD stands for Computer Aided Design, there are different solutions for different industries, like AutoCAD specialized in the mechanical and architecture industry, CATIA for the aircraft, maritime and automobile industry, or Blender specialized in digital art.
 
-[Download this](../images/week03/inkscape_1.jpg)
+There are also differences in licensing, for example proprietary software CATIA, but there are also Open Sourced and Libre solutions like Blender, FreeCAD and OpenScad, that are driven by their communities.
+
 
 ## Drafting:
 
 <img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
+
 
 
 ## Measuring objects:
@@ -31,11 +33,14 @@ Review:
 
 Linux conf:
 
+
+
 ### 3D modeling:
 
 <img src="../../images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
+
 
 
 ### Model video:
@@ -53,6 +58,7 @@ Linux conf:
 <img src="../../images/week03/xdesign_render.jpg" alt="drawing" width="90%"/>
 
 
+
 ### Assembly:
 
 <figure class="video_container">
@@ -61,7 +67,8 @@ Linux conf:
   </video>
 </figure>
 
-[Download XDesign file](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+[Download from XDesign](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+
 
 
 ## 3D modeling with FreeCad:
@@ -70,12 +77,16 @@ Linux conf:
 <img src="../../images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
 
 
+
 ## 3D modeling with Blender:
 
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
 
 [Download Blender files](/files/week03/blender_fabacademy.zip)
+
+## Render with blender
+
 
 
 ## 3D modeling with OpenScad:

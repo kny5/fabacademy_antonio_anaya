@@ -5,8 +5,7 @@ site_author: Antonio de Jesus Anaya Hernandez
 copyright: Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
 
 site_url: http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya
-extra_css:
-  [extra.css]
+
 extra:
   social:
     # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
@@ -41,11 +40,14 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
 
+extra_css:
+    [extra.css]
+
 markdown_extensions:
   - extra
   - smarty
   - admonition
   - codehilite:
-      guess_lang: false
+      guess_lang: True
   - toc:
       permalink: true
