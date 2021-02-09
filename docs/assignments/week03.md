@@ -25,11 +25,41 @@
 
 
 
-## 3D modeling with Xdesign:
+## Xdesign:
+
+Review:
+
+Linux conf:
+
+### 3D modeling:
 
 <img src="../../images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
+
+
+### Model video:
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="../../images/week03/xdesign_video.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
+
+### Photo capture:
+
+<img src="../../images/week03/xdesign_render.jpg" alt="drawing" width="90%"/>
+
+
+### Assembly:
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="../../images/week03/xdesign_assembly.mp4" type="video/mp4">
+  </video>
+</figure>
 
 [Download XDesign file](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
 
@@ -42,8 +72,8 @@
 
 ## 3D modeling with Blender:
 
-<img src="../images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
-<img src="../images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
+<img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
+<img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
 
 [Download Blender files](/files/week03/blender_fabacademy.zip)
 
