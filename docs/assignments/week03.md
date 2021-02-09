@@ -34,9 +34,23 @@ I give myself the challenge to draw one of the earrings we use
 
 Review:
 
-Linux conf:
+I've learned Xdesign and I found it very complicated at first even as a Solidworks user. My main OS is Linux and I've made this list to make Xdesign work fluid and efficiently.
 
+Linux recommendations:
+Chromium works better than Firefox.
+Activate Hardware acceleration.
+Force hardware GPU use.*
 
+*For Nvidia Nouveau drivers use:
+```
+DRI_PRIME=1 chromium-browser
+```
+
+*For Nvidia propietary drivers, use Bumblebee:
+
+```
+optirun chromium-browser
+```
 
 ### 3D modeling:
 
