@@ -97,7 +97,11 @@ In order to used
   </video>
 </figure>
 
-[Download from XDesign](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+[Download 3DXML](../../files_for_projects/earring_fr27.3dxml)
+
+[Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+
+
 
 
 
@@ -113,7 +117,7 @@ In order to used
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
 
-[Download Blender files](/files/week03/blender_fabacademy.zip)
+[Download Blender files](../../files/week03/blender_fabacademy.zip)
 
 ## Render with blender
 
