@@ -22,9 +22,9 @@ I give myself the challenge to draw one of the earrings used for Cow identificat
 
 
 
-## Image compression and improvement with InkScape:
+## Image compression and improvement with Gimp:
 
-I used Inkscape to crop, scale and compress all images shown in this assignment page.
+I used Gimp to crop, scale and compress all images shown in this assignment page.
 
 <img src="../../images/week03/inkscape_1.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_2.jpg" alt="photo_0" width="45%"/>
@@ -58,12 +58,18 @@ optirun chromium-browser
 ### 3D modeling:
 
 There are four basic operations as principles for 3D modeling:
+<ol>
+<li>2D Drafting for sketching.</li>
+<li>Linear region extrusion.</li>
+<li>Linear region extraction.</li>
+<li>One axis profile revolution.</li>
+<li>Parametric scaling.</li>
+</ol>
 
-2D Drafting for sketching.
-Linear region extrusion.
-Linear region extraction.
-One axis profile revolution.
-Parametric scaling.
+
+
+
+
 
 I've used all this to produce the model shown:
 
