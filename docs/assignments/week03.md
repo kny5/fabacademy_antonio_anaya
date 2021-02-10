@@ -122,21 +122,22 @@ I've used all this to produce the model shown:
 
 ### Photo capture:
 
-<img src="../../images/week03/xdesign_render.jpg" alt="drawing" width="90%"/>
+<img src="../../images/week03/xdesign_render.jpg" alt="drawing" />
 
-
-
-### Assembly:
+This is a view of the model I've made in XDesign.
 
 I've used this command for video compression with ffmpeg:
-
-<script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js"   data-autoplay="true" data-size="medium" data-loop=1 data-t=23 data-speed=2  data-rows=10> async></script>
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
     <source src="../../images/week03/xdesign_assembly.mp4" type="video/mp4">
   </video>
 </figure>
+
+<script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js" data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=2  data-rows=10 async></script>
+
+
+### Download:
 
 [Download 3DXML](../../files_for_projects/earring_fr27.3dxml)
 
