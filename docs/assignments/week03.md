@@ -22,7 +22,7 @@ The first thing I've made was this sort of ideation process to define the parts 
 
 <img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
 
-
+[Download InksCape SVG files](../../files_for_projects/inkscape_earring_fr27.zip)
 
 ### Measuring objects:
 
@@ -46,6 +46,7 @@ To improve contrast and color of images, you just need to use options under the 
 
 <img src="../../images/week03/inkscape_3.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_4.jpg" alt="photo_0" width="45%"/>
+
 
 
 ## InkScape illustration:
@@ -166,7 +167,7 @@ The last time I've used blender was in 2010 and nowadays it looks incredible ama
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
 
-[Download Blender files](../../files/week03/blender_fabacademy.zip)
+[Download Blender files](../../files_for_projects/blender_fabacademy.zip)
 
 ## Render with blender
 
@@ -182,4 +183,4 @@ This is the model with a Simple deformation modifier.
 
 The render motor used was Workbench with the basic configuration.
 
-[Download Blender files](../../files/week03/TAG_RF27.zip)
+[Download Blender files](../../files_for_projects/TAG_RF27.zip)
