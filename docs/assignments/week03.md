@@ -148,15 +148,16 @@ I've used this command for video compression with ffmpeg:
 [Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
 
 
+## AgriLabs workshops:
 
-## 3D modeling with FreeCad:
+### 3D modeling with FreeCad:
 
 <img src="../../images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
 <img src="../../images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
 
 
 
-## 3D modeling with Blender:
+### 3D modeling with Blender:
 
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
@@ -165,17 +166,12 @@ I've used this command for video compression with ffmpeg:
 
 ## Render with blender
 
+I've exported the 3D model from xDesign as STL and imported it in Blender to make this renders.
+
 <img src="../../images/week03/blender_render.jpg" alt="drawing" width="90%"/>
+It was easy to paint the faces but it took a while.
 
 <img src="../../images/week03/blender_render_2.jpg" alt="drawing" width="90%"/>
+This is the model with a Simple deformation modifier.
 
-## 3D modeling with OpenScad:
-
-```
-Some_Code.scad
-
-
-```
-
-![Capture_7, code]()
-![Capture_8, code_python]()
+The render motor used was Workbench with the basic configuration.
