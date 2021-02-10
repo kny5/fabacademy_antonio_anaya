@@ -1,44 +1,69 @@
 # 3. Computer Aided design
 
-Description: CAD stands for Computer Aided Design, there are different solutions for different industries, like AutoCAD specialized in the mechanical and architecture industry, CATIA for the aircraft, maritime and automobile industry, or Blender specialized in digital art.
+## Introduction:
 
-There are also differences in licensing, for example proprietary software CATIA, but there are also Open Sourced and Libre solutions like Blender, FreeCAD and OpenScad, that are driven by their communities.
+Description: CAD stands for Computer Aided Design, there are different software solutions for different industries, like [AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&support=null) specialized in the mechanical and architecture industry, [CATIA](https://www.3ds.com/products-services/catia/) for the aircraft, marine and automobile industry, or [Blender](https://www.blender.org/) specialized in digital art.
 
-So, for this week the goal is to learn and use Raster or Vector drafting software.
+There are also differences in licensing, for example proprietary, and open-source. Software like CATIA is proprietary and then you have to buy a license to use it, but there are also Open Sourced solutions like Blender, [FreeCAD](https://www.freecadweb.org/) and [OpenScad](https://www.openscad.org/), that are driven by their communities, and also are free of charge.
 
-## Ideation:
+For this week the goal is to learn and use Raster or Vector drafting software, CAD and render or simulate.
 
-The first thing I've made was this sort of ideation process to define the parts of my project an this is the end-result.
+As a personal note, it's my first time using 100% [Fedora](https://getfedora.org/) for all this process and I had some difficulties configuring my GPU drivers, something that's really common under this operative system if not used carefully. Normally my workflow needed a dual boot system on my personal computer to use Solidworks on Linux and programming under Linux. For the first time I've only used Linux thanks to XDesign and Blender.
+
+
+## 2D
+
+
+The first thing I've made was this sort of ideation process to define the parts of my final project an this is the result:
 
 <img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
 
- My Photo is sort of Pixelated so I've use InkScape to make a vectorized and then compressed again as JPG image:
+ As my Photo is a bit Pixelated, I've used InkScape to make a vectorized version and then compressed it again as a JPG image:
 
 <img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
 
 
 
-## Measuring objects:
+### Measuring objects:
 
-I give myself the challenge to draw one of the earrings used for Cow identification in UniLaSalle:
+I gave myself the challenge to draw one of the earrings used for Cow identification in the experimental farm of [unilasalle](https://www.unilasalle.fr/):
 
 <img src="../../images/week03/photo_0.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/photo_1.jpg" alt="photo_1" width="45%"/>
 
 
 
-## Image compression and improvement with Gimp:
+### Image compression and improvement with Gimp:
 
-I used Gimp to crop, scale and compress all images shown in this assignment page.
+I took some photos and screen captures for this and sometimes I had too use [Gimp](https://www.gimp.org/) to crop, scale and compress all images shown for this assignment page.
+
+To crop the images I used the Selection tool and then the crop to selection tool under the Image menu in the toolbar.
 
 <img src="../../images/week03/inkscape_1.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_2.jpg" alt="photo_0" width="45%"/>
+
+To improve contrast and color of images, you just need to use options under the Filters menu in the toolbar.
+
 <img src="../../images/week03/inkscape_3.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_4.jpg" alt="photo_0" width="45%"/>
 
 
+## InkScape illustration:
 
-## Xdesign:
+### Draft process
+
+<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
+<img src="../../images/week03/inkscape_illustration_2.jpg" alt="photo_0" width="45%"/>
+
+
+
+### Result
+
+<img src="../../images/week03/inkscape_earring_fr27.png" alt="photo_0" width="90%"/>
+
+## 3D
+
+### Xdesign:
 
 Review:
 
@@ -60,9 +85,14 @@ DRI_PRIME=1 chromium-browser
 optirun chromium-browser
 ```
 
+
+
 ### 3D modeling:
 
-There are four basic operations as principles for 3D modeling:
+There are some basic operations for 3D modeling:
+
+#### Linear
+
 <ol>
 <li>2D Drafting for sketching.</li>
 <li>Linear region extrusion.</li>
