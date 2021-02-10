@@ -3,6 +3,11 @@
 
 While working in Mexico, I discovered the need for an affordable data acquisition system.
 
+Project board:
+
+<img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
+
+
 ## Research
 
 ![](./images/cows_infield.jpeg)
