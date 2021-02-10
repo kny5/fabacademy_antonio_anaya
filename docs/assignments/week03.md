@@ -52,14 +52,17 @@ To improve contrast and color of images, you just need to use options under the 
 
 ### Draft process
 
-<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
 <img src="../../images/week03/inkscape_illustration_2.jpg" alt="photo_0" width="45%"/>
+<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
+
 
 
 
 ### Result
 
 <img src="../../images/week03/inkscape_earring_fr27.png" alt="photo_0" width="90%"/>
+
+
 
 ## 3D
 
@@ -91,6 +94,8 @@ optirun chromium-browser
 
 There are some basic operations for 3D modeling:
 
+
+
 #### Linear
 
 <ol>
@@ -107,7 +112,7 @@ I've used all this to produce the model shown:
 <img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
 
-In order to used
+
 
 ### Model video:
 
@@ -136,7 +141,6 @@ In order to used
 [Download 3DXML](../../files_for_projects/earring_fr27.3dxml)
 
 [Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
-
 
 
 
