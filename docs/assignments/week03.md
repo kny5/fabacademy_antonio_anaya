@@ -1,5 +1,5 @@
 # 3. Computer Aided Design
-    
+
 ## Introduction:
 
 Description: CAD stands for Computer Aided Design, there are different software solutions for different industries, like [AutoCAD](https://www.autodesk.com/products/autocad/overview?term=1-YEAR&support=null) specialized in the mechanical and architecture industry, [CATIA](https://www.3ds.com/products-services/catia/) for the aircraft, marine and automobile industry, or [Blender](https://www.blender.org/) specialized in digital art.
@@ -173,9 +173,13 @@ The last time I've used blender was in 2010 and nowadays it looks incredible ama
 I've exported the 3D model from xDesign as STL and imported it in Blender to make this renders.
 
 <img src="../../images/week03/blender_render.jpg" alt="drawing" width="90%"/>
+
 It was easy to paint the faces but it took a while.
 
 <img src="../../images/week03/blender_render_2.jpg" alt="drawing" width="90%"/>
+
 This is the model with a Simple deformation modifier.
 
 The render motor used was Workbench with the basic configuration.
+
+[Download Blender files](../../files/week03/TAG_RF27.zip)
