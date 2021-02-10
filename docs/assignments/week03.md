@@ -10,10 +10,6 @@ For this week the goal is to learn and use Raster or Vector drafting software, C
 
 As a personal note, it's my first time using 100% [Fedora](https://getfedora.org/) for all this process and I had some difficulties configuring my GPU drivers, something that's really common under this operative system if not used carefully. Normally my workflow needed a dual boot system on my personal computer to use Solidworks on Linux and programming under Linux. For the first time I've only used Linux thanks to XDesign and Blender.
 
-
-## 2D
-
-
 The first thing I've made was this sort of ideation process to define the parts of my final project an this is the result:
 
 <img src="../../images/week03/sketch_1.jpg" alt="idea_1" width="90%"/>
@@ -48,14 +44,16 @@ To improve contrast and color of images, you just need to use options under the 
 <img src="../../images/week03/inkscape_4.jpg" alt="photo_0" width="45%"/>
 
 
+## 2D
 
-## InkScape illustration:
+### InkScape Draft process
 
-### Draft process
-
+Shape sketching with simple forms.
 <img src="../../images/week03/inkscape_illustration_2.jpg" alt="photo_0" width="45%"/>
-<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
 
+Using difference and union path tools I got the shape, next added the text, codebar and color.
+
+<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
 
 
 
