@@ -8,7 +8,8 @@ h3 {
 
   color: white;
   font-weight: 900;
-  background: linear-gradient( 45deg, #FF0090, #FF0090, #DADADA ); "
+  background: linear-gradient( 45deg, #FF0090, #FF0090, #DADADA );
+  padding: 5px;
 }
 
 body {
