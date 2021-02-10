@@ -128,6 +128,10 @@ This is a view of the model I've made in XDesign.
 
 I've used this command for video compression with ffmpeg:
 
+
+
+### Assembly video:
+
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
     <source src="../../images/week03/xdesign_assembly.mp4" type="video/mp4">
