@@ -94,10 +94,6 @@ optirun chromium-browser
 
 There are some basic operations for 3D modeling:
 
-
-
-#### Linear
-
 <ol>
 <li>2D Drafting for sketching.</li>
 <li>Linear region extrusion.</li>
@@ -132,6 +128,10 @@ I've used all this to produce the model shown:
 
 ### Assembly:
 
+I've used this command for video compression with ffmpeg:
+
+<script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js"   data-autoplay="true" data-size="medium" data-loop=1 data-t=23 data-speed=2  data-rows=10> async></script>
+
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
     <source src="../../images/week03/xdesign_assembly.mp4" type="video/mp4">
@@ -141,7 +141,6 @@ I've used all this to produce the model shown:
 [Download 3DXML](../../files_for_projects/earring_fr27.3dxml)
 
 [Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
-
 
 
 
