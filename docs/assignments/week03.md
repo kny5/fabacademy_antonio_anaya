@@ -152,12 +152,16 @@ I've used this command for video compression with ffmpeg:
 
 ### 3D modeling with FreeCad:
 
+FreeCAD is a very interesting software, I had some issues on my Linux system but we practiced during our short workshop.
+
 <img src="../../images/week03/freecad_1.jpeg" alt="drawing" width="90%"/>
 <img src="../../images/week03/freecad_2.jpeg" alt="drawing" width="90%"/>
 
 
 
 ### 3D modeling with Blender:
+
+The last time I've used blender was in 2010 and nowadays it looks incredible amazing, the interface and the workflow have improved. At that time we only learn very basic stuff for modeling. But it gave me a very good idea of the possibilities for rendering. So I explored rendering for my self later.
 
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
