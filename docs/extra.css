@@ -16,7 +16,6 @@ h2 {
   border: 0px solid #ffffff;
 }
 
-
 h3 {
   color: white;
   background: #C269E9;
@@ -26,9 +25,7 @@ h3 {
 -moz-border-radius: 5px 5px 5px 5px;
 -webkit-border-radius: 5px 5px 5px 5px;
 border: 0px solid #000000;
-opacity: 0.75;
-
-
+opacity: 0.70;
 }
 
 body {
