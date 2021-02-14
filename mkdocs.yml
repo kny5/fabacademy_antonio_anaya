@@ -43,9 +43,6 @@ plugins:
 extra_css:
     [extra.css]
 
-extra_javascript:
-    [extra.js]
-
 markdown_extensions:
   - extra
   - smarty
