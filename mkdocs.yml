@@ -48,6 +48,6 @@ markdown_extensions:
   - smarty
   - admonition
   - codehilite:
-      guess_lang: true
+      guess_lang: True
   - toc:
       permalink: true
