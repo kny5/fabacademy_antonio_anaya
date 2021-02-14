@@ -20,6 +20,8 @@ The first thing I've made was this sort of ideation process to define the parts 
 
 [Download InksCape SVG files](../../files_for_projects/inkscape_earring_fr27.zip)
 
+
+
 ### Measuring objects:
 
 I gave myself the challenge to draw one of the earrings used for Cow identification in the experimental farm of [unilasalle](https://www.unilasalle.fr/):
@@ -44,11 +46,13 @@ To improve contrast and color of images, you just need to use options under the 
 <img src="../../images/week03/inkscape_4.jpg" alt="photo_0" width="45%"/>
 
 
+
 ## 2D
 
 ### InkScape Draft process
 
 Shape sketching with simple forms.
+
 <img src="../../images/week03/inkscape_illustration_2.jpg" alt="photo_0" width="45%"/>
 
 Using difference and union path tools I got the shape, next added the text, codebar and color.
@@ -57,7 +61,7 @@ Using difference and union path tools I got the shape, next added the text, code
 
 
 
-### Result
+### Result:
 
 <img src="../../images/week03/inkscape_earring_fr27.png" alt="photo_0" width="90%"/>
 

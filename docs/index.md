@@ -1,6 +1,6 @@
 ## Hi this is Antonio Anaya's homepage
 
-<script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+<script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="false" data-theme="none" data-loop=1 data-t=23 data-speed=3></script>
 
 [Download code](./files_for_projects/tags_fabacademy_week2.txt)
 <!--

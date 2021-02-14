@@ -1,19 +1,38 @@
 h1 {
-  color: white;
+  font-size: 150pt;
+  font-style: normal;
+  font-weight: bolder;
 }
 
+h2 {
+  font-weight: 900;
+  color: white;
+  background: #7A3ADD;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid #ffffff;
+}
 
 
 h3 {
-
   color: white;
-  font-weight: 900;
-  background: linear-gradient( 45deg, #FF0090, #FF0090, #DADADA );
+  background: #C269E9;
   padding: 5px;
+  padding-left: 20px;
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+opacity: 0.75;
+
+
 }
 
 body {
-  background-color: #DADADA;
+  background-color: #FFFFFA;
 }
 
 p {
