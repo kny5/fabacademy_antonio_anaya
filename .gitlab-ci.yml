@@ -21,7 +21,7 @@ pages:
   variables:
     GIT_DEPTH: 1000
   script:
-  - time mkdocs build --site-dir public
+  - time python -m mkdocs build --site-dir public
   artifacts:
     paths:
     - public
