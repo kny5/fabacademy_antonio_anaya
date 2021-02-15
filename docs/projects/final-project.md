@@ -1,5 +1,6 @@
 # Final Project
-# On site Milk QC and animal identification system:
+
+## On site Milk QC and animal identification system:
 
 While working in Mexico, I discovered the need for an affordable data acquisition system.
 

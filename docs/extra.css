@@ -5,6 +5,7 @@ h1 {
 }
 
 h2 {
+  font-size: 25pt;
   font-weight: 900;
   color: white;
   background: #7A3ADD;
@@ -25,7 +26,7 @@ h3 {
 -moz-border-radius: 5px 5px 5px 5px;
 -webkit-border-radius: 5px 5px 5px 5px;
 border: 0px solid #000000;
-opacity: 0.70;
+opacity: 0.90;
 }
 
 body {
@@ -34,4 +35,61 @@ body {
 
 p {
   color: black;
+}
+
+/*p:hover {
+  color: black;
+  background-color: #DADADA;
+}*/
+
+li.md-tabs__item:hover {
+  background: #333;
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+}
+
+li.md-tabs__item:active {
+  background-color: #303030;
+}
+
+a.md-nav__link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.md-nav__item .md-nav__link--active {
+  /*background: #252525;*/
+  color: black;
+  font-size: 15pt;
+  font-weight: bold;
+  padding: 10px;
+  border: 0px solid #777777;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+
+}
+
+a.md-nav__link:hover {
+  font-size: 15pt;
+  font-weight: bold;
+  background: magenta;
+  padding: 10px;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+
+}
+
+div.md-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.md-header {
+  background-color: magenta;
 }

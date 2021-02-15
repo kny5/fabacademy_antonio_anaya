@@ -23,14 +23,14 @@ theme:
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
     primary: black
-    accent: magenta
+    accent: black
   font:
     # See available fonts at https://fonts.google.com/
     text: Montserrat
     code: Ubuntu Mono
   icon:
     logo: material/school
-  favicon: images/logo.png
+  favicon: material/school
   features:
     - navigation.tabs
     # - navigation.instant
