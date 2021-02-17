@@ -146,8 +146,3 @@ a.slot(material_thickness, slot_depth)
 dxf_file_ = dxf_file("test.dxf")
 a.get_vectors()
 dxf_file_.add_vectors_dxf(a.output)
-
-
-
-
-#show matplotlib graphics
