@@ -2,8 +2,8 @@
 
 ## Introduction:
 
-This week  we learn how to use different machines in the Fab Lab. We had a great experience while practicing vinyl and laser cutting.
-My approach was very simple but I've learnt interesting techniques and important information for the upcoming weeks.
+This week  we've learnt how to use different machines in the Fab Lab. We had a great experience while practicing vinyl and laser cutting.
+My approach was very simple but I've discovered interesting techniques and important information for the upcoming weeks.
 
 
 
@@ -146,6 +146,8 @@ I've made a parametric random shape generator with Python, the idea was simple, 
 I've coded this following the principle of shaping a polygon by rotating a point in the respective angle that depends of the number of sides of it.
 
 Then to cut the slot I used the same principle mapping manually the points and then rotating it in the origin of the shape.
+
+
 
 ### Python code:
 
@@ -308,6 +310,8 @@ dxf_file_.add_vectors_dxf(a.output)
 ```
 
 
+### Workflow:
+
 <img src="../../images/week04/kit_1.jpg" alt="Thermo transfer to fabric" width="40%"/>
 
 
@@ -318,4 +322,46 @@ dxf_file_.add_vectors_dxf(a.output)
 </figure>
 
 
+
 ### Laser cutting:
+
+This process was really easy, the parameters I used in the Python program were:
+
+1. Kerf = 0.25
+2. Material thinkness = 4.98
+3. Sides = 8 # Can be individually set, but I used the global variable for every polygon.
+
+For the laser cutter:
+
+1. Speed = 80
+2. Power = 30 %
+
+I've made two DXF whit 4 Octagons and a third one with 6.
+I didn't have enough time to add a nesting algoritm and a chamfer algorithm.
+
+But I liked the simplicity of the program.
+
+<img src="../../images/week04/kit_6.jpg" alt="Thermo transfer to fabric" width="90%"/>
+
+First try and perfect!
+
+<img src="../../images/week04/kit_9.jpg" alt="Thermo transfer to fabric" width="45%"/>
+<img src="../../images/week04/kit_8.jpg" alt="Thermo transfer to fabric" width="45%"/>
+
+I was able to make different shapes with it.
+<img src="../../images/week04/kit_4.jpg" alt="Thermo transfer to fabric" width="90%"/>
+
+<img src="../../images/week04/kit_5.jpg" alt="Thermo transfer to fabric" width="90%"/>
+
+
+## Downloads:
+
+[Download InksCape SVG files](../../files_for_projects/week04_inkscape_svg.zip)
+
+Note: You need Python > 3.7 to install the [ezdxf](https://ezdxf.mozman.at/docs/) library with the following command using pip:
+
+```
+pip install ezdxf
+```
+
+[Download Python program latest version](../../scripts/3d_modeling/parametric_polygon_clean.py)

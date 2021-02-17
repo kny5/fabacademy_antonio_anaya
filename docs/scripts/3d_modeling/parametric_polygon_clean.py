@@ -3,12 +3,13 @@ import ezdxf
 import random
 
 # Parameters
-sides = random.randrange(3, 10, 1)
-radius = 40
+# sides = random.randrange(3, 10, 1)
+sides = 6
+radius = 50
 origin = (100,100)
 slot_depth = radius/2
-kerf = 0.2
-material_thickness = 5
+kerf = 0.25
+material_thickness = 4.98
 
 class dxf_file():
     def __init__(self, __filename):
@@ -137,12 +138,48 @@ class polygon():
 
 
 # program test
-
 # creating a random generated polygon
-a = polygon(origin, sides, radius)
+a = polygon((0,0), sides, radius)
 a.slot(material_thickness, slot_depth)
+
+b = polygon((0,104), sides, radius)
+b.slot(material_thickness, slot_depth)
+
+c = polygon((104, 0), sides, radius)
+c.slot(material_thickness, slot_depth)
+
+d = polygon((104,104), sides, radius)
+d.slot(material_thickness, slot_depth)
+
+e = polygon((208,0), sides, radius)
+e.slot(material_thickness, slot_depth)
+
+f = polygon((208,104), sides, radius)
+f.slot(material_thickness, slot_depth)
+
+g = polygon((312, 0), sides, radius)
+g.slot(material_thickness, slot_depth)
+
+h = polygon((312,104), sides, radius)
+h.slot(material_thickness, slot_depth)
 
 # creating a DXF document and adding slot output vectors
 dxf_file_ = dxf_file("test.dxf")
+
 a.get_vectors()
+b.get_vectors()
+c.get_vectors()
+d.get_vectors()
+e.get_vectors()
+f.get_vectors()
+g.get_vectors()
+h.get_vectors()
+
 dxf_file_.add_vectors_dxf(a.output)
+dxf_file_.add_vectors_dxf(b.output)
+dxf_file_.add_vectors_dxf(c.output)
+dxf_file_.add_vectors_dxf(d.output)
+dxf_file_.add_vectors_dxf(e.output)
+dxf_file_.add_vectors_dxf(f.output)
+dxf_file_.add_vectors_dxf(g.output)
+dxf_file_.add_vectors_dxf(h.output)
