@@ -2,6 +2,8 @@
 
 ## Introduction:
 
+This week  we had 
+
 ## Vinyl Cutter:
 
 Description:
