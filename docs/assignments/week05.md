@@ -1,61 +1,89 @@
 # 5. Electronics production
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## Introduction:
 
-## Research
+This week we started learning about electronics production.
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+### Electronic board types:
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+We have seen two different types of boards in the lab, the FR1 and the FR4.
 
-## Useful links
+[You can code check the different FR standards here.](https://www.bestpcbs.com/blog/2016/08/whats-the-difference-for-fr1-fr2-fr3-and-fr4-materials/)
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+We're going to use the FR1 type this week, this is basically due to the soldering process, we know that FR4 boards are capable to be soldered using the IR oven, but FR1 will get fire in the oven, so we're already adverted that we shouldn't by any means try to solder a FR1 in the oven.
 
-## Code Example
 
-Use the three backticks to separate code.
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+### Material:
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
+1. Circuit board
 
-## Gallery
 
-![](../images/sample-photo.jpg)
 
-## Video
+### Manufacturing methods:
 
-### From Vimeo
+Chemical etching:
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+On this process we use a chemical reduction process to peel of the copper traces, it's a very precise method but the waste is very toxic and needs to be disposed carefully, we are discouraged to use this method because of this.   
 
-### From Youtube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+## Milling:
 
-## 3D Models
+This is the process we're going to use this week. It's very simple yet complex in the setting up. It requires a milling machine, those can be as expensive as many tens of thousands of dollars, lately there are some more affordable brands that produce small and precise versions for a few hundred dollars, a good option for home-brew electronics production.
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+The consumables for this machine, are the board, the sacrificial plate, and the bits that are use to cut the copper out of the material.
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+
+
+### V-Bits:
+
+This type of bit is "V" shaped, it's imprecise but very cheap. As the bit goes low in the "Z" axis the diameter of the cut increases and this means it's impossible to produce small traces in the board, it means also the leveling needs to be very consistent in precision.
+
+<img src="../../images/week05/milling_1.jpg" alt="V shaped bit" width="90%"/>
+
+
+### Flat head bits:
+
+This is the bit preferable for precise milling, the diameter is very consistent and this is important to keep consistency in the traces. It also means it's more expensive than "V shaped" bits. This bit also has a feature called "Flute" its a flap that cuts the material, this bit can actually have multiple "flutes"
+
+<img src="../../images/week05/milling_2.jpg" alt="Flat head bit" width="90%"/>
+
+
+
+### Precision:
+
+## Roland SRM-20:
+
+<img src="../../images/week05/milling_3.jpg" alt="Machine at AgriLab" width="95%"/>
+
+### Software:
+
+### Security assessment:
+
+### Calibration process:
+
+### Maintenance:
+
+## Preparing files to mill:
+
+### PCB Designs for micro-controllers:
+
+### Using Mods:
+
+## Assignment outcome:
+
+### Selecting Micro-Controllers:
+
+### Milling the board:
+
+### Stuffing:
+
+### Soldering:
+
+### Debugging:
+
+### Programming:
+
+### Burning the Boot-loader:
+
+## Hero shot:

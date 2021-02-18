@@ -1,8 +1,12 @@
 # Hi this is my homepage
 
+
 ## I'm currently working on this:
 
-> [4. Computer controlled cutting](./assignments/week04/)
+
+
+> [5. Electronics production](./assignments/week05/)
+
 
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
