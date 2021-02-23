@@ -1,8 +1,12 @@
 # 5. Electronics production
 
+<img src="../../images/week05/hero_2.jpg" alt="V shaped bit" width=95%/>
+
 ## Introduction:
 
 This week we started learning about electronics production.
+
+
 
 ### Electronic board types:
 
@@ -24,10 +28,7 @@ We're going to use the FR1 type this week, this is basically due to the solderin
 Check list:
 
 1. Roland SRM-20
-2. Allen key
-1. Milling bit
 2. Soldering iron
-3. Clamp
 4. Multimeter
 5. Microchip debugger (Flashing interface)
 
@@ -51,54 +52,42 @@ The consumables for this machine, are the board, the sacrificial plate, and the 
 
 ### V-Bits:
 
+<img src="../../images/week05/vbits.jpg" alt="V shaped bit" width=50%/>
+
 This type of bit is "V" shaped, it's imprecise but very cheap. As the bit goes low in the "Z" axis the diameter of the cut increases and this means it's impossible to produce small traces in the board, it means also the leveling needs to be very consistent in precision.
 
-<div style="padding:50px" width=50%>
+<img src="../../images/week05/vbit_1.jpg" alt="V shaped bit" width=50%/>
 
-<img src="../../images/week05/vbit_1.jpg" alt="V shaped bit"/>
-
-<p style="text-style=">I've made this drawing in XDesing to estimate the diameter along the bit that depends in the depth of the cut in the Z axis.</p>
-</div>
-
+I've made this drawing in XDesing to estimate the diameter along the bit that depends in the depth of the cut in the Z axis.
 
 
 ### Flat head bits:
 
 This is the bit preferable for precise milling, the diameter is very consistent and this is important to keep consistency in the traces. It also means it's more expensive than "V shaped" bits.
 
-<div style="padding:50px" width=50%>
+<img src="../../images/week05/flute_detail.jpg" alt="V shaped bit" width=50%/>
 
-<img src="../../images/week05/flute_detail.jpg" alt="V shaped bit"/>
-
-<p style="text-style=">This bit also has a feature called "Flute" its a flap that cuts the material.</p>
-</div>
+This bit also has a feature called "Flute" its a flap that cuts the material.
 
 In the lab we have this diameters available:
 
-
-
-#### 0.4 mm:
+**0.4 mm:**
 
 Used to mill the circuit paths, and it's pretty fragile.
 
-
-
-#### 1.0 mm:
+**1.0 mm:**
 
 This is used to drill the outline of the PCB at the end.
 
 
 
-#### Precision:
+###  Precision:
 
 I've tested the V bit and this is the result and comparative with the 0.4mm flat head bit:
 
-<div style="padding:50px" width=90%>
-
 <img src="../../images/week05/vbit_compared.jpg" alt="V shaped bit"/>
 
-<p style="text-style=">At the top its the board milled with the vbit. At the bottom the one machined with the flat head 0.4 mm .</p>
-</div>
+At the top its the board milled with the vbit. At the bottom the one machined with the flat head 0.4 mm.
 
 
 
@@ -106,7 +95,7 @@ I've tested the V bit and this is the result and comparative with the 0.4mm flat
 
 <img src="../../images/week05/milling_3.jpg" alt="Machine at AgriLab" width="95%"/>
 
-It's a desktop 3D milling machine, capable of cutting several soft materials including some metals like soft aluminum and copper.
+It's a desktop 3D milling machine, capable of cutting several soft materials including some metals like soft aluminum and FR1 PCBs.
 
 You can find more technical details [here](https://www.rolanddg.co.uk/products/3d/srm-20-small-milling-machine).
 
@@ -180,6 +169,7 @@ Steps:
 4. Start the milling process.
 
 
+
 ## Preparing files to mill:
 
 I've choose to make the JTAG 10 pin board. To get the files of the board I went to the [Fabcademy week5 material](http://academy.cba.mit.edu/classes/embedded_programming/index.html#programmers). In the JTAG I used the next files to accomplish the board making:
@@ -197,25 +187,28 @@ This is a software made by Prf. Neil Gershenfeld that's is broadly use in the Fa
 <img src="../../images/week05/mods_1.jpg" alt="Mods overview" width="95%"/>
 
 
+#### Settings:
 
-#### Settings I've used in mods:
+**Configuration for the circuit paths:**
 
-<img src="../../images/week05/mods_2.jpg" alt="Mods" width="95%"/>
-
-Configuration for the circuit paths:
 
 1. Flat head 0.4 mm bit.
 2. Speed 1.5 mm/s
 3. Depth 0.1 mm
 
-<img src="../../images/week05/mods_3.jpg" alt="Mods" width="95%"/>
+<img src="../../images/week05/mods_4.jpg" alt="Mods overview" width="45%"/>
+<img src="../../images/week05/mods_2.jpg" alt="Mods overview" width="45%"/>
 
-Configuration for the outline:
+
+**Configuration for the outline:**
 
 1. Flat head 1.0 mm bit.
 2. Speed 2 mm/s
 3. Depth 1.89 mm
 4. Cut depth 0.4 mm
+
+<img src="../../images/week05/mods_5.jpg" alt="Mods overview" width="45%"/>
+<img src="../../images/week05/mods_3.jpg" alt="Mods overview" width="45%"/>
 
 
 
@@ -241,6 +234,10 @@ List of components:
 4. 3.3 V 100 mA SMD-Regulator
 5. 10 Pin SMD male conector. x2
 
+**SAMD11 Pinout:**
+
+<img src="../../images/week05/pinout.jpg" alt="Mods" width="55%"/>
+
 
 
 ### Soldering:
@@ -263,10 +260,93 @@ Process:
 
 3. The soldering process it's very complex and requires expertise to handle the soldering iron.
 
+<img src="../../images/week05/soldering_3.jpg" alt="Desaturated and sharpen" width="45%"/>
+<img src="../../images/week05/soldering_4.jpg" alt="Desaturated and sharpen" width="45%"/>
+
+
+Results:
+
+<img src="../../images/week05/soldering_2.jpg" alt="Desaturated and sharpen" width="95%"/>
+
+
+
+### Flashing:
+
+Conections:
+
+<img src="../../images/week05/flashing_1.jpg" alt="Mods" width="90%"/>
+<img src="../../images/week05/flashing_2.jpg" alt="Mods" width="90%"/>
+
+I've used EDBG compiled it from source.
+
+Clonning EDBG Github repository:
+
+```
+git clone https://github.com/ataradov/edbg.git
+```
+
+Installing EDBG requirements for Fedora Linux:
+
+```
+sudo dnf install libudev-devel
+```
+
+Inside the EDBG directory executed:
+
+```
+make all
+```
+
+To execute EDBG and see the help:
+
+```
+./edbg -h
+```
+
+To access peripherals like the ATMEL USB interface debugger, Administrator rights are needed:
+
+<script id="asciicast-hCsGpWuC8x9buPchYnUcHU1tT" src="https://asciinema.org/a/hCsGpWuC8x9buPchYnUcHU1tT.js" async data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=1  data-rows=10></script>
+
+Parameters:
+
+```
+-t samd11
+```
+- **t** is for Target and SAMD11 it's the family chip of the micro-processor used in the board.
+
+```
+-bpv
+```
+- **b** is for Verbose it's meant to show all the output information in the process.
+- **p** is for Programming, we're going to "flash" the binary file we downloaded previously.
+- **v** is for Verify that the program was flashed correctly.
+
+```
+-f free_dap_d11c_mini.bin
+```
+- **f** is for File and "free_dap_d11c_mini.bin" it's the name of the binary file that contains the instructions or program for our programmer.
+
+
+
 ### Debugging:
 
-### Programming:
+#### Electrical continuity test:
 
-### Burning the Boot-loader:
+<img src="../../images/week05/debugging_1.jpg" alt="Mods" width="95%"/>
+<img src="../../images/week05/debugging_2.jpg" alt="Mods" width="50%"/>
+<img src="../../images/week05/debugging_3.jpg" alt="Mods" width="45%"/>
+
+
+Equipment:
+
+1. Power source.
+2. Clamps.
+2. Multimeter.
+
+Procedure:
+
+1. Attatch the clamps from the positive output of the power source to the positive side of the USB, check the PINOUT using [this image](http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.png).
 
 ## Hero shot:
+
+<img src="../../images/week05/hero_1.jpg" alt="V shaped bit" width=95%/>
