@@ -161,8 +161,10 @@ Main functions:
 4. Spindle RPM indicator.
 5. Spindle speed control.
 6. Global job speed control.
-7. File list job.
-8. Cancel job.
+7. Axis movement arrows.
+8. **Step precision scale control.**
+9. File list job.
+10. Cancel job.
 
 <img src="../../images/week05/vpanel_settings_1.jpg" alt="Machine at AgriLab" width="95%"/>
 
