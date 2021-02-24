@@ -1,11 +1,16 @@
 # 5. Electronics production
 
-<img src="../../images/week05/hero_2.jpg" alt="V shaped bit" width=95%/>
+<iframe src="https://www.youtube.com/embed/ijaYTjS-0R0?modestbranding=1&rel=0&iv_load_policy=3&theme=light&color=white&controls=0&disablekb=1" width="100%" height="315" frameborder="0"></iframe>
 
 ## Introduction:
 
-This week we started learning about electronics production.
+This week we started learning about electronics production. The assignment outcome it's to make a programmer board. There are for us three different types of programmer boards.
 
+1. [SPI](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all)
+2. [UPDI](https://microchipdeveloper.com/mplabx:avr-updi)
+3. [JTAG](https://www.xjtag.com/about-jtag/jtag-a-technical-overview/)
+
+I've been adviced to make the JTAG board as we're going to be able to program new efficient ARM micro-controllers for our next weeks projects.
 
 
 ### Electronic board types:
@@ -52,6 +57,8 @@ The consumables for this machine, are the board, the sacrificial plate, and the 
 
 ### V-Bits:
 
+In the lab we have available 45, 15 and 10 degrees 0.1 mm VBits.
+
 <img src="../../images/week05/vbits.jpg" alt="V shaped bit" width=50%/>
 
 This type of bit is "V" shaped, it's imprecise but very cheap. As the bit goes low in the "Z" axis the diameter of the cut increases and this means it's impossible to produce small traces in the board, it means also the leveling needs to be very consistent in precision.
@@ -59,6 +66,7 @@ This type of bit is "V" shaped, it's imprecise but very cheap. As the bit goes l
 <img src="../../images/week05/vbit_1.jpg" alt="V shaped bit" width=50%/>
 
 I've made this drawing in XDesing to estimate the diameter along the bit that depends in the depth of the cut in the Z axis.
+
 
 
 ### Flat head bits:
@@ -187,6 +195,7 @@ This is a software made by Prf. Neil Gershenfeld that's is broadly use in the Fa
 <img src="../../images/week05/mods_1.jpg" alt="Mods overview" width="95%"/>
 
 
+
 #### Settings:
 
 **Configuration for the circuit paths:**
@@ -277,7 +286,7 @@ Conections:
 <img src="../../images/week05/flashing_1.jpg" alt="Mods" width="90%"/>
 <img src="../../images/week05/flashing_2.jpg" alt="Mods" width="90%"/>
 
-I've used EDBG compiled it from source.
+I've used EDBG compiled from source.
 
 Clonning EDBG Github repository:
 
@@ -347,6 +356,10 @@ Procedure:
 
 1. Attatch the clamps from the positive output of the power source to the positive side of the USB, check the PINOUT using [this image](http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.png).
 
+
+
 ## Hero shot:
 
 <img src="../../images/week05/hero_1.jpg" alt="V shaped bit" width=95%/>
+
+<img src="../../images/week05/hero_2.jpg" alt="V shaped bit" width=95%/>
