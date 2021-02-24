@@ -107,7 +107,6 @@ It's a desktop 3D milling machine, capable of cutting several soft materials inc
 
 You can find more technical details [here](https://www.rolanddg.co.uk/products/3d/srm-20-small-milling-machine).
 
-
 **Check list:**
 
 1. Allen key to replace bits.
@@ -117,6 +116,8 @@ You can find more technical details [here](https://www.rolanddg.co.uk/products/3
 5. Bits of good quality.
 6. VPanel software.
 7. Working computer.
+8. FR1 PCB.
+9. Double face tape.
 
 
 
@@ -215,6 +216,7 @@ Is a software made by Prf. Neil Gershenfeld that's is broadly use in the FabLab 
 6. Configure the settings (details bellow)
 7. Download the roland milling file for the SRM-20.
 8. Repeat the process on another window prefereably for the outline of the PCB.
+
 
 
 #### Settings:
