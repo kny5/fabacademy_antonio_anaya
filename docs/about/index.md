@@ -4,7 +4,17 @@
 
 
 
-Hi! I'm Antonio, I'm in road to become a product developer specialized in agriculture and technology transference, 
+Hi! I'm Antonio from Mexico, currently studying the FabAcademy program in France. My plan is to become a product developer specialized in agriculture.
+
+
+I've choose to study the program in France because of AgriLab which is a agriculture specialized FabLab, so I got in contact with [Luc Hanneuse](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/) the FabManager of AgriLab and He assisted me through all the Fab Academy admission process, then I've also been granted a scholarship from the Fab Foundation and ran a fund-raising campaign to help me with some expenses.
+
+
+I've been participating in agriculture and education related projects in Mexico, and I've been living in some difficult or isolated areas so I've a deep understanding of some of the many needs people have in these areas.
+
+
+AgriLab offers three things together that help to reduce the expenses of some of the development process that I'm interested. The experimental farm is aside the FabLab and an Agriculture specialized institute. While in Mexico, I'll normally have to travel to a different location, that usually takes a few days. The other issue is related to advising, it's really difficult to find an adviser interested in agri-tech and product related projects that works in the field.
+
 
 [You can find my portfolio here.](https://kny5.github.io/personal_portfolio/ "personal website")
 

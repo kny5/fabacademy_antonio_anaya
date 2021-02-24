@@ -73,7 +73,8 @@ I've made this drawing in XDesing to estimate the diameter along the bit that de
 
 This is the bit preferable for precise milling, the diameter is very consistent and this is important to keep consistency in the traces. It also means it's more expensive than "V shaped" bits.
 
-<img src="../../images/week05/flute_detail.jpg" alt="V shaped bit" width=50%/>
+<img src="../../images/week05/flute_detail_1.jpg" alt="Straight V shaped point bit and flute details" width=48%/>
+<img src="../../images/week05/flute_detail.jpg" alt="Straight V shaped point bit and flute details" width=48%/>
 
 This bit also has a feature called "Flute" its a flap that cuts the material.
 
