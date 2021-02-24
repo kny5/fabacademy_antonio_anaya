@@ -108,6 +108,17 @@ It's a desktop 3D milling machine, capable of cutting several soft materials inc
 You can find more technical details [here](https://www.rolanddg.co.uk/products/3d/srm-20-small-milling-machine).
 
 
+**Check list:**
+
+1. Allen key to replace bits.
+2. Aligned and flat sacrificial plate.
+3. Vacuum cleaner.
+4. Multimeter for continuity test.
+5. Bits of good quality.
+6. VPanel software.
+7. Working computer.
+
+
 
 ### Security assessment:
 
@@ -190,10 +201,20 @@ I've choose to make the JTAG 10 pin board. To get the files of the board I went 
 
 ### Using Mods:
 
-This is a software made by Prf. Neil Gershenfeld that's is broadly use in the FabLab community to program easier and visually different procesees and workflows like convert PNG image files to Roland SRM-20 cut files.
+Is a software made by Prf. Neil Gershenfeld that's is broadly use in the FabLab community to program easier and visually different processes and work-flows like convert PNG image files to Roland SRM-20 cut files.
 
-<img src="../../images/week05/mods_1.jpg" alt="Mods overview" width="95%"/>
+<img src="../../images/week05/mods_overview.jpg" alt="Mods overview" width="95%"/>
 
+**Procedure:**
+
+1. Access Mods [here.](http://mods.cba.mit.edu/)
+2. Right click and select, "Programs" and then "Open server program"
+3. Search in the list for "Roland" and "SRM-20".
+4. Select "PCB PNG"
+5. Load a PNG image containing a PCB design. [I've used this one.](http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.traces.png)
+6. Configure the settings (details bellow)
+7. Download the roland milling file for the SRM-20.
+8. Repeat the process on another window prefereably for the outline of the PCB.
 
 
 #### Settings:
@@ -223,9 +244,10 @@ This is a software made by Prf. Neil Gershenfeld that's is broadly use in the Fa
 
 ### Milling the board:
 
-
-3. Follow risk assessment check lit
-2. Follow calibration process check list.
+3. Followed risk assessment check lit
+2. Followed calibration process check list.
+4. Processed the files using Mods.
+3. Followed start cutting process check list.
 
 
 
@@ -355,6 +377,12 @@ Equipment:
 Procedure:
 
 1. Attatch the clamps from the positive output of the power source to the positive side of the USB, check the PINOUT using [this image](http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.png).
+
+2. Detect the VCC points and the expected voltage in each point, in this board we have a 5 Volts supply and in the circuit there are 3.3 Volts after the conections of the regulator. Test those points looking for a 3.3 Volts measure.
+
+3. Detect the ground points and check voltage continuity with them, similarly to the Z axis calibration process of the milling machine.
+
+4. Look for any missing component, damaged trace or shortcut.
 
 
 
