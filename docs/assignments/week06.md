@@ -2,11 +2,19 @@
 
 Video link. **in progress**
 
+
+
 ## Introduction:
+
+This week we started on Friday to
 
 
 
 ## Scanning:
+
+**Introduction:**
+
+
 
 ### Optical line scanning:
 
@@ -40,11 +48,33 @@ Software:
 
 **Description:**
 
+[3D printer at the lab.](../../images/week06/non_tick.jpg)
+
+It's a modern manufacturing process that uses CNC machines to build 3D models, has recently gained a lot of attention due to the availability of desktop 3D print machines to make plastic models.
+
 
 
 ### FDM:
 
 **Description:**
+
+**Parts:**
+
+1. General structure.
+2. Power supply and control unit.
+3. Stepper motors.
+4. Control board.
+5. Motor drivers.
+6. Build plate or bed.
+7. Cart.
+8. X, Y, Z. Rails.
+9. Spool holder.
+10. Filament spool.
+11. Nozzle.
+12. Heating unit for nozzle.
+13. Thermal sensors.
+14. Leveling sensors.
+15. Extruder unit.
 
 
 
@@ -54,9 +84,9 @@ Software:
 
 As in the printing process we are heating plastics and then use a fan to cooldown the layers it's very important to know that we're actually emitting dangerous plastic particles to the air.
 
-![Air quality study](https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-2-e1570468596874.png =250x)
+![Air quality study](https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-2-e1570468596874.png)
 
-![Air quality study](https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-1.jpeg =250x)
+![Air quality study](https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-1.jpeg)
 
 So to prevent any hazardous environment follow this basic checklist:
 
@@ -117,36 +147,79 @@ Food-safe use of 3D printed parts:
 [Detailed information here.](https://formlabs.com/blog/guide-to-food-safe-3d-printing/)
 
 
-**Recycling:**
+**Disposing and recycling:**
 
 [Detailed information here.]()
 
 
 
-#### Calibration process:
+#### Z axis Calibration Check list:
 
-**Check list:**
+1. Turn on the printer.
+2. Make the cart go to the home position.
+3. Disable steppers.
+3. Move the cart to the closest corner of the build plate.
+4. Using a small piece of normal bond paper, check the Z axis distance to the plate by passing through the nozzle and the build platform.
+5. If you feel the paper passing too tight, lose the Z axis bolt, until the paper passes throughfully.
+6. Move to the next corner and repeat the steps 3 to 5.
+7. Once all the corners are aadjusted move to the center.
+8. Enable steppers again and make a test print.
+9. If the print sticks to the printing bed the calibration was successful.
+10. If not, repeat the process, until it's succesfull.
 
-1.
-2.
-3.
-4.
-5.
+
 
 #### Troubleshooting:
 
+Piece not sticking to build plate:
+
+When the machine Z axis is far from the build plate it's very likely that the printing is not going to stick to the bed. If that happens you need to check the Z axis calibration, follow the checklist.
+![warp.](../../images/week06/non_tick.jpg)
+
+
 Warp:
+
+When the build plate is too cold, the plastic shrinks quikly and the difference of contraction between the first layers and the current ones it makes the piece to warp and detatch to the build plate.
+
 
 Elephant feet:
 
-Melted
+When the Z axis is too close to the bed, the fused filament can make a bigger base that looks that a elephant feet.
+![warp.](../../images/week06/feet.jpg)
 
 
-### Composite FDM:
+Melted points:
+
+When the temperature it's too high and the speed it's too slow, the filament will look very low detailed and melted looking.
+![warp.](../../images/week06/Melt.jpg)
+
+
+
+### FMD workflow:
+
+**Requirements:**
+
+1. STL 3D model.
+2. Slicing software.
+3. Filament material spool.
+
+
+**Slicing using Cura:**
+
+Cura is a software that converts STL files into GCODE that's used by the 3D printing.
+
+1. Import the STL file to print.
+2. Place it in to the build plated in one plain side.
+3. Choose the orientation avoiding the largest side in the Z or Y axis.
 
 
 
 ### SLA:
+
+**Introduction:**
+
+Stereolithography it's a manufacturing process that makes use of photoreactive resins and light in a specific wavelenght, to build tri-dimensional models.
+
 
 
 ## Outcome:
