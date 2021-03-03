@@ -377,7 +377,10 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 ### 3D model:
 
-This is the first prototype of the electroconductive sensor for my final project. As I need the parto to be watertight I choose SLA priting, then as We don't have transparent resin available I made a window on my part to place a transparent laser cutted plate. I followed design principles using nervs and reincorcing the unions using chamflers or roundings.
+This is the first prototype of the electroconductive sensor for my final project. As I need the parto to be watertight I choose SLA priting, then as We don't have transparent resin available I made a window on my part to place a transparent laser cutted plate. I followed design principles using nervs and reincorcing the unions using chamflers or roundings. It will be very difficult for a 5 axis milling machine to reproduce the shape, but it's possible to make 2 parts mold of course.
+
+[More info about my project here.](../../projects/final-project/)
+
 
 Part for printing:
 
@@ -396,6 +399,16 @@ Preform:
 Printing:
 
 ![issue_4.](../../images/week06/sla_3.jpg)
+
+Parameters:
+
+| Material  | Grey V4 |
+| Printing time  | 89 min |
+| Washing time | 30 min |
+| Curing time | 36 min |
+| Curing temperature  | 60 C |
+
+
 
 ### Assembly:
 
