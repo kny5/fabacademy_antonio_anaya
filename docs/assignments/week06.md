@@ -8,7 +8,9 @@
 
 This week we started on Friday to Print a becnhmarking model.
 
-![FDM Benchmark 3D model.](../../images/week06/non_tick.jpg)
+![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
+
+[More details in the group assingment page.](http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/)
 
 Then we had the chance to look at the 3D scanners available at the FabLab.
 
@@ -279,6 +281,8 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 ### SLA Workflow with **Formlabs form 2**:
 
+![issue_4.](../../images/week06/sla_1.jpg)
+
 **Requirements:**
 
 1. SLA printer (Formlabs form 2).
@@ -323,6 +327,12 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 15. Once the washing process has finished, remove carefully the part from the machine using globes and avoiding breathing or touching the Isopropyl alcohol.
 16. Place the part inside the curing chamber.
 17. Set the temperature and time using the information available [here](https://support.formlabs.com/s/article/Form-Cure-Time-and-Temperature-Settings?language=en_US).
+18. Once the curing process has finished, carefully remove the suppports using a pinzer or exacto cutter.
+19. The print has finished.
+
+
+![issue_4.](../../images/week06/sla_2.jpg)
+![issue_4.](../../images/week06/sla_3.jpg)
 
 
 **Cleaning and chemical disposing:**
@@ -333,16 +343,13 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 4. Find a chemical disposal container to dispose the paper towels.
 
 
+
 ## Assignment Outcome:
 
 ### 3D model:
 
 ![issue_4.](../../images/week06/solidworks_1.jpg)
 ![issue_4.](../../images/week06/solidworks_2.jpg)
-
-![issue_4.](../../images/week06/sla_1.jpg)
-![issue_4.](../../images/week06/sla_2.jpg)
-![issue_4.](../../images/week06/sla_3.jpg)
 
 ![issue_4.](../../images/week06/assembly.jpg)
 
