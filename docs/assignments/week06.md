@@ -6,7 +6,13 @@ Video link. **in progress**
 
 ## Introduction:
 
-This week we started on Friday to
+This week we started on Friday to Print a becnhmarking model.
+
+![FDM Benchmark 3D model.](../../images/week06/non_tick.jpg)
+
+Then we had the chance to look at the 3D scanners available at the FabLab.
+
+![Media Lab.](../../images/week06/media_lab.jpg)
 
 
 
@@ -21,12 +27,48 @@ This week we started on Friday to
 Devices:
 
 1. Einscan Pro Plus.
-2. Industrial Pack.
+2. Rotation plate.
 
 Software:
 
-1. Shinning 3D
+1. Shinning 3D ExScanPro.
 
+**Workflow:**
+
+**ExScanPRo:**
+4. If your object is as big as a room, and use the tracking stickers.
+1. If you have a small object, les than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the handheld scanning.
+2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
+3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
+5. Open ExScanPro.
+6. Connect the EinScan Pro to a computer using the USB cable. [Detailed computer specs here.]()
+6. Choose the "Fixed scan" option.
+7. Create a new project group.
+8. Start the scan by pressing the play button.
+8. Press play to start the scanning process.
+9. Configure the step angle, for a full detailed scan choose the higher number (180, a scan every 2 degrees.)
+10. Don't move the object during the scanning process, avoid any interference between the scanner and the object.
+11. Once the first scan pass has finished, change the position of the object preserving one or more faces from the first pass visible to the scanner, so the software can unify the next scan passes.
+13. During the scans it may be some noise or unwanted points in the model, use the selection tools to remove all the unwanted points, press shit and click to select and backspace to delete.
+12. Keep scanning and turning the object in the plate changing the position until all the model gets covered.
+13. Once the model gets completely scanned look for any green sphere and remove it, those are mark traking points that can damage your model.
+14. Click on the mesh model button to create a mesh.
+15. Process the mesh in the post-processing step, you can reduce, smooth, simplify and cover holes in the model.
+16. Save the model as a STL file.
+
+**Meshlab:**
+
+1. Import the STL model output from the ExScanPro software.
+2. Filter the model, under the menu Filters>Cleaning and Repairing: Choose as many repair options as the model needs.
+3. save the new filtered STL file.
+
+**Outcome:**
+
+![Original.](../../images/week06/original_piece.jpg)
+![Scanned.](../../images/week06/scanned_piece.jpg)
+
+My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
+[Download file on drive.]()
 
 
 ### Xbox Kinect:
@@ -44,7 +86,7 @@ Software:
 
 
 
-## 3D Printing:
+## FDM:
 
 **Description:**
 
@@ -52,11 +94,6 @@ Software:
 
 It's a modern manufacturing process that uses CNC machines to build 3D models, has recently gained a lot of attention due to the availability of desktop 3D print machines to make plastic models.
 
-
-
-### FDM:
-
-**Description:**
 
 **Parts:**
 
@@ -78,7 +115,7 @@ It's a modern manufacturing process that uses CNC machines to build 3D models, h
 
 
 
-#### Security assessment:
+### Security assessment:
 
 **Plastic particles in air:**
 
@@ -153,7 +190,7 @@ Food-safe use of 3D printed parts:
 
 
 
-#### Z axis Calibration Check list:
+### Z axis Calibration Check list:
 
 1. Turn on the printer.
 2. Make the cart go to the home position.
@@ -169,7 +206,7 @@ Food-safe use of 3D printed parts:
 
 
 
-#### Troubleshooting:
+### Troubleshooting:
 
 Piece not sticking to build plate:
 
