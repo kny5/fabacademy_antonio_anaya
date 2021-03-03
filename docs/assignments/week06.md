@@ -1,6 +1,6 @@
 # 6. 3D Scanning and printing
 
-![FDM Benchmark 3D model.](../../images/week06/hero.jpg)
+![Hero.](../../images/week06/hero.jpg)
 
 
 
@@ -14,31 +14,26 @@ Then we had the chance to look at the 3D scanners available at the FabLab.
 
 
 
-
-
 ## Scanning:
 
 **Introduction:**
 
+This is the process of digitalizing the shape of a physical object, the size can be relative but some scanners are specialized to keep dimesiona accuracy for reverse engineering.
+There are different technologies for scanning, in the fablab we have optical light projection stereo scanners.
 
 
 **Optical line scanning devices in the lab:**
 
-Devices:
+Requirements:
 
 1. Einscan Pro Plus.
 2. Rotation plate.
-
-Software:
-
 1. Shinning 3D ExScanPro.
 2. Meshlab
 
 
 
-### Scanning Workflow:
-
-**ExScanPRo:**
+### ExScanPRo:
 
 ![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
 
@@ -84,16 +79,24 @@ My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big t
 
 ### Xbox Kinect:
 
-Components:
+Requirements:
 
 1. [Power supply 12 Volts.]()
 2. [XBOX to USB and 12 Volts adapter.]()
 3. [XBOX 360 kinect.]()
-
-Software:
-
-1. Reconstructme.
+4. Computer prefereably with at least 16 GB of RAM a dedicated GPU card.
 2. Skanect.
+3. Meshmixer.
+
+
+**Workflow:**
+
+1. Open Skanect and plug the USB converter to current and the a USB port in the computer.
+2. While on skanect follow the stes to stand at a optimal distance from the scanned objective. If you're to close the color of the preview will change to blue, if you're too far it will change to red.
+3. Keep the distance until the color of the preview model stays at green color.
+4. Move around the object to scan until you cover all the sides and details.
+5. If Saknect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the obeject to scan.
+6. Once you have finished the scan, process the points, create a mesh and export the model as STL.
 
 
 
@@ -274,7 +277,63 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 
 
-## Outcome:
+### SLA Workflow with **Formlabs form 2**:
+
+**Requirements:**
+
+1. SLA printer (Formlabs form 2).
+2. Resin cartridge.
+3. Isopropyl alcohol.
+4. Plastic Container.
+5. Paper towels.
+6. Disposable globes.
+7. Clean Spatula.
+8. Fabric Tissue.
+9. UV curing chamber.
+10. Washer for Automatically washing.
+11. Slicer software for SLA.
+12. USB cable or SD memory to load files.
+
+
+**Preparing files:**
+
+1. Desing a model and export it as a STL file.
+2. Open Preform.
+3. Click on the "magick wand button"
+4. Save the file and send it to the machine.
+
+
+**Process:**
+
+1. Turn on the printer. Pulsing the power button.
+2. Keep the lid closed as much as posible, light contaminates the resin byt curing it. Be quick at open and manipulating anything inside the print chamber.
+2. Remove the tank cover.
+3. Open the vent in the cartridge by pushing the mechanical vent button.
+4. Place the building plate in the holder.
+5. Upload the file to print using a USB memory stick, USB cable or network using Preform software.
+6. Check before confirming that the chamber is free of any obstacles and the resin is flowing as expected.
+7. Start the printing process.
+8. If after the first layers you detect any anomaly in the printing like lose supports or detatched parts, stop the printing.
+9. If the printing its succesfull, proceed to remove the building plate.
+10. Use paper towels to clean the excess of liquid in the building plate, not in the model.
+11. Don't pour any of the residual resin in the tank.
+12. Remove the printed part carefully using a clean spatula.
+13. Place the part in the washing machine.
+14. Set the time depending on the size and resin type.
+15. Once the washing process has finished, remove carefully the part from the machine using globes and avoiding breathing or touching the Isopropyl alcohol.
+16. Place the part inside the curing chamber.
+17. Set the temperature and time using the information available [here](https://support.formlabs.com/s/article/Form-Cure-Time-and-Temperature-Settings?language=en_US).
+
+
+**Cleaning and chemical disposing:**
+
+1. Do not wash the resing with water or Isopropyl alcohol in the sink.
+2. Use paper towels, and don't dispose any of it in the paper recycling.
+3. Expose the used towers to sunlight to cure the plastic.
+4. Find a chemical disposal container to dispose the paper towels.
+
+
+## Assignment Outcome:
 
 ### 3D model:
 
