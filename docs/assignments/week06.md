@@ -100,7 +100,7 @@ Requirements:
 5. If Saknect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the obeject to scan.
 6. Once you have finished the scan, process the points, create a mesh and export the model as STL.
 
-
+![issue_4.](../../images/week06/meshmixer_1.jpg)
 
 ## FDM:
 
@@ -112,6 +112,8 @@ It's a modern manufacturing process that uses CNC machines to build 3D models, h
 
 
 **Parts:**
+
+![issue_4.](../../images/week06/spool.jpg)
 
 1. General structure.
 2. Power supply and control unit.
@@ -260,6 +262,8 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 2. Slicing software.
 3. Filament material spool.
 
+![issue_4.](../../images/week06/printer_2.jpg)
+
 
 **Slicing using Cura:**
 
@@ -268,8 +272,33 @@ Cura is a software that converts STL files into GCODE that's used by the 3D prin
 1. Import the STL file to print.
 2. Place it in to the build plated in one plain side.
 3. Choose the orientation avoiding the largest side in the Z or Y axis.
+4. Set the layer thickness optimizing time and material.
+5. Set the temperature of the nozzle following the material recomendations.
+5. Set the build plate temperature depeding on the temperature of the room and following the material labeled recommendations.
+5. Set the speed of the printing process.
+5. Set the infill to a conservative percentage to avoid material wasting, but optimizing mechanical properties of the part.
+6. Slice
+7. Save the GCODE file in a SD card or USB drive to upload it to the machine.
 
 
+**Process:**
+
+1. Ensure the machine is calibrated.
+2. Ensure that there's enough material for the printing job.
+3. Clean the build plate.
+3. Load the GCODE file.
+4. Start the printing process.
+5. Take care of any extruded filament during the pre-heating process. Those can mess up the first layer of the printing.
+6. Once the process started, take care of the temperature of the room and follow the risk assessment checlists.
+7. Once the process has finished, separate the printed part from the build platform using a clean spatula.
+8. Check dimension accuracy if needed.
+9. Take notes of the configurations you used on a document to keep a quality control data base.
+
+
+![FDM Benchmark 3D model.](../../images/week06/fdm_1.jpg)
+![FDM Benchmark 3D model.](../../images/week06/fdm_2.jpg)
+![FDM Benchmark 3D model.](../../images/week06/fdm_3.jpg)
+![FDM Benchmark 3D model.](../../images/week06/fdm_4.jpg)
 
 ### SLA:
 
@@ -332,7 +361,7 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 
 ![issue_4.](../../images/week06/sla_2.jpg)
-![issue_4.](../../images/week06/sla_3.jpg)
+
 
 
 **Cleaning and chemical disposing:**
@@ -348,11 +377,50 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 ### 3D model:
 
+This is the first prototype of the electroconductive sensor for my final project. As I need the parto to be watertight I choose SLA priting, then as We don't have transparent resin available I made a window on my part to place a transparent laser cutted plate. I followed design principles using nervs and reincorcing the unions using chamflers or roundings.
+
+Part for printing:
+
 ![issue_4.](../../images/week06/solidworks_1.jpg)
+
+
+Assembly on 3D:
+
 ![issue_4.](../../images/week06/solidworks_2.jpg)
+
+
+Preform:
+
+![issue_4.](../../images/week06/preform_1.jpg)
+
+Printing:
+
+![issue_4.](../../images/week06/sla_3.jpg)
+
+### Assembly:
+
+Parts:
 
 ![issue_4.](../../images/week06/assembly.jpg)
 
+1. Printed part.
+2. Laser cutted window.
+3. 6 M3 15 mm Bolts.
+4. 6 M3 rubber spacers.
+5. 6 M3 hexagonal nuts.
+
+
+View 1:
 ![issue_4.](../../images/week06/hero.jpg)
+
+
+View 2:
 ![issue_4.](../../images/week06/hero_3.jpg)
+
+
+With Electrodes:
 ![issue_4.](../../images/week06/hero_2.jpg)
+
+Design fails:
+
+The rubber seal holder it's too small, the electrode holders are too big and the nuts can't touch the piece so I'll need to make it wider. For the next iteration.
