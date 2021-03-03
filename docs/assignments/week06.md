@@ -75,7 +75,7 @@ Requirements:
 ![Scanned.](../../images/week06/scanned_piece.jpg)
 
 My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
-[Download file on drive.]()
+[Download file on drive.](https://drive.google.com/file/d/1uwHDAUs1lqgR1rzgQH01UlVKgH_bD-8T/view?usp=sharing)
 
 
 
@@ -300,7 +300,7 @@ Cura is a software that converts STL files into GCODE that's used by the 3D prin
 ![FDM Benchmark 3D model.](../../images/week06/fdm_3.jpg)
 ![FDM Benchmark 3D model.](../../images/week06/fdm_4.jpg)
 
-### SLA:
+## SLA:
 
 **Introduction:**
 
@@ -437,3 +437,7 @@ With Electrodes:
 Design fails:
 
 The rubber seal holder it's too small, the electrode holders are too big and the nuts can't touch the piece so I'll need to make it wider. For the next iteration.
+
+### Files:
+
+[Download](../../files/week06/week06.zip)
