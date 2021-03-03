@@ -1,6 +1,6 @@
 # 6. 3D Scanning and printing
 
-Video link. **in progress**
+![FDM Benchmark 3D model.](../../images/week06/hero.jpg)
 
 
 
@@ -12,7 +12,7 @@ This week we started on Friday to Print a becnhmarking model.
 
 Then we had the chance to look at the 3D scanners available at the FabLab.
 
-![Media Lab.](../../images/week06/media_lab.jpg)
+
 
 
 
@@ -22,7 +22,7 @@ Then we had the chance to look at the 3D scanners available at the FabLab.
 
 
 
-### Optical line scanning:
+**Optical line scanning devices in the lab:**
 
 Devices:
 
@@ -32,12 +32,20 @@ Devices:
 Software:
 
 1. Shinning 3D ExScanPro.
+2. Meshlab
 
-**Workflow:**
+
+
+### Scanning Workflow:
 
 **ExScanPRo:**
-4. If your object is as big as a room, and use the tracking stickers.
+
+![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
+
+![FDM Benchmark 3D model.](../../images/week06/einscan_2.jpg)
+
 1. If you have a small object, les than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the handheld scanning.
+4. If your object is as big as a room, and use the tracking stickers.
 2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
 3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
 5. Open ExScanPro.
@@ -58,6 +66,8 @@ Software:
 
 **Meshlab:**
 
+![FDM Benchmark 3D model.](../../images/week06/meshlab_1.jpg)
+
 1. Import the STL model output from the ExScanPro software.
 2. Filter the model, under the menu Filters>Cleaning and Repairing: Choose as many repair options as the model needs.
 3. save the new filtered STL file.
@@ -69,6 +79,7 @@ Software:
 
 My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
 [Download file on drive.]()
+
 
 
 ### Xbox Kinect:
@@ -90,7 +101,7 @@ Software:
 
 **Description:**
 
-[3D printer at the lab.](../../images/week06/non_tick.jpg)
+[3D printer at the lab.](../../images/week06/creality_cr10s5_agrilab.jpg)
 
 It's a modern manufacturing process that uses CNC machines to build 3D models, has recently gained a lot of attention due to the availability of desktop 3D print machines to make plastic models.
 
@@ -190,7 +201,9 @@ Food-safe use of 3D printed parts:
 
 
 
-### Z axis Calibration Check list:
+### Z axis Calibration:
+
+Checklist:
 
 1. Turn on the printer.
 2. Make the cart go to the home position.
@@ -208,27 +221,29 @@ Food-safe use of 3D printed parts:
 
 ### Troubleshooting:
 
-Piece not sticking to build plate:
+Print not sticking to build plate:
 
 When the machine Z axis is far from the build plate it's very likely that the printing is not going to stick to the bed. If that happens you need to check the Z axis calibration, follow the checklist.
-![warp.](../../images/week06/non_tick.jpg)
+![issue_1.](../../images/week06/issue_0.jpg)
 
 
 Warp:
 
 When the build plate is too cold, the plastic shrinks quikly and the difference of contraction between the first layers and the current ones it makes the piece to warp and detatch to the build plate.
+![issue_2.](../../images/week06/issue_1.jpg)
 
 
 Elephant feet:
 
 When the Z axis is too close to the bed, the fused filament can make a bigger base that looks that a elephant feet.
-![warp.](../../images/week06/feet.jpg)
+![issue_3.](../../images/week06/cube_2.jpg)
 
 
 Melted points:
 
 When the temperature it's too high and the speed it's too slow, the filament will look very low detailed and melted looking.
-![warp.](../../images/week06/Melt.jpg)
+
+![issue_4.](../../images/week06/benchmark_2.jpg)
 
 
 
@@ -260,3 +275,18 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 
 ## Outcome:
+
+### 3D model:
+
+![issue_4.](../../images/week06/solidworks_1.jpg)
+![issue_4.](../../images/week06/solidworks_2.jpg)
+
+![issue_4.](../../images/week06/sla_1.jpg)
+![issue_4.](../../images/week06/sla_2.jpg)
+![issue_4.](../../images/week06/sla_3.jpg)
+
+![issue_4.](../../images/week06/assembly.jpg)
+
+![issue_4.](../../images/week06/hero.jpg)
+![issue_4.](../../images/week06/hero_3.jpg)
+![issue_4.](../../images/week06/hero_2.jpg)
