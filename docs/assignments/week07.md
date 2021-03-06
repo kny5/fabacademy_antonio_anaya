@@ -1,61 +1,104 @@
 # 7. Electronics design
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+It might be a video for this week... depending on Monday's work.
 
-## Research
+![Render_01](../../images/week07/kicad_render_01.jpg)
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+**A few notes for this week about documentation:**
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Working in a FabLab is not an easy task, as much as I like to learn, I can't learn everything, and my ambitions not always reach my outcome in work and documentation. So for this week I've made this list of recommendations to get easily into the documentation process to help me out to have a structure, and with the hope to help others struggling under similar conditions.
 
-## Useful links
+[Check my notes on my new Tips section.](../../Tips/documentation_tips/)
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-## Code Example
 
-Use the three backticks to separate code.
+## Introduction:
+
+
+
+
+
+### Electronic components:
+
+#### Resistor:
+
+![Resistor code table](../../images/week07/component_01.jpg)
+
+Formula:
+
+> Ohms Law: Resistance = Voltage / Current
+
+> Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A = 150 Ohm
+
+> It's a passive electrical component that holds **resistance** to the conductivity of an electrical current.
+
+
+
+#### Capacitor:
+
+![Resistor code table](../../images/week07/component_02.jpg)
+
+Formula:
+
+> Ohms Law: Resistance = Voltage / Current
+
+> Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A = 150 Ohm
+
+> It's a passive electrical component that holds **resistance** to the conductivity of an electrical current.
+
+
+
+#### Regulator:
+
+#### Diode:
+
+#### Micro-controller:
+
+### Schematics Design:
+
+### Footprints:
+
+### Board design:
+
+## Kicad:
+
+**Requirements:**
+
+1. Install KiCad
+2. Download or clone Fab Academy Kicad Library.
+3. Add Symbol and Footprints libraries.
+4. Add [Luc]() and [Florent]() USB and JTAG KiCad footprint files.
+5. [SAMD11 datasheet.]()
+6. [SAMD11 pinout information.](github.com/)
+7. Look for availability of components in your local inventory.
+
+
+
+### Installation:
+
+
+On Fedora Linux:
 
 ```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+sudo dnf install kicad
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
 ```
 
-## Gallery
 
-![](../images/sample-photo.jpg)
+Cloning Fab Academy Library repository:
 
-## Video
+```
+git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
+```
 
-### From Vimeo
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-### From Youtube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## 3D Models
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+###
+
+###
+
+## Outcome:

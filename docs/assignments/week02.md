@@ -14,7 +14,7 @@ Expected time: 5 weeks.
 2. Hardware
 3. Interaction
 
-### Concept design:
+### Cooutputign:
 1. Video demo
 
 ### First prototype:
@@ -28,3 +28,10 @@ Expected time: 5 weeks.
 ...
 
 To define...
+
+
+## Image compression commands:
+
+```
+convert -define jpeg:size=750x750 input.jpg -gravity center -extent 750x750  output.jpg
+```

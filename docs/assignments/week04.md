@@ -151,6 +151,9 @@ Then to cut the slot I used the same principle mapping manually the points and t
 
 ### Python code:
 
+<iframe src="https://www.thiscodeworks.com/embed/6043e996061a6400145911f4" style="width: 100%; height: 300px;" frameborder="0"></iframe>
+
+<!--
 ```
 
 '''
@@ -308,6 +311,8 @@ dxf_file_ = dxf_file("test.dxf")
 a.get_vectors()
 dxf_file_.add_vectors_dxf(a.output)
 ```
+-->
+
 
 
 ### Workflow:
