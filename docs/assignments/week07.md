@@ -2,7 +2,7 @@
 
 It might be a video for this week... depending on Monday's work.
 
-<img src="../../images/week07/kicad_render_01.jpg" alt="Render_01" width=50%/>
+<img src="../../images/week07/kicad_render_01.jpg" alt="Render_01" width=100%/>
 
 **A few notes for this week about documentation:**
 
@@ -150,27 +150,162 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 1. Download this [file](../../files/week07/footprints.zip)
 2. Extract the content to your Kicad project directory
-3. Click on:
+3. Repeat the **Add Symbol library** and **Add footprint library** process using the files extracted.
 
 **Edit footprints:**
 
-
-
 **Make your own library:**
 
-### Workflow
-
-#### Schematic design
-
-For this process I took a look into this years scheduled content. And selected the    **hello.D11C.blink.reset.clock** board as the base of my design.
 
 
+### Usage
 
-#### PCB design
+**Symbol:**
 
-**Place components:**
+<img src="../../images/week07/kicad_09.jpg" alt="Managers" width=100%/>
+<img src="../../images/week07/kicad_10.jpg" alt="Managers" width=100%/>
 
-**Connecting components:**
+**Global label:**
+
+<img src="../../images/week07/kicad_07.jpg" alt="Managers" width=100%/>
+
+<img src="../../images/week07/kicad_08.jpg" alt="Managers" width=100%/>
+
+**Wire:**
+
+<img src="../../images/week07/kicad_05.jpg" alt="Managers" width=100%/>
+
+**No connection:**
+
+<img src="../../images/week07/kicad_06.jpg" alt="Managers" width=100%/>
+
+
+### Schematic layout design
+
+>For this process I've selected the **hello.D11C.blink.reset.clock** board as the base of my design.
+
+1. Divided the work in four parts:
+    - Regulator
+    - USB connector
+    - JTAG conector
+    - Microntroller
+3. Placed the following list of symbols under the FabAcademy library:
+    - ATSAMD11C14A
+    - Regulator
+    - USB connector
+    - JTAG connector
+4. Wired the USB connector to the VCC and GNDREF symbols.
+5. Placed Global labels:
+    - VCC
+    - GND
+    - D+
+    - D-
+6. Wired the global labels to the USB connector:
+    - VCC  to pin 1
+    - D- to pin 2
+    - D+ to pin 3
+    - GND to pin 4
+
+<img src="../../images/week07/workflow_01.jpg" alt="Managers" width=100%/>
+
+1. Placed the following symbols:
+    - C1 capacitor 1uF
+2. Placed global label:
+    - VCC
+    - GND
+    - V3.3
+    - btn_v33
+3. Wired the sub-schema of the regulator.
+    - VCC to pin 2
+    - GND to pin 3
+    - V3.3 to pin 1
+    - pin 1 of C1 between GND and pin 3
+    - pin 2 of C1 between pin 1 and V3.3
+    - btn_v33 between pin 1 and V3.3
+
+<img src="../../images/week07/workflow_02.jpg" alt="Managers" width=100%/>
+
+1. Placed Global labels:
+    - V3.3
+    - GND
+    - CLK
+    - DIO
+    - RESET
+2. Wired the sub-schema of the JTAG connector.
+    - GND to pin 9 and pin 3
+    - DIO to pin 2
+    - CLK to pin 4
+    - RESET to pin 10
+    - VTref to V3.3
+3.
+
+<img src="../../images/week07/workflow_03.jpg" alt="Managers" width=100%/>
+
+1. Placed the following components:
+    - C2 actually this is a crystal and it took me a while after checking the images to discover it.
+    - R1 100 Ohms
+    - R4 100 Ohms
+    - R5 10 KOhms
+    - R6 10 KOhms
+    - LED1
+    - Button1
+2. Placed the following global labels:
+    - GND
+    - RESET
+    - V3.3
+    - CLK
+    - DIO
+3. Wired the left-side of the Microntroller sub-schema:
+    - GND to C2 to RESET and pin 6
+    - V3.3 to R5 to point between C2 and RESET
+    - V3.3 to R6 to pin 7
+    - CLK to point between R6 and pin 7
+1. Placed the following global labels:
+    - VCC
+    - GND
+    - btn_v33
+    - D+
+    - D-
+2. Wired the right-side of the Microntroller sub-schema:
+    - GND to Button1 to pin 13
+    - btn_v33 to point between Button1 and pin 13
+    - VCC to anode of LED1
+    - cathode of LED1 to R4
+    - R4 to pin 1
+
+<img src="../../images/week07/workflow_04.jpg" alt="Managers" width=100%/>
+
+
+
+### Associate footprints
+
+<img src="../../images/week07/workflow_06.jpg" alt="Managers" width=100%/>
+<img src="../../images/week07/workflow_07.jpg" alt="Managers" width=100%/>
+
+1. Click on: "Edit symbol fields" in the toolbar.
+1. Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.
+3. For the LED, Resistors, diode and Capacitor, select the *type 1206* footprint.
+4. For the USB and JTAG connectors look into the custom library.
+
+
+
+### Generate Netlist
+
+<img src="../../images/week07/workflow_05.jpg" alt="Managers" width=100%/>
+
+1. Click on: Icon "Generate Netlist" in the top toolbar
+2. Click on: Button "Generate Netlist"
+3. Save the **"".net"** file
+
+
+
+### PCB Layout design
+
+
+1. Open the PCB layout editor
+2. Click on "Load netlist"
+3.
+
 
 ## Outcome
 
