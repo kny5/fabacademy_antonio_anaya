@@ -35,3 +35,9 @@ To define...
 ```
 convert -define jpeg:size=750x750 input.jpg -gravity center -extent 750x750  output.jpg
 ```
+
+## Delete file from git history:
+
+```
+git filter-branch -f --prune-empty --index-filter "git rm -r --cached --ignore-unmatch ./file1" HEAD
+```

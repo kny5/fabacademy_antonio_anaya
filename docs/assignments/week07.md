@@ -127,6 +127,10 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 <img src="../../images/week07/kicad_02.jpg" alt="Managers" width=100%/>
 
+<img src="../../images/week07/kicad_04.jpg" alt="Managers" width=100%/>
+
+<img src="../../images/week07/kicad_03.jpg" alt="Managers" width=100%/>
+
 
 **Add Symbol library**
 
@@ -149,6 +153,8 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 3. Click on:
 
 **Edit footprints:**
+
+
 
 **Make your own library:**
 
