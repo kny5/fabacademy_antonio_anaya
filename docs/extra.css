@@ -93,3 +93,22 @@ div.md-content {
 .md-header {
   background-color: magenta;
 }
+
+.md-typeset .admonition-title, .md-typeset summary {
+  font-size: 12pt;
+  font-weight: lighter;
+  border-left-color: grey;
+  background-color: white;
+}
+
+.md-typeset .admonition-title::before, .md-typeset summary::before {
+  content: None;
+}
+
+li {
+    font-weight: lighter;
+}
+
+.md-typeset .admonition, .md-typeset details {
+  border-left-color: white;
+}
