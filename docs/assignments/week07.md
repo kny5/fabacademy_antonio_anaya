@@ -4,11 +4,21 @@ It might be a video for this week... depending on Monday's work.
 
 <img src="../../images/week07/kicad_render_01.jpg" alt="Render_01" width=100%/>
 
-**A few notes for this week about documentation:**
+
+<details closed>
+<summary>A few notes for this week about documentation:</summary>
+<p>
 
 I've made a list of recommendations to get easily into the documentation process to help me out to have a structure, and with the hope to help others struggling under similar conditions.
 
-[Check my notes on my new Tips section.](../../Tips/documentation_tips/)
+<a href="../../Tips/documentation_tips/" > [Check my notes on my new Tips section.]</a>
+
+</p>
+
+
+</details>
+
+
 
 
 
@@ -26,10 +36,9 @@ I've made a list of recommendations to get easily into the documentation process
 | Digikey #| 311-100FRCT-ND |
 | Link | <a href="https://www.digikey.com/short/pd5fm4vp" target="_blank"> DigiKey </a> |
 
-Formula:
+>Formula:
 
-Ohms Law: **Resistance = Voltage / Current**
-
+>Ohms Law: **Resistance = Voltage / Current**
 Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A = 150 Ohm
 
 
@@ -123,21 +132,25 @@ Cloning Fab Academy Kicad Library repository:
 git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 ```
 
+
+
 ### **Setup**
-
-<img src="../../images/week07/kicad_02.jpg" alt="Managers" width=100%/>
-
-<img src="../../images/week07/kicad_04.jpg" alt="Managers" width=100%/>
-
-<img src="../../images/week07/kicad_03.jpg" alt="Managers" width=100%/>
 
 
 **Add Symbol library**
 
-1. Open Kicad, at the menu bar, click on: "Preferences">"Manage symbol libraries">"Global libraries".
-2. Click on: "Add a new empty row to table".
-3. Click on: "Library Path" and search-select the file **"fab.lib"** in Fab-Academy "kicad" repository.
-4. Click on: "OK" and close the manager window.
+<img src="../../images/week07/kicad_02.jpg" alt="Managers" width=100%/>
+
+>- Open Kicad, at the menu bar, click on: "Preferences">"Manage symbol libraries">"Global libraries".
+
+<img src="../../images/week07/kicad_03.jpg" alt="Managers" width=100%/>
+
+>- Click on: "Add a new empty row to table".
+
+<img src="../../images/week07/kicad_04.jpg" alt="Managers" width=100%/>
+
+>- Click on: "Library Path" and search-select the file **"fab.lib"** in Fab-Academy "kicad" repository.
+>- Click on: "OK" and close the manager window.
 
 **Add footprint library**
 
@@ -163,22 +176,34 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 **Symbol:**
 
 <img src="../../images/week07/kicad_09.jpg" alt="Managers" width=100%/>
+
+>- Click on: **"Place symbol"** icon, pulse left click on canvas.
+
 <img src="../../images/week07/kicad_10.jpg" alt="Managers" width=100%/>
+
+>- Select a component preferably from the **Fab Academy library**
 
 **Global label:**
 
 <img src="../../images/week07/kicad_07.jpg" alt="Managers" width=100%/>
 
+>- Click on: **"Place global label"** icon, pulse left click on canvas.
+
 <img src="../../images/week07/kicad_08.jpg" alt="Managers" width=100%/>
+
+>- Write the a new name for a label or select an existing one from the drop-down menu.
 
 **Wire:**
 
 <img src="../../images/week07/kicad_05.jpg" alt="Managers" width=100%/>
 
+>- Click on: **"Place wire"** icon, then left-click in the start and end points of the wire, you can connect symbols by clicking in their pin connection area, represented by a circle in the terminals.
+
 **No connection:**
 
 <img src="../../images/week07/kicad_06.jpg" alt="Managers" width=100%/>
 
+>- Click on: **"Place no connection flag"**, left-click on every unused connection. This is important to avoid errors in the electrical check tool.
 
 ### Schematic layout design
 
@@ -189,24 +214,41 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
     - USB connector
     - JTAG conector
     - Microntroller
-3. Placed the following list of symbols under the FabAcademy library:
+2. Placed the following list of symbols under the FabAcademy library:
     - ATSAMD11C14A
     - Regulator
     - USB connector
     - JTAG connector
-4. Wired the USB connector to the VCC and GNDREF symbols.
-5. Placed Global labels:
+
+<details closed>
+<summary>USB connector</summary>
+
+<img src="../../images/week07/workflow_01.jpg" alt="Managers" width=100%/>
+
+<pre>
+
+1. Wired the USB connector to the VCC and GNDREF symbols.
+2. Placed Global labels:
     - VCC
     - GND
     - D+
     - D-
-6. Wired the global labels to the USB connector:
+3. Wired the global labels to the USB connector:
     - VCC  to pin 1
     - D- to pin 2
     - D+ to pin 3
     - GND to pin 4
 
-<img src="../../images/week07/workflow_01.jpg" alt="Managers" width=100%/>
+</pre>
+
+</details>
+
+<details closed>
+<summary>Regulator</summary>
+
+<img src="../../images/week07/workflow_02.jpg" alt="Managers" width=100%/>
+
+<pre>
 
 1. Placed the following symbols:
     - C1 capacitor 1uF
@@ -223,7 +265,18 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
     - pin 2 of C1 between pin 1 and V3.3
     - btn_v33 between pin 1 and V3.3
 
-<img src="../../images/week07/workflow_02.jpg" alt="Managers" width=100%/>
+</pre>
+
+</details>
+
+<details closed>
+<summary>JTAG connector</summary>
+
+<img src="../../images/week07/workflow_03.jpg" alt="Managers" width=100%/>
+
+<pre>
+
+
 
 1. Placed Global labels:
     - V3.3
@@ -237,9 +290,21 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
     - CLK to pin 4
     - RESET to pin 10
     - VTref to V3.3
-3.
 
-<img src="../../images/week07/workflow_03.jpg" alt="Managers" width=100%/>
+
+</pre>
+
+</details>
+
+
+<details closed>
+<summary>Microcontroller</summary>
+
+<img src="../../images/week07/workflow_04.jpg" alt="Managers" width=100%/>
+
+
+<pre>
+
 
 1. Placed the following components:
     - C2 actually this is a crystal and it took me a while after checking the images to discover it.
@@ -260,32 +325,36 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
     - V3.3 to R5 to point between C2 and RESET
     - V3.3 to R6 to pin 7
     - CLK to point between R6 and pin 7
-1. Placed the following global labels:
+4. Placed the following global labels:
     - VCC
     - GND
     - btn_v33
     - D+
     - D-
-2. Wired the right-side of the Microntroller sub-schema:
+5. Wired the right-side of the Microntroller sub-schema:
     - GND to Button1 to pin 13
     - btn_v33 to point between Button1 and pin 13
     - VCC to anode of LED1
     - cathode of LED1 to R4
     - R4 to pin 1
 
-<img src="../../images/week07/workflow_04.jpg" alt="Managers" width=100%/>
+</pre>
 
+</details>
 
 
 ### Associate footprints
 
 <img src="../../images/week07/workflow_06.jpg" alt="Managers" width=100%/>
+
+>- Click on: **"Edit symbol fields"** icon in the toolbar.
+
 <img src="../../images/week07/workflow_07.jpg" alt="Managers" width=100%/>
 
-1. Click on: "Edit symbol fields" in the toolbar.
-1. Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.
-3. For the LED, Resistors, diode and Capacitor, select the *type 1206* footprint.
-4. For the USB and JTAG connectors look into the custom library.
+>- Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.
+
+>- For the LED, Resistors, diode and Capacitor, select the *type 1206* footprint.
+>- For the USB and JTAG connectors look into the custom library.
 
 
 
@@ -301,26 +370,40 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 ### PCB Layout design
 
-
 1. Open the PCB layout editor
 2. Click on "Load netlist"
 3.
 
 
+
+### Troubleshooting
+
+
+
+
 ## Outcome
+
+
+
 
 ### Schematic
 
-![schematic 1](../../images/week07/outcome_sch_01.jpg)
+![schematic 1](../../images/week07/workflow_04.jpg)
 ![schematic 2](../../images/week07/outcome_sch_02.jpg)
+
+
 
 ### Footprints
 
 ![PCB footprints](../../images/week07/outcome_pcb.jpg)
 
+
+
 ### 3D model
 
 ![PCB 3D](../../images/week07/kicad_render_01.jpg)
+
+
 
 ### Processing files
 
