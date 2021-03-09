@@ -9,7 +9,7 @@
 
 I've made a list of recommendations to get easily into the documentation process to help me out to have a structure, and with the hope to help others struggling under similar conditions.
 
-<a href="../../Tips/documentation_tips/" > [Check my notes on my new Tips section.]</a>
+<a href="../../Tips/documentation_tips" > [Check my notes on my new Tips section.]</a>
 
 </p>
 
@@ -433,7 +433,7 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 <img src="../../images/week07/debug_01.jpg" alt="Render_01" width=100%/>
 
-### Programming
+### Flashing
 
 Download files from FabAcademy material:
 
@@ -447,6 +447,20 @@ Clone ASF repository:
 git clone git clone https://github.com/avrxml/asf.git
 ```
 
+Changing D11C/hello.D11C.blink.make code to point correctly to asf.
+
+<script id="asciicast-UlNV8L9upUndPZmUwWoFP1GSM" src="https://asciinema.org/a/UlNV8L9upUndPZmUwWoFP1GSM.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+Install arm-none-eabi-gcc dependency:
+```
+sudo dnf install arm-none-eabi-gcc
+```
+
+Install newlib dependency:
+```
+sudo dnf install arm-none-eabi-newlib arm-none-eabi-gcc-cs-c++.x86_64 gcc-c++-arm-linux-gnu.x86_64
+```
+
 Connecting JTAG programmer board:
 
 <img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/>
@@ -456,3 +470,11 @@ Programming:
 ```
 make -f hello.D11C.blink.make edbg
 ```
+
+<script id="asciicast-44UvJQJOmUYlMv0DcYz8CpcFw" src="https://asciinema.org/a/44UvJQJOmUYlMv0DcYz8CpcFw.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
+  </video>
+</figure>
