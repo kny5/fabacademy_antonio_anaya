@@ -1,8 +1,6 @@
 # 7. Electronics design
 
-It might be a video for this week... depending on Monday's work.
-
-<img src="../../images/week07/kicad_render_01.jpg" alt="Render_01" width=100%/>
+<img src="../../images/week07/hero_00.jpg" alt="Render_01" width=100%/>
 
 
 <details closed>
@@ -407,10 +405,34 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 ### Processing files
 
+<img src="../../images/week07/mods_05.jpg" alt="Render_01" width=45%/>
+
+| Traces | Settings |
+|---|---|
+| Speed | 2 mm/s |
+| Depth | 0.1 mm |
+| Global speed | 80% |
+
+<img src="../../images/week07/mods_06.jpg" alt="Render_01" width=45%/>
+
+| Outline | Settings |
+|---|---|
+| Speed | 3 mm/s |
+| Depth | 1.89 mm |
+| Step cut | 0.4 mm |
+| Global speed | 100% |
+
+
 ### Milling
+
+<img src="../../images/week07/mill_01.jpg" alt="Render_01" width=100%/>
 
 ### Solder
 
+<img src="../../images/week07/solder_01.jpg" alt="Render_01" width=100%/>
+
 ### Debug
+
+
 
 ### Programming
