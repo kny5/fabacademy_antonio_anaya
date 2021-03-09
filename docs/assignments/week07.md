@@ -18,8 +18,6 @@ I've made a list of recommendations to get easily into the documentation process
 
 
 
-
-
 ## Electronic components:
 
 **Resistor:**
@@ -427,12 +425,34 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 <img src="../../images/week07/mill_01.jpg" alt="Render_01" width=100%/>
 
-### Solder
+### Soldering
 
 <img src="../../images/week07/solder_01.jpg" alt="Render_01" width=100%/>
 
-### Debug
+### Debugging
 
-
+<img src="../../images/week07/debug_01.jpg" alt="Render_01" width=100%/>
 
 ### Programming
+
+Download files from FabAcademy material:
+
+1. [Make file.](http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.make)
+2. [Blink.c](http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.c)
+3. [Bootloader](https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11C14A_SAMD11C14A.bin)
+4. [Blink.ino](http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.ino)
+
+Clone ASF repository:
+```
+git clone git clone https://github.com/avrxml/asf.git
+```
+
+Connecting JTAG programmer board:
+
+<img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/>
+
+Programming:
+
+```
+make -f hello.D11C.blink.make edbg
+```
