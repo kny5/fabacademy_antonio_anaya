@@ -173,6 +173,8 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 **Make your own library:**
 
+
+
 ### Usage
 
 #### Schematic layout design
@@ -417,6 +419,8 @@ I've found also a fliped led in my schematic image. That I've corrected except i
 | Outline  | 1.0 mm |
 | Clearance  | 0.1 mm |
 
+
+
 ### 3D model
 
 ![PCB 3D](../../images/week07/kicad_render_01.jpg)
@@ -445,6 +449,7 @@ Importing files as SVG.
 | Depth | 1.89 mm |
 | Step cut | 0.4 mm |
 | Global speed | 100% |
+
 
 
 ### Milling
@@ -495,6 +500,7 @@ Second board:
 
 After soldering I've performed the **Smoke test** by connecting the board to a power supply at 5 V.
 The test passed without any issue. Then I used the multimeter for continuity test and for DC Volt check before and after the regulator and in the power input pin of the Microcontroller. I didn't found any issues.
+
 
 
 ### Flashing
@@ -552,9 +558,12 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
 </figure>
 
 
-### Chaning the speed of the blink
+
+### Changing the speed of the blink
 
 <script id="asciicast-Dxsz3vGol202CMmPHPUfhViQ1" src="https://asciinema.org/a/Dxsz3vGol202CMmPHPUfhViQ1.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+
 
 ## Files
 
