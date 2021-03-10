@@ -16,9 +16,16 @@ I've made a list of recommendations to get easily into the documentation process
 
 </details>
 
+## Introduction
+
+This week I've learn to use Kicad and design my own version of the [**ATSAMD11C hello.D11C.blink.reset.clock**](http://academy.cba.mit.edu/classes/embedded_programming/index.html#echo) I've added a switch button and a blue LED.
+
+I've made two boards. The first one broke in one corner when I tried to make a hole to use it as a badge, and I used the wrong SMD button. For the second one I've removed the hole in the design and used the correct button.
+
+For my board programming I've used the programmer I've made in the [Electronics production week](../../assignments/week05/). And I've also used the oscilloscope to check the signals in my board as part of the group assignment, [check it here](http://fabacademy.org/2021/labs/agrilab/group/week_7).
 
 
-## Electronic components:
+### Electronic components
 
 **Resistor:**
 
@@ -74,7 +81,7 @@ Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A 
 | Component | light emitting diode (LED) |
 | :----------- | :------------------- |
 | Type | SMD 1206 |
-| Value | 2V 0.02A |
+| Value | 1.8V 0.02A |
 | Code | None |
 | Digikey #| 160-1167-1-ND |
 | Link | <a href="https://www.digikey.com/short/8b9t5fjq" target="_blank"> DigiKey </a> |
@@ -95,11 +102,12 @@ Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A 
 
 
 
-## Electronic Schematics
+### Electronic Schematics
 
 **Symbols**
 
 **Examples**
+
 
 ## Kicad
 
@@ -114,7 +122,7 @@ Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A 
 7. Look for availability of components in your local inventory.
 
 
-**Installation**
+**Software**
 
 On Fedora Linux:
 ```
@@ -130,7 +138,7 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 
 
-### **Setup**
+### **Kicad Setup**
 
 
 **Add Symbol library**
@@ -165,9 +173,9 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 **Make your own library:**
 
-
-
 ### Usage
+
+#### Schematic layout design
 
 **Symbol:**
 
@@ -201,9 +209,59 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 >- Click on: **"Place no connection flag"**, left-click on every unused connection. This is important to avoid errors in the electrical check tool.
 
-### Schematic layout design
 
->For this process I've selected the **hello.D11C.blink.reset.clock** board as the base of my design.
+
+#### Associate footprints
+
+<img src="../../images/week07/workflow_06.jpg" alt="Managers" width=100%/>
+
+>- Click on: **"Edit symbol fields"** icon in the toolbar.
+
+<img src="../../images/week07/workflow_07.jpg" alt="Managers" width=100%/>
+
+>- Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.
+
+>- For the LED, Resistors, diode and Capacitor, select the *type 1206* footprint.
+>- For the USB and JTAG connectors look into the custom library.
+
+
+
+#### Generate Netlist
+
+<img src="../../images/week07/workflow_05.jpg" alt="Managers" width=100%/>
+
+1. Click on: Icon "Generate Netlist" in the top toolbar
+2. Click on: Button "Generate Netlist"
+3. Save the **"".net"** file
+
+
+
+#### PCB Layout design
+
+1. Open the PCB layout editor.
+2. Click on "Load netlist".
+3.
+
+| Design | Rules |
+| ---- | ---- |
+| Track | 0.4 mm  |
+| Outline  | 1.0 mm |
+| Clearance  | 0.1 mm |
+
+
+#### Troubleshooting
+
+During the documentation process I've found multiple mistakes in my schematic tht could lead to malfunction or a small explosion.
+I've found also a fliped led in my schematic image. That I've corrected except in the screen capture.
+
+
+## **Assignment Outcome**
+
+
+
+### Schematic
+
+>For this process I've selected the [**ATSAMD11C hello.D11C.blink.reset.clock**](http://academy.cba.mit.edu/classes/embedded_programming/index.html#echo) board as the base of my design.
 
 1. Divided the work in four parts:
     - Regulator
@@ -303,7 +361,7 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 
 1. Placed the following components:
-    - C2 actually this is a crystal and it took me a while after checking the images to discover it.
+    - C2 0.1 uF
     - R1 100 Ohms
     - R4 100 Ohms
     - R5 10 KOhms
@@ -339,60 +397,23 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 </details>
 
 
-### Associate footprints
-
-<img src="../../images/week07/workflow_06.jpg" alt="Managers" width=100%/>
-
->- Click on: **"Edit symbol fields"** icon in the toolbar.
-
-<img src="../../images/week07/workflow_07.jpg" alt="Managers" width=100%/>
-
->- Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.
-
->- For the LED, Resistors, diode and Capacitor, select the *type 1206* footprint.
->- For the USB and JTAG connectors look into the custom library.
-
-
-
-### Generate Netlist
-
-<img src="../../images/week07/workflow_05.jpg" alt="Managers" width=100%/>
-
-1. Click on: Icon "Generate Netlist" in the top toolbar
-2. Click on: Button "Generate Netlist"
-3. Save the **"".net"** file
-
-
-
-### PCB Layout design
-
-1. Open the PCB layout editor
-2. Click on "Load netlist"
-3.
-
-
-
-### Troubleshooting
-
-
-
-
-## Outcome
-
-
-
-
-### Schematic
-
 ![schematic 1](../../images/week07/workflow_04.jpg)
 ![schematic 2](../../images/week07/outcome_sch_02.jpg)
 
 
 
-### Footprints
+### PCB design
 
 ![PCB footprints](../../images/week07/outcome_pcb.jpg)
 
+1. At first the components appear disordered, so the first task it's to order all the components following the relationship established in the schematic.
+4. Then I've used the pattern in the **board I've used as base** to have a clear idea of the location of the components.
+5. The Microcontroller goes in the center.
+6. Regulator at left with its capacitor.
+7. JTAG conector at the bottom.
+8. LED at the lest close to the pin 5 of the Microntroller.
+9. The clock and reset pull-down at the left.
+10. Button and pull-up resistor at the right.
 
 
 ### 3D model
@@ -401,12 +422,13 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 
 
-### Processing files
+### Processing files with mods
 
 <img src="../../images/week07/mods_05.jpg" alt="Render_01" width=45%/>
 
 | Traces | Settings |
 |---|---|
+| Bit diameter | 0.4 mm |
 | Speed | 2 mm/s |
 | Depth | 0.1 mm |
 | Global speed | 80% |
@@ -415,6 +437,7 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 | Outline | Settings |
 |---|---|
+| Bit diameter | 1.0 mm |
 | Speed | 3 mm/s |
 | Depth | 1.89 mm |
 | Step cut | 0.4 mm |
@@ -425,13 +448,51 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 <img src="../../images/week07/mill_01.jpg" alt="Render_01" width=100%/>
 
+>Milling time: 45 min.
+
+I've broke one 0.4 mm and one FR1 PCB board, because the board was slightly curved and it didn't stick to the sacrificial plate.
+
+Solution:
+1. Remove the ailed board and clean up thoughtfully the sacrificial bed until all the debris and dust gets removed.
+2. Use two sides adhesive tape avoiding any bubble or
+
+<img src="../../images/week07/mill_02.jpg" alt="Render_01" width=100%/>
+
+
+
 ### Soldering
 
+This is my favorite process.
+
+1. Stain one the footprints of every component in the board to use it as a mechanical placing connection.
+3. Solder the components from inside to the outside of the board.
+2. Place first the Microcontroller and hold it until it is fixed and aligned.
+3. Solder the remaining pins of the Microcontroller.
+4. Solder the JATG conector.
+7. Solder the button.
+5. Solder the resistances.
+6. Solder the regulator and capacitor.
+7. Solder all the remaining components.
+
 <img src="../../images/week07/solder_01.jpg" alt="Render_01" width=100%/>
+
+First board:
+
+<img src="../../images/week07/hero_01.jpg" alt="Render_01" width=100%/>
+
+Second board:
+
+<img src="../../images/week07/solder_02.jpg" alt="Render_01" width=100%/>
+
+
 
 ### Debugging
 
 <img src="../../images/week07/debug_01.jpg" alt="Render_01" width=100%/>
+
+After soldering I've performed the **Smoke test** by connecting the board to a power supply at 5 V.
+The test passed without any issue. Then I used the multimeter for continuity test and for DC Volt check before and after the regulator and in the power input pin of the Microcontroller. I didn't found any issues.
+
 
 ### Flashing
 
@@ -448,6 +509,8 @@ git clone git clone https://github.com/avrxml/asf.git
 ```
 
 Changing D11C/hello.D11C.blink.make code to point correctly to asf.
+
+I've cloned the repository in a local directory **~/repos/asf**
 
 <script id="asciicast-UlNV8L9upUndPZmUwWoFP1GSM" src="https://asciinema.org/a/UlNV8L9upUndPZmUwWoFP1GSM.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
