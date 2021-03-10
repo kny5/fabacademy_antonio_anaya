@@ -22,7 +22,7 @@ This week I've learn to use Kicad and design my own version of the [**ATSAMD11C 
 
 I've made two boards. The first one broke in one corner when I tried to make a hole to use it as a badge, and I used the wrong SMD button. For the second one I've removed the hole in the design and used the correct button.
 
-For my board programming I've used the programmer I've made in the [Electronics production week](../../assignments/week05/). And I've also used the oscilloscope to check the signals in my board as part of the group assignment, [check it here](http://fabacademy.org/2021/labs/agrilab/group/week_7).
+For my board programming I've used the programmer I've made in the [Electronics production week](../../assignments/week05/). And I've also used the oscilloscope to check the signals in my board as part of the group assignment, [check it here](http://fabacademy.org/2021/labs/agrilab/group/week_7_electronics_design/).
 
 
 ### Electronic components
