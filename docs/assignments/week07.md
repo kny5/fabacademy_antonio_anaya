@@ -240,13 +240,9 @@ git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
 
 1. Open the PCB layout editor.
 2. Click on "Load netlist".
-3.
+3. Using the wire tool you can trace the tracks of the board.
+4. Follow the [design rules of the week05 assingment.](../../assignments/week05)
 
-| Design | Rules |
-| ---- | ---- |
-| Track | 0.4 mm  |
-| Outline  | 1.0 mm |
-| Clearance  | 0.1 mm |
 
 
 #### Troubleshooting
@@ -411,10 +407,15 @@ I've found also a fliped led in my schematic image. That I've corrected except i
 5. The Microcontroller goes in the center.
 6. Regulator at left with its capacitor.
 7. JTAG conector at the bottom.
-8. LED at the lest close to the pin 5 of the Microntroller.
+8. LED at the lest close to the pin 5 of the Microcontroller.
 9. The clock and reset pull-down at the left.
 10. Button and pull-up resistor at the right.
 
+| Design | Rules |
+| ---- | ---- |
+| Track | 0.4 mm  |
+| Outline  | 1.0 mm |
+| Clearance  | 0.1 mm |
 
 ### 3D model
 
@@ -528,11 +529,17 @@ Connecting JTAG programmer board:
 
 <img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/>
 
-Programming:
+Flashing:
 
 ```
 make -f hello.D11C.blink.make edbg
 ```
+If the command doesn't work, you can just used the generated bin file and use edbg like this:
+
+```
+sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
+```
+
 
 <script id="asciicast-44UvJQJOmUYlMv0DcYz8CpcFw" src="https://asciinema.org/a/44UvJQJOmUYlMv0DcYz8CpcFw.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
@@ -541,6 +548,11 @@ make -f hello.D11C.blink.make edbg
     <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
   </video>
 </figure>
+
+
+### Chaning the speed of the blink
+
+
 
 ## Files
 
