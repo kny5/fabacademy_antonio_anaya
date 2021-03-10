@@ -106,7 +106,7 @@ Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A 
 
 **Symbols**
 
-**Examples**
+![Example glossary](https://cdn.sparkfun.com/assets/6/8/6/d/1/51cdc767ce395f7558000002.png)
 
 
 ## Kicad
