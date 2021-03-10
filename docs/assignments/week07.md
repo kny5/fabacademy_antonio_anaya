@@ -425,6 +425,8 @@ I've found also a fliped led in my schematic image. That I've corrected except i
 
 ### Processing files with mods
 
+Importing files as SVG.
+
 <img src="../../images/week07/mods_05.jpg" alt="Render_01" width=45%/>
 
 | Traces | Settings |
@@ -552,7 +554,7 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
 
 ### Chaning the speed of the blink
 
-
+<script id="asciicast-Dxsz3vGol202CMmPHPUfhViQ1" src="https://asciinema.org/a/Dxsz3vGol202CMmPHPUfhViQ1.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
 ## Files
 
