@@ -541,3 +541,7 @@ make -f hello.D11C.blink.make edbg
     <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
   </video>
 </figure>
+
+## Files
+
+[Download kicad files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week07/kicad)
