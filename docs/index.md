@@ -5,9 +5,9 @@
 
 
 
-> [**7. Electronics design**](./assignments/week07/)
+> [**8. Computer controlled machining**](./assignments/week08/)
 
-![Render_01](./images/week07/hero_00.jpg)
+![Render_01](./images/week08/render_01.jpg)
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
