@@ -16,13 +16,13 @@ For this week our individual task is to design, encode, manufacture and assemble
 
 ### Security assessment
 
-[Check the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_7_electronics_design/)
+[Check the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/)
 
 
 
 ## Design process
 
-I've used fusion 360 (under Windows) to design my project. I've been trying to run Fusion on Linux but it has some complications due to my Nvidia driver configuration.
+I've used [Fusion 360](https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null) (under Windows) to design my project. I've been trying to run Fusion on Linux but it has some complications due to my Nvidia driver configuration.
 
 The idea is just very simple yet useful. I got a very bad back pain everytime I solder in the ElectroLab, the reason is that there's no a right size bench. You can get one very tall bench or a very low chair. So I think a good cheap bench design will help us a little in the upcoming weeks.
 
@@ -43,6 +43,7 @@ These are the three parts of the sketch.
 These are the three parts extruded by 1.8 mm which is the width of the material.
 <img src="../../images/week08/fusion_03_1.jpg" alt="Render_01" width=100%/>
 
+This is render I've made using the basic render options of Fusion 360.
 <img src="../../images/week08/render_01.jpg" alt="Render_01" width=100%/>
 
 
