@@ -15,7 +15,7 @@ For this week our individual task is to design, encode, manufacture and assemble
 
 ### Security assessment
 
-
+[Check the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_7_electronics_design/)
 
 ## Design process
 
@@ -95,3 +95,5 @@ Setup the orientation.
 <img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/>
 
 ## Files
+
+[Download Zip with all files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip)
