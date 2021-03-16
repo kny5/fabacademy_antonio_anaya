@@ -6,7 +6,7 @@
 
 ## Introduction
 
-CNC stands for Computer Controlled Machining and the modern predecessors were developed at the begging of 1950 at the MIT servomechanism lab. Through the years this technology has became more precise and affordable, so we can have a tabletop [Roland SRM-20](http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week05/) with a 0.01 mm precision or any [SLM 3D printer](http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/#description-of-ultimaker-3-extended).
+CNC stands for Computer Controlled Machining and the modern predecessors were developed at the beginning of 1950 at the MIT servomechanism lab. Through the years this technology has became more precise and affordable, so we can have a tabletop [Roland SRM-20](http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week05/) with a 0.01 mm precision or any [SLM 3D printer](http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/#description-of-ultimaker-3-extended).
 
 The process needs a hardware capable of following a series of instructions with the encoded geometrical position in 2, 3 or more axis of the tool so as the tool type, the cut-rate, the tolerance, and the speed of any movement.
 
@@ -40,7 +40,7 @@ This is the parametric table.
 These are the three parts of the sketch.
 <img src="../../images/week08/fusion_03_0.jpg" alt="Render_01" width=100%/>
 
-These are the three parts extruded by 1.8 mm which is the width of the material.
+These are the three parts extruded by 18 mm which is the width of the material.
 <img src="../../images/week08/fusion_03_1.jpg" alt="Render_01" width=100%/>
 
 This is render I've made using the basic render options of Fusion 360.
@@ -85,7 +85,7 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 ## Preparation
 
-This is the material I've used (material name).
+This is the material I've used OSB.
 <img src="../../images/week08/preparation_01.jpg" alt="Render_01" width=100%/>
 
 The sheet should be maximum 2.0m, so we should cut it using the saw.
