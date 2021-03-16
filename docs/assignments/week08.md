@@ -27,7 +27,8 @@ I've used [Fusion 360](https://www.autodesk.com/products/fusion-360/overview?ter
 The idea is just very simple yet useful. I got a very bad back pain everytime I solder in the ElectroLab, the reason is that there's no a right size bench. You can get one very tall bench or a very low chair. So I think a good cheap bench design will help us a little in the upcoming weeks.
 
 This is my first sketch.
-<img src="../../images/week08/sketch_00.jpg" alt="Render_01" width=100%/>
+
+<img src="../../images/week08/sketch_00.jpg" alt="Render_01" width=50%/>
 
 
 Then I started drawing it in Fusion.
@@ -37,13 +38,18 @@ Then I started drawing it in Fusion.
 This is the parametric table.
 <img src="../../images/week08/fusion_01.jpg" alt="Render_01" width=100%/>
 
-These are the three parts of the sketch.
+These are the three parts of the sketch. To make the second part of the body for the bench I've copy pasted the first sketch into a new one, and then modify the groove to coincide and serve as join mechanism.
 <img src="../../images/week08/fusion_03_0.jpg" alt="Render_01" width=100%/>
 
 These are the three parts extruded by 18 mm which is the width of the material.
 <img src="../../images/week08/fusion_03_1.jpg" alt="Render_01" width=100%/>
 
+On the Render environment of Fusion I've used Oak as a material for the appearance of the model.
+<img src="../../images/week08/render_02.jpg" alt="Render_01" width=100%/>
+
+
 This is render I've made using the basic render options of Fusion 360.
+To virtually assemble the parts I've using the move/rotate tools under the design environment.
 <img src="../../images/week08/render_01.jpg" alt="Render_01" width=100%/>
 
 
