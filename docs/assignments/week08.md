@@ -139,4 +139,10 @@ Press OK and Run to start the process.
 
 ## Files
 
-[Download Zip with all files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week08)
+[Download Zip with all files from Fabcloud gitlab](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week08)
+
+- [Fusion file](../../files/week08/week08_cnc_bech.f3d)
+- [NC file 1 Cross](../../files/week08/a.nc)
+- [NC file 2 Seat](../../files/week08/b.nc)
+- [NC file 1 Body A](../../files/week08/circle.nc)
+- [NC file 1 Body B](../../files/week08/cross.nc)
