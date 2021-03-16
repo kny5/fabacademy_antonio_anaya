@@ -64,14 +64,71 @@ After the design has been completed the next steps to generate **""*.NC"** files
 - For now all the other parameters of the milling tools like the shaft and holder are not very important, because the milling depth is only about 18 mm.
 
 <img src="../../images/week08/fusion_03.jpg" alt="Render_02" width=100%/>
+
+**2.** Then under the manufacture environment of Fusion select setup to configure the machine, orientation, models and tool for the manufacturing process.
+
+- Select Milling.
+- Selecte Z as the vertical axis for your model, be aware of you machine axis too, in this case Y is the longest axis in the machine so as in the model.
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width=100%>
+    <source src="../../images/week08/setup_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+**3.** Under the 2D strategy I've selected **2D contour** as my milling process. The reason is because in the test I've found that as the quickest and simplest process for milling.
+
+- Select the lower contour of your model.
+- Select the right tool.
+- Select the multi-height passes and use about hald the diameter of your milling bit.
+
 <img src="../../images/week08/fusion_04.jpg" alt="Render_02" width=100%/>
+
+**4.** Contour parameters I've selected:
+
+- The **feedrate was too high** and during the manufacturing process [Luc](link) had to lower the travel and cutting feedrate and increased the spindle RPM to reduce vibrations in the machine. So I'll advice to use 2000 or 2200 Feedrate for 18mm OSB sheets.
+
 <img src="../../images/week08/fusion_05.jpg" alt="Render_02" width=50%/>
+
+**5.** I've used tabs to reduce vibration and the risk of detached parts during the process.
+
+- Tabs are placed every 125.0 mm
+- Tabs are rectangular
+- Height 2.5 mm
+- Width 10.0 mm
+
 <img src="../../images/week08/fusion_06.jpg" alt="Render_02" width=100%/>
+
+**6.** The tolerance was just enough and the parts fit perfectly in place.
+
+- Tolerance was set as 0.125 mm
+
 <img src="../../images/week08/fusion_07.jpg" alt="Render_02" width=50%/>
+
+**7.** Multiple depths were configured
+
+- Maximum roughihg stepdown was set to 5 mm
+- Finishing stepdown for a clean edge is 0.1 mm
+
 <img src="../../images/week08/fusion_08.jpg" alt="Render_02" width=50%/>
+
+**8.** The contour operation is finished and the program shows the cut path way.
+
 <img src="../../images/week08/fusion_09.jpg" alt="Render_02" width=100%/>
+
+- The video shows the complete process
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width=100%>
+    <source src="../../images/week08/cam_02.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
 <img src="../../images/week08/fusion_10.jpg" alt="Render_02" width=100%/>
+
 <img src="../../images/week08/fusion_11.jpg" alt="Render_02" width=100%/>
+
 <img src="../../images/week08/fusion_12.jpg" alt="Render_02" width=50%/>
 
 
@@ -81,11 +138,7 @@ After the design has been completed the next steps to generate **""*.NC"** files
   </video>
 </figure>
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" width=100%>
-    <source src="../../images/week08/cam_02.mp4" type="video/mp4">
-  </video>
-</figure>
+
 
 
 
