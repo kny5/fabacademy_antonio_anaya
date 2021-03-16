@@ -85,16 +85,44 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 ## Preparation
 
+This is the material I've used (material name).
 <img src="../../images/week08/preparation_01.jpg" alt="Render_01" width=100%/>
+
+The sheet should be maximum 2.0m, so we should cut it using the saw.
 <img src="../../images/week08/preparation_02.jpg" alt="Render_01" width=100%/>
+
+Finally we need to measure in different points the thickness of the material.
+
+- 17.6 mm
+- 17.8 mm
+- 17.5 mm
+
+So I've used 17.5 mm as a medium thickness measurement.
+
 <img src="../../images/week08/preparation_03.jpg" alt="Render_01" width=100%/>
 
 
+## Milling machine check list
+
+1. Power on the machine.
+2. Start Depression.
+3. Start Vacuum dust aspiration.
+4. Setup the Z axis connecting the electrode and the clamps, make a small test pressing "toolset" in the remote.
+  - Place the electrode at the top of the material. It's always useful to remember that the "Depression" should be activated to make this step as the height will change because a small compression caused by the vacuum.
+
+5. Lower the brush: To lower the brush go into "inputs menu" and look for **"06"** check it to red color and press "ok".
+6. Ensure that there's no obstacles in the build area.
+7. Ensure that you are using ear protections.
 
 ## Milling with the CNC machine
 
-<img src="../../images/week08/outcome_01.jpg" alt="Render_01" width=100%/>
+
+We need to access the **"*.nc"** files we made with Fusion on the machine.
 <img src="../../images/week08/outcome_02.jpg" alt="Render_01" width=100%/>
+
+Press OK and Run to start the process.
+
+<img src="../../images/week08/outcome_01.jpg" alt="Render_01" width=100%/>
 <img src="../../images/week08/outcome_03.jpg" alt="Render_01" width=100%/>
 <img src="../../images/week08/outcome_05.jpg" alt="Render_01" width=100%/>
 
