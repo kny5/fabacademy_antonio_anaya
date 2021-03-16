@@ -3,6 +3,7 @@
 <img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/>
 
 
+
 ## Introduction
 
 CNC stands for Computer Controlled Machining and the modern predecessors were developed at the begging of 1950 at the MIT servomechanism lab. Through the years this technology has became more precise and affordable, so we can have a tabletop [Roland SRM-20](http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week05/) with a 0.01 mm precision or any [SLM 3D printer](http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/#description-of-ultimaker-3-extended).
@@ -16,6 +17,8 @@ For this week our individual task is to design, encode, manufacture and assemble
 ### Security assessment
 
 [Check the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_7_electronics_design/)
+
+
 
 ## Design process
 
@@ -43,9 +46,15 @@ These are the three parts extruded by 1.8 mm which is the width of the material.
 <img src="../../images/week08/render_01.jpg" alt="Render_01" width=100%/>
 
 
+
 ## CAM with Fusion 360
 
 After the design has been completed the next steps to generate **""*.NC"** files for our CNC machine are:
+
+**1.** Configure the tool size measuring the tool available in the lab.
+
+- I've chose a 10 mm diameter 32 mm two flutes flat-end mill.
+- For now all the other parameters of the milling tools like the shaft and holder are not very important, because the milling depth is only about 18 mm.
 
 <img src="../../images/week08/fusion_03.jpg" alt="Render_02" width=100%/>
 <img src="../../images/week08/fusion_04.jpg" alt="Render_02" width=100%/>
@@ -71,12 +80,13 @@ After the design has been completed the next steps to generate **""*.NC"** files
   </video>
 </figure>
 
-### Setup
-
-Select operation: Milling.
 
 
-Setup the orientation.
+## Preparation
+
+<img src="../../images/week08/preparation_01.jpg" alt="Render_01" width=100%/>
+<img src="../../images/week08/preparation_02.jpg" alt="Render_01" width=100%/>
+<img src="../../images/week08/preparation_03.jpg" alt="Render_01" width=100%/>
 
 
 
@@ -87,6 +97,8 @@ Setup the orientation.
 <img src="../../images/week08/outcome_03.jpg" alt="Render_01" width=100%/>
 <img src="../../images/week08/outcome_05.jpg" alt="Render_01" width=100%/>
 
+
+
 ## Assembly
 
 <img src="../../images/week08/assembly_01.jpg" alt="Render_01" width=100%/>
@@ -94,6 +106,8 @@ Setup the orientation.
 <img src="../../images/week08/assembly_03.jpg" alt="Render_01" width=100%/>
 <img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/>
 
+
+
 ## Files
 
-[Download Zip with all files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip)
+[Download Zip with all files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week08)
