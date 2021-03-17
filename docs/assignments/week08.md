@@ -14,11 +14,11 @@ For this week our individual task is to design, encode, manufacture and assemble
 
 
 
-### Security assessment
+### Risk assessment
 
-[Check the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/)
+[Check my entry to the group assignment to find this information here.](http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/#risk-assessment-check-list)
 
-
+[Check this risk assessment document to find out detailed information](https://www.dysoncentre.eng.cam.ac.uk/mills-folder/documents/manual-mill-risk-assessment-pdf)
 
 ## Design process
 
@@ -124,16 +124,28 @@ After the design has been completed the next steps to generate **""*.NC"** files
   </video>
 </figure>
 
-**9.** Repeat the process for all the parts of the model.
+**9.** Repeat the "2D contour" process for all the parts of the model.
 
-**10.**
+**10.** Click in the post process button to find the next window to generate the GCODE for the CNC milling machine.
+
+- I've selected "Mach2Mill / mach2mill" option which is the one we need in our lab for our CNC machine.
 
 <img src="../../images/week08/fusion_10.jpg" alt="Render_02" width=100%/>
 
+**11.** In the "operations tab" select the process you'll like to include in the output file.
+
+- I've selected only one output file for every operation to have a better control of the whole process.
+- It means I'll have to launch a File for every process in the machine.
+
 <img src="../../images/week08/fusion_11.jpg" alt="Render_02" width=100%/>
+
+**12.** After the output file is written, look for the code **G43 Z15. H8** approximately at line 19 and delete that line.
+
+- The CNC machine at the lab uses this code to compensate the Z axis height by 15 mm and it means your cuts will happen 15 mm above your Z axis origin.
 
 <img src="../../images/week08/fusion_12.jpg" alt="Render_02" width=50%/>
 
+**13.** You can see here a simulation of the process that I've made using the "simulation" tools in Fusion 360.
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" width=100%>
@@ -143,14 +155,14 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 
 
-
-
 ## Preparation
 
-This is the material I've used OSB.
+I've used OSB trying to minimize the cost of my design.
+
 <img src="../../images/week08/preparation_01.jpg" alt="Render_01" width=100%/>
 
-The sheet should be maximum 2.0m, so we should cut it using the saw.
+The sheet should be maximum 2.0m, so we should cut it using the saw by 40 cm.
+
 <img src="../../images/week08/preparation_02.jpg" alt="Render_01" width=100%/>
 
 Finally we need to measure in different points the thickness of the material.
@@ -159,7 +171,7 @@ Finally we need to measure in different points the thickness of the material.
 - 17.8 mm
 - 17.5 mm
 
-So I've used 17.5 mm as a medium thickness measurement.
+So I've used 17.5 mm as the thickness measurement.
 
 <img src="../../images/week08/preparation_03.jpg" alt="Render_01" width=100%/>
 
@@ -176,32 +188,155 @@ So I've used 17.5 mm as a medium thickness measurement.
 6. Ensure that there's no obstacles in the build area.
 7. Ensure that you are using ear protections.
 
+
+## Basic Workflow
+
+Power on:
+
+1. Open the compressed air valve.
+- Push the power on button.
+- In the remote accept "Go home XYZ" option.
+- Press Ok.
+
+<iframe src="https://www.youtube.com/embed/57srurq6RSI?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+Fixing dust collector bug:
+
+The machine at the lab has a bug in the software that need to be corrected in order to lower the dust collector brush.
+
+1. In the menu go to the "inputs and outputs" option.
+- Find the "06" input control
+- Press Run to change the icon to "Red" color.
+- Go to the main screen using the menu.
+- Now the dust collector interrupter is enabled.
+
+<iframe src="https://www.youtube.com/embed/PShWyMkXsJQ?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+X and Y axis calibration:
+
+On this process we need to set the center in the mill to the top left corner of the material to cut in our milling process.
+
+1. Move the axis by using the movement arrows in the remote.
+- You can use the slow or fast movements to be more precise, press the slow button in the remote for this.
+- Position the mid point of the mill in the top left corner.
+
+<iframe src="https://www.youtube.com/embed/zrY48mux4Gc?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+Z axis calibration:
+
+This process is very important for the correct operation of the machine. Be careful while setting up the Z axis.
+
+1. Pick the test probe and connect it to the port in the milling cart head.
+- Connect the clam to the mill holder.
+- Make an "air" test to check if the system works correctly.
+- Pose the Z axis at a high level
+- With help of your companion be prepared to touch the probe and the mill.
+- Press the "toolset" button in the remote.
+- Wear the ear protection
+- Activate the "depression" to hold the material in place
+- Run the "toolset" test.
+- Be prepared to stop the process if anything goes wrong.
+
+
+<iframe src="https://www.youtube.com/embed/fWRaxg3zjwU?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+
+Load file:
+
+1. Connect the USB memory to the remote.
+- press the "file" button.
+- Find and select the file with the arrow buttons in the remote.
+- Press ok to load.
+- Press Run the start the work.
+- Select the global speeds and press Ok to start working.
+
+<iframe src="https://www.youtube.com/embed/9wtutoxJ-hQ?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+
+
 ## Milling with the CNC machine
 
+First process:
 
-We need to access the **"*.nc"** files we made with Fusion on the machine.
-<img src="../../images/week08/outcome_02.jpg" alt="Render_01" width=100%/>
+- I've followed the same logic as the milling process by first cutting the interior contours to avoid misplaced cuts.
 
-Press OK and Run to start the process.
+<img src="../../images/week08/outcome_02.jpg" alt="Render_01" width=50%/>
+<img src="../../images/week08/outcome_01.jpg" alt="Render_01" width=50%/>
 
-<img src="../../images/week08/outcome_01.jpg" alt="Render_01" width=100%/>
-<img src="../../images/week08/outcome_03.jpg" alt="Render_01" width=100%/>
-<img src="../../images/week08/outcome_05.jpg" alt="Render_01" width=100%/>
 
+Second process:
+
+- This is the seat of the bench.
+
+<img src="../../images/week08/outcome_03.jpg" alt="Render_01" width=50%/>
+
+Third process:
+
+- This is the "A" part of the body.
+
+<img src="../../images/week08/outcome_05.jpg" alt="Render_01" width=50%/>
+
+Last process:
+
+- This is the "B" part of the body.
+
+I've missed to take a photo of this because I've some problems while milling.
+
+## Troubleshooting
+
+1. The feedrate is speed was too high in relationship of the spindle speed. It was set to **3500** mm/s in Fusion 360. And the spindle speed to 10000 RPM.
+- My instructor changed the spindle speed to 15000 RPM.
+- The feedrate and movements speed were set to 30% and the whole process moved from 10 mins in the simulation to 30 mins in realtime work.
+
+2. I didn't have a companion.
+- I've asked my instructor to assist me.
 
 
 ## Assembly
 
-<img src="../../images/week08/assembly_01.jpg" alt="Render_01" width=100%/>
-<img src="../../images/week08/assembly_02.jpg" alt="Render_01" width=100%/>
-<img src="../../images/week08/assembly_03.jpg" alt="Render_01" width=100%/>
+- This is how the OSB sheet looked like after removing it from the machine.
+
+<img src="../../images/week08/assembly_01.jpg" alt="Render_01" width=70%/>
+
+- Here you can see the dogbones I've used in my design.
+
+<img src="../../images/week08/assembly_02.jpg" alt="Render_01" width=70%/>
+
+- This is how the seat looks like assembled.
+
+<img src="../../images/week08/assembly_03.jpg" alt="Render_01" width=70%/>
+
+- And this is the final result.
+
 <img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/>
 
+- I'd like to add a video of the assembly process in the next days.
+
+
+## Testing the bench
+
+We can see here my back getting extremely curved while soldering at the soldering station.
+
+<img src="../../images/week08/test_04.JPG" alt="Render_01" width=49%/>
+
+Here I'm quite relaxed thanks to the support in the back of the chair but still it's not a good position for my back.
+
+<img src="../../images/week08/test_02.JPG" alt="Render_01" width=49%/>
+
+Here I'm using my bench and my back feels in a better position for long-time soldering.
+
+<img src="../../images/week08/test_03.JPG" alt="Render_01" width=49%/>
+
+Here you can compare the height of every seat available at the lab.
+
+<img src="../../images/week08/test_01.JPG" alt="Render_01" width=49%/>
 
 
 ## Files
 
 [Download Zip with all files from Fabcloud gitlab](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week08)
+
+Download files individually:
 
 - [Fusion file](../../files/week08/week08_cnc_bech.f3d)
 - [NC file 1 Cross](../../files/week08/a.nc)
