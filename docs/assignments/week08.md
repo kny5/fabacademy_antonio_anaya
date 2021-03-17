@@ -86,7 +86,7 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 **4.** Contour parameters I've selected:
 
-- The **feedrate was too high** and during the manufacturing process [Luc](link) had to lower the travel and cutting feedrate and increased the spindle RPM to reduce vibrations in the machine. So I'll advice to use 2000 or 2200 Feedrate for 18mm OSB sheets.
+- The **feedrate was too high** and during the manufacturing process [Luc](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/) had to lower the travel and cutting feedrate and increased the spindle RPM to reduce vibrations in the machine. So I'll advice to use 2000 or 2200 Feedrate for 18mm OSB sheets.
 
 <img src="../../images/week08/fusion_05.jpg" alt="Render_02" width=50%/>
 
@@ -99,7 +99,7 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 <img src="../../images/week08/fusion_06.jpg" alt="Render_02" width=100%/>
 
-**6.** The tolerance was just enough and the parts fit perfectly in place.
+**6.** The tolerance was just enough and the parts fitted perfectly in place after the manufacturing.
 
 - Tolerance was set as 0.125 mm
 
@@ -107,8 +107,8 @@ After the design has been completed the next steps to generate **""*.NC"** files
 
 **7.** Multiple depths were configured
 
-- Maximum roughihg stepdown was set to 5 mm
-- Finishing stepdown for a clean edge is 0.1 mm
+- Maximum roughing step-down was set to 5 mm
+- Finishing step-down for a clean edge is 0.1 mm
 
 <img src="../../images/week08/fusion_08.jpg" alt="Render_02" width=50%/>
 
@@ -124,6 +124,9 @@ After the design has been completed the next steps to generate **""*.NC"** files
   </video>
 </figure>
 
+**9.** Repeat the process for all the parts of the model.
+
+**10.**
 
 <img src="../../images/week08/fusion_10.jpg" alt="Render_02" width=100%/>
 
