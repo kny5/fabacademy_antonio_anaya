@@ -5,3 +5,5 @@ mkdocs-git-revision-date-localized-plugin ~= 0.8.0
 # Add your custom theme if not inside a theme_dir
 # (https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
 mkdocs-material ~= 6.2
+
+Pygments

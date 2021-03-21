@@ -7,7 +7,11 @@
 
 > [**9. Embedded programming**](./assignments/week09/)
 
-![Render_01](./images/week08/render_01.jpg)
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png"  width="100%" loop>
+    <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
+  </video>
+</figure>
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 

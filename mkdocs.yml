@@ -44,10 +44,12 @@ extra_css:
   [extra.css]
 
 markdown_extensions:
+  - pymdownx.highlight
+  #- pymdownx.superfences
   - extra
   - smarty
   - admonition
   - codehilite:
-      guess_lang: True
+      guess_lang: False
   - toc:
       permalink: true
