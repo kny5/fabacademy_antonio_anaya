@@ -6,9 +6,13 @@
 | --- | ---- | ---- | --- |
 | PIN | | | |
 
+
+
 ## EBDG workflow
 
 Introduction:
+
+
 
 ### Requirements
 
@@ -40,9 +44,13 @@ Install newlib dependency:
 sudo dnf install arm-none-eabi-newlib arm-none-eabi-gcc-cs-c++.x86_64 gcc-c++-arm-linux-gnu.x86_64
 ```
 
+
+
 ### JTAG connection
 
 <img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/>
+
+
 
 ### Flashing
 
@@ -58,6 +66,8 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
 
 <script id="asciicast-44UvJQJOmUYlMv0DcYz8CpcFw" src="https://asciinema.org/a/44UvJQJOmUYlMv0DcYz8CpcFw.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
+
+
 ### Blink Demo
 
 <figure class="video_container">
@@ -66,15 +76,20 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
   </video>
 </figure>
 
+
+
 ### Sparky blink Demo
 
+Context:
 
-Nested while loops:
-Loop1: Runs the whole program.
-  Loop2: Waits until PA02 state changes, the change is made by pulsating the button on the board.
-  Loop3: Toggles the LED state reducing the period every time.
-  Loop4: Toggles the LED state increasing the period every time.
-  If2: Keeps the LED on or off depending on the st variable, saves the value every in every cycle.
+Pseudo-code:
+
+- Nested while loops:
+- Loop1: Runs the whole program.
+  - Loop2: Waits until PA02 state changes, the change is made by pulsating the button on the board.
+  - Loop3: Toggles the LED state reducing the period every time.
+  - Loop4: Toggles the LED state increasing the period every time.
+  - If2: Keeps the LED on or off depending on the st variable, saves the value every in every cycle.
 
 ``` cpp
 
@@ -83,7 +98,7 @@ This program uses the SAM11.h library from the ASF programming repository at git
 This program reads PA02 to turn on the LED at PA05, and makes a bouncing-blinky effect like an fluorescent old lamp.
 
 IO pins:
-PA02 <- Digital pull-up input
+PA02 <- Digital pull-up button input
 PA05 -> Digital LED output
 
 Autor: Antonio de Jesus Anaya Hernandez
@@ -234,6 +249,8 @@ void loop() {
   //Serial.println("waitting");
 }
 ```
+
+
 
 <script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=10 data-rows=30 data-speed=2></script>
 
