@@ -163,7 +163,79 @@ int main(void) {
 
 ### One button scroll-down/up controller
 
-<script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+```
+/*
+This program uses Arduino and Mouse library.
+This program reads the board button to scroll-down and after the release of the button waits for 4 seconds to scroll up. After 4 seconds the program waits for a new button push event.
+
+IO pins:
+PA02 <- Digital pull-up input
+PA05 -> Digital LED output
+
+Autor: Antonio de Jesus Anaya Hernandez
+Year: 2021
+Org: Fab Academy
+Lab: AgriLab
+Country: France
+*/
+
+#include <Mouse.h>
+
+const int BTN = 2;
+const int LED =  5;
+int timer = 0;
+int btn_state = 0;
+int idle1 = 0;
+int idle2 = 0;
+
+void blink() {
+  for(int pw = 0; pw < 255; pw++){
+      delay(1);
+      analogWrite(LED,pw);
+  }
+  analogWrite(LED,0);
+}
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(BTN, INPUT);
+  Mouse.begin();
+  //Serial.begin(9600);
+}
+
+void loop() {
+  analogWrite(LED,5);
+  btn_state = digitalRead(BTN);
+  if(btn_state == LOW){
+    while(btn_state == LOW){
+      delay(200);
+      analogWrite(LED, 100);
+      Mouse.move(0,0,-1);
+      btn_state = digitalRead(BTN);
+    }
+    for(int clicks = 0; clicks < 10; clicks++){
+      delay(200);
+      //Serial.println("Clicked");
+      //Serial.print(clicks);
+      if(clicks < 6){
+        //digitalWrite(LED, HIGH);
+        blink();
+      }
+      btn_state = digitalRead(BTN);
+      while(btn_state == LOW && clicks < 6){
+        delay(200);
+        analogWrite(LED,30);
+        Mouse.move(0,0,1);
+        btn_state = digitalRead(BTN);
+      }
+    }
+  }
+  delay(200);
+  //Serial.println("waitting");
+}
+```
+
+<script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=10 data-speed=2></script>
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
