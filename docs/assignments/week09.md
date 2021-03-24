@@ -7,6 +7,45 @@
 | PIN | | | |
 
 
+## Debugging
+
+- Inspecting button at PA02:
+
+<img src="../../images/week09/debug_03.jpg" alt="Render_01" width=100%/>
+
+- Power source at 5V:
+
+<img src="../../images/week09/debug_02.jpg" alt="Render_01" width=45%/>
+
+- Signal in the Oscilloscope:
+
+<img src="../../images/week09/debug_01.jpg" alt="Render_01" width=45%/>
+
+- Program to estimate mV at input:
+
+```
+const int BTN = 2;
+int BTN_STATE = digitalRead(BTN);
+const long VIN_FACTOR = 3.3 / 1.023 ;
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(BTN, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+Serial.println(analogRead(BTN) * VIN_FACTOR);
+
+analogWrite(LED_BUILTIN, analogRead(BTN) );
+}
+
+```
+
+
+- Arduino capture:
+
+<img src="../../images/week09/arduino_05.jpg" alt="Render_01" width=45%/>
 
 ## EBDG workflow
 
