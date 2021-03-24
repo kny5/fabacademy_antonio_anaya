@@ -2,9 +2,53 @@
 
 ## SAMD11 Datasheet
 
-| SAMD11 | | | |
-| --- | ---- | ---- | --- |
-| PIN | | | |
+| SAMD11 | Arduino | PINOUT | | | | | | | | | | | |
+| --- | ---- | ---- | --- | --- | --- | --- | ---- | ---- | --- | --- | --- | --- | --- |
+| Other | COM | PWM | Analog | INT | # | PIN | PIN | # | INT | Analog | PWM | COM | Other |
+| | SCK*/RX2 | TCC01 | * | * | 5 | A5 | A4 | 4 | * | * | TCC00 | MOSI*/TX2 | REF |
+| | MOSI* | TCC02 | | * | 8 | A8 (XIN) | A2 | 2 | * | * | | | DAC |
+| | SCK* | TCC03 | | * | 9 | A9 (XOUT) | Vdd |
+| | SDA/MISO* | TC10 | * | NMI | 14 | A14 | Gnd |
+| | SCL/SS* | TC11 | * | * | 15 | A15 | A25 | 25 | | | | USB/DP |
+BOOT | | | | | 28 | A28/RST | A24 | 24 | | | | USB/DM |
+SWDCLK |  TX1/MISO* | | | | 30 | A30 | A31 | 31 | * | | RX1/SS* | | SWDIO |
+  -------------------
+
+Arduino	| Port	| Alternate Function	| Comments (! means not used with this peripheral assignment)
+--------|-------|-----------------------|-------------------------------------------------------------------------------------------
+0	| ----	| NOT A PIN		| NOT A PIN
+1	| ----	| NOT A PIN		| NOT A PIN
+2	| PA02	| DAC			| EIC/EXTINT[2] ADC/AIN[0] PTC/Y[0] DAC/VOUT
+3	| ----	| NOT A PIN		| NOT A PIN
+4	| PA04	| REFB / TX2* / TCC00	| EIC/EXTINT[4] REF/ADC/VREFB ADC/AIN[2] AC/AIN[0] PTC/Y[2] SERCOM0/PAD[2] !SERCOM0/PAD[0] !TC1/WO[0] TCC0/WO[0]
+5	| PA05	| RX2* / TCC01		| EIC/EXTINT[5] ADC/AIN[3] AC/AIN[1] PTC/Y[3] SERCOM0/PAD[3] !SERCOM0/PAD[1] !TC1/WO[1] TCC0/WO[1]
+6	| ----	| NOT A PIN		| NOT A PIN
+7	| ----	| NOT A PIN		| NOT A PIN
+8	| PA08	| TX1 / MOSI / TCC02	| EIC/EXTINT[6] SERCOM1/PAD[2] !SERCOM0/PAD[2] TCC0/WO[2] !TCC0/WO[4] Xin32 / Xin
+9	| PA09	| RX1 / SCK / TCC03	| EIC/EXTINT[7] SERCOM1/PAD[3] !SERCOM0/PAD[3] TCC0/WO[3] !TCC0/WO[5] Xout32 / Xout
+10	| ----	| NOT A PIN		| NOT A PIN
+11	| ----	| NOT A PIN		| NOT A PIN
+12	| ----	| NOT A PIN		| NOT A PIN
+13	| ----	| NOT A PIN		| NOT A PIN
+14	| PA14	| SDA / TC10		| EIC/NMI ADC/AIN[6] PTC/X[0] PTC/Y[6] SERCOM0/PAD[0] !SERCOM2/PAD[0] TC1/WO[0] !TCC0/WO[0]
+15	| PA15	| SCL / TC11		| EIC/EXTINT[1] ADC/AIN[7] PTC/X[1] PTC/Y[7] SERCOM0/PAD[1] !SERCOM2/PAD[1] TC1/WO[1] !TCC0/WO[1]
+16	| ----	| NOT A PIN		| NOT A PIN
+17	| ----	| NOT A PIN		| NOT A PIN
+18	| ----	| NOT A PIN		| NOT A PIN
+19	| ----	| NOT A PIN		| NOT A PIN
+20	| ----	| NOT A PIN		| NOT A PIN
+21	| ----	| NOT A PIN		| NOT A PIN
+22	| ----	| NOT A PIN		| NOT A PIN
+23	| ----	| NOT A PIN		| NOT A PIN
+24	| PA24	| USB_NEGATIVE		| USB/DM
+25	| PA25	| USB_POSITIVE		| USB/DP
+26	| ----	| NOT A PIN		| NOT A PIN
+27	| ----	| NOT A PIN		| NOT A PIN
+28	| PA28	| Reset			| Reset, BOOT (double tap bootloader entry)
+29	| ----	| NOT A PIN		| NOT A PIN
+30	| PA30	| MISO / SWD CLK	| !EIC/EXTINT[2] SERCOM1/PAD[0] !SERCOM1/PAD[2] !TC2/WO[0] !TCC0/WO[2] SWD CLK, leave floating during boot
+31	| PA31	| SS / SWD IO		| EIC/EXTINT[3] SERCOM1/PAD[1] !SERCOM1/PAD[3] !TC2/WO[1] !TCC0/WO[3] SWD IO
+
 
 
 ## Debugging
@@ -15,11 +59,11 @@
 
 - Power source at 5V:
 
-<img src="../../images/week09/debug_02.jpg" alt="Render_01" width=45%/>
+<img src="../../images/week09/debug_02.jpg" alt="Render_01" width=100%/>
 
 - Signal in the Oscilloscope:
 
-<img src="../../images/week09/debug_01.jpg" alt="Render_01" width=45%/>
+<img src="../../images/week09/debug_01.jpg" alt="Render_01" width=100%/>
 
 - Program to estimate mV at input:
 
@@ -45,7 +89,7 @@ analogWrite(LED_BUILTIN, analogRead(BTN) );
 
 - Arduino capture:
 
-<img src="../../images/week09/arduino_05.jpg" alt="Render_01" width=45%/>
+<img src="../../images/week09/arduino_05.jpg" alt="Render_01" width=100%/>
 
 ## EBDG workflow
 
