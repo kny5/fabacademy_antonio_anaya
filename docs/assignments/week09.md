@@ -178,10 +178,13 @@ int main(void) {
 ## Arduino Workflow
 
 
-- Installing mattairtech libraries
+- Installing mattairtech libraries:
 
 <img src="../../images/week09/arduino_02.jpg" alt="Render_01" width=100%/>
 
+- Flashing Bootloader:
+
+<script id="asciicast-bVs53JUItHgLdNUwZ5pnDpwCx" src="https://asciinema.org/a/bVs53JUItHgLdNUwZ5pnDpwCx.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
 
 ### One button scroll-down/up controller
 
