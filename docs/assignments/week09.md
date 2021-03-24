@@ -175,6 +175,13 @@ int main(void) {
 </figure>
 
 
+## Arduino Workflow
+
+
+- Installing mattairtech libraries
+
+<img src="../../images/week09/arduino_02.jpg" alt="Render_01" width=100%/>
+
 
 ### One button scroll-down/up controller
 
@@ -257,5 +264,25 @@ void loop() {
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
     <source src="../../images/week09/demo_03.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_04.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
+### Ncurses for microcontrollers
+
+```
+```
+
+<script id="asciicast-dDgFmfugIqAcCHOVTcJEl1tu5" src="https://asciinema.org/a/dDgFmfugIqAcCHOVTcJEl1tu5.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_05.mp4" type="video/mp4">
   </video>
 </figure>
