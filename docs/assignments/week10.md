@@ -273,6 +273,7 @@ I've calculated this using this [calulator.](https://zalophusdokdo.github.io/Ste
 | 200 micron | 20 | 1.8° | Full step | 2mm |
 
 
+
 ### GRBL
 
 [GRBL](https://github.com/grbl/grbl) is an Open-Source firmware that runs in Atmega328 based Arduinos for low cost CNC machines. The version I've used is the v1.1 released in 08/2019.
@@ -283,7 +284,7 @@ I've dowloaded the repository:
 git clone https://github.com/grbl/grbl.git
 ```
 
-Install requisites for Fedora Linux:
+Install requirements for Fedora Linux:
 
 - Avr gcc compiler
 - Arduino
@@ -292,19 +293,212 @@ Install requisites for Fedora Linux:
 sudo dnf install avr-gcc arduino
 ```
 
+Once the requirements are installed, the next steps are documented in the [GRBL repository.](https://github.com/gnea/grbl/wiki/Compiling-Grbl)
 
 
-#### Upload with Arduino
+
+#### Compiling and Flashing GRBL using Arduino IDE
+
+1. Launch the Arduino IDE
+ * Make sure you are using the most recent version of the Arduino IDE!
+3. Load the ```grbl folder``` into the Arduino IDE as a Library.
+ * Click the ```Sketch``` drop-down menu, navigate to ```Include Library``` and select ```Add .ZIP Library```. The ```Add .ZIP Library``` command supports both a .ZIP file or a folder. In our case, there is no ```.ZIP``` file.
+ * You can confirm that the library has been added. Click the ```Sketch``` drop-down menu again, navigate to ```Include Library```, then scroll to the bottom of the list where you should see ```grbl```.
+ * **IMPORTANT:** Select the ```grbl``` folder **_inside_** the ```grbl-XXX``` folder, which **only** contains the source files and an example directory.
+ * If you accidentally select the `.zip` file or the wrong folder, you will need to navigate to your Arduino library, delete the mistake, and re-do Step 3.
+4. Open the `GrblUpload` Arduino example.
+ * Click the ```File``` down-down menu, navigate to ```Examples->Grbl```, and select ```GrblUpload```.
+ * Do not alter this example in any way! Grbl does not use any Arduino code. Altering this example may cause the Arduino IDE to reference Arduino code and compiling will fail.
+5. Compile and upload Grbl to your Arduino.
+ * Connect your Arduino Uno to your computer.
+ * Make sure your board is set to the Arduino Uno in the ```Tool->Board``` menu and the serial port is selected correctly in ```Tool->Serial Port```. (There are some controller boards on ebay that have the Arduino Pro bootloader on it, if you get error messages like "avrdude: stk500_getsync() attempt n of 10: not in sync: resp=0x20" then choose another board, try Arudino Pro/Pro Mini)
+ * Click the ```Upload```, and Grbl should compile and flash to your Arduino! (Flashing with a programmer also works by using the ```Upload Using Programmer``` menu command.)
+
+
+
+#### Compiling and flashing using command line tools
+
+**Requirements for Fedora Linux**
+
+GRBL repository:
+
+```
+git clone https://github.com/grbl/grbl.git
+```
+
+AVR-GCC and Arduino core libraries:
+
+```
+sudo dnf install avr-gcc arduino-core
+```
+
+Make:
+
+```
+sudo dnf install make
+```
+
+**Usage**
+
+Go to your local GRBL repository using your terminal by cd <location_of_grbl>, in my case this is:
+
+```
+cd $HOME/repos/grbl
+```
+
+Then use make to compile the grbl HEX file that's going to be flashed to your Arduino UNO board:
+
+```
+make clean && make grbl.hex
+```
+
+If the HEX file is successfully compiled then proceed to flash it to the board by executing:
+
+```
+avrdude -v -patmega328p -Uflash:w:grbl_v1.1h.20190825.hex:i -carduino -b 115200 -P /dev/ttyACM0
+```
+
+Where:
+
+- /dev/ttyACM0 it's the local addres of my Arduino UNO board.
+
+- -patmega328p it's microprocessor family
+
+- -Uflash:w:grbl*.hex it's the grbl_file_name.hex you have compiled.
+
+- b 115200 it's the baudrate speed.
+
+There are different ways to know this value, the easiest one it's this:
+
+- Execute on the terminal with your board **unplugged**:
+
+<script id="asciicast-aK4bM2mC0358HUAwKh2PpuRtb" src="https://asciinema.org/a/aK4bM2mC0358HUAwKh2PpuRtb.js" async></script>
+
+
+```
+ls /dev/tty*
+```
+
+Save the output and then execute the same command again, **but with your Arduino board connected**, compare the difference, and the new address it's the one of your Arduino:
+
+
 
 #### Disable Z axis homing routine
 
+After flashing the board, and setting up electronics and power source I tried to configure the homming using **Universal Gcode Sender** but, I got many alarms in the process of trying the limit switches. Remember I'm using a 2 axis configuration in hardware but then the GRBL by default expects  Z axis limit switch in the routine.
+
+We need to edit and re-flash the firmware to the board, this are the steps needed:
+
+In the lines 75 and 76 of the **grbl/config.h** file its declared the homing process and as the comments point:
+
+- line 75 moves the Z axis which is not existing in our configuration,
+
+- line 76 moves the XY axis at the same time and rate.
+
+This whole process it's called "limit finding":
+
+Edition:
+
+- Comment line 75 by adding double slash "//" at the begging of the line.
+
+- Edit line 76 by changing "HOMING_CYCLE_1" to "HOMING_CYCLE_0".
+
+- Save the file, and run the compilation process with Arduino or Linux command tools.
+
+Now the homing cycle starts by moving the X and Y axis and the errors are fixed.
+
+<script id="asciicast-MdI79ftDUjOytR7em4Otg9V2P" src="https://asciinema.org/a/MdI79ftDUjOytR7em4Otg9V2P.js" async></script>
+
+
+
 #### Firmware configuration
+
+The important points of the firmware configuration are:
+
+- Report in inches, which means you need to disable it to use millimeters.
+
+- Homing cycle enabled, this is required since we're using a band-pulley system, and as result the machine is not precise enough to preserve an reliable 0 position.
+
+- Working area limits:
+  - X: 310 mm
+  - Y: 290 mm
+
+We obtained this measurements by manually measuring the travel length of each axis.
+
+Firmware configuration table:
+
+| Setting | Value | Description |
+| -- | -- | -- |
+| $0 | 10 | Step pulse time |
+| $1 | 25 | Step idle delay |
+| $2 | 0 | Step pulse invert |
+| $3 | 2 | Step direction invert |
+| $4 | 0 | Invert Step enable pin |
+| $5 | 0 | Invert limit pins |
+| $6 | 0 | Invert probe pin |
+| $10 | 1 | Status report options |
+| $11 | 0.010 | Junction deviation |
+| $12 | 0.020 | Arc tolerance |
+| $13 | 0 | Report in inches |
+| $20 | 1 | Soft limits enable |
+| $21 | 0 | Hard limits enable |
+| $22 | 1 | Homing cycle enable |
+| $23 | 7 | Homing direction invert |
+| $24 | 25.000 | Homing locate feed rate |
+| $25 | 700.000 | Homing search feed rate |
+| $26 | 250 |Homing switch de-bouncing delay |
+| $27 | 1.000 | Homing switch pull-off distance |
+| $30 | 10000 | Maximum spindle speed |
+| $31 | 0 | Minimum spindle speed |
+| $32 | 1 | Laser mode enabled |
+| $100 | 5.000 | X-axis travel resolution |
+| $101 | 5.000 | Y-axis travel resolution |
+| $102 | 5.000 | Z-axis travel resolution |
+| $110 | 10000.000 | X-axis maximum rate |
+| $111 | 10000.000 | Y-axis maximum rate |
+| $112 | 500.000 | Z-axis maximum rate |
+| $120 | 5000.000 | X-axis acceleration |
+| $121 | 5000.000 | Y-axis acceleration |
+| $122 | 10.000 | Z-axis acceleration |
+| $130 | 310.000 | X-axis maximum travel |
+| $131 | 290.000 | Y-axis maximum travel |
+| $132 | 0.000 | Z-axis maximum travel |
+
+
+
 
 ### Valid GCODE
 
+
+I've the time to test multiple GCODES compatible for this version of GRBL.
+
+| Code | Action|
+| -- | -- |
+| $H | Starts homing cycle |
+| $G28 | Goes to the maximum point |
+| $G0 X100 | Linear movement on X axis by 100 mm |
+| $G0 Y100 | Linear movement on Y axis by 100 mm |
+| $G0 X100 Y100 | Linear movement on X and Y axis by 100 mm |
+| $G53 | Uses absolute coordinates for positioning |
+| $G27 | Uses XY plane |
+
+
+
 ## Wiring and connections
 
+1. Connect motor driver boards to the CNC arduino shield
+2. Connect stepper motors with the correct wiring configuration specified in the stepper motors section.
+3. Connect X and Y limit switches to -X and -Y ports in the board.
+4. Connect power supply yellow and black cables from the ATX power supply.
+5. I've included a 12 V Red led to give some visual feedback, it's connected by an independent yellow and black wires from the ATX power supply.
+
+
+
 ## Fusion 360 work-flow
+
+
+
+
 
 ### Design
 
