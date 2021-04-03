@@ -1,7 +1,20 @@
 # 9. Embedded programming
 
+
+## Introduction
+
+The Micro-controller that I'm using in my board. [Check this link for more information.](../../assignments/week07)
+[This is the page for the group assignment.](http://fabacademy.org/2021/labs/agrilab/group/week09/) I 've contributed with the [Raspberry pi]() board review.
+
+This week I've learn how to program in bare-metal C using only the ASF library, then I used Rust Programming Language, but I didn't have time to write down all the steps in the compiling process and eventually found out some difficulties with the build toolchain. I've also tried Haskell and autopilot and Finally the Arduino IDE.
+
+My board has only one Button as input in PA02 and one LED as output in PA05. So I was looking for something useful to make with only one button and one LED and the result is the one button Mouse Scroll that I've made using Arduino, the Mouse library and event detection.
+
+
+
 ## SAMD11 Datasheet
 
+11
 | SAMD11 | Arduino | PINOUT | | | | | | | | | | | |
 | --- | ---- | ---- | --- | --- | --- | --- | ---- | ---- | --- | --- | --- | --- | --- |
 | Other | COM | PWM | Analog | INT | # | PIN | PIN | # | INT | Analog | PWM | COM | Other |
@@ -165,6 +178,11 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
 
 Context:
 
+Useful link:
+
+[Tutorial for bare metal C programming for SAMD Microcontroller](https://microchipdeveloper.com/32arm:sam-bare-metal-c-programming)
+
+
 Pseudo-code:
 
 - Nested while loops:
@@ -258,8 +276,8 @@ int main(void) {
 </figure>
 
 
-## Arduino Workflow
 
+## Arduino Workflow
 
 - Installing mattairtech libraries:
 
@@ -269,7 +287,12 @@ int main(void) {
 
 <script id="asciicast-bVs53JUItHgLdNUwZ5pnDpwCx" src="https://asciinema.org/a/bVs53JUItHgLdNUwZ5pnDpwCx.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
 
+
+
 ### One button scroll-down/up controller
+
+
+
 
 ```
 /*
@@ -343,8 +366,6 @@ void loop() {
 }
 ```
 
-
-
 <script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=10 data-rows=30 data-speed=2></script>
 
 <figure class="video_container">
@@ -360,7 +381,13 @@ void loop() {
 </figure>
 
 
+
 ### Ncurses for microcontrollers
+
+
+```
+git clone https://github.com/ChrisMicro/mcurses
+```
 
 ```
 /*---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -463,3 +490,11 @@ void loop()
     <source src="../../images/week09/demo_05.mp4" type="video/mp4">
   </video>
 </figure>
+
+
+
+## Files
+
+[Arduino Mouse Wheel](../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino)
+
+[Arduino Embedded Ncurses on Microcontrollers]()
