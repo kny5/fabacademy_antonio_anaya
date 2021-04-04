@@ -1,8 +1,12 @@
 # 10. Mechanical design / Machine design
 
-<img src="../../images/week10/hero_01.jpeg" alt="hero_01" width=100%/>
+<img src="../../images/week10/hero_01.jpg" alt="hero_01" width=100%/>
 
-
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week10/demo_02.mp4" type="video/mp4">
+  </video>
+</figure>
 
 ## Introduction
 
@@ -20,7 +24,7 @@ We first talked together to explain our ideas and split the work.
 
 This was the first sketch we made together.
 
-<img src="../../images/week10/sketch_01.jpeg" alt="sketch_01" width=100%/>
+<img src="../../images/week10/sketch_01.jpg" alt="sketch_01" width=100%/>
 
 Then we explored the available materials and parts in the Lab.
 
@@ -56,7 +60,7 @@ Then we explored the available materials and parts in the Lab.
 
 ### Parts
 
-<img src="../../images/week10/parts_01.jpeg" alt="parts_01" width=100%/>
+<img src="../../images/week10/parts_01.jpg" alt="parts_01" width=100%/>
 
 **Click on name to check reference in Digikey**
 
@@ -74,7 +78,9 @@ Then we explored the available materials and parts in the Lab.
 
 ### Consumables
 
-<img src="../../images/week10/consumables_01.jpeg" alt="consumables_01" width=100%/>
+<img src="../../images/week10/wires_01.jpg" alt="consumables_01" width=100%/>
+
+<img src="../../images/week10/connectors_01.jpg" alt="consumables_01" width=100%/>
 
 1. Ribbon wire 4 colors for stepper motors
 2. AWG wire 1669
@@ -85,7 +91,7 @@ Then we explored the available materials and parts in the Lab.
 
 ### Tools
 
-<img src="../../images/week10/tools_01.jpeg" alt="tools_01" width=100%/>
+<img src="../../images/week10/tools_01.jpg" alt="tools_01" width=100%/>
 
 1. Crimping D Sub-terminal
 2. Soldering iron
@@ -109,7 +115,7 @@ Then we explored the available materials and parts in the Lab.
 
 ## Using an ATX Power supply
 
-<img src="../../images/week10/atx_01.jpeg" alt="atx_01" width=100%/>
+<img src="../../images/week10/atx_01.jpg" alt="atx_01" width=100%/>
 
 We checked possible power sources and the most suitable one was this recycled ATX power supply.
 
@@ -124,9 +130,8 @@ To switch on the power supply I added a jumper between the green wire and ground
 1. Cut the wires
 2. Connect using an electrical union connector
 
-<img src="../../images/week10/atx_02.jpeg" alt="atx_02" width=45%/>
-
-<img src="../../images/week10/atx_03.jpeg" alt="atx_03" width=45%/>
+<img src="../../images/week10/atx_03.jpg" alt="atx_03" width=48%/>
+<img src="../../images/week10/atx_02.jpg" alt="atx_02" width=48%/>
 
 
 
@@ -134,7 +139,9 @@ To switch on the power supply I added a jumper between the green wire and ground
 
 This is the table with the Voltage and Power of every output in the ATX power supply.
 
-<img src="../../images/week10/atx_04.jpeg" alt="atx_04" width=100%/>
+<img src="../../images/week10/atx_04.jpg" alt="atx_04" width=100%/>
+
+<img src="../../images/week10/atx_05.jpg" alt="atx_05" width=100%/>
 
 I've used 3 pairs of 12 Volts based in the power consumption of every component listed here:
 
@@ -159,7 +166,7 @@ The GRBL board we have it's a common one used for CNC machines, like small low p
 
 This is the schematic given by the manufacturer.
 
-<img src="../../images/week10/schematic_01.jpeg" alt="schematic_01" width=100%/>
+<img src="../../images/week10/schematic_01.jpg" alt="schematic_01" width=100%/>
 
 characteristics:
 
@@ -178,13 +185,17 @@ characteristics:
 
 ### Assembly
 
-Connect the motor driver boards to the GRBL board sockets. Check the pinout and be sure all the pins coincide correctly.
+<img src="../../images/week10/cnc_01.jpg" alt="cnc_01" width=100%/>
 
-<img src="../../images/week10/cnc_01.jpeg" alt="cnc_01" width=100%/>
+Connect the motor driver boards to the GRBL board sockets. Check the pinout and be sure all the pins coincide correctly.
 
 
 
 ### Motor drivers
+
+<img src="../../images/week10/driver_01.jpg" alt="cnc_01" width=100%/>
+
+<img src="../../images/week10/driver_02.jpg" alt="cnc_01" width=100%/>
 
 Characteristic:
 
@@ -217,6 +228,8 @@ The wiring with the stepper motors was confusing and I invested one afternoon to
 
 Following the color code the wires should be punched in the connector like this:
 
+<img src="../../images/week10/motor_01.jpg" alt="cnc_01" width=100%/>
+
 | Motor driver | Step motor |
 | -- | -- |
 | Green | Red |
@@ -243,7 +256,7 @@ Calculation:
 
 I've found this formula VREF = RMC x 8 x Rsense
 
-<img src="../../images/week10/vref_01.jpeg" alt="vref_01" width=100%/>
+<img src="../../images/week10/vref_01.jpg" alt="vref_01" width=100%/>
 
 Process:
 
@@ -425,6 +438,11 @@ The important points of the firmware configuration are:
 
 We obtained this measurements by manually measuring the travel length of each axis.
 
+
+<img src="../../images/week10/axis_01.jpg" alt="cnc_01" width=100%/>
+
+<img src="../../images/week10/axis_02.jpg" alt="cnc_01" width=100%/>
+
 Firmware configuration table:
 
 | Setting | Value | Description |
@@ -485,6 +503,8 @@ I've the time to test multiple GCODES compatible for this version of GRBL.
 
 
 ## Wiring and connections
+
+<img src="../../images/week10/wiring_02.jpg" alt="vref_01" width=100%/>
 
 1. Connect motor driver boards to the CNC arduino shield
 2. Connect stepper motors with the correct wiring configuration specified in the stepper motors section.
