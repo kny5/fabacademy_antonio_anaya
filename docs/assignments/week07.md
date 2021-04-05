@@ -585,4 +585,24 @@ sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
 
 ## Files
 
-[Download kicad files](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week07/kicad)
+[Custom library 1](../../files/week07/kicad/antonio_lib.zip)
+
+- Custom connector 1x04 male
+- Custom SMD header 01x04
+
+[Custom library 2](../../files/week07/kicad/antonio_lib.pretty.zip)
+
+- fab-SWD10pin127pitch
+- fab-USB_A male plug
+- Header smd 1x04
+
+[Kicad Files](../../files/week07/kicad/week07.zip)
+
+- Week07 kicad project file
+- Week07 kicad schematic file
+- Week07 kicad net file
+- Week07 kicad pcb file
+
+**Optionally you can use this link**
+
+[Download kicad files from gitlab repository as Zip file](https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week07/kicad)
