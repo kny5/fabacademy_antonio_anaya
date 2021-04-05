@@ -1,6 +1,8 @@
 # 10. Mechanical design / Machine design
 
 <img src="../../images/week10/hero_01.jpg" alt="hero_01" width=100%/>
+<img src="../../images/week10/hero_03.jpg" alt="hero_01" width=100%/>
+
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>

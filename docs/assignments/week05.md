@@ -12,6 +12,7 @@ This week we started learning about electronics production. The assignment outco
 
 I've been adviced to make the JTAG board as we're going to be able to program new efficient ARM micro-controllers for our next weeks projects.
 
+I've contributed for the group assingment using the vbit find out more in the [group page](http://fabacademy.org/2021/labs/agrilab/group/week%205%20Electronics%20production/).
 
 ### Electronic board types:
 
