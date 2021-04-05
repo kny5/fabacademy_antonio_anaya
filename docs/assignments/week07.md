@@ -502,6 +502,24 @@ After soldering I've performed the **Smoke test** by connecting the board to a p
 The test passed without any issue. Then I used the multimeter for continuity test and for DC Volt check before and after the regulator and in the power input pin of the Microcontroller. I didn't found any issues.
 
 
+#### Inspecting signals with the Oscilloscope
+
+I've inspected the board using a oscilloscope and I've observed a signal in the led output. I didn't find any other issue at that time.
+
+The oscilloscope is an instrument to visualize signals in cartesian coordinates.
+We have a [Tektronix TBS1052B-EDU](https://fr.farnell.com/tektronix/tbs1052b-edu/oscilloscope-2ch-50mhz-education/dp/2383221)
+
+For this exercise we inspected [Antonio's board](http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week07/).
+
+![](../../images/week07/osc_2.jpg)
+
+Every oscilloscope has different interaction, but the principles are the same you have the basic functions for:
+
+1. Scale the scope in X and Y axis.
+2. Change the pitch.
+3. Make a two channel graph.
+4. Auto-scale and focus the signal.
+
 
 ### Flashing
 
