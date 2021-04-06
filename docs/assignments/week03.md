@@ -53,18 +53,89 @@ To improve contrast and color of images, you just need to use options under the 
 
 Shape sketching with simple forms.
 
-<img src="../../images/week03/inkscape_illustration_2.jpg" alt="photo_0" width="45%"/>
-
 Using difference and union path tools I got the shape, next added the text, codebar and color.
 
-<img src="../../images/week03/inkscape_illustration_1.jpg" alt="photo_0" width="45%"/>
+- First create this simple shapes with the circle and rectangle tools. The rounded corners were made with the bezier editor.
 
+<img src="../../images/week03/inkscape_01.jpg" alt="photo_0" width="100%"/>
+
+- Then look for the "**Align and distribute**" palette in the **Object** menu"  
+
+<img src="../../images/week03/inkscape_02.jpg" alt="photo_0" width="100%"/>
+
+- Select all the shapes and use "**Center on vertical axis**"
+
+<img src="../../images/week03/inkscape_03.jpg" alt="photo_0" width="100%"/>
+
+- Then manually adjust the shapes to make the shape as is shown here.
+
+<img src="../../images/week03/inkscape_05.jpg" alt="photo_0" width="100%"/>
+
+- Select all the shapes again and use the "**Union**" boolean operation on the "**Path**" Menu.
+
+<img src="../../images/week03/inkscape_06.jpg" alt="photo_0" width="100%"/>
+
+- This is the result and the first part of the body for the cow earring.
+
+<img src="../../images/week03/inkscape_07.jpg" alt="photo_0" width="100%"/>
+
+- Then make a rectangle an a Oval using the rectangle and circle tools. Try to make the Oval tangent to the first body of the earring as is shown.
+
+<img src="../../images/week03/inkscape_10.jpg" alt="photo_0" width="100%"/>
+
+- Select the rectangle first and then the oval, go to the "**Path**" menu in the toolbar and use the "**Difference**" boolean operation.
+
+<img src="../../images/week03/inkscape_11.jpg" alt="photo_0" width="100%"/>
+
+- Make the same process por the right side.
+
+<img src="../../images/week03/inkscape_12.jpg" alt="photo_0" width="100%"/>
+
+- Now we have two shapes that resemble the earring.
+
+<img src="../../images/week03/inkscape_13.jpg" alt="photo_0" width="100%"/>
+
+- To complete the shape of the earring merge both shapes using the "**Union**" operation again.
+
+<img src="../../images/week03/inkscape_14.jpg" alt="photo_0" width="100%"/>
+
+- This is the basic shape of the earring.
+
+<img src="../../images/week03/inkscape_15.jpg" alt="photo_0" width="100%"/>
+
+- Next use the circle tool and the line bezier tool to match the image shown bellow.
+
+<img src="../../images/week03/inkscape_18.jpg" alt="photo_0" width="100%"/>
+
+- Then select the earring shape first and the lines right after. Use the "**Cut Path**" tool to divide the shape in 3 parts. This is needed to have 3 different colors in the next step and try to make a 3D effect.
+
+<img src="../../images/week03/inkscape_19.jpg" alt="photo_0" width="100%"/>
+
+- Then select the parts to paint it.
+
+<img src="../../images/week03/inkscape_20.jpg" alt="photo_0" width="100%"/>
+
+I've used this colors:
+
+  - <p style="background-color:#ffcc00ff"">Top: #ffcc00ff</p>
+  - <p style="background-color:#d4aa00ff"">Middle: #d4aa00ff</p>
+  - <p style="background-color:#ffcc00ff"">Bottom: #ffcc00ff</p>
+
+<img src="../../images/week03/inkscape_21.jpg" alt="photo_0" width="100%"/>
+
+- Using the "**Text box tool**" I've wrote the numbers and codes as shown those are similar to the earring, but I didn't found the same font.
+
+<img src="../../images/week03/inkscape_22.jpg" alt="photo_0" width="100%"/>
+
+Then I've painted the "plug" circles in the top:
+
+  - <p style="color:white; background-color:#918a6fff"">Outer: #918a6fff</p>
+  - <p style="color:white; background-color:#24221cff"">Inner: #24221cff</p>
 
 
 ### Result:
 
-<img src="../../images/week03/inkscape_earring_fr27.png" alt="photo_0" width="90%"/>
-
+<img src="../../images/week03/inkscape_23.jpg" alt="photo_0" width="100%"/>
 
 
 ## 3D
@@ -73,9 +144,11 @@ Using difference and union path tools I got the shape, next added the text, code
 
 Review:
 
-I've learned Xdesign and I found it very complicated at first even as a Solidworks user. My main OS is Linux and I've made this list to make Xdesign work fluid and efficiently.
+I've learned Xdesign and I found it very complicated at first even as a Solidworks user. My main OS is Linux.
 
-Linux recommendations:
+
+
+#### Linux configuration:
 Chromium works better than Firefox.
 Activate Hardware acceleration.
 Force hardware GPU use.*
@@ -144,13 +217,6 @@ I've used this command for video compression with ffmpeg:
 <script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js" data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=2  data-rows=10 async></script>
 
 
-### Download:
-
-[Download 3DXML](../../files_for_projects/earring_fr27.3dxml)
-
-[Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
-
-
 ## AgriLabs workshops:
 
 ### 3D modeling with FreeCad:
@@ -169,7 +235,6 @@ The last time I've used blender was in 2010 and nowadays it looks incredible ama
 <img src="../../images/week03/blender_1.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/blender_2.jpg" alt="drawing" width="90%"/>
 
-[Download Blender files](../../files_for_projects/blender_fabacademy.zip)
 
 ## Render with blender
 
@@ -185,4 +250,12 @@ This is the model with a Simple deformation modifier.
 
 The render motor used was Workbench with the basic configuration.
 
-[Download Blender files](../../files_for_projects/TAG_RF27.zip)
+
+## Files
+
+
+[Download 3DXML Xdesign files.](../../files_for_projects/earring_fr27.3dxml)
+
+[Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+[Download Blender files](../../files_for_projects/blender_fabacademy.zip)
+[Download Render files](../../files_for_projects/TAG_RF27.zip)

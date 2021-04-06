@@ -1,14 +1,15 @@
 # 10. Mechanical design / Machine design
 
-<img src="../../images/week10/hero_01.jpg" alt="hero_01" width=100%/>
-<img src="../../images/week10/hero_03.jpg" alt="hero_01" width=100%/>
-
+<img src="../../images/week10/hero_01.jpg" alt="hero_01" width=50%/>
+<img src="../../images/week10/hero_03.jpg" alt="hero_01" width=50%/>
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
     <source src="../../images/week10/demo_02.mp4" type="video/mp4">
   </video>
 </figure>
+
+
 
 ## Introduction
 
@@ -30,6 +31,11 @@ This was the first sketch we made together.
 
 Then we explored the available materials and parts in the Lab.
 
+## Pancake robot:
+
+
+
+**General schematic or diagram**
 
 
 ### Work split
@@ -95,7 +101,7 @@ Then we explored the available materials and parts in the Lab.
 
 <img src="../../images/week10/tools_01.jpg" alt="tools_01" width=100%/>
 
-1. Crimping D Sub-terminal
+1. GST Crimping Tool
 2. Soldering iron
 3. Clippers
 4. Multimeter
@@ -128,6 +134,8 @@ In AgriLab there's a large stock of recycled parts and materials.
 ### Power on jumper
 
 To switch on the power supply I added a jumper between the green wire and ground.
+
+Explain more
 
 1. Cut the wires
 2. Connect using an electrical union connector
@@ -167,6 +175,8 @@ The GRBL board we have it's a common one used for CNC machines, like small low p
 ### CNC board
 
 This is the schematic given by the manufacturer.
+
+Schematic has some faults in the motor driver silk
 
 <img src="../../images/week10/schematic_01.jpg" alt="schematic_01" width=100%/>
 
@@ -589,5 +599,9 @@ M30
 ### Configurations
 
 ## Troubleshooting
+
+### GCODE
+
+
 
 ## Files

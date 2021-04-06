@@ -3,8 +3,6 @@
 
 ## I'm currently working on:
 
-
-
 > [**10. Mechanical design / Machine design**](./assignments/week10/)
 
 <figure class="video_container">
