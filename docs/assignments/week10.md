@@ -542,7 +542,7 @@ I've simple shapes to test the
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
-    <source src="./images/week10/fusion_08.mp4" type="video/mp4">
+    <source src="../../images/week10/fusion_08.mp4" type="video/mp4">
   </video>
 </figure>
 
