@@ -99,7 +99,22 @@ Or using the http clonning approach:
 git clone your_repository_url_on_fabcloud.git
 ```
 
+### Gitlab configuration
 
+- Open your fabcloud gitlab profile in my case and at this current time the URL is [https://gitlab.fabcloud.org/-/profile](https://gitlab.fabcloud.org/-/profile)
+
+- Then Open the preferences tab in the top right menu:
+
+<img src="../../images/week02/gitlab_01.jpg" alt="hero_01" width=100%/>
+
+- Under the User settings menu click on "SSH Keys"
+<img src="../../images/week02/gitlab_02.jpg" alt="hero_01" width=50%/>
+
+- Copy and paste the generated SSH-key into the Key field, add a title and an expritarion date.
+
+<img src="../../images/week02/gitlab_03.jpg" alt="hero_01" width=100%/>
+
+- Click on "**Add key**"
 
 ### Serve mkdocs locally:
 
