@@ -5,7 +5,7 @@
 
 
 
-> [**10. Mechanical design / Machine design**](./assignments/week09/)
+> [**10. Mechanical design / Machine design**](./assignments/week10/)
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>

@@ -518,15 +518,69 @@ I've the time to test multiple GCODES compatible for this version of GRBL.
 
 ## Fusion 360 work-flow
 
-
-
+I've used Autodesk's [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) to understand how the process of making GCODE works with a familiar software. Although there are other options like [LaserWeb](https://laserweb.yurl.ch/)
 
 
 ### Design
 
+The Design process conssit just in drawing a shape using the sketch tools under the Design environment of Fusion 360.
+
+I've simple shapes to test the
+
 ### Manufacturing
 
+<img src="../../images/week10/fusion_01.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_02.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_03.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_04.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_05.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_06.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_07.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_08.jpg" alt="vref_01" width=100%/>
+
+### Simulation
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="./images/week10/fusion_08.mp4" type="video/mp4">
+  </video>
+</figure>
+
 ### NC file post-processing
+
+<img src="../../images/week10/fusion_09.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_10.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_11.jpg" alt="vref_01" width=100%/>
+<img src="../../images/week10/fusion_12.jpg" alt="vref_01" width=100%/>
+
+```
+%
+(cake_test_01)
+(Machine)
+(  vendor: Autodesk)
+(  description: Generic Cutting Machine)
+G90 G94
+G17
+G21
+
+(2D Profile2)
+G54
+G0 S255 M4
+G0 X62.576 Y25.508
+G1 X61.576 Y23.776 F1000
+G1 X62.447 Y22.268
+G1 X131.498
+G1 X166.023 Y82.068
+G1 X131.498 Y141.868
+G1 X62.447
+G1 X27.921 Y82.068
+G1 X61.576 Y23.776
+G1 X63.576
+G1 S0
+M30
+%
+
+```
 
 ## Fine tuning
 
