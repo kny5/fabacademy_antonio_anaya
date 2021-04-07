@@ -1,13 +1,11 @@
 # 10. Mechanical design / Machine design
 
-<img src="../../images/week10/hero_01.jpg" alt="hero_01" width=50%/>
-<img src="../../images/week10/hero_03.jpg" alt="hero_01" width=50%/>
+<img src="../../images/week10/slide.jpg" alt="hero_01" width=100%/>
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
-    <source src="../../images/week10/demo_02.mp4" type="video/mp4">
-  </video>
-</figure>
+<img src="../../images/week10/hero_01.jpg" alt="hero_01" width=48%/>
+<img src="../../images/week10/hero_03.jpg" alt="hero_01" width=48%/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_DBPXuooTRU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 
@@ -21,8 +19,8 @@ On this week we learn to design and make a machine. We faced different difficult
 
 We first talked together to explain our ideas and split the work.
 
-- [Theo's](link) idea: Pancake machine.
-- [Elina's](link) idea: 3 axis CNC machine.
+- [Theo's](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/) idea: Pancake machine.
+- [Elina's](http://fabacademy.org/2021/labs/agrilab/students/elina-nguyen-cadoret/) idea: 3 axis CNC machine.
 - My idea was to stick to someone's else idea. So we agreed to work together to develop Theo's pancake machine.
 
 This was the first sketch we made together.
@@ -31,12 +29,15 @@ This was the first sketch we made together.
 
 Then we explored the available materials and parts in the Lab.
 
+
+
 ## Pancake robot:
-
-
 
 **General schematic or diagram**
 <img src="../../images/week10/diagram_toon.jpg" alt="hero_01" width=50%/>
+<img src="../../images/week10/slide.jpg" alt="hero_01" width=50%/>
+
+
 
 ### Work split
 
@@ -178,7 +179,7 @@ This is the schematic given by the manufacturer.
 
 Schematic has some faults in the motor driver silk
 
-<img src="../../images/week10/schematic_01.jpg" alt="schematic_01" width=100%/>
+<img src="../../images/week10/diagram_01.jpg" alt="schematic_01" width=100%/>
 
 characteristics:
 
@@ -207,7 +208,7 @@ Connect the motor driver boards to the GRBL board sockets. Check the pinout and 
 
 <img src="../../images/week10/driver_01.jpg" alt="cnc_01" width=100%/>
 
-<img src="../../images/week10/driver_02.jpg" alt="cnc_01" width=100%/>
+
 
 Characteristic:
 
@@ -450,6 +451,7 @@ The important points of the firmware configuration are:
 
 We obtained this measurements by manually measuring the travel length of each axis.
 
+I've used UGS to change this configuration and also manually typing the codes in a terminal like minicom.
 
 <img src="../../images/week10/axis_01.jpg" alt="cnc_01" width=100%/>
 
@@ -617,5 +619,37 @@ M30
 
 ## Troubleshooting
 
+- Slow speeds:
+
+Change the maximum acceleration on the firmware configuration:
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week10/demo_02.mp4" type="video/mp4">
+  </video>
+</figure>
+
+- High vibration:
+
+Decrease the motor drivers VREF until the vibration gets reduced
+
+- Axis not moving:
+
+Check the transmission band, look for any stuck parts or excessive friction.
+Adjust the motor drivers VREF increasing the output
+
+- Motors not changing direction
+
+I've found that the silk labels on the motor drivers are inverted and thus it gets confusing if you try to connect the stepper motors following the schematics.
+
+<img src="../../images/week10/diagram.jpg" alt="vref_01" width=100%/>
+
+<img src="../../images/week10/driver_02.jpg" alt="cnc_01" width=100%/>
+
+
 
 ## Files
+
+[firmware](../files/week10/firmware_cakebot.settings)
+[test_cake gcode](../files/week10/cake_test_01.nc)
+[test_cake fusion file](../files/week10/test_cake.f3d)
