@@ -13,6 +13,7 @@
 
 On this week we learn to design and make a machine. We faced different difficulties related to the teamwork, machine motion, electronics and the GCODE.
 
+Check the group assignment [here](http://fabacademy.org/2021/labs/agrilab/group/week10_machine_week/)
 
 
 ## Idea
