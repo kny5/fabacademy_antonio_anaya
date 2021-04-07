@@ -36,7 +36,7 @@ Then we explored the available materials and parts in the Lab.
 
 
 **General schematic or diagram**
-
+<img src="../../images/week10/diagram_toon.jpg" alt="hero_01" width=50%/>
 
 ### Work split
 
@@ -592,16 +592,30 @@ M30
 
 ```
 
-## Fine tuning
-
 ## Universal GCODE sender
 
-### Configurations
+- Download Universal GCODE sender
+
+- Run Universal GCODE sender and activate the communication with the machine
+- Establish serial communication at 115200 bauds
+
+<img src="../../images/week10/ugs_04.jpg" alt="vref_01" width=100%/>
+
+- Run the HOME cycle
+
+<img src="../../images/week10/ugs_03.jpg" alt="vref_01" width=100%/>
+
+- Import the GCODE in "File" --> "Open"
+
+<img src="../../images/week10/ugs_06.jpg" alt="vref_01" width=100%/>
+
+- Press the "Play" Button to run the GCODE
+
+<img src="../../images/week10/ugs_05.jpg" alt="vref_01" width=100%/>
+
+
 
 ## Troubleshooting
-
-### GCODE
-
 
 
 ## Files
