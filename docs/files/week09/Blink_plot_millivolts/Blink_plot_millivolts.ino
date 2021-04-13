@@ -1,10 +1,9 @@
-const int BTN = 4;
+const int HALL = 4;
 const long VIN_FACTOR = 3.3 / 1.023 ;
 long value = 0;
 
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(BTN, INPUT);
+  pinMode(HALL, INPUT);
   Serial.begin(9600);
 }
 
