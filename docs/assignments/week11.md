@@ -2,6 +2,8 @@
 
 <img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
 
+
+
 ## Introduction
 
 This week I've learn to include a sensor on a pcb design, to programming it and to use the input data.
@@ -12,14 +14,16 @@ I've chose to use use this input devices:
 2. RFID ISO11784 for animal Tag FDX reading board
 3. Sparkfun's AS726x Spectral sensor VISIBLE
 
+[Group assignment](http://fabacademy.org/2021/labs/agrilab/group/week11/)
+
 
 
 ## Testing sensors with SAMD11 board
 
+I've used my SAMD11 board from [week07](../../assignments/week07), I've soldered wires to the pins to access the io pins.
+
 <img src="../../images/week11/test_01.jpg" alt="hero_01" width=100%/>
 <img src="../../images/week11/test_02.jpg" alt="hero_01" width=100%/>
-<img src="../../images/week11/test_03.jpg" alt="hero_01" width=100%/>
-<img src="../../images/week11/test_05.jpg" alt="hero_01" width=100%/>
 
 
 
@@ -28,6 +32,17 @@ I've chose to use use this input devices:
 While working on the breadboard inspecting the pinouts I've had the idea to make analog write, place a wire as probe in the middle of an Oscilloscope.
 
 I've observed a change in the wave when tested the probe into my chocolate "cocoa" beverage.
+
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week11/demo_02.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<img src="../../images/week11/test_03.jpg" alt="hero_01" width=100%/>
+
+<img src="../../images/week11/test_05.jpg" alt="hero_01" width=100%/>
 
 <img src="../../images/week11/osc_04.jpg" alt="hero_01" width=100%/>
 
@@ -137,6 +152,7 @@ This is the final PCB design
 <img src="../../images/week11/pcb_12.jpg" alt="hero_01" width=100%/>
 
 
+
 ### Milling
 
 For milling I've made three files using mods.
@@ -148,6 +164,7 @@ For milling I've made three files using mods.
 <img src="../../images/week11/milling_03.jpg" alt="hero_01" width=100%/>
 
 <img src="../../images/week11/milling_05.jpg" alt="hero_01" width=100%/>
+
 
 
 ## Hall effect fluid sensor
@@ -169,10 +186,8 @@ Soldering order:
 <img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
 
 
-###
 
-
-Code:
+### Code
 
 ```
 /*
@@ -228,6 +243,7 @@ This is the signal response when an magnet passes 3 times over the sensor at 3mm
 The the step is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
 
 
+
 ## RFID Reader
 
 ### About RFID:
@@ -281,6 +297,7 @@ void loop() {
 <script id="asciicast-wSqG449cNzomrx4QNRKXbDJVJ" src="https://asciinema.org/a/wSqG449cNzomrx4QNRKXbDJVJ.js" async></script>
 
 
+
 ### Video
 
 <figure class="video_container">
@@ -288,6 +305,30 @@ void loop() {
     <source src="../../images/week11/demo_01.mp4" type="video/mp4">
   </video>
 </figure>
+
+
+
+## Sparkfun spectral sensor
+
+I've been stuck on this due to the library size. I've above 7000 bytes of the flash memory.
+
+So I've been looking to the [AS7262 datasheet](https://cdn.sparkfun.com/assets/parts/1/2/2/4/9/AS7262_Datasheet.pdf#G1006885)
+
+
+So I've learn that its possible to use i2c protocol by writing bytes to the sensor or UART by sending commands.
+
+To read the device temperature:
+- i2c: 0x06 bit 7:0
+- UART: ATTEMP
+
+Things I've to do to enable UART communication:
+
+- Remove the solder from the Jp1 jumper
+- Add a older to the jp2 jumper.
+
+<img src="../../images/week11/sparkfun_01.jpg" alt="hero_01" width=80%/>
+<img src="../../images/week11/sparkfun_02.jpg" alt="hero_01" width=40%/>
+<img src="../../images/week11/sparkfun_03.jpg" alt="hero_01" width=40%/>
 
 
 ## Files
