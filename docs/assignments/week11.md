@@ -165,6 +165,10 @@ For milling I've made three files using mods.
 
 <img src="../../images/week11/milling_05.jpg" alt="hero_01" width=100%/>
 
+### FLashing
+
+<img src="../../images/week11/flash_01.JPG" alt="hero_01" width=100%/>
+
 
 
 ## Hall effect fluid sensor
