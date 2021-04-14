@@ -3,13 +3,9 @@
 
 ## I'm currently working on:
 
-> [**10. Mechanical design / Machine design**](./assignments/week10/)
+> [**11. Input devices**](./assignments/week11/)
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
-    <source src="./images/week10/demo_02.mp4" type="video/mp4">
-  </video>
-</figure>
+![](./images/week11/hero_00.jpg)
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
