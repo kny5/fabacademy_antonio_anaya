@@ -228,9 +228,66 @@ This is the signal response when an magnet passes 3 times over the sensor at 3mm
 The the step is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
 
 
-## Spectrometer sensor
-In process
-
 ## RFID Reader
 
-In process
+### About RFID:
+
+RFID stands for "radio-frequency identification" and belongs to AIDC technologies, "Automated identification and data capture".
+
+This is an important part of my final project and RFID it's board used in animal identification systems.
+
+<img src="../../images/week03/postit.jpg" alt="hero_01" width=100%/>
+
+Here I'm using an FDX stadard reader that's used also in Mexico for cattle identification.
+
+Every cow in France gets an RFID earring by default but in Mexico its deployment its still ongoing due to multiple factors like supply chain and distribution.
+
+<img src="../../images/week03/photo_1.jpg" alt="hero_01" width=100%/>
+
+```
+/*
+This program reads the TX output of the RFID ISO11784 for animal Tag FDX reading board, using the Serial1 interface of the SAMD11 micro-controller.
+
+TX to RX on pin 31 Serial1
+
+
+Autor: Antonio de Jesus Anaya Hernandez
+Agrilab, France.
+Fabacademy week 11.
+*/
+
+void setup() {
+  Serial.begin(9600);
+  Serial1.begin(9600);
+}
+
+void loop() {
+  char id = Serial1.read();
+  Serial.println(id);
+  delay(100);
+}
+```
+
+
+
+### Flashing
+
+<script id="asciicast-9uphJuuU7P0OiTTZe8sKLbwrr" src="https://asciinema.org/a/9uphJuuU7P0OiTTZe8sKLbwrr.js" async></script>
+
+
+
+### Serial output
+
+<script id="asciicast-wSqG449cNzomrx4QNRKXbDJVJ" src="https://asciinema.org/a/wSqG449cNzomrx4QNRKXbDJVJ.js" async></script>
+
+
+### Video
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week11/demo_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+
+## Files
