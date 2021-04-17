@@ -314,6 +314,23 @@ Conections:
 <img src="../../images/week05/flashing_1.jpg" alt="Mods" width="90%"/>
 <img src="../../images/week05/flashing_2.jpg" alt="Mods" width="90%"/>
 
+Device recognition in Linux:
+
+- Using EDBG
+```
+./edbg -l
+```
+
+- Using lsusb
+```
+lsusb
+```
+<script id="asciicast-J006z8fvrMjIGsngs2DuBz3wo" src="https://asciinema.org/a/J006z8fvrMjIGsngs2DuBz3wo.js" async data-autoplay="true" data-size="small" data-loop=1 data-speed=1  data-rows=10></script>
+
+Data:
+- Manufacturer: Alex Taradov
+- Serial: AC80EAC2
+
 I've used EDBG compiled from source.
 
 Clonning EDBG Github repository:
