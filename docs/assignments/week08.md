@@ -338,7 +338,7 @@ Here you can compare the height of every seat available at the lab.
 
 Download files individually:
 
-- [Fusion file](../../files/week08/week08_cnc_bech.f3d)
+- [Fusion file](../../files/week08/week08_cnc_bench.f3d)
 - [NC file 1 Cross](../../files/week08/a.nc)
 - [NC file 2 Seat](../../files/week08/b.nc)
 - [NC file 1 Body A](../../files/week08/circle.nc)

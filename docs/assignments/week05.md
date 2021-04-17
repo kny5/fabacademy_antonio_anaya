@@ -331,6 +331,10 @@ Data:
 - Manufacturer: Alex Taradov
 - Serial: AC80EAC2
 
+Capture:
+
+<img src="../../images/week05/device_01.jpg" alt="Device recognizen under linux" width="100%"/>
+
 I've used EDBG compiled from source.
 
 Clonning EDBG Github repository:

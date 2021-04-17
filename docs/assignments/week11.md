@@ -336,3 +336,17 @@ Things I've to do to enable UART communication:
 
 
 ## Files
+
+Kicad:
+- Schematic
+- Net file
+- PCB design
+
+Roland SRM-20
+- Milling gcode
+
+Inkscape:
+- Outtrace shape
+
+Arduino:
+-
