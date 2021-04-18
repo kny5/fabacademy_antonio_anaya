@@ -6,32 +6,16 @@ I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
 
 ## Project management program
 
-### First sprint
-Expected time: 5 weeks.
+| week01 | week02 | week03 | week04 | week05 |
+| -- | -- | -- | -- | -- |
+| General and user research |
+| | Proposals, Hardware, Software, Interaction |
+| | | Video demo |
+| | | | First prototype, workbench test, feedback and rework |
+| | | | | Second prototype, Workbench test, field test, feedback and rework |
 
-#### Research:
-1. General
-2. User
 
-#### Proposals:
-1. Software
-2. Hardware
-3. Interaction
-
-#### Demo:
-1. Video demo
-
-#### First prototype:
-1. Workbench test
-2. Feedback and rework
-
-#### Second prototype:
-1. Workbench test
-2. Field test
-3. Feedback and rework
-...
-
-### Project description:
+## Project description:
 
 Challenge:
 
@@ -65,7 +49,7 @@ User:
 
 
 
-### Sketches
+## Sketches
 
 - Hall effect circuit board sketch:
 
@@ -93,12 +77,17 @@ User:
 
 
 
-### Tests
+## Tests
+
+- Testing SLA 3D printing, I would like to cast this pieces in food-safe silicone.
 
 ![Hero.](../../images/week06/hero.jpg)
 
+- This is my first attempt to make a circuit board with a hall effect sensor that I'll use later for the flow sensor.
 
 <img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
+
+- This is a test of the ISO11784 RFID module that will be used to read Cow earrings.
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>

@@ -105,10 +105,15 @@ User:
 
 ### Tests
 
+- Testing SLA 3D printing, I would like to cast this pieces in food-safe silicone.
+
 ![Hero.](../../images/week06/hero.jpg)
 
+- This is my first attempt to make a circuit board with a hall effect sensor that I'll use later for the flow sensor.
 
 <img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
+
+- This is a test of the ISO11784 RFID module that will be used to read Cow earrings.
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
