@@ -215,12 +215,20 @@ git filter-branch -f --prune-empty --index-filter "git rm -r --cached --ignore-u
 
 
 
-## Video processing
+## Video and image processing
 
 - Install requirements for Fedora Linux
 ```
 sudo dnf install ffmpeg mogrify jpegoptim GraphicsMagick simplescreenrecorder
 ```
+
+### Video
+
+Video compression it's something crucial for the success of a less than 10MB commit and preserve a good repository size on the fabcloud gitlab service.
+
+I've used this commands multiple times across my assignments.
+
+The examples depend on your screen color configuration and its very subjective. But you can use this examples to have an idea on how to use this commands to have clear and concise videos on your documentation.
 
 - FULL HD video compression with 32k audio
 ```
@@ -247,9 +255,62 @@ ffmpeg -i demo_01.mp4 -vf "crop=iw-160" -b:v 300k demo_01_square.mp4
 ffmpeg -i demo_01.mp4 -vf eq=brightness=0.06:saturation=2 -c:a copy demo_01_b0_06_s2.mp4
 ```
 
+### Video Examples
+
+- Video 720p 1000k bitrate
+```
+ffmpeg -i input.mp4 -vf scale=-1:720 -b:v 1000k output.mp4
+```
+
+<figure class="video_container">
+<video controls="true" allowfullscreen="true" width=100%>
+<source src="../../images/week02/720_demo_01_1000.mp4" type="video/mp4">
+</video>
+</figure>
+
+- Video 720p 500k bitrate
+```
+ffmpeg -i input.mp4 -vf scale=-1:720 -b:v 500k output.mp4
+```
+
+<figure class="video_container">
+<video controls="true" allowfullscreen="true" width=100%>
+<source src="../../images/week02/720_demo_01_500.mp4" type="video/mp4">
+</video>
+</figure>
+
+- Video 720p 500k bitrate squared
+```
+ffmpeg -i input.mp4 -vf "crop=iw-480" output.mp4
+```
+
+<figure class="video_container">
+<video controls="true" allowfullscreen="true" width=100%>
+<source src="../../images/week02/q_demo_01_500.mp4" type="video/mp4">
+</video>
+</figure>
+
+- Video 720p 1000k bitrate squared
+```
+ffmpeg -i input.mp4 -vf "crop=iw-480" output.mp4
+```
+
+<figure class="video_container">
+<video controls="true" allowfullscreen="true" width=100%>
+<source src="../../images/week02/q_demo_01_1000.mp4" type="video/mp4">
+</video>
+</figure>
+
+- Video 720 1000k bitrate squared brightness 0.06 and saturation 2
+
+<figure class="video_container">
+<video controls="true" allowfullscreen="true" width=100%>
+<source src="../../images/week02/b0_06_s2_demo_01_1000.mp4" type="video/mp4">
+</video>
+</figure>
 
 
-## Image processing
+### Image processing
 
 I've used this commands to standardize my images on the documentation, the values are examples, and the values are subjective. The objective is to have a clear and meaningful image that describes a process and contains valuable information on it.
 
@@ -279,7 +340,7 @@ mogrify -resize 800x arduino_07.jpg
 mogrify -format jpg arduino_07.PNG
 ```
 
-### examples
+### Image examples
 
 - Input image
 
