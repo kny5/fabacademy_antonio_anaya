@@ -2,31 +2,34 @@
 
 [You can find information about my project here.](../../projects/final-project/)
 
-## First sprint
+I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
+
+## Project management program
+
+### First sprint
 Expected time: 5 weeks.
 
-### Research:
+#### Research:
 1. General
 2. User
 
-### Proposals:
+#### Proposals:
 1. Software
 2. Hardware
 3. Interaction
 
-### Demo:
+#### Demo:
 1. Video demo
 
-### First prototype:
+#### First prototype:
 1. Workbench test
 2. Feedback and rework
 
-### Second prototype:
+#### Second prototype:
 1. Workbench test
 2. Field test
 3. Feedback and rework
 ...
-
 
 ### Project description:
 
