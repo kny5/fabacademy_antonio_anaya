@@ -1,9 +1,5 @@
 # 12. Molding and casting
 
-
-<img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
-
-
 ## Introduction
 
 Things I've learn so far:
