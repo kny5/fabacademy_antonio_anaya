@@ -3,9 +3,13 @@
 
 ## I'm currently working on:
 
-> [**11. Input devices**](./assignments/week11/)
+> [**12. Molding and casting**](./assignments/week12/)
 
-![](./images/week11/hero_00.jpg)
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../images/week12/cnc_3d.mp4" type="video/mp4">
+	</video>
+</figure>
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 

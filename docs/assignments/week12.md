@@ -1,61 +1,65 @@
-# 12. Output devices
+# 12. Molding and casting
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
 
-## Research
+<img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+## Introduction
 
-## Useful links
+Things I've learn so far:
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+- 3D modeling for molding
+- Process 3D CNC operations
+- Machining Wax bricks for molds
 
-## Code Example
+## Images
 
-Use the three backticks to separate code.
+<img src="../../images/week12/base_03.jpg" alt="base_03.jpg" width=100%/>
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+<img src="../../images/week12/cnc_01.jpg" alt="cnc_01.jpg" width=100%/>
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
+<img src="../../images/week12/cnc_09.jpg" alt="cnc_09.jpg" width=100%/>
 
-## Gallery
+<img src="../../images/week12/base_06.jpg" alt="base_06.jpg" width=100%/>
 
-![](../images/sample-photo.jpg)
+<img src="../../images/week12/cnc_07.jpg" alt="cnc_07.jpg" width=100%/>
 
-## Video
+<img src="../../images/week12/base_05.jpg" alt="base_05.jpg" width=100%/>
 
-### From Vimeo
+<img src="../../images/week12/cnc_02.jpg" alt="cnc_02.jpg" width=100%/>
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<img src="../../images/week12/mold2_03.jpg" alt="mold2_03.jpg" width=100%/>
 
-### From Youtube
+<img src="../../images/week12/mold2_01.jpg" alt="mold2_01.jpg" width=100%/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<img src="../../images/week12/group_03.jpg" alt="group_03.jpg" width=100%/>
 
-## 3D Models
+<img src="../../images/week12/fusion_00.jpg" alt="fusion_00.jpg" width=100%/>
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<img src="../../images/week12/mold2_07.jpg" alt="mold2_07.jpg" width=100%/>
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+<img src="../../images/week12/base_01.jpg" alt="base_01.jpg" width=100%/>
+
+<img src="../../images/week12/mold2_05.jpg" alt="mold2_05.jpg" width=100%/>
+
+<img src="../../images/week12/cnc_03.jpg" alt="cnc_03.jpg" width=100%/>
+
+<img src="../../images/week12/base_08.jpg" alt="base_08.jpg" width=100%/>
+
+<img src="../../images/week12/cnc_06.jpg" alt="cnc_06.jpg" width=100%/>
+
+<img src="../../images/week12/group_04.jpg" alt="group_04.jpg" width=100%/>
+
+<img src="../../images/week12/group_02.jpg" alt="group_02.jpg" width=100%/>
+
+
+
+
+##Videos
+
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/cnc_3d.mp4" type="video/mp4">
+	</video>
+</figure>

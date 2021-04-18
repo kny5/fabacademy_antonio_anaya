@@ -166,19 +166,31 @@ optirun chromium-browser
 
 
 
-### 3D modeling:
+### 3D design:
 
 There are some basic operations for 3D modeling:
 
-<ol>
-<li>2D Drafting for sketching.</li>
-<li>Linear region extrusion.</li>
-<li>Linear region extraction.</li>
-<li>One axis profile revolution.</li>
-<li>Parametric scaling.</li>
-</ol>
+- 2D Drafting for sketching.
+- Linear region extrusion.
+- Linear region extraction.
+- One axis profile revolution.
+- Parametric scaling.
 
-I've used all this to produce the model shown:
+The whole process can be divided into three important steps:
+
+- Sketching
+- Modeling
+- Assembling
+
+The sketch is the 2D representation of a section or projection and its the base of a 3D model.
+
+The modeling process starts when we transform a 2D shape from a sketch into a 3D entity, there are multiple operations like extrusion, revolution, subtraction and other boolean operations to shape a 3D entity.
+
+An ensemble it's the combination of multiple 3D entities or parts, like in the real life process it requires constrains, joining mechanisms, but here you can restrict the displacement, rotation and collision with a "restriction or relationship" indicator.
+
+### Sketching
+
+
 
 <img src="../../images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
 <img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
@@ -207,6 +219,8 @@ I've used this command for video compression with ffmpeg:
 
 
 ### Assembly video:
+
+To make this assembly video I've captured the screen on my computer using [simple screen recorder](https://www.maartenbaert.be/simplescreenrecorder/) selecting a rectangular region of my screen framing my model under Xdesign and then pulsing the relationship constrain "coincident surface". Xdesign then makes and animation where the two selected surfaces move until fund each other.
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
