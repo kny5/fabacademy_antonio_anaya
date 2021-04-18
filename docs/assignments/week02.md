@@ -168,8 +168,9 @@ touch .gitignore
 
 ## Text editor:
 
-I'm using Typora editor as I find it simple and aesthetic for Markdown editing.
-The work-flow is just to edit the files as Markdown, execute mkdocs and commit the changes on git.
+I'm using [Typora](https://typora.io/) editor as I find it simple and aesthetic for Markdown editing.
+
+The work-flow is just to edit the files as [Markdown](https://www.wikiwand.com/es/Markdown), execute [mkdocs](https://www.mkdocs.org/) and commit the changes on git.
 
 Over the weeks I've been working using [Atom](https://atom.io/) and [Vim](https://www.vim.org/)
 
@@ -250,7 +251,15 @@ ffmpeg -i demo_01.mp4 -vf eq=brightness=0.06:saturation=2 -c:a copy demo_01_b0_0
 
 ## Image processing
 
+I've used this commands to standardize my images on the documentation, the values are examples, and the values are subjective. The objective is to have a clear and meaningful image that describes a process and contains valuable information on it.
+
+As the weeks have passed I've been improving this process of image compression and this commands are part of my process.
+
+I've preserved the size range between 750 and 800 pixels in photos, but in screen captures it depends on the size of the area captured.
+
 - cut image to 750x750 pixels centered
+
+
 ```
 convert -define jpeg:size=750x750 input.jpg -gravity center -extent 750x750  output.jpg
 ```
@@ -269,6 +278,89 @@ mogrify -resize 800x arduino_07.jpg
 ```
 mogrify -format jpg arduino_07.PNG
 ```
+
+### examples
+
+- Input image
+
+<img src="../../images/week02/base.jpg" alt="hero_01" />
+
+- Scaled to 800px Width and keeping same aspect ratio.
+```
+mogrify -resize 800x input.jpg
+```
+<img src="../../images/week02/800.jpg" alt="hero_01"/>
+
+- Scaled to 400px Width and keeping same aspect ratio.
+```
+mogrify -resize 400x input.jpg
+```
+<img src="../../images/week02/400.jpg" alt="hero_01"/>
+
+- Scaled to 200px Width and keeping same aspect ratio.
+```
+mogrify -resize 200x input.jpg
+```
+<img src="../../images/week02/200.jpg" alt="hero_01"/>
+
+- Scaled to 100px Width and keeping same aspect ratio.
+```
+mogrify -resize 100x input.jpg
+```
+<img src="../../images/week02/100.jpg" alt="hero_01"/>
+
+I've chose 800px as size base. But the image size is 251.8 Kb, to optimize its size I'll use a compression command.
+
+- 800px image optimized to 150k
+```
+jpegoptim --size=150k 800.jpg
+```
+<img src="../../images/week02/800_150k.jpg" alt="hero_01"/>
+
+- 800px image optimized to 100k
+```
+jpegoptim --size=100k 800.jpg
+```
+<img src="../../images/week02/800_100k.jpg" alt="hero_01"/>
+
+- 800px image optimized to 50k
+```
+jpegoptim --size=50k 800.jpg
+```
+<img src="../../images/week02/800_50k.jpg" alt="hero_01"/>
+
+- 800px image optimized to 40k
+```
+jpegoptim --size=40k 800.jpg
+```
+<img src="../../images/week02/800_40k.jpg" alt="hero_01"/>
+
+- 800px image optimized to 30k
+```
+jpegoptim --size=30k 800.jpg
+```
+<img src="../../images/week02/800_30k.jpg" alt="hero_01"/>
+
+I'd like to make my image squared and try different compression sizes to select the best one based in quality of the image.
+
+- 800px input image squared
+```
+convert -define jpeg:size=750x750 800.jpg -gravity center -extent 750x750 sq_800.jpg
+```
+<img src="../../images/week02/sq_800.jpg" alt="hero_01"/>
+
+
+- 800px 150k image squared
+```
+convert -define jpeg:size=750x750 800_150k.jpg -gravity center -extent 750x750 sq_800_150k.jpg
+```
+<img src="../../images/week02/sq_800_150k.jpg" alt="hero_01"/>
+
+- 800px 50k image squared
+```
+convert -define jpeg:size=750x750 800_50k.jpg -gravity center -extent 750x750 sq_800_50k.jpg
+```
+<img src="../../images/week02/sq_800_50k.jpg" alt="hero_01"/>
 
 
 
