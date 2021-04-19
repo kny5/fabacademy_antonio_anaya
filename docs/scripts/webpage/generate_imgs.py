@@ -6,7 +6,6 @@ Autor: Antonio de Jesus Anaya Hernandez
 Fablab: agrilab
 Country: France
 Week: 12
-
 '''
 
 import os
