@@ -107,6 +107,32 @@ Things I've learn so far:
 <img src="../../images/week12/vacuum_02.jpg" alt="vacuum_02.jpg" width=100%/>
 
 
+<img src="../../images/week12/bismuth_01.jpg" alt="bismuth_01.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_08.jpg" alt="bismuth_08.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_11.jpg" alt="bismuth_11.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_06.jpg" alt="bismuth_06.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_09.jpg" alt="bismuth_09.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_12.jpg" alt="bismuth_12.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_02.jpg" alt="bismuth_02.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_10.jpg" alt="bismuth_10.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_04.jpg" alt="bismuth_04.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_05.jpg" alt="bismuth_05.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_03.jpg" alt="bismuth_03.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_07.jpg" alt="bismuth_07.jpg" width=100%/>
+
+
+
 ##Videos
 
 
@@ -134,5 +160,19 @@ Things I've learn so far:
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../images/week12/pouring_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/casting_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/casting_00.mp4" type="video/mp4">
 	</video>
 </figure>
