@@ -22,6 +22,9 @@ Things I've learn so far:
 - Cast silicon.
 - Use the vacuum chamber.
 
+Project:
+
+This is the rotor for my milk flow sensor. 
 
 
 ## 3D design on Fusion
@@ -42,6 +45,10 @@ Model based in this two pieces found in Agrilab:
 
 ### Manufacturing
 
+<img src="../../images/week12/fusion_09.jpg" alt="fusion_05.jpg" width=100%/>
+<img src="../../images/week12/fusion_10.jpg" alt="fusion_06.jpg" width=100%/>
+<img src="../../images/week12/fusion_11.jpg" alt="fusion_07.jpg" width=100%/>
+<img src="../../images/week12/fusion_12.jpg" alt="fusion_08.jpg" width=100%/>
 
 ### GCODE
 
