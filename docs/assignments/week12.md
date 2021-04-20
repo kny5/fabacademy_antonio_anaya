@@ -1,13 +1,19 @@
 # 12. Molding and casting
 
+<img src="../../images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
+
+
+
 ## Introduction
 
 For this week we need to:
+
 1. Mill a mold using our available [CNC machine](http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/).
 2. Cast an object using the milled mold.
 3. Test materials for the [group assignment](http://fabacademy.org/2021/labs/agrilab/group/week12/)
 
 Things I've learn so far:
+
 - 3D modeling for molding.
 - Process 3D CNC operations.
 - Machining Wax bricks for molds.
@@ -27,6 +33,10 @@ Model based in this two pieces found in Agrilab:
 
 **Work in process**
 <img src="../../images/week12/fusion_00.jpg" alt="fusion_00.jpg" width=100%/>
+
+
+
+## GCODE
 
 
 
@@ -92,7 +102,8 @@ In the milling day I've used Theo's holder for the 75 x 176 x 37 mm Wax brick
 <img src="../../images/week12/group_03.jpg" alt="group_03.jpg" width=100%/>
 <img src="../../images/week12/group_04.jpg" alt="group_04.jpg" width=100%/>
 <img src="../../images/week12/group_02.jpg" alt="group_02.jpg" width=100%/>
-
+<img src="../../images/week12/group_06.jpg" alt="group_06.jpg" width=100%/>
+<img src="../../images/week12/group_07.jpg" alt="group_07.jpg" width=100%/>
 
 
 ### Supplies
@@ -130,6 +141,14 @@ In the milling day I've used Theo's holder for the 75 x 176 x 37 mm Wax brick
 
 
 
+### Vacuum chamber
+
+<img src="../../images/week12/vacuum_01.jpg" alt="vacuum_01.jpg" width=100%/>
+<img src="../../images/week12/vacuum_05.jpg" alt="vacuum_05.jpg" width=100%/>
+<img src="../../images/week12/vacuum_02.jpg" alt="vacuum_02.jpg" width=100%/>
+
+
+
 ## Casting
 
 ### Mold preparation
@@ -161,15 +180,17 @@ In the milling day I've used Theo's holder for the 75 x 176 x 37 mm Wax brick
 
 
 
-### Vacuum chamber
+## Demolding
 
-<img src="../../images/week12/vacuum_01.jpg" alt="vacuum_01.jpg" width=100%/>
-<img src="../../images/week12/vacuum_05.jpg" alt="vacuum_05.jpg" width=100%/>
-<img src="../../images/week12/vacuum_02.jpg" alt="vacuum_02.jpg" width=100%/>
+<img src="../../images/week12/mold_10.jpg" alt="mold_10.jpg" width=100%/>
 
+<img src="../../images/week12/demold_01.jpg" alt="demold_01.jpg" width=100%/>
+<img src="../../images/week12/demold_02.jpg" alt="demold_02.jpg" width=100%/>
+<img src="../../images/week12/demold_03.jpg" alt="demold_03.jpg" width=100%/>
+<img src="../../images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
 
-
-## Casting bismuth
+## Extra
+### Casting bismuth
 
 <img src="../../images/week12/bismuth_12.jpg" alt="bismuth_12.jpg" width=100%/>
 
