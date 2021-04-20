@@ -26,6 +26,8 @@ Project:
 
 - This is the rotor for my milk flow sensor.
 
+<img src="../../projects/images/sketch_03.jpg" alt="flow_sensor" width=100%/>
+
 
 
 ## 3D design on Fusion

@@ -5,6 +5,8 @@
 
 > [**12. Molding and casting**](./assignments/week12/)
 
+<img src="images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
+
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="images/week12/cnc_3d.mp4" type="video/mp4">
