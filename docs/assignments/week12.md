@@ -33,6 +33,10 @@ Model based in this two pieces found in Agrilab:
 
 **Work in process**
 <img src="../../images/week12/fusion_00.jpg" alt="fusion_00.jpg" width=100%/>
+<img src="../../images/week12/fusion_05.jpg" alt="fusion_05.jpg" width=100%/>
+<img src="../../images/week12/fusion_06.jpg" alt="fusion_06.jpg" width=100%/>
+<img src="../../images/week12/fusion_07.jpg" alt="fusion_07.jpg" width=100%/>
+<img src="../../images/week12/fusion_08.jpg" alt="fusion_08.jpg" width=100%/>
 
 ### Design
 
@@ -43,6 +47,7 @@ Model based in this two pieces found in Agrilab:
 
 **Work in process**
 
+- Delete line with G43 code.
 
 
 ## Preparation prior to Milling process
