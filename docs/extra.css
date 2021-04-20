@@ -112,3 +112,8 @@ li {
 .md-typeset .admonition, .md-typeset details {
   border-left-color: white;
 }
+
+video {
+  display: block;
+	width: 100%;
+}

@@ -24,37 +24,93 @@ Things I've learn so far:
 
 Project:
 
-This is the rotor for my milk flow sensor. 
+- This is the rotor for my milk flow sensor.
+
 
 
 ## 3D design on Fusion
 
-Model based in this two pieces found in Agrilab:
+
+- Model inspired on this:
 
 <img src="../../images/week12/model_01.jpg" alt="model_01.jpg" width=45%/>
+
+- And this 6 mm diameter x 50 mm long shaft I've found and cut in Agrilab.
+
 <img src="../../images/week12/model_02.jpg" alt="model_02.jpg" width=45%/>
 
-**Work in process**
-<img src="../../images/week12/fusion_00.jpg" alt="fusion_00.jpg" width=100%/>
-<img src="../../images/week12/fusion_05.jpg" alt="fusion_05.jpg" width=100%/>
-<img src="../../images/week12/fusion_06.jpg" alt="fusion_06.jpg" width=100%/>
-<img src="../../images/week12/fusion_07.jpg" alt="fusion_07.jpg" width=100%/>
-<img src="../../images/week12/fusion_08.jpg" alt="fusion_08.jpg" width=100%/>
+
 
 ### Design
 
+- Sketch.
+- Diameter: 50mm
+- Shaft hole diameter: 5mm
+- Blades width: 6mm
+- Round corners 3mm
+
+<img src="../../images/week12/fusion_08.jpg" alt="fusion_08.jpg" width=100%/>
+
+- Cross section of the model extruded.
+- I've made this by using revolve on a profile and then applying difference.
+
+<img src="../../images/week12/fusion_07.jpg" alt="fusion_07.jpg" width=100%/>
+
+This is a video of my entire CAD design process:
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/fusion_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
 ### Manufacturing
 
+- I've placed thi origin in the corner shown in the capture.
+
 <img src="../../images/week12/fusion_09.jpg" alt="fusion_05.jpg" width=100%/>
+
+- Rough cut.
+
+<img src="../../images/week12/fusion_05.jpg" alt="fusion_05.jpg" width=100%/>
+
+- Smoother cut.
+
+<img src="../../images/week12/fusion_06.jpg" alt="fusion_06.jpg" width=100%/>
+
+
 <img src="../../images/week12/fusion_10.jpg" alt="fusion_06.jpg" width=100%/>
+
+Tool configuration:
+
+- Diameter: 3 mm
+- Shaft diameter: 3 mm
+- Overall length: 50 mm
+- length bellow holder: 25 mm
+- Shoulder length: 16 mm
+- Flute length: 15 mm
+- Tool number 3. (Just for current agrilab CNC machine tool configuration)
+
 <img src="../../images/week12/fusion_11.jpg" alt="fusion_07.jpg" width=100%/>
 <img src="../../images/week12/fusion_12.jpg" alt="fusion_08.jpg" width=100%/>
 
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/mold_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
 ### GCODE
 
-**Work in process**
+- Delete line with G43 code. This adds 16 mm compensation to Z axis.
+```
+G43 Z16. H3
+```
 
-- Delete line with G43 code.
 
 
 ## Preparation prior to Milling process
@@ -90,6 +146,8 @@ So, we had the task to design a holding tool, for that I've measure the CNC bed.
 
 I've chose to design a holder device for the machinable wax bricks, using 6 mm MDF plates and the laser cutter.
 
+
+
 ### Draw
 
 **Inkscape captures missing**
@@ -117,7 +175,7 @@ I've chose to design a holder device for the machinable wax bricks, using 6 mm M
 <img src="../../images/week12/mold2_07.jpg" alt="mold2_07.jpg" width=100%/>
 <img src="../../images/week12/mold2_05.jpg" alt="mold2_05.jpg" width=100%/>
 
-- Since I didn't have time to finish my entire design for milling, in the milling day I've used [Theo's](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/about/) holder for the 75 x 176 x 37 mm Wax brick. So I'm saving my brick and holder for later.
+- Since I didn't have time to finish my entire **design for milling**. In the milling day I've used [Theo's](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/about/) holder for the 75 x 176 x 37 mm Wax brick. So I'm saving my brick and holder for later.
 
 <img src="../../images/week12/cnc_02.jpg" alt="cnc_02.jpg" width=100%/>
 
@@ -191,7 +249,7 @@ For that I've used:
 
 <img src="../../images/week12/group_02.jpg" alt="group_02.jpg" width=100%/>
 
-- I've cast a coin using Food-safe silicone, as Elina, but I've used the vacuum pump to extract air bubbles from the mix.
+- I've cast a coin using Food-safe silicone, as [Elina](http://fabacademy.org/2021/labs/agrilab/students/elina-nguyen-cadoret/about/), but with the difference that I've used the vacuum pump to extract air bubbles from the mix.
 
 <img src="../../images/week12/group_06.jpg" alt="group_06.jpg" width=100%/>
 
@@ -200,9 +258,10 @@ For that I've used:
 <img src="../../images/week12/group_07.jpg" alt="group_07.jpg" width=100%/>
 
 
+
 ## Food-safe Silicone
 
-- This is the Food-safe silicone I've used, its made by [Esprit Composite](https://espritcomposite.com/).
+- This is the **Food-safe silicone RTV polyaddition 3428** made by [Esprit Composite](https://espritcomposite.com/).
 
 - It's a two components silicone A 100 and B 10 by mass.
 
@@ -288,6 +347,7 @@ The component A and B weighted **97 g** together 4 mm above to the level of the 
 - 9 g Component B
 
 <img src="../../images/week12/calc_04.jpg" alt="calc_04.jpg" width=100%/>
+
 
 
 ### Mixing
@@ -406,32 +466,43 @@ Remarks:
 
 <img src="../../images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
 
+
+
 ## Extra
 ### Casting bismuth
 
+I've helped [Theo's](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/about/) with his test for soft metal casting.
+
+- This is the setup of the pizza oven and a improvised table I've found in AgriLab.
+
 <img src="../../images/week12/bismuth_12.jpg" alt="bismuth_12.jpg" width=100%/>
+
+- The oven with the special container for molten metals.
 
 <img src="../../images/week12/bismuth_02.jpg" alt="bismuth_02.jpg" width=100%/>
 
+- We used a K-type thermo-pair attached to the container using Kapton tape.
+
 <img src="../../images/week12/bismuth_08.jpg" alt="bismuth_08.jpg" width=100%/>
+
+- Theo coated the mold with a thick layer of baby powder.
 
 <img src="../../images/week12/bismuth_11.jpg" alt="bismuth_11.jpg" width=100%/>
 
+- This is Bismuth and his characteristic light reflective crystal structure.
+
 <img src="../../images/week12/bismuth_04.jpg" alt="bismuth_04.jpg" width=100%/>
+
+- This device is a XTC-Profiler a thermo-pair reader that we use in the Electro-Lab.
 
 <img src="../../images/week12/bismuth_05.jpg" alt="bismuth_05.jpg" width=100%/>
 
+- This was Theo's first attempt to cast Bismuth. The Bismuth got cold quickly, since the mold was 4 meters away from the oven. So the Bismuth didn't flow on the mold.
+
 <img src="../../images/week12/bismuth_01.jpg" alt="bismuth_01.jpg" width=100%/>
-
-<img src="../../images/week12/bismuth_07.jpg" alt="bismuth_07.jpg" width=100%/>
-
-<img src="../../images/week12/bismuth_10.jpg" alt="bismuth_10.jpg" width=100%/>
-
-<img src="../../images/week12/bismuth_03.jpg" alt="bismuth_03.jpg" width=100%/>
-
 <img src="../../images/week12/bismuth_06.jpg" alt="bismuth_06.jpg" width=100%/>
 
-<img src="../../images/week12/bismuth_09.jpg" alt="bismuth_09.jpg" width=100%/>
+- This is a video of a second attempt performed by our instructor [Luc](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/)
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
@@ -439,17 +510,39 @@ Remarks:
 	</video>
 </figure>
 
+- This is Theo's third and successful attempt to cast the Bismuth into the mold.
+
+<img src="../../images/week12/bismuth_07.jpg" alt="bismuth_07.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_10.jpg" alt="bismuth_10.jpg" width=100%/>
+
+<img src="../../images/week12/bismuth_03.jpg" alt="bismuth_03.jpg" width=100%/>
+
+- Final cast piece.
+
+<img src="../../images/week12/bismuth_09.jpg" alt="bismuth_09.jpg" width=100%/>
+
+| Data | casting Bismuth |
+| -- | -- |
+| Oven max Temp | 290 C |
+| Time of practice | 46 mins |
+| Time to reach 280 C | 26 mins |
+| Attempts until success | 3 |
+
 
 
 ## Conclusion
 
 - Silicone RTV3428 it's really easy to use.
 - The viscosity was perfect to replicate all the features of the design.
-- Use a cap for the top of my design.
+- I'd like to use a cap for the top of my design, or a two parts mold.
+- I'd keep using this material for my next sensor parts.
 
 <img src="../../images/week12/cap_01.jpg" alt="cap_01.jpg" width=100%/>
 
-- Design changes
+Design changes
+
+- Design a mold that covers or embeds the shaft to avoid direct contact with the milk and the metal.
 
 <img src="../../images/week12/changes_01.jpg" alt="changes_01.jpg" width=100%/>
 
@@ -459,4 +552,14 @@ Remarks:
 
 I've the idea to cast the entire body of my flow sensor, but since it's the first time for me using Food-safe materials I'll wait until finish my design properly.
 
+
+
 ## Files
+
+<a href="../../files/week12/1_rotor_00.nc"> NC Rotor Rough Pocket process file. </a>
+
+<a href="../../files/week12/2_rotor_01.nc"> NC Rotor Smoother Parallel process file. </a>
+
+<a href="../../files/week12/inkscape_mold_base.svg"> Inkscape laser mold base file for 6x6 inches Wax brick </a>
+
+<a href="../../files/week12/rotor_01.f3d"> Fusion 360 Rotor design and manufacturing file </a>
