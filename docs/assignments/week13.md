@@ -1,61 +1,113 @@
-# 13. Applications and implications
+# 13. Output Devices
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## Introduction
 
-## Research
+This week I've started to use output devices that are part of my device for the final project.
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+- A **Speaker** to make a sound after a RFID successful read.
+- A **LCD display** to show information relative to the milk production.
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+Then to make this possible I've listed here different components and concepts that were useful for me during this weeks work.
 
-## Useful links
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
-## Code Example
+### 2N2222 Transistor
 
-Use the three backticks to separate code.
+I've used the 2N2222 which is a multipurpose NPN transistor for low power amplification.
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+- For testing I've used the T0-92 form
+- In my SMD circuit the SOT-23 form.
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
+Datasheets:
 
-## Gallery
+- [P2N2222A](../../datasheets/P2N2222A.PDF)
+- [MMBT2N2222A](../../datasheets/MMBT2N2222A.pdf)
 
-![](../images/sample-photo.jpg)
 
-## Video
 
-### From Vimeo
+### Voltage divider
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+> *from Sparkfun's tutorial's page*
 
-### From Youtube
+> *[https://learn.sparkfun.com/tutorials/voltage-dividers/all](https://learn.sparkfun.com/tutorials/voltage-dividers/all)*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> *"A voltage divider is a simple circuit which turns a large voltage into a smaller one. Using just two series resistors and an input voltage, we can create an output voltage that is a fraction of the input. Voltage dividers are one of the most fundamental circuits in electronics. If learning Ohm's law was like being introduced to the ABC's, learning about voltage dividers would be like learning how to spell cat."*
 
-## 3D Models
+Why do I need this?
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+The RFID board that I'm using for my project uses 5 to 9 Volts for power source, while my projects micro-controller with the SAMD11E17 needs only 3.3 Volts.
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+<img src="../../images/week13/rfid_01.jpg" alt="rfid_01" width=100%/>
+
+It means that to use this board with the UART Serial Communication Protocol, I need to connect the PIN_31 (RX) of my micro-controller to the TX pin of the RFID board.
+
+So I need to convert from 5 to 3.3 Volts using a **Voltage divider**.
+
+My current voltage divider configuration works using a 2k Ohms and 1 k Ohms resistors in a configuration like this.
+
+<img src="../../images/week13/divider_01.jpg" alt="divider_01" width=100%/>
+
+Formula:
+
+<img src="../../images/week13/divider_01.jpg" alt="divider_01" width=100%/>
+
+
+
+### PWM
+
+>Reference from [https://learn.sparkfun.com/tutorials/pulse-width-modulation/all](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all)
+
+PWM stands for Pulse-Width-Modulation and it's a way to process output signals to use it for digital control. It is used for processes like dimming for RGB LED control, and current/ voltage for speed motor control.
+
+One important thing to know and remember its the "Duty Cycle", it depends in the percentage of time that a signal is High or LOW in a period of time.
+
+For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the output is 5 Volts for every 0.05 seconds my duty cycle will be equal to 50%. If the output is High for 0.025 seconds the Duty Cycle will be 25%. And if its High for 0.06 seconds the Duty Cycle will be 60%.
+
+
+
+### Sound and tones
+
+
+
+
+### Pull-up resistors
+
+A pull-up resistor is an circuit arrangement to solve *floating input* signals.
+
+The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used for the i2c SDA and SCL inputs. Without this pull resistors the i2c communication doesn't work.
+
+
+
+### i2c protocol
+
+### SAMD11E17 MUX table
+
+## Speaker for sound
+
+### Test
+
+### Circuit
+
+### Code
+
+### Demo
+
+### Issues
+
+
+
+## LCD Display
+
+### Test
+
+### Circuit
+
+### Code
+
+### Demo
+
+### Issues
+
+
+
+## SAMD21E17

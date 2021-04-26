@@ -1,6 +1,5 @@
 # Hi this is my homepage
 
-
 ## I'm currently working on:
 
 > [**12. Molding and casting**](./assignments/week12/)

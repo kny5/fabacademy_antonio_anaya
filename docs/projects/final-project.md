@@ -8,8 +8,18 @@ Project board:
 
 <img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
 
+## Project management table
 
-## Research
+| week01 | week02 | week03 | week04 | week05 |
+| -- | -- | -- | -- | -- |
+| General and user research |
+| | Proposals, Hardware, Software, Interaction |
+| | | Video demo |
+| | | | First prototype, workbench test, feedback and rework |
+| | | | | Second prototype, Workbench test, field test, feedback and rework |
+
+
+## Context
 
 ![](./images/cows_infield.jpeg)
 
