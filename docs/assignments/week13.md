@@ -64,7 +64,6 @@ One important thing to know and remember its the "Duty Cycle", it depends in the
 For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the output is 5 Volts for every 0.05 seconds my duty cycle will be equal to 50%. If the output is High for 0.025 seconds the Duty Cycle will be 25%. And if its High for 0.06 seconds the Duty Cycle will be 60%.
 
 
-
 ### Sound and tones
 
 
@@ -80,15 +79,54 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 ### i2c protocol
 
+
+
+
 ### SAMD11E17 MUX table
 
-## Speaker for sound
+| MUX | Serial | Pins |
+| -- | -- | -- |
+| Serial0 | N/A | N/A |
+| Serial1 | PA14 | PA15 |
+
+
+## Speaker
 
 ### Test
 
+
+
 ### Circuit
 
+<img src="../../images/week13/transistor_01.jpg" alt="transistor_01" width=100%/>
+
 ### Code
+
+```
+//This code produces a "beep" every one second.
+// Pin 5 is the output
+// It uses the tone function that produces a square signal with a duty cycle depending in the frequency of the tone.
+// Autor: Antonio de Jesus Anaya Hernandez
+// FabAcademy 2021
+// Lab: Agrilab
+// Country: France
+
+void setup() {
+}
+
+void loop() {
+  delay(1000);
+  beep();
+}
+
+//This function produces a "beep" using Tone function in pin 5.
+void beep(){
+  tone(5, 4186, 85.5);
+  delay(85.5);
+  noTone(5);
+}
+
+```
 
 ### Demo
 
@@ -102,7 +140,40 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 ### Circuit
 
+
+<img src="../../images/week13/pull_up_01.jpg" alt="transistor_01" width=100%/>
+
+
 ### Code
+```
+//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// This code makes the i2c display blink its backlight for 1 second and writes "hello" during setup and "world" during loop.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+void setup() {
+  Wire.begin();
+  //setup lcd and write hello
+  lcd.init();
+}
+
+void loop() {
+  lcd.backlight();
+  lcd.setCursor(1,2);
+  lcd.print("world");
+  delay(1000);
+  lcd.noBacklight();
+  delay(1000);
+}
+```
 
 ### Demo
 
@@ -110,4 +181,59 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 
 
-## SAMD21E17
+## Input + output
+
+### Code
+```
+//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// Pin 31 for Serial communication at 9600 bauds
+// Pin 5 for tone speaker output
+// 5 Volts for RFID Tag reader board
+// 3.3 Volts for Speaker and LCD display.
+// Communcation protocols: i2c for display and Serial at "Serial1 interface" for RFID tag reader.
+// This code makes the i2c display blink its backlight for 1 second and writes "hello" during setup and "world" during loop.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+char rfid_tag [30];
+
+void setup() {
+  Wire.begin();
+  Serial1.begin(9600);
+  lcd.init();
+  lcd.backlight();
+}
+
+void loop() {
+  int id = Serial1.read();
+
+  if (id == 2){
+    beep();
+    rfid_tag[0] = id;
+    for (int c = 1; c < 30; c++){
+      int bit_ = Serial1.read();
+      rfid_tag[c] = bit_;
+    }
+    }
+  lcd.setCursor(0,0);
+  lcd.print(rfid_tag);
+}
+
+void beep(){
+  tone(5, 4186, 85.5);
+  delay(85.5);
+  noTone(5);
+}
+```
+
+## Board
+
+### Issues
