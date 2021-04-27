@@ -94,7 +94,11 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 ### Test
 
-
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week13/speaker_test_03.mp4" type="video/mp4">
+	</video>
+</figure>
 
 ### Circuit
 
@@ -130,6 +134,12 @@ void beep(){
 
 ### Demo
 
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week13/speaker_demo_03.mp4" type="video/mp4">
+	</video>
+</figure>
+
 ### Issues
 
 
@@ -139,7 +149,6 @@ void beep(){
 ### Test
 
 ### Circuit
-
 
 <img src="../../images/week13/pull_up_01.jpg" alt="transistor_01" width=100%/>
 
@@ -233,6 +242,14 @@ void beep(){
   noTone(5);
 }
 ```
+
+### Demo
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week13/demo_01.mp4" type="video/mp4">
+	</video>
+</figure>
 
 ## Board
 
