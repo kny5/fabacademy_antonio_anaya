@@ -27,7 +27,9 @@ Datasheets:
 - [P2N2222A](../../datasheets/P2N2222A.PDF)
 - [MMBT2N2222A](../../datasheets/MMBT2N2222A.pdf)
 
-<img src="../../images/week12/IMG_20210422_171541.jpg" alt="IMG_20210422_171541.jpg" width=100%/>
+<img src="../../images/week13/IMG_20210422_171541.jpg" alt="IMG_20210422_171541.jpg" width=100%/>
+
+I've used this on my speaker circuit for amplification.
 
 ### Voltage divider
 
@@ -56,7 +58,7 @@ Formula:
 <img src="https://cdn.sparkfun.com/assets/e/7/6/3/c/511968d9ce395f7c54000000.png" alt="divider_01" width=100%/>
 
 
-
+<!--
 ### PWM
 
 >Reference from [https://learn.sparkfun.com/tutorials/pulse-width-modulation/all](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all)
@@ -66,7 +68,7 @@ PWM stands for Pulse-Width-Modulation and it's a way to process output signals t
 One important thing to know and remember its the "Duty Cycle", it depends in the percentage of time that a signal is High or LOW in a period of time.
 
 For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the output is 5 Volts for every 0.05 seconds my duty cycle will be equal to 50%. If the output is High for 0.025 seconds the Duty Cycle will be 25%. And if its High for 0.06 seconds the Duty Cycle will be 60%.
-
+-->
 
 ### Sound and tones
 
@@ -94,6 +96,7 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 | Serial0 | N/A | N/A |
 | Serial1 | PA14 | PA15 |
 
+Talk about arduino Two_UART options
 
 ## Speaker
 
@@ -199,7 +202,7 @@ void loop() {
 
 ### Circuit
 
-<img src="../../images/week12/demo_01.jpg" alt="demo_01.jpg" width=100%/>
+<img src="../../images/week13/demo_01.jpg" alt="demo_01.jpg" width=100%/>
 
 ### Code
 ```
@@ -266,4 +269,4 @@ void beep(){
 
 ### Issues
 
-<img src="../../images/week12/board_02.jpg" alt="board_02.jpg" width=100%/>
+<img src="../../images/week13/board_02.jpg" alt="board_02.jpg" width=100%/>
