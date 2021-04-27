@@ -10,6 +10,10 @@ This week I've started to use output devices that are part of my device for the 
 Then to make this possible I've listed here different components and concepts that were useful for me during this weeks work.
 
 
+<img src="../../images/week12/outputs_02.jpg" alt="outputs_02.jpg" width=100%/>
+
+<img src="../../images/week12/outputs_01.jpg" alt="outputs_01.jpg" width=100%/>
+
 
 ### 2N2222 Transistor
 
@@ -23,7 +27,7 @@ Datasheets:
 - [P2N2222A](../../datasheets/P2N2222A.PDF)
 - [MMBT2N2222A](../../datasheets/MMBT2N2222A.pdf)
 
-
+<img src="../../images/week12/IMG_20210422_171541.jpg" alt="IMG_20210422_171541.jpg" width=100%/>
 
 ### Voltage divider
 
@@ -49,7 +53,7 @@ My current voltage divider configuration works using a 2k Ohms and 1 k Ohms resi
 
 Formula:
 
-<img src="../../images/week13/divider_01.jpg" alt="divider_01" width=100%/>
+<img src="https://cdn.sparkfun.com/assets/e/7/6/3/c/511968d9ce395f7c54000000.png" alt="divider_01" width=100%/>
 
 
 
@@ -192,6 +196,10 @@ void loop() {
 
 ## Input + output
 
+### Circuit
+
+<img src="../../images/week12/demo_01.jpg" alt="demo_01.jpg" width=100%/>
+
 ### Code
 ```
 //This code uses:
@@ -253,4 +261,8 @@ void beep(){
 
 ## Board
 
+<img src="../../images/week13/pcb_01.jpg" alt="pcb_01" width=100%/>
+
 ### Issues
+
+<img src="../../images/week12/board_02.jpg" alt="board_02.jpg" width=100%/>
