@@ -7,12 +7,12 @@ This week I've started to use output devices that are part of my device for the 
 - A **Speaker** to make a sound after a RFID successful read.
 - A **LCD display** to show information relative to the milk production.
 
-Then to make this possible I've listed here different components and concepts that were useful for me during this weeks work.
+Then to make this possible I've listed here different components and concepts that were useful for me during this week work.
 
 
-<img src="../../images/week12/outputs_02.jpg" alt="outputs_02.jpg" width=100%/>
+<img src="../../images/week13/outputs_02.jpg" alt="outputs_02.jpg" width=100%/>
 
-<img src="../../images/week12/outputs_01.jpg" alt="outputs_01.jpg" width=100%/>
+<img src="../../images/week13/outputs_01.jpg" alt="outputs_01.jpg" width=100%/>
 
 
 ### 2N2222 Transistor
@@ -70,6 +70,7 @@ For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the
 
 ### Sound and tones
 
+*"I have the idea to explain about this. Work in process."*
 
 
 
@@ -83,7 +84,7 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 ### i2c protocol
 
-
+*"I have the idea to explain about this. Work in process."*
 
 
 ### SAMD11E17 MUX table
