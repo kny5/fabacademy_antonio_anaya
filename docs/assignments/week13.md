@@ -9,10 +9,19 @@ This week I've started to use output devices that are part of my device for the 
 
 Then to make this possible I've listed here different components and concepts that were useful for me during this week work.
 
+Possible thing to use for this week work:
+
+- Relay
+- Speaker
 
 <img src="../../images/week13/outputs_02.jpg" alt="outputs_02.jpg" width=100%/>
 
+- LCD i2c display
+- TFT display
+- OLED i2c display
+
 <img src="../../images/week13/outputs_01.jpg" alt="outputs_01.jpg" width=100%/>
+
 
 
 ### 2N2222 Transistor
@@ -30,6 +39,8 @@ Datasheets:
 <img src="../../images/week13/IMG_20210422_171541.jpg" alt="IMG_20210422_171541.jpg" width=100%/>
 
 I've used this on my speaker circuit for amplification.
+
+
 
 ### Voltage divider
 
@@ -70,6 +81,8 @@ One important thing to know and remember its the "Duty Cycle", it depends in the
 For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the output is 5 Volts for every 0.05 seconds my duty cycle will be equal to 50%. If the output is High for 0.025 seconds the Duty Cycle will be 25%. And if its High for 0.06 seconds the Duty Cycle will be 60%.
 -->
 
+
+
 ### Sound and tones
 
 *"I have the idea to explain about this. Work in process."*
@@ -89,6 +102,7 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 *"I have the idea to explain about this. Work in process."*
 
 
+
 ### SAMD11E17 MUX table
 
 | MUX | Serial | Pins |
@@ -97,6 +111,8 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 | Serial1 | PA14 | PA15 |
 
 Talk about arduino Two_UART options
+
+
 
 ## Speaker
 
@@ -108,9 +124,13 @@ Talk about arduino Two_UART options
 	</video>
 </figure>
 
+
+
 ### Circuit
 
 <img src="../../images/week13/transistor_01.jpg" alt="transistor_01" width=100%/>
+
+
 
 ### Code
 
@@ -137,8 +157,9 @@ void beep(){
   delay(85.5);
   noTone(5);
 }
-
 ```
+
+
 
 ### Demo
 
@@ -157,6 +178,8 @@ void beep(){
 ### Test
 
 ### Circuit
+
+I'm using here pull-up resistors
 
 <img src="../../images/week13/pull_up_01.jpg" alt="transistor_01" width=100%/>
 
@@ -180,6 +203,8 @@ void setup() {
   Wire.begin();
   //setup lcd and write hello
   lcd.init();
+  lcd.setCursor(1,1);
+  lcd.print("Hello");
 }
 
 void loop() {
@@ -196,13 +221,23 @@ void loop() {
 
 ### Issues
 
-
-
 ## Input + output
+
+| Parts list | | |
+| -- | -- | -- |
+| Resistor | 1 | 1K |
+| Resistor | 1 | 2K |
+| 2N2222 | 1 | SOT-32 |
+| 1x04 connector | 2 |
+| 1x03 connector  | 1 |
+
+
 
 ### Circuit
 
 <img src="../../images/week13/demo_01.jpg" alt="demo_01.jpg" width=100%/>
+
+
 
 ### Code
 ```
@@ -255,6 +290,8 @@ void beep(){
 }
 ```
 
+
+
 ### Demo
 
 <figure class="video_container">
@@ -263,10 +300,27 @@ void beep(){
 	</video>
 </figure>
 
+
+
 ## Board
 
 <img src="../../images/week13/pcb_01.jpg" alt="pcb_01" width=100%/>
 
+
+
 ### Issues
 
 <img src="../../images/week13/board_02.jpg" alt="board_02.jpg" width=100%/>
+
+I'll change the design of my board on the:
+
+- Connectors
+- Transistor type
+
+
+
+## Files
+
+- Speaker code
+- Display code
+- RFID, Speker and Display code.
