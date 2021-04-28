@@ -249,6 +249,7 @@ void loop() {
 | 1x04 connector | 2 |
 | 1x03 connector  | 1 |
 
+[RFID WL-134KHz Datasheet](https://allinbest.com/blog/1342k-animal-tag-fdxb-iso11784-reader-module/)
 
 
 ### Circuit
