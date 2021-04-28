@@ -23,6 +23,7 @@ Project board:
 
 ![](./images/cows_infield.jpeg)
 
+### Why?
 
 Currently RFID is the preferred technology for farm animals identification, in Mexico this is something that
 has been unsuccessfully deployed due to multiple factors, but the most important one is supply chain and distribution.
@@ -33,13 +34,21 @@ In Mexico the standard RFID earring is imported and then distributed, making it 
 
 ![](./images/cow_earings.jpeg)
 
+### Idea
+
 My idea is to design a RFID system that can be made on FabLabs and also an Milk Quality control sensor to measure protein/fat content and also somatic cells. Somatic cells are present as part of animals immune system, and some diseases can be prevented by counting somatic cells in the dairy production.
 
+### Objectives
+
 My approach for a sustainable farm is the one that makes decisions based on data captured in the working field, to make a better use of natural resources and also all sort of different supplies. The indiscriminate use of hormones and antibiotics in animals is a problem that affects current disease control systems, producers financial viability and the consumer. One of the objectives is to identify diseases while in the dairy production and apply the antibiotics on the affected animal. Currently most farmers apply vaccines periodically without any analysis and this makes vaccination an expensive activity that most producers avoid because of their current financial status.
+
+### About Spectroscopy
 
 To indirectly measure fat/protein in milk I've found spectroscopy as a viable solution. Currently they're cheaper CHIPS like the [AS7265x](https://www.sparkfun.com/products/15050) that can be used to classify previously measured fat/protein samples of milk based in their measured spectrum.
 
 So one of the steps in this research will be to measure a variety of milk samples using the AS7265x and a laboratory standard spectrometer to correlate the results.
+
+### About UxD
 
 The other important aspect I'm considering for this project is the interaction design. User-centered design for agriculture is an important topic, since most tools need an specialized trained professional to be used. In some places this will not be a problem, but in Mexico, in my region the technicians/animals is 3000 animals for each technician.
 
