@@ -10,6 +10,8 @@
 
 This week I've started to use output devices that are part of my device for the final project.
 
+For this week I've used my board from [week11, input devices based on the ATSAMD11 micro-controller.](../../assignments/week09)
+
 - A **Speaker** to make a sound after a RFID successful read.
 - A **LCD display** to show information relative to the milk production.
 
@@ -115,13 +117,13 @@ i2c is a protocol that improves features from UART and SPI, its useful is you wa
 
 ### SAMD11E17 MUX table
 
-| MUX | Serial | Pins |
-| -- | -- | -- |
-| Serial0 | N/A | N/A |
-| Serial1 | PA14 | PA15 |
+Under the Arduino IDE we can select the number and types of com protocols to be used in our program and bootloader. To understand this more in detail I had to check the MUX table in the [ATSAMD11 documentation](http://ww1.microchip.com/downloads/en/devicedoc/atmel-42363-sam-d11_datasheet.pdf).
 
-Talk about arduino Two_UART options
+<img src="../../images/week13/uart_01.jpg" alt="tran_01" width=100%/>
 
+<img src="../../images/week13/mux_01.jpg" alt="transistor_01" width=100%/>
+
+<img src="../../images/week13/mux_02.jpg" alt="transistor_01" width=100%/>
 
 
 ## Speaker
