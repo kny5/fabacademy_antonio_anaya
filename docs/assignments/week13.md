@@ -119,7 +119,7 @@ i2c is a protocol that improves features from UART and SPI, its useful is you wa
 
 
 
-### SAMD11E17 MUX table
+### SAMD11 MUX table
 
 Under the Arduino IDE we can select the number and types of com protocols to be used in our program and bootloader. To understand this more in detail I had to check the MUX table in the [ATSAMD11 documentation](http://ww1.microchip.com/downloads/en/devicedoc/atmel-42363-sam-d11_datasheet.pdf).
 
