@@ -1,14 +1,14 @@
-# Hi this is my homepage
+# Portrait
 
 ## I'm currently working on:
 
-> [**12. Molding and casting**](./assignments/week12/)
+> [**13. Output Devices**](./assignments/week13/)
 
-<img src="images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
+<!--img src="images/week13/hero_01.jpg" alt="hero_01.jpg" width=100%/-->
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
-		<source src="images/week12/cnc_3d.mp4" type="video/mp4">
+		<source src="images/week13/demo_01.mp4" type="video/mp4">
 	</video>
 </figure>
 
@@ -21,7 +21,7 @@
 
 ![](./images/me_meme.jpg)-->
 
-### Welcome to my Fabacademy website
+### Welcome to my Fab Academy website
 
 [You can check my bio here](./about/index.md)
 

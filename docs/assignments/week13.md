@@ -1,5 +1,11 @@
 # 13. Output Devices
 
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week13/demo_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
 ## Introduction
 
 This week I've started to use output devices that are part of my device for the final project.
@@ -21,6 +27,8 @@ Possible thing to use for this week work:
 - OLED i2c display
 
 <img src="../../images/week13/outputs_01.jpg" alt="outputs_01.jpg" width=100%/>
+
+Also I've contributed to this weeks [Group assignment](http://fabacademy.org/2021/labs/agrilab/group/week13/) by checking the power consumption of a display and a speaker.
 
 
 
@@ -69,7 +77,7 @@ Formula:
 <img src="https://cdn.sparkfun.com/assets/e/7/6/3/c/511968d9ce395f7c54000000.png" alt="divider_01" width=100%/>
 
 
-<!--
+
 ### PWM
 
 >Reference from [https://learn.sparkfun.com/tutorials/pulse-width-modulation/all](https://learn.sparkfun.com/tutorials/pulse-width-modulation/all)
@@ -79,14 +87,16 @@ PWM stands for Pulse-Width-Modulation and it's a way to process output signals t
 One important thing to know and remember its the "Duty Cycle", it depends in the percentage of time that a signal is High or LOW in a period of time.
 
 For a 5 Volts circuit, if I use 0.1 seconds (10 Hz) for "Period of time" and the output is 5 Volts for every 0.05 seconds my duty cycle will be equal to 50%. If the output is High for 0.025 seconds the Duty Cycle will be 25%. And if its High for 0.06 seconds the Duty Cycle will be 60%.
--->
 
 
 
 ### Sound and tones
 
-*"I have the idea to explain about this. Work in process."*
+The tone() function in the arduino library generates a square wave of the specified frequency (and 50% duty cycle) on a pin. A duration can be specified, otherwise the wave continues until a call to noTone(). The pin can be connected to a piezo buzzer or other speaker to play tones.
 
+Only one tone can be generated at a time. If a tone is already playing on a different pin, the call to tone() will have no effect. If the tone is playing on the same pin, the call will set its frequency.
+
+I've used this to produce a note C8 with the speaker. See the value 4186 in the tone() function.
 
 
 ### Pull-up resistors
@@ -99,7 +109,7 @@ The Pin is connected to the Voltage source in this case 3.3 Volts. And it's used
 
 ### i2c protocol
 
-*"I have the idea to explain about this. Work in process."*
+i2c is a protocol that improves features from UART and SPI, its useful is you want to connect multiple devices using only 2 wires. An important remark is that every device that uses i2c has an hexadecimal "address" in this case I'm using **0x27** and I've find this in the LCD i2c documentation.
 
 
 
@@ -169,13 +179,9 @@ void beep(){
 	</video>
 </figure>
 
-### Issues
-
 
 
 ## LCD Display
-
-### Test
 
 ### Circuit
 
@@ -219,7 +225,13 @@ void loop() {
 
 ### Demo
 
-### Issues
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week13/display_02.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
 
 ## Input + output
 
@@ -294,6 +306,12 @@ void beep(){
 
 ### Demo
 
+This is the messy setup of my input+output first attempt. I integrates this elements:
+
+- Speaker
+- RFID 134KHz
+- LCD Display
+
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../images/week13/demo_01.mp4" type="video/mp4">
@@ -303,6 +321,8 @@ void beep(){
 
 
 ## Board
+
+I've made this board to replace the wiring of my circuit, although during the weekend I've broke one of the 1x04 connectors.
 
 <img src="../../images/week13/pcb_01.jpg" alt="pcb_01" width=100%/>
 
@@ -321,6 +341,20 @@ I'll change the design of my board on the:
 
 ## Files
 
-- Speaker code
-- Display code
-- RFID, Speker and Display code.
+Code:
+
+- [Speaker code](../../files/week13/speaker.ino)
+- [Display code](../../files/week13/display.ino)
+- [RFID, Speaker and Display code](../../files/week13/speaker_lcd_rfid.ino)
+
+Circuits:
+
+- [Kicad project file](../../files/week13/kicad/wee13.pro)
+- [Schematic](../../files/week13/kicad/wee13.sch)
+- [PCB](../../files/week13/kicad/wee13.kicad_pcb)
+- [Netfile](../../files/week13/kicad/wee13.net)
+
+Milling Roland SRM-20:
+
+- [Traces](../../files/week13/roland_srm20/week13_audio_rfid.rml)
+- [Outline](../../files/week13/roland_srm20/week13_outline.rml)
