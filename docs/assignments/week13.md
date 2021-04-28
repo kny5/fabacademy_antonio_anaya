@@ -12,6 +12,10 @@ This week I've started to use output devices that are part of my device for the 
 
 For this week I've used my board from [week11, input devices based on the ATSAMD11 micro-controller.](../../assignments/week09)
 
+
+<img src="../../images/week11/hero_00.jpg" alt="hero_01" width=100%/>
+
+
 - A **Speaker** to make a sound after a RFID successful read.
 - A **LCD display** to show information relative to the milk production.
 
