@@ -1,11 +1,5 @@
 # 1. Principles and practices.
 
-[You can find information about my project here.](../../projects/final-project/)
-
-I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
-
-
-
 ## Project management table
 
 | week01 | week02 | week03 | week04 | week05 |
@@ -19,6 +13,12 @@ I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
 
 
 ## Context
+
+[You can find information about my project here.](../../projects/final-project/)
+
+I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
+
+
 
 ### Why?
 
