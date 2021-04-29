@@ -31,7 +31,3 @@ For this week I've started to learn about:
 ![](../../images/week14/lora_01.jpg)
 
 [My instructor Luc Hanneuse](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/) explained LORA, LORAWAN and thethingsnetwork.org to me on Thursday morning.
-
-Useful links:
-
-- The
