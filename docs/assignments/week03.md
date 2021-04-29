@@ -144,7 +144,7 @@ Then I've painted the "plug" circles in the top:
 
 Review:
 
-I've learned Xdesign and I found it very complicated at first even as a Solidworks user. My main OS is Linux.
+I've learned Xdesign and I found it very complicated at first even as a Solidworks user. My main OS is Fedora Linux.
 
 
 

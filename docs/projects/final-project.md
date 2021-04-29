@@ -8,7 +8,7 @@ Project board:
 
 <img src="../../images/week03/postit.jpg" alt="idea_1" width="90%"/>
 
-## Project management table
+### Project management table
 
 | week01 | week02 | week03 | week04 | week05 |
 | -- | -- | -- | -- | -- |
@@ -19,7 +19,7 @@ Project board:
 | | | | | Second prototype, Workbench test, field test, feedback and rework |
 
 
-## Context
+### Context
 
 ![](./images/cows_infield.jpeg)
 
@@ -139,3 +139,24 @@ User:
     <source src="../../images/week11/demo_01.mp4" type="video/mp4">
   </video>
 </figure>
+
+
+
+## Week01
+## Week02
+## Week03
+## Week04
+## Week05
+## Week06
+## Week07
+## Week08
+## Week09
+## Week10
+## Week11
+## Week12
+
+
+
+## Week13
+
+During this week I've the need to have access to a chemistry or lab kit, to test samples of solutions of water, fat and casein protein.

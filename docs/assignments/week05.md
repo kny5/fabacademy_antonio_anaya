@@ -1,6 +1,6 @@
 # 5. Electronics production
 
-<iframe src="https://www.youtube.com/embed/ijaYTjS-0R0?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="560" height="315" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/ijaYTjS-0R0?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
 
 ## Introduction:
 
