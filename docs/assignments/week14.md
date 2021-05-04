@@ -189,6 +189,8 @@ The plan its too reduce the noise observed during in week 11.
 
 - [Week 11 oscilloscope](../../assignments/week11/#hall-effect-fluid-sensor)
 
+![](../../images/week14/filters_01.jpg)
+
 ### Conclusions
 
 I've been working on this but unfortunately I didn't have the time to manufacture the board.
