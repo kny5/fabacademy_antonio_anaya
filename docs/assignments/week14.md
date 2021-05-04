@@ -32,7 +32,14 @@ For this week I've started to learn about:
 
 [My instructor Luc Hanneuse](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/) explained LORA, LORAWAN and thethingsnetwork.org to me on Thursday morning.
 
-## Lora
+For the [group assignment](http://fabacademy.org/2021/labs/agrilab/group/week14/) I have asked [Theo](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier) to use i2c protocol to communicate our boards.
+
+![Theo's week12 board](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/images/week11/42.jpg)
+
+![My boad from week11](../../images/week11/hero_00.jpg)
+
+
+## Issues with LORA, thethingsnetwork.
 
 So far I've made and account on thethingsnetwork.org, and sadly on the last week a bug made it impossible to access to the network in agrilab's node.
 
@@ -44,6 +51,8 @@ I'll try this again on Tuesday.
 ## Circuit design for week14
 
 For this weeks assignment I've worked on a circuit integrating an improved hall effect sensor circuit alongside a **DAC** output that I'll use for my final project Dielectric Spectroscopy sensor.
+
+The original plan was to make two of this boards and communicate with i2c protocol.
 
 I've also the next objectives:
 
