@@ -155,7 +155,7 @@ For this I've consulted the references shown:
 - [Overview of differential amplifiers on science direct by multiple autors](https://www.sciencedirect.com/topics/engineering/differential-amplifier)
 
 ![](../../images/week14/ref_01.jpg)
-
+![](../../images/week14/vda_01.jpg)
 
 
 ### DAC amplifier
@@ -167,7 +167,7 @@ For this I've used the next reference:
 - [AD8605 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf)
 
 ![](../../images/week14/ref_02.jpg)
-
+![](../../images/week14/dac_01.jpg)
 
 
 ### Noise filters
