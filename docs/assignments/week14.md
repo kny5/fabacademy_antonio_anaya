@@ -81,19 +81,61 @@ Important info from SODAQ/orange documentation:
 
 ![](../../images/week14/lora_06.jpg)
 
-> for this I've used the the things network library on Arduino
+
+> For this I've used the the things network library on Arduino
+> Here there's the process to add the library from the Arduino Library manager.
+
+![](../../images/week14/lora_09.jpg)
+
+> Here there's the boards manager to add SODAQ SAMD boards.
+
+![](../../images/week14/lora_14.jpg)
+
+> Here this sketch shows the device EUI.
+
+![](../../images/week14/lora_15.jpg)
+
+> This sketch in the examples apart, its a simple test to send "00" to the thethingsnetwork app.
+
+![](../../images/week14/lora_10.jpg)
+
+> We need to add appEUI and appKey, I've find this data in the thethingsnetwork console.
+
+![](../../images/week14/lora_11.jpg)
+
+> Selecting the SODAQ ExpLoRer board.
+
+![](../../images/week14/lora_12.jpg)
+
+![](../../images/week14/lora_02.jpg)
+
+> New device added.
 
 ![](../../images/week14/lora_07.jpg)
 
-
+> Device information.
 
 ![](../../images/week14/lora_08.jpg)
-![](../../images/week14/lora_09.jpg)
-![](../../images/week14/lora_10.jpg)
 
-![](../../images/week14/lora_02.jpg)
-![](../../images/week14/lora_11.jpg)
-![](../../images/week14/lora_12.jpg)
+> Data sent.
+
+![](../../images/week14/lora_13.jpg)
+
+
+### Results
+
+> Location
+
+![](../../images/week14/lora_15.jpg)
+
+> Data
+
+![](../../images/week14/lora_16.jpg)
+
+
+The SODAQ ExpLoRer board, it's an easy to setup and start hardware, once I've understand the process It went extremely quick with the Arduino IDE.
+
+I'll like to use LORA and the thethingsnetwork for my communications of my final project.
 
 
 ## Circuit design for week14
