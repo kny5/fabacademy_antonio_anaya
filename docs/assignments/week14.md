@@ -298,6 +298,16 @@ I've been working on this but unfortunately I didn't have the time to manufactur
 In the last weeks I've use multiple communication protocols. I'll shown this work and then the final one.
 
 
+### SAMD11 MUX table
+
+Under the Arduino IDE we can select the number and types of com protocols to be used in our program and bootloader. To understand this more in detail I had to check the MUX table in the [ATSAMD11 documentation](http://ww1.microchip.com/downloads/en/devicedoc/atmel-42363-sam-d11_datasheet.pdf).
+
+<img src="../../images/week13/uart_01.jpg" alt="tran_01" width=100%/>
+
+<img src="../../images/week13/mux_01.jpg" alt="transistor_01" width=100%/>
+
+<img src="../../images/week13/mux_02.jpg" alt="transistor_01" width=100%/>
+
 
 ### USB
 
