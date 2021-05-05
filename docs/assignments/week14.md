@@ -49,19 +49,49 @@ Also I've tried to use the arduino resources following Luc's tutorial but the re
 I'll try this again on Tuesday.
 
 
-## Using SODAQ Explorer LORA development board.
+## Using **SODAQ Explorer** LORA development board.
 
 [Following this tutorial](https://www.thethingsnetwork.org/docs/devices/node/quick-start/index.html)
 
+Important info from SODAQ/orange documentation:
+
+[Link](https://github.com/Orange-OpenSource/Orange-ExpLoRer-Kit-for-LoRa)
+
+- SerialUSB for debugSerial
+- Serial1 for Bluetooth
+- Serial for pins D0/RX and D1/TX
+- Serial2 for loraSerial
+- TTN_FP_EU868 for freqPlan
+- appEui: Provided by thethingsnetwork
+- appKey: Provided by thethingsnetwork
+
+> I've created an account on [thethingsnetwork](https://thethingsnetwork.org/)
+
 ![](../../images/week14/lora_03.jpg)
+
+> Then added a new application
+
 ![](../../images/week14/lora_04.jpg)
+
+> This form gives applications a
+
 ![](../../images/week14/lora_05.jpg)
+
+> After finishing the app creation I've added a new device
+
 ![](../../images/week14/lora_06.jpg)
-![](../../images/week14/lora_02.jpg)
+
+> for this I've used the the things network library on Arduino
+
 ![](../../images/week14/lora_07.jpg)
+
+
+
 ![](../../images/week14/lora_08.jpg)
 ![](../../images/week14/lora_09.jpg)
 ![](../../images/week14/lora_10.jpg)
+
+![](../../images/week14/lora_02.jpg)
 ![](../../images/week14/lora_11.jpg)
 ![](../../images/week14/lora_12.jpg)
 
