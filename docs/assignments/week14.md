@@ -132,6 +132,17 @@ Important info from SODAQ/orange documentation:
 
 ![](../../images/week14/lora_16.jpg)
 
+> Response on serialdebug
+
+![](../../images/week14/lora_17.jpg)
+
+> Testing
+
+![](../../images/week14/lora_18.jpg)
+
+![](../../images/week14/lora_19.jpg)
+
+
 
 The SODAQ ExpLoRer board, it's an easy to setup and start hardware, once I've understand the process It went extremely quick with the Arduino IDE.
 
@@ -740,10 +751,15 @@ void receiveEvent(int howMany)
 
 ## Demo
 
-**Work in progress**
+
+![](../../images/week14/i2c_01.jpg)
+![](../../images/week14/i2c_02.jpg)
 
 ## Circuit
 
 **Work in progress**
 
 ## Files
+
+
+**Work in progress**
