@@ -10,7 +10,7 @@ For this week I've started to learn about:
   - [thethingsnetwork.org](thethingsnetwork.org)
   - AM stands for Amplitude modulation.
   - FM stands for Frequency modulation.
-    - Lower noise than AM.
+    - More immune to noise than AM.
 - LORA modulation:
   - Payload.
   - Encoding.
@@ -26,7 +26,8 @@ For this week I've started to learn about:
   - Duty cycle for thethingsnetwork.
     - max 30 seconds every 24 hrs.
     - band shifting.
-  - Power consumption: 1 Dbm = 1mW.
+  - Power consumption: 1 dBm = 1mW.
+  - dB it's and scale not an unit.
 
 ![](../../images/week14/lora_01.jpg)
 
@@ -46,6 +47,23 @@ So far I've made and account on thethingsnetwork.org, and sadly on the last week
 Also I've tried to use the arduino resources following Luc's tutorial but the references don't work so far.
 
 I'll try this again on Tuesday.
+
+
+## Using SODAQ Explorer LORA development board.
+
+[Following this tutorial](https://www.thethingsnetwork.org/docs/devices/node/quick-start/index.html)
+
+![](../../images/week14/lora_03.jpg)
+![](../../images/week14/lora_04.jpg)
+![](../../images/week14/lora_05.jpg)
+![](../../images/week14/lora_06.jpg)
+![](../../images/week14/lora_02.jpg)
+![](../../images/week14/lora_07.jpg)
+![](../../images/week14/lora_08.jpg)
+![](../../images/week14/lora_09.jpg)
+![](../../images/week14/lora_10.jpg)
+![](../../images/week14/lora_11.jpg)
+![](../../images/week14/lora_12.jpg)
 
 
 ## Circuit design for week14
@@ -150,7 +168,9 @@ List of components used:
 
 ### Differential amplifier
 
-For this I've consulted the references shown:
+Differential amplifier it's,
+
+For this I've consulted the references shown.
 
 - [Overview of differential amplifiers on science direct by multiple autors](https://www.sciencedirect.com/topics/engineering/differential-amplifier)
 
@@ -161,6 +181,8 @@ For this I've consulted the references shown:
 ### DAC amplifier
 
 DAC stands for Digital to analog converter and it's part of my Dielectric Spectroscopy Sensor for my final project. I'm going to use this to identify fat and protein proportions in milk samples.
+
+I'm using DAC from the SAMD11C14, in the datasheet DAC it's on the
 
 For this I've used the next reference:
 
@@ -191,15 +213,23 @@ The plan its too reduce the noise observed during in week 11.
 
 ![](../../images/week14/filters_01.jpg)
 
+
+
 ### Conclusions
 
 I've been working on this but unfortunately I didn't have the time to manufacture the board.
+
+
 
 ## Communications:
 
 In the last weeks I've use multiple communication protocols. I'll shown this work and then the final one.
 
+
+
 ### USB
+
+[]()
 
 One button scroll-down/up controller.
 
@@ -450,6 +480,14 @@ Demo
 
 ### i2c bus
 
+Explain about communication on deep.
+
+- SDA
+- SCL
+- Show data from the network analyzer
+- Bytes
+
+
 For this I've used:
 
 - my board from [week11](../../assignments/week11.)
@@ -462,13 +500,17 @@ Description:
 
 - Teacher sets the LCD display,
 - Teacher sends x and y values to students 4 and 17,
-- Student 4 prints x value using the LCD screen and serial communication.
+- i2c addresses are 4, 17 and master address its optional, and LCD address it's 0x27.
+- Student 4 prints x value using the LCD screen and serial communication,
 - Student 17 prints y value using the LCD screen and serial communication.
 
+
+### Board and pinouts
 
 ### Code
 
 Teacher:
+I've use my own board as Teacher.
 
 
 ```
@@ -621,3 +663,5 @@ void receiveEvent(int howMany)
 ## Circuit
 
 **Work in progress**
+
+## Files
