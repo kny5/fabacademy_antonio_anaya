@@ -80,6 +80,7 @@ The process of cloning a repository is just to create a new instance or copy of 
 You can add a SSH key to GitLab's repository configuration or you can just make use of the http request logging system.
 
 
+
 ### Setup SSH key
 
 During our Bootcamp we had the time to learn how to setup a SSH key on our systems and then copy the resulting string to the GitLab configuration to allow SSH cloning for ourselves.
@@ -99,6 +100,8 @@ Or using the http clonning approach:
 git clone your_repository_url_on_fabcloud.git
 ```
 
+
+
 ### Gitlab configuration
 
 - Open your fabcloud gitlab profile in my case and at this current time the URL is [https://gitlab.fabcloud.org/-/profile](https://gitlab.fabcloud.org/-/profile)
@@ -115,6 +118,8 @@ git clone your_repository_url_on_fabcloud.git
 <img src="../../images/week02/gitlab_03.jpg" alt="hero_01" width=100%/>
 
 - Click on "**Add key**"
+
+
 
 ### Serve mkdocs locally:
 

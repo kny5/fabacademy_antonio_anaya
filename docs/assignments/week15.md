@@ -81,15 +81,43 @@ The Python programming language it's my favorite programming language. So I've d
 
 ### About Python
 
+>*Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. It supports multiple programming paradigms beyond object-oriented programming, such as procedural and functional programming. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants including Linux and macOS, and on Windows.*
+
+**[Fragment from Python's documentation.](https://docs.python.org/3/faq/general.html#what-is-python)**
 
 
 
 ### Configurations
 
+I'm a Linux user and so my configuration follows this information.
+
+1. Linux Fedora 32
+2. Conda as Python environment version manager.
+3. Qt as User interface library.
+
+For this the Configuration process may change a bit for Windows and Mac users.
 
 
 
 ####  Conda environment
+
+> *Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies. Conda easily creates, saves, loads and switches between environments on your local computer. It was created for Python programs, but it can package and distribute software for any language.*
+
+> *Conda as a package manager helps you find and install packages. If you need a package that requires a different version of Python, you do not need to switch to a different environment manager, because conda is also an environment manager. With just a few commands, you can set up a totally separate environment to run that different version of Python, while continuing to run your usual version of Python in your normal environment*
+
+[**Taken from Anaconda's documentation**](https://conda.io/en/latest/)
+
+Process overview:
+
+We need to:
+
+1. Install Python Anaconda compiler,
+2. Create a new environment just for this weeks assignment,
+3. Install PyQt5 and requirements packages,
+4. Install PySerial library
+5. Code a program with Python using PyQT5 and PySerial Libraries.
+6. Make a distributable version of the program.
+
 
 Creating a new environment:
 
@@ -109,7 +137,7 @@ Install pyserial:
 pip install pyserial
 ```
 
-First trial code:
+## First trial code:
 
 ```
 import serial
@@ -126,7 +154,7 @@ while(True):
     print(data)
 ```
 
-Second trial code:
+## Second trial code:
 
 ```
 import serial
@@ -163,3 +191,94 @@ with serial.Serial(port, baud_rate, timeout=10) as serial_device:
         else:
             print("No tags detected")
 ```
+
+## Using Qt
+
+### About Qt
+
+### PyQt5
+
+#### Configuration
+
+Install PyQt5 library:
+```
+pip install PyQt5
+```
+
+Test code:
+
+
+```
+"""
+https://pythonbasics.org/pyqt-hello-world/
+"""
+
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+
+def window():
+   app = QApplication(sys.argv)
+   widget = QWidget()
+
+   textLabel = QLabel(widget)
+   textLabel.setText("Hello World!")
+   textLabel.move(110,85)
+
+   widget.setGeometry(50,50,320,200)
+   widget.setWindowTitle("PyQt5 Example")
+   widget.show()
+   sys.exit(app.exec_())
+
+if __name__ == '__main__':
+   window()
+
+
+   ```
+
+Using it long side PySerial:
+
+```
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+
+
+class MainWindow():
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.widget = QWidget()
+        self.text1 = "Fab Academy 2021, week15"
+        self.text2 = "0"
+
+    def setLabel(self):
+        self.label = QLabel(self.widget)
+        self.label.setText(self.text2)
+        self.label.move(110, 85)
+
+    def setTitle(self):
+        self.widget.setGeometry(50,50,320,200)
+        self.widget.setWindowTitle(self.text1)
+
+    def display(self):
+        self.widget.show()
+        sys.exit(self.app.exec_())
+
+
+def __run():
+    app = MainWindow()
+    app.setLabel()
+    app.setTitle()
+    app.display()
+
+def read_rfid():
+      
+
+
+__run()
+
+
+```
+
+
+
+
+###
