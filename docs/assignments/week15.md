@@ -19,7 +19,14 @@ For this week I've decided to complete the minimum requirements. My tasks will b
 3. Read and parse the data received from micro-controller using Python.
 4. Make a short basic UI. Using QT.
 5. Make a distributable version of the software using a packaging library.
+6. [Group assignment UI comparison](http://fabacademy.org/2021/labs/agrilab/group/week15/)
 
+This is part of my final project RFID reader module.
+
+1. Micrcontroller reads RFID TAG and sends strings through SERIAL COM.
+2. Python RFID parses the data and detects error and manages it with exceptions.
+3. QT UI shows the data parsed.
+4. Python parser runs in a parallel Thread.
 
 
 ## Micro-controller
