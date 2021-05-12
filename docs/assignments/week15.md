@@ -531,3 +531,14 @@ def read_rfid():
         return "Not connected"
 
 ```
+
+## Files
+
+[Python Serial communication reader](../../files/week15/python_serial_01.py)
+[Python Pyqt User interface](../../files/week15/rfid_app_view.py)
+[Arduino code for SAMD11C14 board microcontroller](../../files/week15/serial_rfid.ino)
+Icons from [flaticon](flaticon.com):
+[cow](../../files/week15/cow.png)
+[ok](../../files/week15/ok.png)
+[not](../../files/week15/not.png)
+[rfid](../../files/week15/tag.png)
