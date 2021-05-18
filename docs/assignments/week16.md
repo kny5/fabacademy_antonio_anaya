@@ -1,61 +1,76 @@
-# 16. Interface and application programming
+# 16. Wildcard week
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## Robotics
 
-## Research
+For this I've been using the Niryo One 5 axis Robotic Arm.
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-## Useful links
+### Assembling process
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+**Work in progress**
 
-## Code Example
+**Images**
 
-Use the three backticks to separate code.
+
+### Firsts Steps
+
+Following the Guide from Niryo:
+
+*For Linux*
+
+- [Download the Niryo One Studio Program](https://drive.google.com/file/d/1PbiHoHrFK54YVzJFzgfM_a51oE6ReHKe/view)
+- Extract the files.
+- Make the program File executable using:
 
 ```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+chmod +x NiryoOneStudio
+```
+- Execute the program by doing:
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
+```
+./NiryoOneStudio
 ```
 
-## Gallery
+- Power on by pulsing the button.
+- Wait until the Power LED indicator turns Blue. This means the arm its on Hotspot mode.
+- Using Niryo One Studio search for the Niryo One hotspot in the connection section.
 
-![](../images/sample-photo.jpg)
+![](../../images/week16/studio_01.jpg)
+![](../../images/week16/studio_02.jpg)
 
-## Video
+- Once the connection has been established, start the automatic calibration process.
 
-### From Vimeo
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-### From Youtube
+### Automatic Calibration
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week16/niryo_00.mp4" type="video/mp4">
+	</video>
+</figure>
 
-## 3D Models
+- Here is the tracking position showed in the 3D model on Niryo One Studio:
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+![](../../images/week16/studio_03.jpg)
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+
+
+### Position Tracking
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week16/niryo_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Learning mode
+
+
+
+### Python interface
+
+## Machine learning
