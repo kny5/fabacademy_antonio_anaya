@@ -149,11 +149,15 @@ I've learned Xdesign and I found it very complicated at first even as a Solidwor
 
 
 #### Linux configuration:
-Chromium works better than Firefox.
-Activate Hardware acceleration.
-Force hardware GPU use.*
+
+I've tried to use XDeisgn under Linux using Firefox, and Chromium web navigators.
+
+- Chromium works better than Firefox.
+- Activate Hardware acceleration.
+- Force hardware GPU use.*
 
 *For Nvidia Nouveau drivers use:
+
 ```
 DRI_PRIME=1 chromium-browser
 ```
@@ -163,10 +167,24 @@ DRI_PRIME=1 chromium-browser
 ```
 optirun chromium-browser
 ```
+<!--
+#### Building an ElectronJS application to ensure hardware acceleration
 
+Install node version manager:
 
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
 
-### 3D design:
+Load configuration to ZSH:
+
+```
+source ~/.zshrc
+```
+
+-->
+
+#### Introduction
 
 There are some basic operations for 3D modeling:
 
@@ -179,7 +197,8 @@ There are some basic operations for 3D modeling:
 The whole process can be divided into three important steps:
 
 - Sketching
-- Modeling
+- 3D solids modeling
+- Part Modeling
 - Assembling
 
 The sketch is the 2D representation of a section or projection and its the base of a 3D model.
@@ -188,17 +207,100 @@ The modeling process starts when we transform a 2D shape from a sketch into a 3D
 
 An ensemble it's the combination of multiple 3D entities or parts, like in the real life process it requires constrains, joining mechanisms, but here you can restrict the displacement, rotation and collision with a "restriction or relationship" indicator.
 
-### Sketching
+
+#### Start a new XDesign File
+
+We received an account as part of our Fab Academy course to access Xdesign:
+
+This is the URL to access:
+[https://eu1-ds-iam.3dexperience.3ds.com/cas/login?service=https%3A//eu1-ifwe.3dexperience.3ds.com/%3FserverId%3DFRONT_2](https://eu1-ds-iam.3dexperience.3ds.com/cas/login?service=https%3A//eu1-ifwe.3dexperience.3ds.com/%3FserverId%3DFRONT_2)
 
 
 
-<img src="../../images/week03/xdesign_2.jpg" alt="drawing" width="90%"/>
-<img src="../../images/week03/xdesign_4.jpg" alt="drawing" width="90%"/>
-<img src="../../images/week03/xdesign_5.jpg" alt="drawing" width="90%"/>
+<img src="../../images/week03/x_01.jpg" alt="x_01.jpg" width=100%/>
+<img src="../../images/week03/x_02.jpg" alt="x_02.jpg" width=100%/>
+<img src="../../images/week03/x_03.jpg" alt="x_03.jpg" width=100%/>
+<img src="../../images/week03/x_04.jpg" alt="x_04.jpg" width=100%/>
+<img src="../../images/week03/x_05.jpg" alt="x_05.jpg" width=100%/>
 
 
 
-### Model video:
+#### Sketching:
+
+<img src="../../images/week03/x_06.jpg" alt="x_06.jpg" width=30%/>
+<img src="../../images/week03/x_07.jpg" alt="x_07.jpg" width=30%/>
+<img src="../../images/week03/x_08.jpg" alt="x_08.jpg" width=30%/>
+<img src="../../images/week03/x_09.jpg" alt="x_09.jpg" width=30%/>
+<img src="../../images/week03/x_10.jpg" alt="x_10.jpg" width=30%/>
+<img src="../../images/week03/x_11.jpg" alt="x_11.jpg" width=30%/>
+<img src="../../images/week03/x_12.jpg" alt="x_12.jpg" width=30%/>
+<img src="../../images/week03/x_13.jpg" alt="x_13.jpg" width=30%/>
+<img src="../../images/week03/x_14.jpg" alt="x_14.jpg" width=30%/>
+<img src="../../images/week03/x_15.jpg" alt="x_15.jpg" width=30%/>
+<img src="../../images/week03/x_16.jpg" alt="x_16.jpg" width=30%/>
+<img src="../../images/week03/x_17.jpg" alt="x_17.jpg" width=30%/>
+<img src="../../images/week03/x_18.jpg" alt="x_18.jpg" width=30%/>
+<img src="../../images/week03/x_19.jpg" alt="x_19.jpg" width=30%/>
+<img src="../../images/week03/x_20.jpg" alt="x_20.jpg" width=30%/>
+<img src="../../images/week03/x_21.jpg" alt="x_21.jpg" width=30%/>
+<img src="../../images/week03/x_22.jpg" alt="x_22.jpg" width=30%/>
+<img src="../../images/week03/x_23.jpg" alt="x_23.jpg" width=100%/>
+<img src="../../images/week03/x_24.jpg" alt="x_24.jpg" width=100%/>
+<img src="../../images/week03/x_25.jpg" alt="x_25.jpg" width=100%/>
+<img src="../../images/week03/x_26.jpg" alt="x_26.jpg" width=100%/>
+<img src="../../images/week03/x_27.jpg" alt="x_27.jpg" width=100%/>
+<img src="../../images/week03/x_28.jpg" alt="x_28.jpg" width=100%/>
+<img src="../../images/week03/x_29.jpg" alt="x_29.jpg" width=100%/>
+<img src="../../images/week03/x_30.jpg" alt="x_30.jpg" width=100%/>
+<img src="../../images/week03/x_31.jpg" alt="x_31.jpg" width=100%/>
+<img src="../../images/week03/x_32.jpg" alt="x_32.jpg" width=100%/>
+<img src="../../images/week03/x_33.jpg" alt="x_33.jpg" width=100%/>
+
+
+
+
+
+#### Modeling:
+
+<img src="../../images/week03/x_34.jpg" alt="x_34.jpg" width=100%/>
+<img src="../../images/week03/x_35.jpg" alt="x_35.jpg" width=100%/>
+<img src="../../images/week03/x_36.jpg" alt="x_36.jpg" width=100%/>
+<img src="../../images/week03/x_37.jpg" alt="x_37.jpg" width=100%/>
+<img src="../../images/week03/x_38.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_39.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_40.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_41.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_42.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_43.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_44.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_45.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_46.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_47.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_48.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_49.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_50.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_51.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_52.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_53.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_54.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_55.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_56.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_57.jpg" alt="" width=100%/>
+<img src="../../images/week03/x_58.jpg" alt="" width=100%/>
+
+
+
+
+
+
+#### Assembly:
+
+
+
+
+
+
+#### Model video:
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
@@ -208,7 +310,7 @@ An ensemble it's the combination of multiple 3D entities or parts, like in the r
 
 
 
-### Photo capture:
+#### Photo capture:
 
 <img src="../../images/week03/xdesign_render.jpg" alt="drawing" />
 
@@ -218,7 +320,7 @@ I've used this command for video compression with ffmpeg:
 
 
 
-### Assembly video:
+#### Assembly video:
 
 To make this assembly video I've captured the screen on my computer using [simple screen recorder](https://www.maartenbaert.be/simplescreenrecorder/) selecting a rectangular region of my screen framing my model under Xdesign and then pulsing the relationship constrain "coincident surface". Xdesign then makes and animation where the two selected surfaces move until fund each other.
 
@@ -230,7 +332,7 @@ To make this assembly video I've captured the screen on my computer using [simpl
 
 <script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js" data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=2  data-rows=10 async></script>
 
-
+<!--
 ## AgriLabs workshops:
 
 ### 3D modeling with FreeCad:
@@ -264,7 +366,7 @@ This is the model with a Simple deformation modifier.
 
 The render motor used was Workbench with the basic configuration.
 
-
+-->
 ## Files
 
 

@@ -544,6 +544,8 @@ def read_rfid():
 
 ## MCurses
 
+NCurses it's a text based interface design standard, and Mcurses its a version for Micro-controllers.
+
 ### Ncurses for microcontrollers
 
 

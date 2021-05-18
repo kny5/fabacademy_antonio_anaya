@@ -29,6 +29,18 @@ border: 0px solid #000000;
 opacity: 0.90;
 }
 
+h4 {
+  color: white;
+  background: #48ACF0;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px 5px 5px 5px;
+-webkit-border-radius: 5px 5px 5px 5px;
+border: 0px solid #000000;
+opacity: 0.90;
+}
+
 body {
   background-color: #FFFFFA;
 }
