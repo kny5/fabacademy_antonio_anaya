@@ -421,10 +421,25 @@ The process its as follows:
 - First part:
 
 <img src="../../images/week03/x_75.jpg" alt="" width=100%/>
+
+- a)
+
 <img src="../../images/week03/x_76.jpg" alt="" width=100%/>
+
+- b)
+
 <img src="../../images/week03/x_77.jpg" alt="" width=100%/>
+
+- c)
+
 <img src="../../images/week03/x_78.jpg" alt="" width=100%/>
+
+- d)
+
 <img src="../../images/week03/x_79.jpg" alt="" width=100%/>
+
+- e)
+
 <img src="../../images/week03/x_80.jpg" alt="" width=100%/>
 
 - Second part:
@@ -478,10 +493,16 @@ The process its as follows:
 
 - This is the configuration I've used on simplescreenrecorder.
 
+- a)
 <img src="../../images/week03/as_03.jpg" alt="" width=45%/>
-<img src="../../images/week03/as_04.jpg" alt="" width=45%/>
-<img src="../../images/week03/as_05.jpg" alt="" width45%/>
 
+- b)
+
+<img src="../../images/week03/as_04.jpg" alt="" width=45%/>
+
+- c)
+
+<img src="../../images/week03/as_05.jpg" alt="" width45%/>
 
 - This is the video result:
 
@@ -497,8 +518,30 @@ The process its as follows:
 <script id="asciicast-GVYKXvYN9nGQclZUruxwxH2TU" src="https://asciinema.org/a/GVYKXvYN9nGQclZUruxwxH2TU.js" data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=2  data-rows=10 async></script>
 
 
+#### Embed text:
 
-#### Model video:
+- This process its similar to the past processes, but instead of using the Lines and arcs tools I've used the text tool:
+
+- First I've created a new sketch on the fron surface, following the same proportions of the RFID tag:
+
+<img src="../../images/week03/tx_01.jpg" alt="" width45%/>
+
+- The number 8207 its 25 mm height, -5% spacing and 78% ratio scaled:
+
+<img src="../../images/week03/tx_02.jpg" alt="" width45%/>
+
+- The 27 0808 test its 5mm height -5% Spaced and 90% ratio scaled:
+
+<img src="../../images/week03/tx_03.jpg" alt="" width45%/>
+
+- After finishing the sketch I've extruded it by 0.1mm:
+
+<img src="../../images/week03/tx_04.jpg" alt="" width45%/>
+<img src="../../images/week03/tx_05.jpg" alt="" width45%/>
+
+- Finally I've made the same for the FR text:
+
+- And Applied "Plastic, low gloss Black" Material with the "Apply material tool":
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true">
@@ -508,13 +551,11 @@ The process its as follows:
 
 
 
-#### Photo capture:
+#### Final result:
+
+- I've captured this view from the photo view tool in XDesign:
 
 <img src="../../images/week03/xdesign_render.jpg" alt="drawing" />
-
-This is a view of the model I've made in XDesign.
-
-I've used this command for video compression with ffmpeg:
 
 
 <!--
@@ -557,10 +598,13 @@ The render motor used was Workbench with the basic configuration.
 ## Files
 
 
-[Download 3DXML Xdesign files.](../../files_for_projects/earring_fr27.3dxml)
+- [Download 3DXML Xdesign files.](../../files_for_projects/earring_fr27.3dxml)
 
-[Download InksCape SVG files](../../files_for_projects/inkscape_earring_fr27.zip)
+- [Download InksCape SVG files](../../files_for_projects/inkscape_earring_fr27.zip)
 
-[Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+- [Download from XDesign. Note: You need a 3dexperience account.](https://eu1-ifwe.3dexperience.3ds.com/#app:X3DDRIV_AP/content:driveId=R1132100766590&contentId=C0CC36E6092700006020334C00074EA0&contentType=file)
+
+<!--
 [Download Blender files](../../files_for_projects/blender_fabacademy.zip)
 [Download Render files](../../files_for_projects/TAG_RF27.zip)
+-->
