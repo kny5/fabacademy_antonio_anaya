@@ -2,7 +2,7 @@
 
 ## Robotics
 
-For this I've been using the Niryo One 6 axis Robotic Arm.
+For this I've been using the [Niryo One](https://niryo.com/product/ned/) 6 axis Robotic Arm.
 
 Characteristics:
 
