@@ -2,15 +2,15 @@
 
 ## I'm currently working on:
 
-> [**14. Networking and Communications**](./assignments/week14/)
+> [**16. Wildcard week**](./assignments/week16/)
 
-<img src="images/week14/lora_01.jpg" alt="hero_01.jpg" width=100%/>
+<!--img src="images/week14/lora_01.jpg" alt="hero_01.jpg" width=100%/-->
 
-<!--figure class="video_container">
+<figure class="video_container">
 	<video controls="true" allowfullscreen="true">
-		<source src="images/week13/demo_01.mp4" type="video/mp4">
+		<source src="images/week16/niryo_01.mp4" type="video/mp4">
 	</video>
-</figure-->
+</figure>
 
 <script id="asciicast-xLqACH4OH1MVKM1PXh7tTE31u" src="https://asciinema.org/a/xLqACH4OH1MVKM1PXh7tTE31u.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
 
