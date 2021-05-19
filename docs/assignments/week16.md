@@ -79,10 +79,17 @@ chmod +x NiryoOneStudio
 
 ### Working area
 
-I've designed this grid to train a pick and place program easily.
+I've designed this grid to train a pick and place program easily. The grid is 5x5 each hole is 25 mm diameter and spaced 15 mm.
+
 
 ![](../../images/week16/pieces_01.jpg)
+
+Cubetes:
+
 ![](../../images/week16/pieces_02.jpg)
+
+Suction cups for fixing the laser cut grid:
+
 ![](../../images/week16/pieces_03.jpg)
 
 
