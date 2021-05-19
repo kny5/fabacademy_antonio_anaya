@@ -36,7 +36,7 @@ The clamps need to be enabled under Niryo Studio.
 - Click Enable.
 - Test the clamps.
 
-![clamps](../../images(week16/studio_04.jpg))
+![clamps](../../images/week16/studio_04.jpg)
 
 
 <figure class="video_container">
