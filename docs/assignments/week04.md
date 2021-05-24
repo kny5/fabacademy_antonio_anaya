@@ -5,6 +5,7 @@
 This week  we've learned how to use different machines in the Fab Lab. We had a great experience while practicing vinyl and laser cutting.
 My approach was very simple but I've discovered interesting techniques and important information for the upcoming weeks.
 
+This is the link to this weeks [group assignment]()
 
 
 ## Vinyl Cutter:

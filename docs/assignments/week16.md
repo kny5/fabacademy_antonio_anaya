@@ -27,6 +27,12 @@ The idea its use this to move [cubetes](https://www.wikiwand.com/en/Cuvette) usi
 ![wiring](../../images/week16/wires_01.jpg)
 
 
+### Parts description
+
+The parts of the Niryo One are 3D printed and some of the pieces don't fit exactly in place.
+
+![asm](../../images/week16/ams_01.jpg)
+
 
 ### Enable clamps
 
@@ -237,7 +243,7 @@ Sometimes Niryo will stop in the middle of a task.
 
 - Just move to a initial pose and restart the routine.
 
-Issues with ELF files caused by dual boooting Windows and Linux.
+Issues with ELF files caused by dual booting Windows and Linux.
 
 - I've tried to recover my files but I've a data corruption issue that damaged half of my work. This started on week 14 while using Python under Windows.
 - Solution was to make a new repository clone and copy paste the recovered files.
