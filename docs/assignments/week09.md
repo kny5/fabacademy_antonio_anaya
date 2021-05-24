@@ -1,20 +1,70 @@
 # 9. Embedded programming
 
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" loop>
+    <source src="../../images/week09/demo_04.mp4" type="video/mp4">
+  </video>
+</figure>
 
 ## Introduction
 
 The Micro-controller that I'm using in my board. [Check this link for more information.](../../assignments/week07)
-[This is the page for the group assignment.](http://fabacademy.org/2021/labs/agrilab/group/week09/) I 've contributed with the [Raspberry pi]() board review.
+[This is the page for the group assignment.](http://fabacademy.org/2021/labs/agrilab/group/week09/) I 've contributed with the [Raspberry pi](https://www.raspberrypi.org/) board review.
 
-This week I've learn how to program in bare-metal C using only the ASF library, then I used Rust Programming Language, but I didn't have time to write down all the steps in the compiling process and eventually found out some difficulties with the build toolchain. I've also tried Haskell and autopilot and Finally the Arduino IDE.
+This week I've learn how to program in bare-metal C using only the [ASF library](https://www.microchip.com/en-us/development-tools-tools-and-software/libraries-code-examples-and-more/advanced-software-framework-for-sam-devices), then I used [Rust Programming Language](https://www.rust-lang.org/), but I didn't have time to write down all the steps in the compiling process and eventually found out some difficulties with the build toolchain. I've also tried Haskell and autopilot and Finally the [Arduino IDE.](https://www.arduino.cc/en/software)
 
 My board has only one Button as input in PA02 and one LED as output in PA05. So I was looking for something useful to make with only one button and one LED and the result is the one button Mouse Scroll that I've made using Arduino, the Mouse library and event detection.
 
 
 
-## SAMD11 Datasheet
+## ATSAMD11C14 Microcontroller
 
-11
+Its a low-power, high-performance ARM® Cortex®-M0+ based flash microcontroller.
+
+It's one of the ATSAMD available in the AgriLab ElectroLab aside the SAMD21D17.
+
+I've selected this microcontroller on [week07 electronics design](../../assignments/week07). The following information was learned and collected by me over this assignment.
+
+Summary of specifications:
+
+- > *Information modified from [Atmel documentation page](https://www.microchip.com/wwwproducts/en/ATSAMD11C14)*
+
+| SAMD11C14 Specs |  |
+| -- | -- |
+| Family | SAMD11 |
+| Max CPU speed | 48 MHz |
+| Programmable memory size | 16 KBytes |
+| SRAM | 4 KBytes |
+| Auxiliary flash memory | 64 Bytes |
+| Working Temperature range | -40 to 105 C |
+| Operating Voltage range | 1.62 to 3.63 Volts |
+| Direct memory access channels | 6 |
+| SPI ports | 2 |
+| I2C ports | 2 |
+| Hardware touch periphereal | PTC |
+| Periphereal pin select | YES |
+| Native USB | YES, Full speed |
+| Analog to Digital inputs (ADC) | 5 |
+| ADC resolution | 12 Bits |
+| ADC sampling rate | 350 K Samples per Second |
+| Digital to Analog Outputs (DAC) | 1 |
+| Input capture ports | 3 |
+| Standalone output compare/ Standard PWM ports | 4 |
+| Motor control PWM channels | 8 |
+| 16 Bit digital timers | 2 |
+| Parallel port type | GPIO |
+| Comparators | 2 |
+| Internal Oscillator | 32KHz, 32KHz ULP, 8 MHz |
+| Hardware Realtime clock counter/Realtime Clock | YES |
+| IO Pins| 12 |
+| Pincount | 14 |
+| Low Power capability | YES |
+
+> *This tables were taken from [Mattairtech SAMD boards documentation.*](https://github.com/mattairtech/ArduinoCore-samd/blob/master/variants/Generic_D11C14A/README.md)
+
+
+Pinout table for Arduino IDE:
+
 | SAMD11 | Arduino | PINOUT | | | | | | | | | | | |
 | --- | ---- | ---- | --- | --- | --- | --- | ---- | ---- | --- | --- | --- | --- | --- |
 | Other | COM | PWM | Analog | INT | # | PIN | PIN | # | INT | Analog | PWM | COM | Other |
@@ -26,6 +76,8 @@ My board has only one Button as input in PA02 and one LED as output in PA05. So 
 BOOT | | | | | 28 | A28/RST | A24 | 24 | | | | USB/DM |
 SWDCLK |  TX1/MISO* | | | | 30 | A30 | A31 | 31 | * | | RX1/SS* | | SWDIO |
   -------------------
+
+Detailed information:
 
 Arduino	| Port	| Alternate Function	| Comments (! means not used with this peripheral assignment)
 --------|-------|-----------------------|-------------------------------------------------------------------------------------------
@@ -46,6 +98,7 @@ Arduino	| Port	| Alternate Function	| Comments (! means not used with this perip
 14	| PA14	| SDA / TC10		| EIC/NMI ADC/AIN[6] PTC/X[0] PTC/Y[6] SERCOM0/PAD[0] !SERCOM2/PAD[0] TC1/WO[0] !TCC0/WO[0]
 15	| PA15	| SCL / TC11		| EIC/EXTINT[1] ADC/AIN[7] PTC/X[1] PTC/Y[7] SERCOM0/PAD[1] !SERCOM2/PAD[1] TC1/WO[1] !TCC0/WO[1]
 16	| ----	| NOT A PIN		| NOT A PIN
+
 17	| ----	| NOT A PIN		| NOT A PIN
 18	| ----	| NOT A PIN		| NOT A PIN
 19	| ----	| NOT A PIN		| NOT A PIN
@@ -61,6 +114,33 @@ Arduino	| Port	| Alternate Function	| Comments (! means not used with this perip
 29	| ----	| NOT A PIN		| NOT A PIN
 30	| PA30	| MISO / SWD CLK	| !EIC/EXTINT[2] SERCOM1/PAD[0] !SERCOM1/PAD[2] !TC2/WO[0] !TCC0/WO[2] SWD CLK, leave floating during boot
 31	| PA31	| SS / SWD IO		| EIC/EXTINT[3] SERCOM1/PAD[1] !SERCOM1/PAD[3] !TC2/WO[1] !TCC0/WO[3] SWD IO
+
+The SAMD11C14 its part of the SAMD family of microntrollers, its has multiple thing that are of the interest for my project including:
+
+- Native USB connectors
+- Digital to Analog Output
+- Analog to Digital Input
+- Communication
+    - I2C
+    - ISP
+    - Serial
+
+SAMD11C14 comes from:
+
+![code name](../../images/week09/docs_01.jpg)
+
+This is a reference for the PIN numbers of the SAMD11C14:
+
+![code name](../../images/week09/docs_02.jpg)
+
+And this is a schematic of the Digital to analog converter that I'm interested to use for the Dielectric Spectroscopy module of my final project.
+
+![code name](../../images/week09/docs_03.jpg)
+
+The multiplexor table shows the pins and its capabilities for Communication and functionalities.S
+
+![code name](../../images/week09/mux_01.jpg)
+![code name](../../images/week09/mux_02.jpg)
 
 
 
@@ -495,6 +575,6 @@ void loop()
 
 ## Files
 
-[Arduino Mouse Wheel](../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino)
+[Arduino Mouse Scroller](../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino)
 
 [Arduino Embedded Ncurses on Microcontrollers]()
