@@ -851,6 +851,11 @@ This independent Arduino pumping system was later removed.
 
 As the task was for 3 days 4 maximum, stress was a factor that limited our integration as teammates but at the end we cope and moved forward to deliver the machine on time.
 
+Design improvements:
+
+Use [Laserweb](https://laserweb.yurl.ch/) for user friendly interaction adding a [raspberry pi](https://www.raspberrypi.org/) as server and a display in place to have an embed pancake machine system.
+
+We have also discussed to run a machine demo on FabAcademy graduation.
 
 
 ## Files
