@@ -481,6 +481,21 @@ void loop() {
 
 ### Ncurses for microcontrollers
 
+About [NCURSES](https://www.wikiwand.com/en/Ncurses):
+
+Its a library for application programming interface, for text-based user interfaces:
+
+Like on this example:
+
+<iframe src="http://www.youtube-nocookie.com/embed/KmSKwU-vc4g?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&controls=0&disablekb=1" width="100%" height="315" frameborder="0"></iframe>
+
+This next program produces an UI that's transmitted over SERIAL Communication to the computer and accesed by using minicon.
+
+By pressing the physical button on my board the interface shows a message.
+
+MCURSES its a version of NCURSES for embeded systems, it means that's small enough to fit in the memory of the SAMD11C14.
+
+To install MCURSES:
 
 ```
 git clone https://github.com/ChrisMicro/mcurses
@@ -580,7 +595,11 @@ void loop()
 }
 ```
 
+This is the result shown in asciinema:
+
 <script id="asciicast-dDgFmfugIqAcCHOVTcJEl1tu5" src="https://asciinema.org/a/dDgFmfugIqAcCHOVTcJEl1tu5.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
+
+Video demo:
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
