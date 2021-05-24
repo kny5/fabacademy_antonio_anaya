@@ -6,6 +6,8 @@
   </video>
 </figure>
 
+
+
 ## Introduction
 
 The Micro-controller that I'm using in my board. [Check this link for more information.](../../assignments/week07)
@@ -13,7 +15,9 @@ The Micro-controller that I'm using in my board. [Check this link for more infor
 
 This week I've learn how to program in bare-metal C using only the [ASF library](https://www.microchip.com/en-us/development-tools-tools-and-software/libraries-code-examples-and-more/advanced-software-framework-for-sam-devices), then I used [Rust Programming Language](https://www.rust-lang.org/), but I didn't have time to write down all the steps in the compiling process and eventually found out some difficulties with the build toolchain. I've also tried Haskell and autopilot and Finally the [Arduino IDE.](https://www.arduino.cc/en/software)
 
-My board has only one Button as input in PA02 and one LED as output in PA05. So I was looking for something useful to make with only one button and one LED and the result is the one button Mouse Scroll that I've made using Arduino, the Mouse library and event detection.
+My board has only one Button as input in PA02 and one LED as output in PA05. So I was looking for something useful to make with only one button and one LED and the result is the one button Mouse Scroll that I've made using the [Arduino IDE](arduino.cc), the Mouse library and event detection.
+
+Then I've inspected using the oscilloscope
 
 
 
@@ -137,7 +141,7 @@ And this is a schematic of the Digital to analog converter that I'm interested t
 
 ![code name](../../images/week09/docs_03.jpg)
 
-The multiplexor table shows the pins and its capabilities for Communication and functionalities.S
+The multiplexor table shows the pins and its capabilities for Communication and functions:
 
 ![code name](../../images/week09/mux_01.jpg)
 ![code name](../../images/week09/mux_02.jpg)
@@ -145,6 +149,10 @@ The multiplexor table shows the pins and its capabilities for Communication and 
 
 
 ## Debugging
+
+I've found out the difference between pull-up and pull-down arrangements for floating point connections.
+
+So I've the idea to inspect using the oscilloscope the pin PA_02 which is connected to a button on my [board designed in week07](../../assignments/week07)
 
 - Inspecting button at PA02:
 
@@ -179,10 +187,11 @@ analogWrite(LED_BUILTIN, analogRead(BTN) );
 
 ```
 
-
 - Arduino capture:
 
 <img src="../../images/week09/arduino_05.jpg" alt="Render_01" width=100%/>
+
+
 
 ## EBDG workflow
 
@@ -371,7 +380,15 @@ int main(void) {
 
 ### One button scroll-down/up controller
 
+Configuration:
 
+To use [Human Interface Devices](https://www.wikiwand.com/en/Human_interface_device) such as Mouse or keyboards on a computer, requires an special configuration of the ATSAMD11 bootloader programmed by Mattairtech.
+
+![](../../images/week09/arduino_08.jpg)
+
+And also import the library from the arduino library manager repository:
+
+![](../../images/week09/arduino_09.jpg)
 
 
 ```
@@ -575,6 +592,22 @@ void loop()
 
 ## Files
 
-[Arduino Mouse Scroller](../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino)
+For Millivolts plotter:
 
-[Arduino Embedded Ncurses on Microcontrollers]()
+- [blink.ino](../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino)
+
+For blinky with ASF:
+
+- [blinky.c](../../files/week09/blinky_ASF_SAMD11.c)
+- [make file](../../files/week09/blinky_ASF_SAMD11.c)
+
+For Mouse controller:
+
+- [Arduino Mouse Scroller](../../files/week09/button_mouse/button_mouse.ino)
+
+For Mcurses on Microcontrollers example:
+
+- [Arduino code](../../files/week09/fabacademy_logo/fabacademy_logo.ino)
+- [mcurses-config.h](../../files/week09/fabacademy_logo/mcurses-config.h)
+- [mcurses.c](../../files/week09/fabacademy_logo/mcurses.c)
+- [mcurses.h](../../files/week09/fabacademy_logo/mcurses.h)
