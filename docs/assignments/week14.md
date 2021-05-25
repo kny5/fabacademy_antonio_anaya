@@ -7,7 +7,7 @@ For this week I've started to learn about:
 - LORA and LORAWAN:
   - Microchip, LORA ExpLoRer board.
     - Arduino SODAQ firmware libraries.
-  - [thethingsnetwork.org](thethingsnetwork.org)
+  - [thethingsnetwork.org](https://thethingsnetwork.org)
   - AM stands for Amplitude modulation.
   - FM stands for Frequency modulation.
     - More immune to noise than AM.
@@ -251,9 +251,20 @@ List of components used:
 
 ### Differential amplifier
 
-Differential amplifier it's,
+Differential amplifier is a type of electronic amplifier that amplifies the difference between two input voltages but suppresses any voltage common to the two inputs.
 
-For this I've consulted the references shown.
+I need a this electronic component for the Hall effect sensor, to amplify the signal output because the signal it's just 100 mV and can by difficult to filter, instead of measuring the 100 mV I'll use the differential amplifier to measure 5 - 0.001 = 4.999 Volts pulses which are notably easy to detect.
+
+> [From week11 input devices work](../../assignments/week11)
+Using Arduino's serial plotter I've found the sensor sends a lot of noise, and I've learn that's normal because of the materials of the board.
+
+<img src="../../images/week11/arduino_01.jpg" alt="hero_01" width=100%/>
+
+This is the signal response when an magnet passes 3 times over the sensor at 3mm distance.  
+
+<img src="../../images/week11/step_01.jpg" alt="hero_01" width=100%/>
+
+For this I've consulted the references shown:
 
 - [Overview of differential amplifiers on science direct by multiple autors](https://www.sciencedirect.com/topics/engineering/differential-amplifier)
 
@@ -265,7 +276,11 @@ For this I've consulted the references shown.
 
 DAC stands for Digital to analog converter and it's part of my Dielectric Spectroscopy Sensor for my final project. I'm going to use this to identify fat and protein proportions in milk samples.
 
-I'm using DAC from the SAMD11C14, in the datasheet DAC it's on the
+I'm using DAC from the SAMD11C14, in the datasheet DAC it's on the pin PA_02. And its capable to perform at 350000 samples per second.
+
+I want to use this capability of the SAMD11C14 to produce a signal and then measure the difference by passing the signal trough a milk sample.
+
+This is in order to detect the molecular structure of the milk sample.
 
 For this I've used the next reference:
 
@@ -296,6 +311,10 @@ The plan its too reduce the noise observed during in week 11.
 
 ![](../../images/week14/filters_01.jpg)
 
+After the local review my instructor [Luc Hanneuse](https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/)) has helped me to understand that I'm not implementing noise filters in my circuit but only parallel connected capacitors, this helps only to prevent voltage drops while operating the device.
+
+So certainly I'll have to work more on the circuits design og my project for the next steps.
+
 
 
 ### Conclusions
@@ -322,7 +341,9 @@ Under the Arduino IDE we can select the number and types of com protocols to be 
 
 ### USB
 
-[]()
+I've made this program originally on week09 Embedded programming.
+
+Check more details [here.](../../assignments/week09)
 
 One button scroll-down/up controller.
 
@@ -569,6 +590,8 @@ Demo
 	</video>
 </figure>
 
+
+
 ## Networking
 
 ### i2c bus
@@ -757,7 +780,7 @@ void receiveEvent(int howMany)
 
 ## Circuit
 
-**Work in progress**
+![](../../images/week14/diagram_01.png)
 
 ## Files
 
@@ -765,3 +788,4 @@ void receiveEvent(int howMany)
 - [Spectral_test.ino](../../files/week14/spectral_test.ino)
 - [student.ino](../../files/week14/student.ino)
 - [teacher.ino](../../files/week14/teacher.ino)
+- [Arduino Mouse Scroller](../../files/week09/button_mouse/button_mouse.ino)

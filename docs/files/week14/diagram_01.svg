@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="diagram_01.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="374.42817"
+     inkscape:cy="421.66065"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1000"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.989273"
+       id="rect455"
+       width="182.28853"
+       height="84.467896"
+       x="16.298077"
+       y="69.484711"
+       ry="0" />
+    <rect
+       style="fill:#999999;stroke:#000000;stroke-width:1.27269"
+       id="rect10"
+       width="39.419418"
+       height="45.08445"
+       x="149.18756"
+       y="97.06089" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1"
+       id="rect10-6"
+       width="24.190477"
+       height="45.357143"
+       x="86.242867"
+       y="96.924545" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1"
+       id="rect10-7"
+       width="24.190477"
+       height="45.357143"
+       x="23.434526"
+       y="96.924545" />
+    <g
+       id="g381"
+       transform="matrix(1.0614525,0,0,0.25000012,-2.6432778,86.323296)">
+      <rect
+         style="fill:#ff2a2a;stroke:none;stroke-width:1"
+         id="rect50"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="115.72771" />
+      <rect
+         style="fill:#7fff2a;stroke:none;stroke-width:1"
+         id="rect50-7"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="123.47852" />
+      <rect
+         style="fill:#ffdd55;stroke:none;stroke-width:1"
+         id="rect50-6"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="131.22934" />
+      <rect
+         style="fill:#4d4d4d;stroke:none;stroke-width:1"
+         id="rect50-7-7"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="138.98015" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="50.424023"
+       y="113.90517"
+       id="text74"><tspan
+         sodipodi:role="line"
+         id="tspan72"
+         x="50.424023"
+         y="113.90517"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">i2c BUS</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:P052;-inkscape-font-specification:P052;stroke-width:0.264583"
+       x="11.759859"
+       y="59.066566"
+       id="text78"><tspan
+         sodipodi:role="line"
+         id="tspan76"
+         x="11.759859"
+         y="59.066566"
+         style="stroke-width:0.264583"> </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="22.627611"
+       y="85.025566"
+       id="text74-0"><tspan
+         sodipodi:role="line"
+         id="tspan72-9"
+         x="22.627611"
+         y="85.025566"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">i2c communication</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="27.227179"
+       y="137.94495"
+       id="text74-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan72-9-7"
+         x="27.227179"
+         y="137.94495"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">0x11</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="87.966484"
+       y="137.94495"
+       id="text74-0-1-7"><tspan
+         sodipodi:role="line"
+         id="tspan72-9-7-1"
+         x="87.966484"
+         y="137.94495"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">0x04</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="151.74709"
+       y="137.92378"
+       id="text74-0-1-7-1"><tspan
+         sodipodi:role="line"
+         id="tspan72-9-7-1-5"
+         x="151.74709"
+         y="137.92378"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">Teacher</tspan></text>
+    <g
+       id="g381-2"
+       transform="matrix(1.2290503,0,0,0.25000012,50.990738,86.323296)">
+      <rect
+         style="fill:#ff2a2a;stroke:none;stroke-width:1"
+         id="rect50-93"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="115.72771" />
+      <rect
+         style="fill:#7fff2a;stroke:none;stroke-width:1"
+         id="rect50-7-9"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="123.47852" />
+      <rect
+         style="fill:#ffdd55;stroke:none;stroke-width:1"
+         id="rect50-6-0"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="131.22934" />
+      <rect
+         style="fill:#4d4d4d;stroke:none;stroke-width:1"
+         id="rect50-7-7-8"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="138.98015" />
+    </g>
+    <g
+       id="g381-3"
+       transform="matrix(0.39723742,0,0,0.93513328,103.44819,-3.5862735)">
+      <rect
+         style="fill:#ff2a2a;stroke:none;stroke-width:1"
+         id="rect50-9"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="115.72771" />
+      <rect
+         style="fill:#7fff2a;stroke:none;stroke-width:1"
+         id="rect50-7-4"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="123.47852" />
+      <rect
+         style="fill:#ffdd55;stroke:none;stroke-width:1"
+         id="rect50-6-8"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="131.22934" />
+      <rect
+         style="fill:#4d4d4d;stroke:none;stroke-width:1"
+         id="rect50-7-7-1"
+         width="47.841244"
+         height="7.7508163"
+         x="43.013313"
+         y="138.98015" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:0;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+       x="124.04702"
+       y="111.3587"
+       id="text74-9"><tspan
+         sodipodi:role="line"
+         id="tspan72-7"
+         x="124.04702"
+         y="111.3587"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583">3.3V</tspan><tspan
+         sodipodi:role="line"
+         x="124.04702"
+         y="118.41425"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+         id="tspan271">SDA</tspan><tspan
+         sodipodi:role="line"
+         x="124.04702"
+         y="125.46982"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+         id="tspan273">SCL</tspan><tspan
+         sodipodi:role="line"
+         x="124.04702"
+         y="132.52538"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1;font-family:Coolvetica;-inkscape-font-specification:Coolvetica;stroke-width:0.264583"
+         id="tspan275">GND</tspan></text>
+  </g>
+</svg>

@@ -1,61 +1,70 @@
-# 17. Machine design
+# 17. Applications and Implications.
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
+## What will it do?
 
-## Research
+- Identify cow in production.
+    - Using RFID reader.
+        - Module RFID reader FDX, or, HDX - FDX.
+- Measure the quantity of milk produced by the identified cow.
+    - Using Hall effect food-safe sensor.
+        - Module food-safe flow sensor.
+- Estimate the Quality of milk based in its content of Fat/Protein.
+    - Using Dielectric Spectroscopy.
+        - Module signal emiter (DAC output).
+        - AND
+        - Module signal reader (ADC input).
+- Save the data generated per cow.
+    - Using SD memory card module.
+        - Module SD card writer.
+- Display information of the current process.
+    - Using a LCD display.
+        - Module display.
+- Send data over USB, serial communication.
+    - Using Module display,
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-## Useful links
+### Modules
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+Summary table:
 
-## Code Example
+> I2C Communication protocol.
 
-Use the three backticks to separate code.
+| Module | Id | Address | Type |
+| -- | -- | -- | -- |
+| Module RFID reader FDX | 2 | 0x02 | Student |
+| Module food-safe flow sensor | 3 | 0x03 | Student |
+| Module signal emiter (DAC output) | 4 | 0x04 | Student |
+| Module signal reader (ADC input) | 5 | 0x05 | Student |
+| Module SD card writer | 6 | 0x06 | Student |
+| Module display | 1 | | 0x01 | Teacher |
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+- Module RFID reader FDX.
+- Module food-safe flow sensor.
+- Module signal emiter (DAC output).
+- Module signal reader (ADC input).
+- Module SD card writer.
+- Module display.
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
 
-## Gallery
 
-![](../images/sample-photo.jpg)
+## Who has done what beforehand?
 
-## Video
 
-### From Vimeo
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-### From Youtube
+## What will you design?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+## What materials and components will be used?
 
-## 3D Models
+## Where will they come from?
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+## How much will they cost?
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+## What parts and systems will be made?
+
+## What processes will be used?
+
+## What questions need to be answered?
+
+## How will it be evaluated?
