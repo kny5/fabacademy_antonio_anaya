@@ -489,6 +489,10 @@ Like on this example:
 
 <iframe src="http://www.youtube-nocookie.com/embed/KmSKwU-vc4g?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&controls=0&disablekb=1" width="100%" height="315" frameborder="0"></iframe>
 
+This is an example on [asciinema](https://ascinema.org):
+
+<script id="asciicast-333393" src="https://asciinema.org/a/333393.js" async></script>
+
 This next program produces an UI that's transmitted over SERIAL Communication to the computer and accesed by using minicon.
 
 By pressing the physical button on my board the interface shows a message.
