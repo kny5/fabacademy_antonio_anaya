@@ -63,12 +63,15 @@
 
 ## What will you design?
 
+Prototypes:
+
+Electronic circuit DAC, ADC, and hall effect board.
 ![](../../images/week11/hero_00.jpg)
-
+Food-safe hall effect flow sensor.
 ![](../../images/week12/hero_01.jpg)
-
+Waterproof encase.
 ![](../../images/week06/hero.jpg)
-
+RFID reader module.
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
     <source src="../../images/week11/demo_01.mp4" type="video/mp4">
@@ -135,7 +138,7 @@ Summary table:
     |J1       |Conn_01x05_Female                     |~                                                                                       |
     |U3       |Sensor_Hall-Effect_Analog_A1324LLHLT-T|https://www.allegromicro.com/~/media/Files/Datasheets/A1324-5-6-Datasheet.ashx          |
     |C5       |0.1 uF                                |                                                                                        |
-    |J5       |Conn_01x04_Female                     |~                                                                                       |
+    |J5       |Conn_01x04_Female                     |~               elina-nguyen-cadoret                                                                        |
     |C2       |0.1uF                                 |                                                                                        |
     |C1       |10uF                                  |                                                                                        |
     |D1       |LED                                   |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf       |
