@@ -151,6 +151,9 @@ This is the final PCB design
 
 <img src="../../images/week11/pcb_12.jpg" alt="hero_01" width=100%/>
 
+<img src="../../images/week11/hall_03.jpg" alt="hall_03" width=100%/>
+
+
 
 
 ### Milling
@@ -165,19 +168,16 @@ For milling I've made three files using mods.
 
 <img src="../../images/week11/milling_05.jpg" alt="hero_01" width=100%/>
 
-### FLashing
-
-<img src="../../images/week11/flash_01.JPG" alt="hero_01" width=100%/>
 
 
 
-## Hall effect fluid sensor
-
-Stuffing:
+### Stuffing
 
 <img src="../../images/week11/stuffing_01.jpg" alt="hero_01" width=100%/>
 
-Soldering order:
+
+
+### Soldering
 
 1. Micro-controller
 2. Jumpers
@@ -191,7 +191,78 @@ Soldering order:
 
 
 
+### Flashing
+
+For flashing I've used the JTAG programmer I've made in [Week05.](../../assignments/week05)
+
+<img src="../../images/week11/flash_01.JPG" alt="hero_01" width=100%/>
+
+
+
+## Hall effect fluid sensor
+
+For the this I've used the Allegro Micro A1324:
+
+<img src="../../images/week11/hall_01.jpg" alt="hall_01" width=50%/>
+
+
+
+#### Characteristics
+
+- [Datasheet](../../datasheets/A1324-5-6-Datasheet.pdf)
+- SMD SOT23 form factor 3 pins.
+- Temperature stable -40 to 150 C.
+- Low noise
+- Analog output
+- Supply voltage 4.5 to 5.5 Volts.
+- Current 9 mA.
+- Frequency 17 KHz.
+
+
+
+### Circuit design
+
+I've follow this [Allegro Hall effect sensor applications guide](https://www.allegromicro.com/en/insights-and-innovations/technical-documents/hall-effect-sensor-ic-publications/hall-effect-ic-applications-guide), to design my circuit.
+
+My design uses a voltage divider to scale a Maximum 5 Volts output to 3.3 Volts to prevent burning my SAMD11C14 microcontroller.
+
+
+
+#### Schematic
+
+<img src="../../images/week11/hall_04.jpg" alt="hall_04" width=100%/>
+
+**BOM**
+
+| Component | ID | Form factor |
+| -- | -- | -- |
+| Allegromicro a1324 Hall effect sensor. | U3 |  SOT23W |
+| Resistor 2 K Ohms | R3 | 1206 |
+| Resistor 1 K Ohms | R2 | 1206 |
+| Resistor 0 Ohms (jumper) | R8 | 1206 |
+
+
+
+#### PCB
+
+I've decided to make this shape to later add a mechanical spinning component so it could be used as a liquid flow sensor.
+
+<img src="../../images/week11/hall_02.jpg" alt="hall_02" width=100%/>
+
+
+
 ### Code
+
+This code works by reading the analog output signal of the Allegromicro a1324 sensor connected to the pin **PA_04** of my board using the **AnalogRead** function of the Generic Arduino Mattairtech bootloader for SAMD11C14.
+
+First declares the constants "HALL" to 4, "VIN_FACTOR" the factor of conversion to analog to millivolts 3.3/1023.
+
+Declares a long precision variable "value".
+
+Sets Hall pin as input, and starts Serial (USB) communication at 9600 bauds.
+
+Loops analog read of HALL and sends TX Serial with the result of Value times VIN_FACTOR.
+
 
 ```
 /*
@@ -199,7 +270,7 @@ This program reads the analog output of a HALL effect A-1324 sensor to millivolt
 
 Pinout:
 
-HAll sensor @ PIN 4
+Hall sensor @ PIN 4
 
 Pseudo-code:
 
@@ -246,11 +317,12 @@ This is the signal response when an magnet passes 3 times over the sensor at 3mm
 
 The the step is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
 
+I've used the Arduino IDE software to flash my board. The included plotter in the IDE as following.
+
+<img src="../../images/week11/hall_05.jpg" alt="hall_05" width=100%/>
 
 
-## RFID Reader
-
-### About RFID:
+## RFID Reader:
 
 RFID stands for "radio-frequency identification" and belongs to AIDC technologies, "Automated identification and data capture".
 
@@ -258,11 +330,54 @@ This is an important part of my final project and RFID it's board used in animal
 
 <img src="../../images/week03/postit.jpg" alt="hero_01" width=100%/>
 
-Here I'm using an FDX stadard reader that's used also in Mexico for cattle identification.
+There are two standards HDX and FDX.
+
+Here I'm using an FDX standard reader that's used also in Mexico for cattle identification.
+
+The RFID module that I'm using is the **134.2K Animal Tag FDX-B ISO11784 Reader Module**. I've find this module in [Agrilab's Electrolab inventory](agrilab.unilasalle.fr/).
+
+<img src="../../images/week11/rfid_01.jpg" alt="rfid_01" width=100%/>
 
 Every cow in France gets an RFID earring by default but in Mexico its deployment its still ongoing due to multiple factors like supply chain and distribution.
 
 <img src="../../images/week03/photo_1.jpg" alt="hero_01" width=100%/>
+
+
+
+#### Characteristics of the RFID module:
+
+- Serial communication at 9600 bauds.
+- LSB Hexadecimal format ASCII.
+- 5 to 9 Volts
+- FDX RFID standard complaining with the [ISO11784 standard](https://www.wikiwand.com/en/ISO_11784_and_ISO_11785)
+
+This module uses Serial communication, the **TX** pin outputs at 9600 bauds, the reading distance it's approximately 25 to 30 centimeters at 5 Volts and 10 mA. You can appreciate the distance of detection in the demo video below.
+
+
+
+#### Interfacing with the module
+
+To interface with this board I've used the **Serial1** interface of my SAMD11C14 based board. Using the [Mattairtech Generic SAMD11C14 bootloader](https://github.com/mattairtech/ArduinoCore-samd/tree/master/variants/Generic_D11C14A), you have the **RX1** pin on the pin **PA_31** pin.
+
+<img src="../../images/week11/rfid_02.jpg" alt="rfid_02" width=100%/>
+
+To read Serial communications we need the **TX** pin of the module connected to the **RX1** pin of the board, GND to ground and VCC to the 5 Volts pin of my SAMD11C14 board, the 5 Volts come from the USB connector. You can appreciate the wiring I've used with a bread board in the demo video below.
+
+
+
+#### Code
+
+This is the minimal code you need to read the module output, later on I'll need to decode and detect valid RFID earrings.
+
+This code uses two serial communication interfaces, **Serial** which its equal to **USBSerial** and **Serial1** which is located in Pins 30 and 31 of the SAMD11C14 bootloader from Mattairtech.
+
+I the **Setup** the code starts Serial communication on **Serial** and **Serial1** interfaces, both at 9600 bauds.
+
+In **Loop** the board makes a **char** variable and assigns the value of the **Serial1.read()** output. *.read()* means that my board will open and read Serial communication in *Serial1* interface.
+
+Then the **Loop** ends by printing the result using the **Serial (USBSerial)** communication. You can appreciate the output [here.](#serial-output)
+
+
 
 ```
 /*
@@ -335,18 +450,39 @@ Things I've to do to enable UART communication:
 <img src="../../images/week11/sparkfun_03.jpg" alt="hero_01" width=40%/>
 
 
+
+## Learning outcomes
+
+This week assignment was very didactic and I've learn about step response by experimenting with the liquids at the beginning.
+
+It's was my first time designing and manufacturing a sensor, so it was very satisfactory to me to see the sensor working using the Oscilloscope, but also I've learned about electronic noise.
+
+I've learned to mill on this order:
+
+- Traces
+- Holes
+- Outline
+
+Then I've learned the basics about interfacing with Serial communications.
+
 ## Files
 
 Kicad:
-- Schematic
-- Net file
-- PCB design
 
-Roland SRM-20
-- Milling gcode
+- [Compressed ZIP](../../files/kicad/week11_kicad.zip)
+
+Milling for Roland SRM-20:
+
+- [Traces](../../files/milling/week11_traces.rml)
+- [Holes](../../files/milling/week11_holes.rml)
+- [Outline](../../files/milling/week11_outline.rml)
 
 Inkscape:
-- Outtrace shape
+
+- [Outline shape SVG](../../files/week11/pcb_outline.svg)
+- [Outline shape DXF](../../files/week11/pcb_outline.dxf)
 
 Arduino:
--
+
+- [Hall effect](../../files/week11/hall_effect_millivolts/hall_effect_millivolts.ino)
+- [RFID](../../files/week11/rfid_134K_module/rfid_134K_module.ino)
