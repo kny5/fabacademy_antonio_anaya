@@ -45,6 +45,15 @@
 <!--[](../../images/week17/ref_02_a.jpg)-->
 [Datasheet](https://www.arbrown.com/english/products/milk_test/digital_mastitis_detector/dl3.html)
 
+This device its commonly use to verify the freshness of milk and to detect sub-clinical mastitis in the cattle.
+
+The functioning its simple:
+
+- Collecting a sample of milk.
+- Perform the test by pulsing the test button.
+- Check a paper printed reference table of values and possible correlations.
+- Determine a diagnostic based in the lecture.
+
 
 
 ### Sensirion liquid flow meters

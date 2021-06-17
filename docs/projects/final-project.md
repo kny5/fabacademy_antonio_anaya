@@ -2,6 +2,51 @@
 
 ## On site Milk QC and animal identification system:
 
+<img src="../../presentation.png" alt="presentation" width=100%/>
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../presentation.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+## What will it do?
+
+- Identify cow in production.
+    - Using RFID reader.
+
+- Display information of the current process.
+		- Using a LCD display.
+
+- Identify fresh milk
+		- Using AC current
+
+
+
+## Who has done what beforehand?
+
+The device I'm using as reference its the [Milk Checker.](https://www.arbrown.com/english/products/milk_test/digital_mastitis_detector/)
+
+[Datasheet](https://www.arbrown.com/english/products/milk_test/digital_mastitis_detector/dl3.html)
+
+![](../../images/week17/ref_02.jpg)
+<!--[](../../images/week17/ref_02_a.jpg)-->
+
+This device its commonly use to verify the freshness of milk and to detect sub-clinical mastitis in the cattle.
+
+The functioning its simple:
+
+- Collecting a sample of milk.
+- Perform the test by pulsing the test button.
+- Check a paper printed reference table of values and possible correlations.
+- Determine a diagnostic based in the lecture.
+
+
+
+## Introduction
+
 While working in Mexico, I discovered the need for an affordable data acquisition system.
 
 Project board:
@@ -19,6 +64,7 @@ Project board:
 | | | Video demo |
 | | | | First prototype, workbench test, feedback and rework |
 | | | | | Second prototype, Workbench test, field test, feedback and rework |
+
 
 
 ### Context
@@ -154,21 +200,6 @@ User:
   </video>
 </figure>
 
-
-<!--
-## Week01
-## Week02
-## Week03
-## Week04
-## Week05
-## Week06
-## Week07
-## Week08
-## Week09
-## Week10
-## Week11
-## Week12
--->
 
 
 ## Week13
