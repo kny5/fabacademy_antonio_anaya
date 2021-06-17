@@ -1,61 +1,141 @@
-# 19. Invention, intellectual property and income
+# 19. Project development.
 
-This week I worked on defining my final project idea and started to getting used to the documentation process.
 
-## Research
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+## Introduction:
 
-> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+My final project development will consist in the design and manufacture of a device inspired on this form factor:
 
-## Useful links
 
-- [Jekyll](http://jekyll.org)
-- [Google](http://google.com)
-- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+[Milk Checker](https://www.arbrown.com/english/products/milk_test/digital_mastitis_detector/)
 
-## Code Example
+![](../../images/week17/ref_02.jpg)
+<!--[](../../images/week17/ref_02_a.jpg)-->
+[Datasheet](https://www.arbrown.com/english/products/milk_test/digital_mastitis_detector/dl3.html)
 
-Use the three backticks to separate code.
+Concepts of form factor and electronics:
 
-```
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+<img src="../../images/week19/concept_01.jpg" alt="concept_01" width=100%/>
+<img src="../../images/week19/concept_02.jpg" alt="concept_02" width=100%/>
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
 
-## Gallery
 
-![](../images/sample-photo.jpg)
+## What tasks have been completed, and what tasks remain?
 
-## Video
+Due to a short of time caused by health issues I've decided to cut tasks and
 
-### From Vimeo
+Completed tasks:
 
-<iframe src="https://player.vimeo.com/video/10048961" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/10048961">Sound Waves</a> from <a href="https://vimeo.com/radarboy">George Gally (Radarboy)</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+- Identify cow in production using RFID.
+- Display information of current process.
 
-### From Youtube
+Remaining tasks:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jjNgJFemlC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+- Measure the quantity of milk produced by identified cow.
+- Estimate the Quality of milk based in its content of Fat/Protein.
+- Save the data generated per cow.
+- Send data over USB, serial communication.
 
-## 3D Models
+New tasks added:
 
-<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+- Identify fresh and 5 days not refrigerated milk.
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/models/658c8f8a2f3042c3ad7bdedd83f1c915?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Dita&#39;s Gown</a>
-    by <a href="https://sketchfab.com/francisbitontistudio?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Francis Bitonti Studio</a>
-    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
-</div>
+
+
+## What has worked? what hasn't?
+
+The DAC output of my final project has worked but with a Frequency limited to 1 KHz, to increase the frequency of the signal generated I've worked on a Multivibrator circuit. To generate an AC signal up to 1 MHz frequency.
+
+
+
+## What questions need to be resolved?
+
+The correlation between dielectric spectroscopy and the quality of milk based in the proportion of Fat and Protein needs to be approached in detail and with access to a production facility.
+
+
+
+## What will happen when?
+
+| week01 to week16 | week17 | week18 | week19 | week20 |
+| -- | -- | -- | -- | -- |
+| General and user research |
+| | Proposals, Hardware, Software, Interaction |
+| | | Second prototype, Workbench test. |
+| | | | First prototype, workbench test, feedback and rework |
+| | | | | Video demo |
+
+
+
+## what have you learned?
+
+During the last four weeks I've experimented with different things for my final project especially for the electronics here I summarize the most important things I've learned.
+
+### Electronic circuits design in details
+
+During the weeks I've learned how to produce electronics in different shapes by importing contour files in DXF format in Kicad.
+
+Button board with LEDs:
+
+<img src="../../images/week19/electronics_01.jpg" alt="electronics_01" width=100%/>
+
+Immersive electrode for the transmission of Alternate Current signals:
+
+<img src="../../images/week19/electronics_02.jpg" alt="electronics_02" width=100%/>
+
+SAMD11C14 based board for DAC 1 Khz and Analog to Digital capturing:
+
+<img src="../../images/week19/electronics_03.jpg" alt="electronics_03" width=100%/>
+
+Usage of connectors for clean wiring of electronics:
+
+<img src="../../images/week19/prototype_01.jpg" alt="prototyping_01" width=100%/>
+
+I've made a USB cable connector using a 4 pin connector instead of the USB milled connector used during the weeks on my designs.
+
+<img src="../../images/week19/prototype_02.jpg" alt="prototyping_02" width=100%/>
+
+
+
+### Packaging
+
+I've made several iterations in the packaging development the common failures were caused by:
+
+- Kerf.
+- Brittleness of materials.
+- Mechanical assembly of laser cut pieces.
+
+<img src="../../images/week19/packaging_02.jpg" alt="packaging_02" width=100%/>
+
+This first prototype was impossible to assembly without breaking the pieces due to its tighten assembly connections.
+
+<img src="../../images/week19/packaging_01.jpg" alt="packaging_01" width=100%/>
+
+
+
+### Prototyping and iteration
+
+Prototyping takes time, its the most obvious thing but it can be hard to make it on time without considering every component.
+
+For that I've reasoned in the next following steps for a successful project integration:
+
+- Initial form factor design
+- User interaction considerations
+- Inputs and outputs
+- Electronics design
+- Power supply selection
+- Location of components inside and outside the package
+- Wiring
+- Packaging design
+- Joining mechanisms
+
+This reassembles the [FabAcademy program](https://fabacademy.org) and now I've a better understanding about the order of the assignments we have been following during this weeks.
+
+
+
+### DAC Signal generation with SAMD11C14 microcontroller.
+
+I've learned to generated signals using the [MPLAB IDE of Microchip](https://microchip-mplab-harmony.github.io/csp_apps_sam_d11/apps/dac/dac_wav_gen/readme.html) with the Harmony library.
+
+This is the result observed in the oscilloscope.
+
+<img src="../../images/week19/signal_01.jpg" alt="context_01" width=100%/>
