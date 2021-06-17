@@ -315,7 +315,11 @@ This is the signal response when an magnet passes 3 times over the sensor at 3mm
 
 <img src="../../images/week11/step_01.jpg" alt="hero_01" width=100%/>
 
-The the step is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
+### About the 100mV step response
+
+The step response signal is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
+
+The reason of the 100mV step signal is that I'm scalling the output signal assuming a maximun of 5 Volts, so the measured signal is 625 mV after the voltage divider, the arrengement of the voltage divider reduces by 66% the original analog output of the allegromicro a1324 hall effect sensor, so the step response of 100mV could be +34% without it.
 
 I've used the Arduino IDE software to flash my board. The included plotter in the IDE as following.
 
@@ -469,18 +473,18 @@ Then I've learned the basics about interfacing with Serial communications.
 
 Kicad:
 
-- [Compressed ZIP](../../files/kicad/week11_kicad.zip)
+- [Compressed ZIP](../../files/week11/kicad/week11_kicad.zip)
 
 Milling for Roland SRM-20:
 
-- [Traces](../../files/milling/week11_traces.rml)
-- [Holes](../../files/milling/week11_holes.rml)
-- [Outline](../../files/milling/week11_outline.rml)
+- [Traces](../../files/week11/milling/week11_traces.rml)
+- [Holes](../../files/week11/milling/week11_holes.rml)
+- [Outline](../../files/week11/milling/week11_outline.rml)
 
 Inkscape:
 
-- [Outline shape SVG](../../files/week11/pcb_outline.svg)
-- [Outline shape DXF](../../files/week11/pcb_outline.dxf)
+- [Outline shape SVG](../../files/week11/inkscape/pcb_outline.svg)
+- [Outline shape DXF](../../files/week11/inkscape/pcb_outline.dxf)
 
 Arduino:
 
