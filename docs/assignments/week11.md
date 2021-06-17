@@ -338,7 +338,7 @@ There are two standards HDX and FDX.
 
 Here I'm using an FDX standard reader that's used also in Mexico for cattle identification.
 
-The RFID module that I'm using is the **134.2K Animal Tag FDX-B ISO11784 Reader Module**. I've find this module in [Agrilab's Electrolab inventory](agrilab.unilasalle.fr/).
+The RFID module that I'm using is the **134.2K Animal Tag FDX-B ISO11784 Reader Module**. I've find this module in [Agrilab's Electrolab inventory](https://agrilab.unilasalle.fr/).
 
 <img src="../../images/week11/rfid_01.jpg" alt="rfid_01" width=100%/>
 
