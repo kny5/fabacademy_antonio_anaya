@@ -317,13 +317,16 @@ This is the signal response when an magnet passes 3 times over the sensor at 3mm
 
 ### About the 100mV step response
 
-The step response signal is very small around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
+The step response signal is around 100 mV, the hall sensor needs at least 4.5V so I've think that maybe the voltage divider is not a good idea after all. So in the future I'll like to switch to a regulator, and test again.
 
-The reason of the 100mV step signal is that I'm scalling the output signal assuming a maximun of 5 Volts, so the measured signal is 625 mV after the voltage divider, the arrengement of the voltage divider reduces by 66% the original analog output of the allegromicro a1324 hall effect sensor, so the step response of 100mV could be +34% without it.
+The reason of the 100mV step signal is that I'm scaling the output signal assuming a maximun of 5 Volts, so the measured signal is 625 mV after the voltage divider, the arrengement of the voltage divider reduces by 66% the original analog output of the allegromicro a1324 hall effect sensor, so the step response of 100mV could be +34% without it.
 
 I've used the Arduino IDE software to flash my board. The included plotter in the IDE as following.
 
 <img src="../../images/week11/hall_05.jpg" alt="hall_05" width=100%/>
+
+I've read the input with a resolution of 10 bits and didn't tried any other resolution like 12 bits wich is an advantage of the SAMD11C14 microcontroller.
+
 
 
 ## RFID Reader:
