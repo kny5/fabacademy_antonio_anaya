@@ -469,6 +469,20 @@ I've learned to mill on this order:
 
 Then I've learned the basics about interfacing with Serial communications.
 
+
+
+## Physical properties related to the measurement
+
+The hall effect sensor measures changes in magnetic fields in a certain range, the allegro a1324 measures changes around 4.75 to 5.25 mV/G at 25 C.
+
+>Using semiconductors (such as silicon), Hall effect sensors work by measuring the changing voltage when the device is placed in a magnetic field. In other words, once a Hall effect sensor detects that it is now in a magnetic field, it is able to sense the position of objects.
+
+*Source RS-online [https://se.rs-online.com/web/generalDisplay.html?id=ideas-and-advice/hall-effect-sensors-guide](https://se.rs-online.com/web/generalDisplay.html?id=ideas-and-advice/hall-effect-sensors-guide)
+
+<img src="../../images/week11/hall_06.jpg" alt="hall_06" width=40%/>
+
+
+
 ## Files
 
 Kicad:
