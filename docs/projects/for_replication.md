@@ -62,7 +62,8 @@ Joinery:
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
-| Nylon hexagonal spacers | 
+| Nylon hexagonal spacers |
+|
 
 Electronic components:
 

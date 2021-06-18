@@ -6,7 +6,7 @@
 
 ## Introduction:
 
-This week we started on Friday to Print a becnhmarking model.
+This week we started on Friday to Print a benchmark model.
 
 ![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
 
@@ -20,7 +20,7 @@ Then we had the chance to look at the 3D scanners available at the FabLab.
 
 **Introduction:**
 
-This is the process of digitalizing the shape of a physical object, the size can be relative but some scanners are specialized to keep dimesiona accuracy for reverse engineering.
+This is the process of digitizing the shape of a physical object, the size can be relative but some scanners are specialized to keep dimensional accuracy for reverse engineering.
 There are different technologies for scanning, in the fablab we have optical light projection stereo scanners.
 
 
@@ -29,19 +29,20 @@ There are different technologies for scanning, in the fablab we have optical lig
 Requirements:
 
 1. Einscan Pro Plus.
+1. ExScanPro software
 2. Rotation plate.
 1. Shinning 3D ExScanPro.
 2. Meshlab
 
 
 
-### ExScanPRo:
+### EinScan Pro +:
 
 ![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
 
 ![FDM Benchmark 3D model.](../../images/week06/einscan_2.jpg)
 
-1. If you have a small object, les than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the handheld scanning.
+1. If you have a small object, less than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the hand-held scanning.
 4. If your object is as big as a room, and use the tracking stickers.
 2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
 3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
@@ -71,8 +72,11 @@ Requirements:
 
 **Outcome:**
 
-![Original.](../../images/week06/original_piece.jpg)
-![Scanned.](../../images/week06/scanned_piece.jpg)
+![Original.](../../images/week06/scan_00.jpg)
+
+Viewed using [Layout Editor 3D](https://layouteditor.com/)
+
+![Scanned.](../../images/week06/scan_01.jpg)
 
 My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
 [Download file on drive.](https://drive.google.com/file/d/1uwHDAUs1lqgR1rzgQH01UlVKgH_bD-8T/view?usp=sharing)
@@ -100,13 +104,21 @@ Requirements:
 5. If Saknect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the obeject to scan.
 6. Once you have finished the scan, process the points, create a mesh and export the model as STL.
 
+My team mate [Theo Gautier](http://fab.academany.org/2021/labs/agrilab/students/theo-gautier/) was my model to scan, this is a photo of him before the process in the MediaLab of [Agrilab Fablab](https://agrilab.unilasalle.fr)
+
+![issue_4.](../../images/week06/theo_00.jpg)
+
+And this is the model being processed in [Meshmixer.](https://www.meshmixer.com/)
+
 ![issue_4.](../../images/week06/meshmixer_1.jpg)
+
+
 
 ## FDM:
 
 **Description:**
 
-[3D printer at the lab.](../../images/week06/creality_cr10s5_agrilab.jpg)
+![3D printer at the lab.](../../images/week06/creality_cr10s5_agrilab.jpg)
 
 It's a modern manufacturing process that uses CNC machines to build 3D models, has recently gained a lot of attention due to the availability of desktop 3D print machines to make plastic models.
 
@@ -159,6 +171,8 @@ So to prevent any hazardous environment follow this basic checklist:
 
 As the FDM printing process requires high temperatures to melt the plastic, there's some risk associated to the usage of the machine.
 
+Although current 3D printers incorporate overheating control to prevent fires using thermo-couple wire sensors located in the heating extrude elements and the heating bed, its still a safety assurance to have extra preventing measures.
+
 ![Fire example.](https://hackaday.com/wp-content/uploads/2018/03/fire.png?w=800 =250x)
 
 Checklist to prevent fires while 3D printing:
@@ -204,7 +218,13 @@ Food-safe use of 3D printed parts:
 
 **Disposing and recycling:**
 
-[Detailed information here.]()
+The process of recycling 3D printed plastics requires the use of equipment to crush, melt and extrude new filament or other objects.
+
+[Detailed information here.](https://bitfab.io/blog/3d-printing-plastic-recycling/)
+
+[Precious plastic](https://preciousplastic.com/) its also a project that shares machine building blueprints and methods to establish a plastic recycling station.
+
+The objective of recycling 3D printed residues its to decrease the environmental impact of the process. [More information about this topic here on this research paper.](https://www.sciencedirect.com/science/article/pii/S2352940720301360)
 
 
 
@@ -217,12 +237,12 @@ Checklist:
 3. Disable steppers.
 3. Move the cart to the closest corner of the build plate.
 4. Using a small piece of normal bond paper, check the Z axis distance to the plate by passing through the nozzle and the build platform.
-5. If you feel the paper passing too tight, lose the Z axis bolt, until the paper passes throughfully.
+5. If you feel the paper passing too tight, lose the Z axis bolt, until the paper passes with a slight friction resistance.
 6. Move to the next corner and repeat the steps 3 to 5.
-7. Once all the corners are aadjusted move to the center.
+7. Once all the corners are adjusted move to the center.
 8. Enable steppers again and make a test print.
 9. If the print sticks to the printing bed the calibration was successful.
-10. If not, repeat the process, until it's succesfull.
+10. If not, repeat the process, until it's successful.
 
 
 
@@ -231,13 +251,17 @@ Checklist:
 Print not sticking to build plate:
 
 When the machine Z axis is far from the build plate it's very likely that the printing is not going to stick to the bed. If that happens you need to check the Z axis calibration, follow the checklist.
-![issue_1.](../../images/week06/issue_0.jpg)
+
+
+![issue_0.](../../images/week06/issue_0.jpg)
 
 
 Warp:
 
-When the build plate is too cold, the plastic shrinks quikly and the difference of contraction between the first layers and the current ones it makes the piece to warp and detatch to the build plate.
-![issue_2.](../../images/week06/issue_1.jpg)
+When the build plate is too cold, the plastic shrinks quickly and the difference of contraction between the first layers and the current ones it makes the piece to warp and detach to the build plate.
+
+
+![issue_1.](../../images/week06/issue_1.jpg)
 
 
 Elephant feet:
@@ -267,14 +291,14 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 
 **Slicing using Cura:**
 
-Cura is a software that converts STL files into GCODE that's used by the 3D printing.
+[Cura](https://ultimaker.com/es/software/ultimaker-cura) is a software that converts STL files into GCODE that's used by the 3D printing.
 
 1. Import the STL file to print.
 2. Place it in to the build plated in one plain side.
 3. Choose the orientation avoiding the largest side in the Z or Y axis.
 4. Set the layer thickness optimizing time and material.
-5. Set the temperature of the nozzle following the material recomendations.
-5. Set the build plate temperature depeding on the temperature of the room and following the material labeled recommendations.
+5. Set the temperature of the nozzle following the material recommendations.
+5. Set the build plate temperature depending on the temperature of the room and following the material labeled recommendations.
 5. Set the speed of the printing process.
 5. Set the infill to a conservative percentage to avoid material wasting, but optimizing mechanical properties of the part.
 6. Slice
@@ -289,7 +313,7 @@ Cura is a software that converts STL files into GCODE that's used by the 3D prin
 3. Load the GCODE file.
 4. Start the printing process.
 5. Take care of any extruded filament during the pre-heating process. Those can mess up the first layer of the printing.
-6. Once the process started, take care of the temperature of the room and follow the risk assessment checlists.
+6. Once the process started, take care of the temperature of the room and follow the risk assessment checklists.
 7. Once the process has finished, separate the printed part from the build platform using a clean spatula.
 8. Check dimension accuracy if needed.
 9. Take notes of the configurations you used on a document to keep a quality control data base.
@@ -298,19 +322,40 @@ Cura is a software that converts STL files into GCODE that's used by the 3D prin
 ![FDM Benchmark 3D model.](../../images/week06/fdm_1.jpg)
 ![FDM Benchmark 3D model.](../../images/week06/fdm_2.jpg)
 ![FDM Benchmark 3D model.](../../images/week06/fdm_3.jpg)
+
+On this picture, my instructor [Florent Lemaire](http://fabacademy.org/2020/labs/agrilab/students/florent-lemaire/about) pointed the skipped layers in the printing.
+
+The printing process was made overnight on Friday so I didn't had the chance to inspect the final result until next Monday, it could be due to a clogged nozzle or over-tighten Z axis.
+
+Unfortunately I didn't perform an extrusion purge test on the machine before starting the process.
+
 ![FDM Benchmark 3D model.](../../images/week06/fdm_4.jpg)
+
+
 
 ## SLA:
 
 **Introduction:**
 
-Stereolithography it's a manufacturing process that makes use of photoreactive resins and light in a specific wavelenght, to build tri-dimensional models.
+Stereo-lithography it's a manufacturing process that makes use of photo-reactive resins and light in a specific wavelength, to build 3D models.
 
 
 
 ### SLA Workflow with **Formlabs form 2**:
 
 ![issue_4.](../../images/week06/sla_1.jpg)
+
+**Machine:**
+
+[Formlabs Form 2](https://formlabs.com/3d-printers/form-2/)
+
+**Material:**
+
+[Grey standard Formlabs UV resin](https://formlabs.com/materials/standard/#greyscale)
+
+**Software:**
+
+[Formlabs preform](https://formlabs.com/software/#preform)
 
 **Requirements:**
 
@@ -335,19 +380,20 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 3. Click on the "magick wand button"
 4. Save the file and send it to the machine.
 
+![preform.](../../images/week06/preform_1.jpg)
 
 **Process:**
 
 1. Turn on the printer. Pulsing the power button.
-2. Keep the lid closed as much as posible, light contaminates the resin byt curing it. Be quick at open and manipulating anything inside the print chamber.
+2. Keep the lid closed as much as possible, light contaminates the resin byt curing it. Be quick at open and manipulating anything inside the print chamber.
 2. Remove the tank cover.
 3. Open the vent in the cartridge by pushing the mechanical vent button.
 4. Place the building plate in the holder.
 5. Upload the file to print using a USB memory stick, USB cable or network using Preform software.
 6. Check before confirming that the chamber is free of any obstacles and the resin is flowing as expected.
 7. Start the printing process.
-8. If after the first layers you detect any anomaly in the printing like lose supports or detatched parts, stop the printing.
-9. If the printing its succesfull, proceed to remove the building plate.
+8. If after the first layers you detect any anomaly in the printing like lose supports or detached parts, stop the printing.
+9. If the printing its successful, proceed to remove the building plate.
 10. Use paper towels to clean the excess of liquid in the building plate, not in the model.
 11. Don't pour any of the residual resin in the tank.
 12. Remove the printed part carefully using a clean spatula.
@@ -356,9 +402,52 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 15. Once the washing process has finished, remove carefully the part from the machine using globes and avoiding breathing or touching the Isopropyl alcohol.
 16. Place the part inside the curing chamber.
 17. Set the temperature and time using the information available [here](https://support.formlabs.com/s/article/Form-Cure-Time-and-Temperature-Settings?language=en_US).
-18. Once the curing process has finished, carefully remove the suppports using a pinzer or exacto cutter.
+18. Once the curing process has finished, carefully remove the supports using a pincer or knife cutter.
 19. The print has finished.
 
+#### **Visual reference:**
+
+Estimated printing time:
+![](../../images/week06/sla_007.jpg)
+
+Opening valve:
+![](../../images/week06/sla_002.jpg)
+
+Raising bed holder lock:
+![](../../images/week06/sla_003.jpg)
+
+Globes and paper towels are needed at any moment to manipulate the prints:
+![](../../images/week06/sla_004.jpg)
+
+3D Printer chamber opened:
+![](../../images/week06/sla_005.jpg)
+
+Build plate:
+![](../../images/week06/sla_006.jpg)
+
+Printing temperature of resin 31 C:
+![](../../images/week06/sla_001.jpg)
+
+Isopropyl alcohol for the washing machine:
+![](../../images/week06/sla_008.jpg)
+
+
+![](../../images/week06/sla_0010.jpg)
+![](../../images/week06/sla_0011.jpg)
+![](../../images/week06/0.jpg)
+
+About to submerge the printing in the washing machine:
+![](../../images/week06/sla_009.jpg)
+
+
+Building plate:
+
+![](../../images/week06/sla_0013.jpg)
+
+
+![](../../images/week06/sla_0014.jpg)
+![](../../images/week06/sla_0015.jpg)
+![](../../images/week06/sla_0016.jpg)
 
 ![issue_4.](../../images/week06/sla_2.jpg)
 
@@ -366,7 +455,7 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 **Cleaning and chemical disposing:**
 
-1. Do not wash the resing with water or Isopropyl alcohol in the sink.
+1. Do not wash the resin with water or Isopropyl alcohol in the sink.
 2. Use paper towels, and don't dispose any of it in the paper recycling.
 3. Expose the used towers to sunlight to cure the plastic.
 4. Find a chemical disposal container to dispose the paper towels.
@@ -377,7 +466,7 @@ Stereolithography it's a manufacturing process that makes use of photoreactive r
 
 ### 3D model:
 
-This is the first prototype of the electroconductive sensor for my final project. As I need the parto to be watertight I choose SLA priting, then as We don't have transparent resin available I made a window on my part to place a transparent laser cutted plate. I followed design principles using nervs and reincorcing the unions using chamflers or roundings. It will be very difficult for a 5 axis milling machine to reproduce the shape, but it's possible to make 2 parts mold of course.
+This is the first prototype of the electro-conductive sensor for my final project. As I need the part to be watertight I choose SLA printing, then as We don't have transparent resin available I made a window on my part to place a transparent plate. I followed design principles using nerves and reinforcing the unions using chamflers or rounding. It will be very difficult for a 5 axis milling machine to reproduce the shape, but it's possible to make 2 parts mold of course.
 
 [More info about my project here.](../../projects/final-project/)
 
@@ -437,6 +526,8 @@ With Electrodes:
 Design fails:
 
 The rubber seal holder it's too small, the electrode holders are too big and the nuts can't touch the piece so I'll need to make it wider. For the next iteration.
+
+
 
 ### Files:
 

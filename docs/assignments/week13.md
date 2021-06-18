@@ -375,7 +375,7 @@ Why do I need this?
 
 The RFID board that I'm using for my project uses 5 to 9 Volts for power source, while my projects micro-controller with the SAMD11E17 needs only 3.3 Volts.
 
-<img src="../../images/week13/rfid_01.jpg" alt="rfid_01" width=100%/>
+<img src="../../images/week11/rfid_01.jpg" alt="rfid_01" width=100%/>
 
 It means that to use this board with the UART Serial Communication Protocol, I need to connect the PIN_31 (RX) of my micro-controller to the TX pin of the RFID board.
 
@@ -457,7 +457,7 @@ To flash my board I've selected this options:
 
 ## Speaker
 
-For this I've used as inspiration the access door of [Agrilab](agrilab.unilasalle.fr) the access door works by RFID when the ID is scanned it gives feedback by blinking a Green light and producing the following sound shown in the Test section.
+For this I've used as inspiration the access door of [Agrilab](https://agrilab.unilasalle.fr) the access door works by RFID when the ID is scanned it gives feedback by blinking a Green light and producing the following sound shown in the Test section.
 
 I'll like to use the [tone library](#tone-library-for-arduino) to make a beep sound after scanning an RFID tag.
 
@@ -476,6 +476,8 @@ I'll like to use the [tone library](#tone-library-for-arduino) to make a beep so
 ### Circuit
 
 This is the circuit I've designed to drive a 2 Watts speaker using my SAMD11C14 board from week11, since the voltage output and current of the SAMD11C14 its limited to 1.63 to 3.63 Volts *depending on power operation input* on my case is 3.3 Volts to amplify the sound out of the speaker I've used a [2N2222 general purpose transistor](#2n2222-transistor).
+
+I'm amplifying current and voltage since the Positive Pin to the speaker its connected to 5V and the micro-controller runs at 3.3 V.
 
 The pin **PA_05** of my SAMD11C14 board is connected to the **BASE** Pin of the **2N2222** transistor. The **Collector** pin is connected to the **GROUND of the power source** and the **Emitter** to the **GROUND pad of the speaker**.
 
@@ -760,10 +762,13 @@ Code:
 
 Circuits:
 
+- [Kicad files **Use this** ZIP version](../../files/week13/kicad.zip)
+<!--
 - [Kicad project file](../../files/week13/kicad/wee13.pro)
 - [Schematic](../../files/week13/kicad/wee13.sch)
 - [PCB](../../files/week13/kicad/wee13.kicad_pcb)
 - [Netfile](../../files/week13/kicad/wee13.net)
+-->
 
 Milling Roland SRM-20:
 
