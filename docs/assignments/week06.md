@@ -10,13 +10,13 @@ This week we started on Friday to Print a benchmark model.
 
 ![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
 
-[More details in the group assingment page.](http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/)
+[More details in the group assignmentz page.](http://fabacademy.org/2021/labs/agrilab/group/week06/)
 
 Then we had the chance to look at the 3D scanners available at the FabLab.
 
 
 
-## Scanning:
+## Scanning:z
 
 **Introduction:**
 
@@ -38,12 +38,12 @@ Requirements:
 
 ### EinScan Pro +:
 
-![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
 
-![FDM Benchmark 3D model.](../../images/week06/einscan_2.jpg)
+![Scanning Device and rotatory platform](../../images/week06/scan_3.jpg)
+
 
 1. If you have a small object, less than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the hand-held scanning.
-4. If your object is as big as a room, and use the tracking stickers.
+4. If your object is as big as a room, and use the tracking stickers, although sticker are also used to improve the scanning of small objects without enough surfaces for matching in the rebuild process.
 2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
 3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
 5. Open ExScanPro.
@@ -64,6 +64,10 @@ Requirements:
 
 **Meshlab:**
 
+![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
+
+![FDM Benchmark 3D model.](../../images/week06/einscan_2.jpg)
+
 ![FDM Benchmark 3D model.](../../images/week06/meshlab_1.jpg)
 
 1. Import the STL model output from the ExScanPro software.
@@ -80,10 +84,15 @@ Viewed using [Layout Editor 3D](https://layouteditor.com/)
 
 My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
 [Download file on drive.](https://drive.google.com/file/d/1uwHDAUs1lqgR1rzgQH01UlVKgH_bD-8T/view?usp=sharing)
-
+complete.
 
 
 ### Xbox Kinect:
+
+![Kinect and skanect.](http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/images/Week6/kinect.jpg)
+
+*Credits to [Theo Gautier for the photo.](http://fab.academany.org/2021/labs/agrilab/students/theo-gautier/)*
+*Note: We made this practice together.*
 
 Requirements:
 
@@ -124,8 +133,6 @@ It's a modern manufacturing process that uses CNC machines to build 3D models, h
 
 
 **Parts:**
-
-![issue_4.](../../images/week06/spool.jpg)
 
 1. General structure.
 2. Power supply and control unit.
@@ -228,7 +235,8 @@ The objective of recycling 3D printed residues its to decrease the environmental
 
 
 
-### Z axis Calibration:
+###
+ Calibration:
 
 Checklist:
 
@@ -295,7 +303,7 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 
 1. Import the STL file to print.
 2. Place it in to the build plated in one plain side.
-3. Choose the orientation avoiding the largest side in the Z or Y axis.
+3. Choose the orientation avoiding the largest side in the Z or Y axis. **Although my instructor [Florent Lemaire](http://fabacademy.org/2020/labs/agrilab/students/florent-lemaire/about/) pointed that this is not a completely correct answer.**
 4. Set the layer thickness optimizing time and material.
 5. Set the temperature of the nozzle following the material recommendations.
 5. Set the build plate temperature depending on the temperature of the room and following the material labeled recommendations.
@@ -385,7 +393,7 @@ Stereo-lithography it's a manufacturing process that makes use of photo-reactive
 **Process:**
 
 1. Turn on the printer. Pulsing the power button.
-2. Keep the lid closed as much as possible, light contaminates the resin byt curing it. Be quick at open and manipulating anything inside the print chamber.
+2. Keep the lid closed as much as possible, light contaminates the resin by curing it. Be quick at open and manipulating anything inside the print chamber.
 2. Remove the tank cover.
 3. Open the vent in the cartridge by pushing the mechanical vent button.
 4. Place the building plate in the holder.
@@ -405,6 +413,19 @@ Stereo-lithography it's a manufacturing process that makes use of photo-reactive
 18. Once the curing process has finished, carefully remove the supports using a pincer or knife cutter.
 19. The print has finished.
 
+
+
+#### Settings
+
+- 0.1 resolution.
+- 31 C temperature.
+- Material: standard grey resin formlabs.
+- Washing time 15 mins.
+- Used 2-propanol Isopropyl Alcohol.
+- Curing time 20 mins at 60 C.
+
+
+
 #### **Visual reference:**
 
 Estimated printing time:
@@ -413,41 +434,44 @@ Estimated printing time:
 Opening valve:
 ![](../../images/week06/sla_002.jpg)
 
-Raising bed holder lock:
-![](../../images/week06/sla_003.jpg)
+Build plate:
+![](../../images/week06/sla_006.jpg)
 
 Globes and paper towels are needed at any moment to manipulate the prints:
 ![](../../images/week06/sla_004.jpg)
 
+Raising bed holder lock:
+![](../../images/week06/sla_003.jpg)
+
 3D Printer chamber opened:
 ![](../../images/week06/sla_005.jpg)
-
-Build plate:
-![](../../images/week06/sla_006.jpg)
 
 Printing temperature of resin 31 C:
 ![](../../images/week06/sla_001.jpg)
 
-Isopropyl alcohol for the washing machine:
-![](../../images/week06/sla_008.jpg)
+Building plate with piece:
+![](../../images/week06/sla_0013.jpg)
 
-
-![](../../images/week06/sla_0010.jpg)
+Removing printed part from build plate with spatula:
 ![](../../images/week06/sla_0011.jpg)
-![](../../images/week06/0.jpg)
+![](../../images/week06/sla_0010.jpg)
+
+Cleaning build plate with paper towels:
+![](../../images/week06/0012.jpg)
+
+Isopropyl alcohol for the washing machine 2-propanol:
+![](../../images/week06/sla_008.jpg)
 
 About to submerge the printing in the washing machine:
 ![](../../images/week06/sla_009.jpg)
 
-
-Building plate:
-
-![](../../images/week06/sla_0013.jpg)
-
-
+Washing machine time elapse:
 ![](../../images/week06/sla_0014.jpg)
-![](../../images/week06/sla_0015.jpg)
-![](../../images/week06/sla_0016.jpg)
+
+Final result:
+![](../../images/week06/sla_final.jpg)
+
+
 
 ![issue_4.](../../images/week06/sla_2.jpg)
 
