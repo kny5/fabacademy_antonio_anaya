@@ -300,7 +300,7 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 
 
 
-### FMD workflow:
+### FMD work:
 
 **Requirements:**
 
@@ -311,7 +311,7 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 ![issue_4.](../../images/week06/printer_2.jpg)
 
 
-**Slicing using Cura:**
+#### Slicing using Cura
 
 [Cura](https://ultimaker.com/es/software/ultimaker-cura) is a software that converts STL files into GCODE that's used by the 3D printing.
 
@@ -361,8 +361,12 @@ The printing process was made overnight on Friday so I didn't had the chance to 
 
 Unfortunately I didn't perform an extrusion purge test on the machine before starting the process.
 
+#### Result:
+
 ![FDM Benchmark 3D model.](../../images/week06/fdm_4.jpg)
 ![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
+![FDM Benchmark 3D model.](../../images/week06/issue_3.jpg)
+
 
 
 ## SLA:
