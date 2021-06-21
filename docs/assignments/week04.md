@@ -45,6 +45,7 @@ The process of cutting the vinyl is very quick and it only needs some basic adju
 
 
 
+
 ### Heat transfer vinyl on fabric:
 
 <img src="../../images/week04/vinyl_2.JPG" alt="Thermal-transfer to fabric" width="90%"/>
