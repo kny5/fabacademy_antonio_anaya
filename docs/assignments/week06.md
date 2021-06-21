@@ -29,14 +29,13 @@ There are different technologies for scanning, in the fablab we have optical lig
 Requirements:
 
 1. Einscan Pro Plus.
-1. ExScanPro software
 2. Rotation plate.
-1. Shinning 3D ExScanPro.
+1. Shinning 3D ExScanPro Software.
 2. Meshlab
 
 
 
-### EinScan Pro +:
+### 3D scanning with EinScan Pro + device:
 
 
 ![Scanning Device and rotatory platform](../../images/week06/scan_3.jpg)
@@ -47,7 +46,7 @@ Requirements:
 2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
 3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
 5. Open ExScanPro.
-6. Connect the EinScan Pro to a computer using the USB cable. [Detailed computer specs here.]()
+6. Connect the EinScan Pro device to a computer using the USB cable. [Detailed computer specs here.]()
 6. Choose the "Fixed scan" option.
 7. Create a new project group.
 8. Start the scan by pressing the play button.
@@ -62,17 +61,32 @@ Requirements:
 15. Process the mesh in the post-processing step, you can reduce, smooth, simplify and cover holes in the model.
 16. Save the model as a STL file.
 
-**Meshlab:**
-
 ![FDM Benchmark 3D model.](../../images/week06/einscan_1.jpg)
 
 ![FDM Benchmark 3D model.](../../images/week06/einscan_2.jpg)
+
+
+
+#### Meshlab:
 
 ![FDM Benchmark 3D model.](../../images/week06/meshlab_1.jpg)
 
 1. Import the STL model output from the ExScanPro software.
 2. Filter the model, under the menu Filters>Cleaning and Repairing: Choose as many repair options as the model needs.
 3. save the new filtered STL file.
+
+Settings used:
+
+- Surface reconstruction VCG:
+    - Voxel side (absolute and %) = 1.0295, 1.000
+    - Sub Volume splitting, 1.
+    - Geodesic weighting, 2.
+    - Show result, True.
+    - Volume Laplacian iteration, 2.
+    - Widering, 3.
+    - Vertex splatting, False.
+    - Post merge simplification, False.
+    - Pre-smooth iteration, 3.
 
 **Outcome:**
 
@@ -85,6 +99,7 @@ Viewed using [Layout Editor 3D](https://layouteditor.com/)
 My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
 [Download file on drive.](https://drive.google.com/file/d/1uwHDAUs1lqgR1rzgQH01UlVKgH_bD-8T/view?usp=sharing)
 complete.
+
 
 
 ### Xbox Kinect:
@@ -235,8 +250,7 @@ The objective of recycling 3D printed residues its to decrease the environmental
 
 
 
-###
- Calibration:
+### Calibration:
 
 Checklist:
 
@@ -312,6 +326,16 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 6. Slice
 7. Save the GCODE file in a SD card or USB drive to upload it to the machine.
 
+![FDM Benchmark 3D model.](../../images/week06/cura_00.jpg)
+
+Settings:
+
+- Resolution 0.10 mm layer.
+- No supports.
+- Skirt width 10 mm.
+- Skirt distance from object 0.0mm
+- Skirt layers, 1.
+- Skirt layer height 0.1 mm.
 
 **Process:**
 
@@ -338,7 +362,7 @@ The printing process was made overnight on Friday so I didn't had the chance to 
 Unfortunately I didn't perform an extrusion purge test on the machine before starting the process.
 
 ![FDM Benchmark 3D model.](../../images/week06/fdm_4.jpg)
-
+![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
 
 
 ## SLA:

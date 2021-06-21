@@ -1,7 +1,5 @@
 # 19. Project development.
 
-
-
 ## Introduction:
 
 My final project development will consist in the design and manufacture of a device inspired on this form factor:
@@ -22,7 +20,7 @@ Concepts of form factor and electronics:
 
 ## What tasks have been completed, and what tasks remain?
 
-Due to a short of time caused by health issues I've decided to cut tasks and
+Due to a short of time caused by health issues I've decided to cut tasks and focus in the simplest functions of the project:
 
 Completed tasks:
 
@@ -42,9 +40,11 @@ New tasks added:
 
 
 
+
 ## What has worked? what hasn't?
 
 The DAC output of my final project has worked but with a Frequency limited to 1 KHz, to increase the frequency of the signal generated I've worked on a Multivibrator circuit. To generate an AC signal up to 1 MHz frequency.
+
 
 
 
