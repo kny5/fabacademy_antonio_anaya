@@ -47,6 +47,12 @@ The DAC output of my final project has worked but with a Frequency limited to 1 
 
 
 
+The Multivibrator Circuit has also worked producing a capped frequency of 40Khz. But due to multiple mistakes in the tracing process I've had problems to finally make it to work.
+
+The operational amplifier hasn't work due to a misunderstanding of the pin out connections and components used, like the 10K Ohms resistor added to the output instead the input.
+
+
+
 
 ## What questions need to be resolved?
 

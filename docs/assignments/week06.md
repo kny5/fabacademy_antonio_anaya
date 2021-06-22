@@ -28,14 +28,14 @@ There are different technologies for scanning, in the fablab we have optical lig
 
 Requirements:
 
-1. Einscan Pro Plus.
+1. Einscan Pro Plus device.
 2. Rotation plate.
-1. Shinning 3D ExScanPro Software.
-2. Meshlab
+1. [Shinning 3D EinScan Software](https://www.einscan.com/einscan-software/einscan-software-download-new-2/).
+2. [Meshlab](https://www.meshlab.net/)
 
 
 
-### 3D scanning with EinScan Pro + device:
+### EinScan Pro +:
 
 
 ![Scanning Device and rotatory platform](../../images/week06/scan_3.jpg)
@@ -45,7 +45,7 @@ Requirements:
 4. If your object is as big as a room, and use the tracking stickers, although sticker are also used to improve the scanning of small objects without enough surfaces for matching in the rebuild process.
 2. If you're using the rotation plate place the object to scan in a position with any curved face on top.
 3. If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.
-5. Open ExScanPro.
+5. Open EinScan Software.
 6. Connect the EinScan Pro device to a computer using the USB cable. [Detailed computer specs here.]()
 6. Choose the "Fixed scan" option.
 7. Create a new project group.
@@ -71,7 +71,7 @@ Requirements:
 
 ![FDM Benchmark 3D model.](../../images/week06/meshlab_1.jpg)
 
-1. Import the STL model output from the ExScanPro software.
+1. Import the STL model output from the EinScan Software software.
 2. Filter the model, under the menu Filters>Cleaning and Repairing: Choose as many repair options as the model needs.
 3. save the new filtered STL file.
 

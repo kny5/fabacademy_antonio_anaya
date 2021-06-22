@@ -65,15 +65,40 @@ Joinery:
 | Nylon hexagonal spacers |
 |
 
-Electronic components:
-
-|
 
 
 ### Electronic components:
 
-| Component | Code |
-| -- | -- | -- | -- |
+|Reference|Value                             |Footprint                                |Datasheet                                                                                      |
+|---------|----------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------|
+|U5       |ATSAMD11C14A-SS                   |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                               |
+|R8       |10K                               |fabacademy2021:R_1206                    |~                                                                                              |
+|C3       |1uF                               |fabacademy2021:C_1206                    |                                                                                               |
+|J5       |Conn_01x04_Female                 |digikey:PinHeader_1x4_P2.54mm_Drill1.02mm|~                                                                                              |
+|U1       |Regulator_Linear_LM3480-3.3V-100mA|fabacademy2021:fab-SOT23                 |https://www.ti.com/lit/ds/symlink/lm3480.pdf                                                   |
+|R10      |10k                               |fabacademy2021:R_1206                    |~                                                                                              |
+|R9       |10k                               |fabacademy2021:R_1206                    |~                                                                                              |
+|C6       |0.1uF                             |fabacademy2021:C_1206                    |                                                                                               |
+|J3       |Conn_01x04_Female                 |digikey:PinHeader_1x4_P2.54mm_Drill1.02mm|~                                                                                              |
+|J4       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
+|R3       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
+|R4       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
+|R5       |0                                 |fabacademy2021:R_1206                    |~                                                                                              |
+|U3       |Regulator_Linear_NCP1117-5.0V-1A  |fabacademy2021:fab-SOT223                |https://www.onsemi.com/pub/Collateral/NCP1117-D.PDF                                            |
+|C1       |C                                 |fabacademy2021:C_1206                    |~                                                                                              |
+|J6       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
+|J7       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
+|Q1       |PN2222A                           |fabacademy2021:fab-SOT23                 |https://www.onsemi.com/pub/Collateral/PN2222-D.PDF                                             |
+|C2       |1nF                               |fabacademy2021:C_1206                    |                                                                                               |
+|R1       |1K                                |fabacademy2021:R_1206                    |~                                                                                              |
+|R6       |100                               |fabacademy2021:R_1206                    |~                                                                                              |
+|R13      |100                               |fabacademy2021:R_1206                    |~                                                                                              |
+|R12      |1K                                |fabacademy2021:R_1206                    |~                                                                                              |
+|C4       |1nF                               |fabacademy2021:C_1206                    |                                                                                               |
+|Q2       |PN2222A                           |fabacademy2021:fab-SOT23                 |https://www.onsemi.com/pub/Collateral/PN2222-D.PDF                                             |
+|J2       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
+|J8       |Conn_ARM_JTAG_SWD_10              |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
+|R2       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
 
 
 
