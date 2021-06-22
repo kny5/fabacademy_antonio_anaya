@@ -50,6 +50,21 @@ My plan summarizes in this points:
 - Distributing the resources through Hackaday, Field Ready and PublicLab.
 - Search for seed funding towards a commercial product development.
 
+### Details
+
+About the use of seed funding resources the main points to cover for seed funding are:
+
+- The associated costs to Product development prior to final product launching.
+- [Equipment](#equipment) or renting a space in a Fablab.
+- Fulfill with localized legal permissions and regulations.
+
+
+About who will build the device:
+
+For the first three trials the device will be build by me, [Antonio Anaya](../../about/index.html), but for the future steps the device is ment to be build by anyone that has access to the minimum equipment required but specially to people with access to fablabs.
+
+You will find the instructions to replicate my final project in the next [link](../../projects/for_replication).
+
 
 
 ## Equipment
@@ -79,9 +94,9 @@ Schedule:
 - Second cut in Jun 2022.
 - Prototype 3 in July 2022.
 
-### Trials
 
-#### First
+
+### First
 This will be the feasibility of the device.
 
 Its mean to be conducted with the help of technicians and researchers of the [UNACH](https://www.unach.mx/campus-ii-tuxtla-gutierrez/facultad-de-medicina-veterinaria-y-zootecnia) due to their knowledge of the location and understanding of the working conditions of the local farms in the Ocozocuautla region.
@@ -92,17 +107,20 @@ The method will be developed by the researchers based on a [Scientific Comparati
 
 
 
-#### Second
+### Second
 
 This will be focus in the interaction and will compare two form factors of the device. Currently there's only one form factor but the second one will be developed on the following months.
 
 The methodology will be based on the "Design thinking, User Centered Product design methodology" of [IDEO, and Stanford](https://changelabs.stanford.edu/system-transformation-methodologies-2/design-thinking) and later use the data obtained will be process using [AB comparison methodology](https://www.wikiwand.com/en/A/B_testing)
 
-#### Third
+
+
+### Third
 
 This will be focus to complain with Mexican norms and standards and will consider the replacement of materials prior to a pre-commercial release.
 
 The methodology will be based on the [COFEPRIS regulations *in Spanish*](https://www.gob.mx/cms/uploads/attachment/file/540589/GUIA_REGULACION_PRODUCTOS_BIOLOGICOS.PDF) The MExican office for regulations for products for veterinarian usage.
+
 
 
 ## Intellectual Property
@@ -463,6 +481,7 @@ Potential:
 - Community workshops by region.
 
 
+
 ### Channels:
 
 #### Awareness:
@@ -487,11 +506,26 @@ After sales support will be given by Asociación de veterinarios y zootecnicos d
 
 ### Revenue streams:
 
-The revenue streams are still unknown but the goal price for monthly suscription to adquire the device will be 1000 MXN Month per device per farm with after sales support.
+The revenue streams are still unknown but the goal price for monthly subscription to acquire the device will be 1000 MXN Month per device per farm with after sales support.
+The device its planned to have a annual price of 6'000 MXN. Pesos. And the after sales support of 600 MXN month.
 
-The device its planned to have a annual price of 6'000 MXN. Pesos.
+They're three streams of income:
 
-And the after sales support of 600 MXN month.
+- Monthly subscription 1'000 MXN that includes the device rent and support.
+- One time payment for the device of $6'000 MXN and one year support included.
+- Extra after sales support 600 MXN per month.
+
+
+
+#### Details
+
+The annual production of milk in the Tropical south zone of Mexico has been 1500 million liters per year from the year 2000 to the year 2010.
+
+The average revenue of a small dairy producer in the south region in Mexico, which is the poorest region the country is a minimum of 4.2 MXN per liter, and the minimum production per day its an average of 13 liters per day per cow. The minimum amount of cattle to be part of the local dairy association is 10 cows.
+
+So the minimum brute income will be around 16'000 MXN per month with an approximate production cost of 75% the final income per month will be 3'000 MXN per month. This income its for the smallest of the associates but they represent only 10% of the total of producers and the average cattle per producers its around 70 cows.  
+
+The real cost per device as a product its yet to be determined, the plan its to make a revenue of it, still the numbers are difficult to say given the current state of the project, in the next stages I'll update the amounts in this section.
 
 
 

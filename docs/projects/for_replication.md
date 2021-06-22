@@ -58,13 +58,15 @@ Connectors:
 | JTAG self punching | | | |
 | | 2x5 | 1 | female, 1.27 mm pitch |
 
+
+<!--
 Joinery:
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
 | Nylon hexagonal spacers |
 |
-
+-->
 
 
 ### Electronic components:
@@ -100,7 +102,15 @@ Joinery:
 |J8       |Conn_ARM_JTAG_SWD_10              |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
 |R2       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
 
+## Files
 
+### Files for laser cut
+
+### Files for 3D printing
+
+### Files for circuit milling
+
+### Code
 
 ## Assembly process
 
