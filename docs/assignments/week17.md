@@ -230,5 +230,20 @@ This materials are available in the FabLab inventory. For now all of them will c
 
 ## How will it be evaluated?
 
-- Finding a correlation between Step response and Fat Protein that could be measure with the DAC and DCA modules.
-- By being used in an actual farm.
+> Finding a correlation between Step response and Fat Protein that could be measure with the DAC and DCA modules.
+> - By being used in an actual farm.
+
+**Note:** As week22 I've decided to change this to the next testing plan also written in [week19 documentation](../../assignments/week19/#time-management)
+
+For the testing I've changed my idea since the time available is less for me. My testing will be to measure different samples:
+
+- 100ml From a bottle milk
+- 100ml of creme.
+- 100ml of coca-cola
+- 100ml of tap water.
+
+I'll take note of the values of the samples and compare the results in a table like this:
+
+| Substance | Samples per second | Min | Max | Average |
+| -- | -- | -- | -- | -- |
+| | | | | |
