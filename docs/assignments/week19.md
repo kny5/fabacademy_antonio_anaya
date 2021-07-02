@@ -90,6 +90,41 @@ Software design was focus on showing the information and process the sample meas
 
 
 
+### Testing
+
+For the testing I've changed my idea since the time available is less for me. My testing will be to measure different samples:
+
+- 100ml From a bottle milk
+- 100ml of creme.
+- 100ml of coca-cola
+- 100ml of tap water.
+
+I'll take note of the values of the samples and compare the results in a table like this:
+
+| Substance | Samples per second | Min | Max | Average |
+| -- | -- | -- | -- | -- |
+| | | | | |
+
+
+
+### Deployment
+
+This process will follow the future plans of my project, that I've explained [here in the week18 material](../../assignments/week18/#dissemination-plan).
+
+Resume:
+
+I'll perform 3 trials starting in 2022 using the device, and will be performed by veterinary technicians from public and private institutions dedicated to monitor the quality of dairy productions in the central Region of Chiapas in Mexico.
+
+Schedule:
+
+- First trial starting in January 2022.
+- First cut in March 2022.
+- Prototype 2 in April 2022.
+- Second trial in May 2022.
+- Second cut in Jun 2022.
+- Prototype 3 in July 2022.
+
+
 ## What tasks have been completed, and what tasks remain?
 
 Due to a short of time caused by health issues I've decided to cut tasks and focus in the simplest functions of the project:
@@ -133,19 +168,24 @@ The correlation between dielectric spectroscopy and the quality of milk based in
 
 ## What will happen when?
 
-| week01 to week16 | week17 | week18 | week19 | week20 |
-| -- | -- | -- | -- | -- |
+| week01 to week16 | week17 | week18 | week19 | week20 | week21 | week22 | week23 |
+| -- | -- | -- | -- | -- | -- | -- | -- |
 | General and user research |
 | | Proposals, Hardware, Software, Interaction |
 | | | Second prototype, Workbench test. |
 | | | | First prototype, workbench test, feedback and rework |
 | | | | | Video demo |
+| | | | | | Circuit board design and manufacturing |
+| | | | | | | Probes (Electrodes) design and manufacturing, software programming, testing and finishing |
+| | | | | | | | | |
 
 
 
 ## what have you learned?
 
 During the last four weeks I've experimented with different things for my final project especially for the electronics here I summarize the most important things I've learned.
+
+
 
 ### Electronic circuits design in details
 
