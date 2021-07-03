@@ -10,18 +10,18 @@ This week we started on Friday to Print a benchmark model.
 
 ![FDM Benchmark 3D model.](../../images/week06/benchmark_5.jpg)
 
-[More details in the group assignmentz page.](http://fabacademy.org/2021/labs/agrilab/group/week06/)
+[More details in the group assignment page.](http://fabacademy.org/2021/labs/agrilab/group/week06/)
 
 Then we had the chance to look at the 3D scanners available at the FabLab.
 
 
 
-## Scanning:z
+## Scanning:
 
 **Introduction:**
 
 This is the process of digitizing the shape of a physical object, the size can be relative but some scanners are specialized to keep dimensional accuracy for reverse engineering.
-There are different technologies for scanning, in the fablab we have optical light projection stereo scanners.
+There are different technologies for scanning, in the FabLab we have optical light projection stereo scanners.
 
 
 **Optical line scanning devices in the lab:**
@@ -37,9 +37,7 @@ Requirements:
 
 ### EinScan Pro +:
 
-
 ![Scanning Device and rotatory platform](../../images/week06/scan_3.jpg)
-
 
 1. If you have a small object, less than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the hand-held scanning.
 4. If your object is as big as a room, and use the tracking stickers, although sticker are also used to improve the scanning of small objects without enough surfaces for matching in the rebuild process.
@@ -56,7 +54,7 @@ Requirements:
 11. Once the first scan pass has finished, change the position of the object preserving one or more faces from the first pass visible to the scanner, so the software can unify the next scan passes.
 13. During the scans it may be some noise or unwanted points in the model, use the selection tools to remove all the unwanted points, press shit and click to select and backspace to delete.
 12. Keep scanning and turning the object in the plate changing the position until all the model gets covered.
-13. Once the model gets completely scanned look for any green sphere and remove it, those are mark traking points that can damage your model.
+13. Once the model gets completely scanned look for any green sphere and remove it, those are mark tracking points that can damage your model.
 14. Click on the mesh model button to create a mesh.
 15. Process the mesh in the post-processing step, you can reduce, smooth, simplify and cover holes in the model.
 16. Save the model as a STL file.
@@ -71,13 +69,13 @@ Requirements:
 
 ![FDM Benchmark 3D model.](../../images/week06/meshlab_1.jpg)
 
-1. Import the STL model output from the EinScan Software software.
+1. Import the STL model output from the EinScan Software.
 2. Filter the model, under the menu Filters>Cleaning and Repairing: Choose as many repair options as the model needs.
 3. save the new filtered STL file.
 
 Settings used:
 
-- Surface reconstruction VCG:
+    - Surface reconstruction VCG:
     - Voxel side (absolute and %) = 1.0295, 1.000
     - Sub Volume splitting, 1.
     - Geodesic weighting, 2.
@@ -122,10 +120,10 @@ Requirements:
 **Workflow:**
 
 1. Open Skanect and plug the USB converter to current and the a USB port in the computer.
-2. While on skanect follow the stes to stand at a optimal distance from the scanned objective. If you're to close the color of the preview will change to blue, if you're too far it will change to red.
+2. While on Skanect follow the steps to stand at a optimal distance from the scanned objective. If you're to close the color of the preview will change to blue, if you're too far it will change to red.
 3. Keep the distance until the color of the preview model stays at green color.
 4. Move around the object to scan until you cover all the sides and details.
-5. If Saknect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the obeject to scan.
+5. If Skanect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the object to scan.
 6. Once you have finished the scan, process the points, create a mesh and export the model as STL.
 
 My team mate [Theo Gautier](http://fab.academany.org/2021/labs/agrilab/students/theo-gautier/) was my model to scan, this is a photo of him before the process in the MediaLab of [Agrilab Fablab](https://agrilab.unilasalle.fr)
@@ -171,7 +169,7 @@ It's a modern manufacturing process that uses CNC machines to build 3D models, h
 
 **Plastic particles in air:**
 
-As in the printing process we are heating plastics and then use a fan to cooldown the layers it's very important to know that we're actually emitting dangerous plastic particles to the air.
+As in the printing process we are heating plastics and then use a fan to cool down the layers it's very important to know that we're actually emitting dangerous plastic particles to the air.
 
 ![Air quality study](https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-2-e1570468596874.png)
 
@@ -205,7 +203,7 @@ Checklist to prevent fires while 3D printing:
 4. Take a look at the board components and try to identify any over heating on the motor drivers.
 5. Use safe temperature materials, there are some exotic mixes that require higher temperatures.
 6. Check that all the cooling fans are working correctly.
-7. Check if you have the right setttings for the material.
+7. Check if you have the right settings for the material.
 8. Try to split large models into ~8 to 10 hours parts.
 9. Avoid prints that are very long.
 10. Install [Octoprint](https://octoprint.org/) or [astroprint](https://www.astroprint.com/) to monitor online your prints.
@@ -217,22 +215,22 @@ Checklist to prevent fires while 3D printing:
 
 **Cross contamination:**
 
-There are some people interested on food-safe or biomedical 3D printing parts. But there's some risk associated to the FDM process that makes very difficult to make safe printed parts.
+There are some people interested on food-safe or bio-medical 3D printing parts. But there's some risk associated to the FDM process that makes very difficult to make safe printed parts.
 
 Food-safe manufacturing checklist:
 
-1. Change the brass extruder nozzle for one made of lead-free staninless steel.
+1. Change the brass extruder nozzle for one made of lead-free stainless steel.
 2. Use a closed cased 3D printer.
 3. Use a lead-free glass for the printer bed.
 4. Use a lead-free material.
-5. Print with the higher resolution to reduce the ammount of porosity on the part surface.
-6. For posprocessing you can cover the part with Teflon, Transparent resin or try electroplating.
+5. Print with the higher resolution to reduce the amount of porosity on the part surface.
+6. For pos-processing you can cover the part with Teflon, Transparent resin or try electroplating.
 
 Food-safe use of 3D printed parts:
 
-1. Clean inmediately after every usage, to avoid the food impregnate on the part surface.
+1. Clean immediately after every usage, to avoid the food impregnate on the part surface.
 2. Don't put any reactive substance in the 3D printed part.
-3. If you're using a dishwashing machine, check the temperatures to avoid any deformation on the part.
+3. If you're using a dish washing machine, check the temperatures to avoid any deformation on the part.
 4. Be conscious that there's no possibility to have a long-lasting 3D print part, so you need to dispose the part after it shows signs of wearing in the food-safe coating.
 
 [Detailed information here.](https://formlabs.com/blog/guide-to-food-safe-3d-printing/)
@@ -311,6 +309,7 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 ![issue_4.](../../images/week06/printer_2.jpg)
 
 
+
 #### Slicing using Cura
 
 [Cura](https://ultimaker.com/es/software/ultimaker-cura) is a software that converts STL files into GCODE that's used by the 3D printing.
@@ -328,7 +327,7 @@ When the temperature it's too high and the speed it's too slow, the filament wil
 
 ![FDM Benchmark 3D model.](../../images/week06/cura_00.jpg)
 
-Settings:
+**Settings:**
 
 - Resolution 0.10 mm layer.
 - No supports.
