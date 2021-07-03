@@ -125,8 +125,8 @@ The methodology will be based on the [COFEPRIS regulations *in Spanish*](https:/
 
 ## Intellectual Property
 
+```
 The device will currently run under the [CERN Open Hardware License](https://ohwr.org/cernohl) [strongly reciprocal variant](https://ohwr.org/cern_ohl_s_v2.txt). This license was chosen for being a scientific hardware license, compared to the [Open Soruce Hardware Association](https://www.oshwa.org/faq/) it has stronger scientifical support.
-
 
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
@@ -417,7 +417,7 @@ subsection 3.2.
   8.6 This Licence shall not be enforceable except by a Licensor
       acting as such, and third party beneficiary rights are
       specifically excluded.
-
+```
 
 
 ## Business model based in Lean Business Canvas
