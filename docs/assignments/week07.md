@@ -421,7 +421,21 @@ I've found also a fliped led in my schematic image. That I've corrected except i
 
 
 
+#### Design Rules check
+
+Design rules check its a tool of PCBnew to detect violations to the design rules specified in the pcb design file. Its under the inspect menu of the top toolbar.
+
+![PCB 3D](../../images/week07/drc_02.jpg)
+
+My design didn't had any trouble in the traces as I've made a very simple design, still in the future DRC will be an important tool for me to know if the design its suitable to process in MODS and also to have a functional milled circuit board.
+
+![PCB 3D](../../images/week07/drc_01.jpg)
+
+
+
 ### 3D model
+
+I've made this capture by using the 3D tool in PCBnew in the view menu of the top toolbar.
 
 ![PCB 3D](../../images/week07/kicad_render_01.jpg)
 
