@@ -102,7 +102,6 @@ Arduino	| Port	| Alternate Function	| Comments (! means not used with this perip
 14	| PA14	| SDA / TC10		| EIC/NMI ADC/AIN[6] PTC/X[0] PTC/Y[6] SERCOM0/PAD[0] !SERCOM2/PAD[0] TC1/WO[0] !TCC0/WO[0]
 15	| PA15	| SCL / TC11		| EIC/EXTINT[1] ADC/AIN[7] PTC/X[1] PTC/Y[7] SERCOM0/PAD[1] !SERCOM2/PAD[1] TC1/WO[1] !TCC0/WO[1]
 16	| ----	| NOT A PIN		| NOT A PIN
-
 17	| ----	| NOT A PIN		| NOT A PIN
 18	| ----	| NOT A PIN		| NOT A PIN
 19	| ----	| NOT A PIN		| NOT A PIN

@@ -477,9 +477,9 @@ Video
   </video>
 </figure>
 
-### Spectral sensor and serial communication:
+### Serial communication:
 
-## Sparkfun spectral sensor
+#### Sparkfun spectral sensor
 
 I've been stuck on this due to the library size. I've above 7000 bytes of the flash memory.
 
@@ -539,7 +539,7 @@ delay(100);
 
 ### i2c
 
-LCD Display
+#### LCD Display
 
 Circuit
 
@@ -582,13 +582,14 @@ void loop() {
 }
 ```
 
-Demo
+#### Demo
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../images/week13/display_02.mp4" type="video/mp4">
 	</video>
 </figure>
+
 
 
 
@@ -620,8 +621,6 @@ Description:
 - Student 4 prints x value using the LCD screen and serial communication,
 - Student 17 prints y value using the LCD screen and serial communication.
 
-
-### Board and pinouts
 
 ### Code
 
