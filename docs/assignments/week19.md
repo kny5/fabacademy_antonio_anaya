@@ -157,6 +157,15 @@ The Multivibrator Circuit has also worked producing a capped frequency of 40Khz.
 
 The operational amplifier hasn't work due to a misunderstanding of the pin out connections and components used, like the 10K Ohms resistor added to the output instead the input.
 
+Also at week22 I've decided to change to electrical conductivity and designed a third electronic board, the output its from 1.6 to 3.3 Volts and the Input its 12 bits resolution using the analogReadResolution function of the arduino library.
+
+I've also designed the user interface using a 20 x 4 LCD Display that uses a PCF8574 microcontroller for i2c interfacing. The LCD shows the next data:
+
+- RFID value,
+- Sample size,
+- Current value,
+- Average value,
+- Graphbar, Y = samples, X = value.
 
 
 
