@@ -772,5 +772,5 @@ Circuits:
 
 Milling Roland SRM-20:
 
-- [Traces](../../files/week13/roland_srm20/week13_audio_rfid.rml)
-- [Outline](../../files/week13/roland_srm20/week13_outline.rml)
+- [Traces](../../files/week13/week13_traces.svg)
+- [Outline](../../files/week13/week13_outline.svg)
