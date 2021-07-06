@@ -369,6 +369,8 @@ Joinery:
 
 ### Electronic components:
 
+#### Control board components:
+
 |Reference|Value                             |Footprint                                |Datasheet                                                                                      |
 |---------|----------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------|
 |U5       |ATSAMD11C14A-SS                   |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                               |
@@ -399,6 +401,10 @@ Joinery:
 |J2       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
 |J8       |Conn_ARM_JTAG_SWD_10              |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
 |R2       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
+
+
+#### Button board components
+
 
 
 
@@ -695,10 +701,14 @@ void die_read_02(){
 
 ```
 
-[Download code](../../files/project/code/firmware_01.ino)
+[Download code](../../files/project/code/milq_01.ino)
 
-[Download binary for ATSAMD11C14A](../../files/project/code/firmware_01.bin)
+[Download binary for ATSAMD11C14A](../../files/project/code/milq_firmware.bin)
 
+
+#### Flashing code with EDBG ATSAMD11C14A programmer
+
+<script id="asciicast-7dRzmv1E9xrZKi30LasY9GCZF" src="https://asciinema.org/a/7dRzmv1E9xrZKi30LasY9GCZF.js" async></script>
 
 
 ## Assembly process
