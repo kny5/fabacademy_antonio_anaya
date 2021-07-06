@@ -129,3 +129,8 @@ video {
   display: block;
 	width: 100%;
 }
+
+a.md-nav__link {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
