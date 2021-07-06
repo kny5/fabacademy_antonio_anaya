@@ -1,22 +1,10 @@
 # 1. Principles and practices.
 
-## Project management table
-
-| week01 | week02 | week03 | week04 | week05 |
-| -- | -- | -- | -- | -- |
-| General and user research |
-| | Proposals, Hardware, Software, Interaction |
-| | | Video demo |
-| | | | First prototype, workbench test, feedback and rework |
-| | | | | Second prototype, Workbench test, field test, feedback and rework |
-
-
-
 ## Context
 
 [You can find information about my project here.](../../projects/final-project/)
 
-I've read the [fab charter](http://fab.cba.mit.edu/about/charter/)
+I've read the [fab charter and signed the student agreement.](http://fab.cba.mit.edu/about/charter/)
 
 
 
@@ -60,6 +48,18 @@ So one of the steps in this development will be to measure a variety of milk sam
 ### About UxD
 
 The other important aspect I'm considering for this project is the interaction design. User-centered design for agriculture is an important topic, since most tools need an specialized trained professional to be used. In some places this will not be a problem, but in Mexico, in my region the technicians/animals is 3000 animals for each technician.
+
+
+
+### Project management table
+
+| week01 | week02 | week03 | week04 | week05 |
+| -- | -- | -- | -- | -- |
+| General and user research |
+| | Proposals, Hardware, Software, Interaction |
+| | | Video demo |
+| | | | First prototype, workbench test, feedback and rework |
+| | | | | Second prototype, Workbench test, field test, feedback and rework |
 
 
 
