@@ -59,14 +59,15 @@ Connectors:
 | | 2x5 | 1 | female, 1.27 mm pitch |
 
 
-<!--
 Joinery:
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
-| Nylon hexagonal spacers |
-|
--->
+| Nylon hexagonal spacers | 2 | 5 mm spacer |
+| Nylon hexagonal nuts | 14 | 3 mm height |
+| Nylon bolt | 2 | 6 mm height |
+| Nylon bolt | 4 | 12 mm height |
+
 
 
 ### Electronic components:
@@ -102,15 +103,71 @@ Joinery:
 |J8       |Conn_ARM_JTAG_SWD_10              |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
 |R2       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
 
+
+
 ## Files
 
 ### Files for laser cut
 
+Settings for 100 Watts CO2 laser cutter machine:
+
+- Speed: 15
+- Power: 20
+
+Files for aproximate kerf: 0.2 mm.
+
+| Piece | Quantity | File |
+| -- | -- | -- |
+| Side plate | 3 | [side plate](../../files/project/laser/side_plate.DXF)
+| Front plate | 1 | [Front plate](../../files/project/laser/front_plate.DXF)
+| Rear plate | 1 | [rear plate](../../files/project/laser/rear_plate.DXF)
+| Middle plate | 1 | [middle plate](../../files/project/laser/middle_plate.DXF)
+
+
+
 ### Files for 3D printing
+
+Settings for FDM 1.75 mm heated bed printer:
+
+- Infill: 10%
+- Generic PLA filament
+- First layer:
+		- Layer height: 0.20 mm
+		- Nozzle temp: 215 C
+		- Bed temp: 60 C
+- Other layers:
+		- Layer height: 0.20 mm
+		- 210 C
+		- 60 C
+- Shell: 2
+- Solid layers every 4 layers
+- Minimum wall thickness: 0.7 mm
+- Perimeter speed: 50 mm/s
+- External perimeter speed: 35 mm/s
+
+[Download Prusa Slicer configuration file](../../files/project/3d/config.ini)
+
+[Download Prusa Slicer adjustments](../../files/project/3d/settings_01.ini)
+
+| Piece | Quantity | File |
+| -- | -- | -- |
+| Buttons | 1 | [buttons](../../files/project/3d/buttons.stl) |
+| Holders | 4 | [Holders](../../files/project/3d/holder.stl) |
+
+
 
 ### Files for circuit milling
 
+| Piece | Quantity | Traces | Text | Holes | Outline |  
+| -- | -- | -- | -- | -- | -- |
+| Buttons board | 1 | [Button traces](../../files/project/milling/buttons_traces.SVG) | NO | [Buttons holes](../../files/project/milling/buttons_holes.SVG) | [Buttons outline](../../files/project/milling/buttons_outline.SVG) |
+| Control board | 1 | [control traces](../../files/project/milling/control_traces.SVG) | [control text](../../files/project/milling/control_txt.SVG) | [control holes](../../files/project/milling/control_holes.SVG) | [control outline](../../files/project/milling/control_outline.SVG) |
+
+![Board PCB Kicad](../../files/project/3d/settings_01.ini)
+
 ### Code
+
+
 
 ## Assembly process
 
