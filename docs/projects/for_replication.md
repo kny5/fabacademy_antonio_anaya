@@ -14,6 +14,7 @@ MILQ its a device for checking the freshness of a milk sample. It reads FDX RFID
 
 [CERN Open Hardware Licence Version 2 - Strongly Reciprocal](../../files/project/cern_ohl_s_v2.txt)
 
+```
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
 
@@ -304,7 +305,7 @@ subsection 3.2.
       acting as such, and third party beneficiary rights are
       specifically excluded.
 
-
+```
 
 ## BOM
 
@@ -410,11 +411,12 @@ Settings for 100 Watts CO2 laser cutter machine:
 - Speed: 15
 - Power: 20
 
-Files for aproximate kerf: 0.2 mm.
+Files for approximate kerf: 0.2 mm.
 
 | Piece | Quantity | File |
 | -- | -- | -- |
 | Side plate | 3 | [side plate](../../files/project/laser/side_plate.DXF)
+| Switch plate | 1 | [switch plate](../../files/project/laser/switch_plate.DXF)
 | Front plate | 1 | [Front plate](../../files/project/laser/front_plate.DXF)
 | Rear plate | 1 | [rear plate](../../files/project/laser/rear_plate.DXF)
 | Middle plate | 1 | [middle plate](../../files/project/laser/middle_plate.DXF)
@@ -447,8 +449,8 @@ Settings for FDM 1.75 mm heated bed printer:
 
 | Piece | Quantity | File |
 | -- | -- | -- |
-| Buttons | 1 | [buttons](../../files/project/3d/buttons.stl) |
-| Holders | 4 | [Holders](../../files/project/3d/holder.stl) |
+| Buttons | 1 | [buttons](../../files/project/3d/buttons.STL) |
+| Holders | 4 | [Holders](../../files/project/3d/holder.STL) |
 
 
 
@@ -458,10 +460,244 @@ Settings for FDM 1.75 mm heated bed printer:
 | -- | -- | -- | -- | -- | -- |
 | Buttons board | 1 | [Button traces](../../files/project/milling/buttons_traces.SVG) | NO | [Buttons holes](../../files/project/milling/buttons_holes.SVG) | [Buttons outline](../../files/project/milling/buttons_outline.SVG) |
 | Control board | 1 | [control traces](../../files/project/milling/control_traces.SVG) | [control text](../../files/project/milling/control_txt.SVG) | [control holes](../../files/project/milling/control_holes.SVG) | [control outline](../../files/project/milling/control_outline.SVG) |
+| EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.SVG) | [ec text](../../files/project/milling/ec_txt.SVG) | [ec holes](../../files/project/milling/ec_holes.SVG) | [ec outline](../../files/project/milling/ec_outline.SVG) |
 
 ![Board PCB Kicad](../../files/project/3d/settings_01.ini)
 
+
+
 ### Code
+
+
+```
+
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+char rfid_tag[26];
+
+#define max_val 4000
+#define sample_size 100
+#define duty_cycle 1
+#define lcd_scaler 2
+#define lcd_segments 8
+#define plot_mult ((max_val / lcd_segments)*2) * duty_cycle
+
+uint8_t customChar[8] = {
+  0x02,
+  0x0A,
+  0x0E,
+  0x1E,
+  0x1E,
+  0x1C,
+  0x0C,
+  0x08
+};
+
+void mkr_chrs(){
+  lcd.init();
+  lcd.setCursor(0,0);
+
+  uint8_t graphChar[8][8] = {B00000};
+
+  for(int n = 0; n<7; n++){
+  graphChar[n][n] = B11111;
+  lcd.createChar(n, graphChar[n]);
+  }};
+
+void plot(int a, int c_pos){
+   int a_p = (max_val - a) / plot_mult;
+
+   lcd.home();
+   lcd.print(a_p);
+
+   if(a_p == 7){
+    lcd.setCursor(c_pos,2);
+    lcd.print("_");
+    }
+   else if(a_p < 5){
+    lcd.setCursor(c_pos,1);
+    lcd.write(a_p*lcd_scaler);
+    }
+   else {
+    lcd.setCursor(c_pos,2);
+    lcd.write(a_p*lcd_scaler);}
+   };
+
+void p_samples(){
+  for(int n = 0; n < 8; n++){
+    lcd.setCursor(2+n, 0);
+    lcd.write(n);
+    }
+  }
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+
+  mkr_chrs();
+
+  lcd.init();
+  lcd.backlight();
+
+  lcd.createChar(7, customChar);
+
+  //bootstart_msg();
+  //delay(1000);
+  animation_01(50);
+  lcd.clear();
+  pinMode(4, INPUT);
+  //pinMode(5, OUTPUT);
+  pinMode(5, INPUT);
+  analogReadResolution(12);
+  analogWriteResolution(12);
+}
+
+void loop() {
+
+  /*if (Serial1.available()) {
+    animation_01(100);
+    lcd.setCursor(0,1);
+    char* rfid_val = readRFIDtag();
+    lcd.print(rfid_val);
+    delay(1000);
+  }
+  else{
+    lcd.print("nope");
+    }
+  */
+
+  //p_samples();
+
+
+  byte SAMPLES[sample_size-1];
+  int mult = sample_size/20;
+  lcd.setCursor(12,0);
+  agrilab();
+
+
+  for(int s = 0; s < sample_size; s++){
+    //digitalWrite(5, HIGH);
+    analogWrite(DAC0, max_val);
+    int ec_val = analogRead(4);
+    //analogWrite(DAC0, 0x0);
+
+    lcd.setCursor(8,3);
+    lcd.print(ec_val);
+    SAMPLES[s] = ec_val;
+
+
+    //lcd.setCursor(s/mult,2);
+    plot(ec_val, s/mult);
+
+    lcd.setCursor(s/mult,3);
+    lcd.print(">");
+
+    lcd.setCursor(0,3);
+    lcd.print(s+1);
+    //digitalWrite(5, LOW);
+    }
+
+  int key = analogRead(5);
+
+    lcd.setCursor(3,0);
+    if(key > 3500){
+      lcd.print("c");
+      }
+    else if(key > 3190 && key < 3250){
+      lcd.print("b");
+      }
+    else if(key < 2340 && key > 2305){
+      lcd.print("a");
+      }
+    else{
+      lcd.print("?");
+      }
+    lcd.setCursor(5,0);
+    lcd.print(key);
+
+
+  int sum_ec = 0;
+
+  for(int z = 0; z < sample_size; z++){
+    sum_ec += SAMPLES[z];
+   }
+   lcd.setCursor(17,3);
+   lcd.print(sum_ec/sample_size);
+   delay(3000);
+
+   lcd.clear();
+}
+
+
+char* readRFIDtag() {
+  byte id = Serial.read();
+  rfid_tag[0] = id;
+
+  if (id == 2){
+    for (int c = 1; c < 26; c++){
+      byte bit_ = Serial.read();
+      rfid_tag[c] = bit_;
+      }
+  }
+  return rfid_tag;
+  }
+
+void agrilab(){
+  const char a[] = {"AgriLab"};
+  lcd.print(a);
+  lcd.write(7);
+  }
+
+void bootstart_msg() {
+
+  const char b[] = {"Fab Academy 2021"};
+  const char c[] = {"MILQ"};
+
+  lcd.setCursor(6,1);
+
+  agrilab();
+  delay(2000);
+
+  lcd.clear();
+  lcd.setCursor(0,1);
+  lcd.print(b);
+  lcd.setCursor(0,2);
+  lcd.print(c);
+  delay(3000);
+  }
+
+void animation_01(int del_ay){
+  int a;
+  int b;
+  for(a = 0; a < 20; a++){
+    lcd.setCursor(a,3);
+    lcd.print("/");
+    delay(del_ay);
+    }
+  }
+
+void dieleric_01(){
+  while(true){
+    analogWrite(DAC0, 0xff);
+    analogWrite(DAC0, 0x0);
+    }
+  }
+
+void die_read_02(){
+  while(true){
+    lcd.print(analogRead(4));
+    }
+  }
+
+```
+
+[Download code](../../files/project/code/firmware_01.ino)
+
+[Download binary for ATSAMD11C14A](../../files/project/code/firmware_01.bin)
 
 
 
