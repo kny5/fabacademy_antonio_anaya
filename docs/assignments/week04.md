@@ -9,8 +9,11 @@ My approach was very simple but I've discovered interesting techniques and impor
 
 This is the link to this weeks [group assignment](http://fabacademy.org/2021/labs/agrilab/group/week04/#the-lasercutter)
 
+<img src="../../images/week04/group_01.jpg" alt="Thermal-transfer to fabric" width="100%"/>
 
-## Vinyl Cutter:
+
+
+## Vinyl Cutting:
 
 ### Machine
 
@@ -37,6 +40,7 @@ The machine I've used for this practice is the [Silhouette Cameo version 3](http
 | Warranty | One year parts and labor |
 
 
+
 #### Consumables
 
 - Blades
@@ -45,7 +49,7 @@ The machine I've used for this practice is the [Silhouette Cameo version 3](http
 ![vinyl rolls](../../images/week04/vinyl_rolls.jpg)
 - Vinyl for heat transfer
 - Adhesive vinyl
-
+- <img src="../../images/week04/vinyls_02.jpg" alt="Thermal-transfer to fabric" width="100%"/>
 
 
 #### Settings
@@ -151,11 +155,13 @@ It was a slow process because of the QR in my design. But after a while I got co
 
 While peeling the design the iron press machine was pre-heating in order to be ready to transfer our designs in a piece of fabric.
 
+<img src="../../images/week04/iron_01.jpg" alt="Thermal-transfer to fabric" width="100%"/>
+
 This design is different from the one of stickers.
 
 
 
-## Laser Cutter:
+## Laser Cutting:
 
 ### Security:
 
