@@ -73,7 +73,7 @@ The machine I've used for this practice is the [Silhouette Cameo version 3](http
 3. Using the machine interface select "Load material" option and accept to confirm. ![vinyl_01.jpg](../../images/week04/vinyl_02.jpg)
 4. Check the correct placement of the material of the machine. ![vinyl_01.jpg](../../images/week04/vinyl_01.jpg)
 
-**Notes**: The auto-blade will perform a test to find the right leveling of the cut end of the tool.
+The auto-blade will adjust itself depending on the settings you have selected on the software, altough Silhouette Studio will give you predefined settings.
 
 
 
@@ -117,11 +117,18 @@ Cutting:
 4. Prior to sending the file prepare the file, if you are about to use a transfer process, be sure that you need to mirror or not the design, otherwise it will appear inverted after the process. <img src="../../images/week04/vinyl_0.jpg" alt="Vinyl software silhoutte" width="90%"/>
 4. Press the send file button in the top right corner. ![send](../../images/week04/settings_01.jpg)
 5. Select the material to use from the drop down list. ![send](../../images/week04/settings_02.jpg)
-6. Select your cut tool for me it was (auto-blade). ![send](../../images/week04/settings_03.jpg)
-7. Select this settings for vinyl (#settings) ![send](../../images/week04/settings_04.jpg)
+6. Select your cut tool for me it was (auto-blade). ![send](../../images/week04/settings_04.jpg)
+7. Select this settings for vinyl (#settings)
 8. [Follow the instructions to load the material](#load-material)
 
+Settings:
 
+- Force: Its the force applied to punch the material with the blade.
+- Speed: The cut blade movement speeds.
+- Passed: The number of passes through the cuts.
+- Blade deep: The ammount of milimeters that the blade will cut into the material.
+
+Notes about vinyl cut: I didn't perform any tests I've used the predefined settings in silhoutte studio for **vinyl mate**.
 
 ### Adhesive transfer vinyl:
 
