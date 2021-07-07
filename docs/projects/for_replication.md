@@ -1096,6 +1096,26 @@ On this video you can observe the step response in the horizontal graph.
 
 
 
+## Evaluation
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/ec_test_08.mp4" type="video/mp4">
+	</video>
+</figure>
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/ec_test_09.mp4" type="video/mp4">
+	</video>
+</figure>
+
+| Substance | Samples per second | Min | Max | Average |
+| -- | -- | -- | -- | -- |
+| Tap water | 100 | 25 | 27 | 26 |  
+| Creme Legere 12% | 100 | 202 | 214 | 208 |  
+
+
 ## Original design files
 
 

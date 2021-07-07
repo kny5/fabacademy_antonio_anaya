@@ -166,6 +166,11 @@ void loop() {
   for(int z = 0; z < sample_size; z++){
     sum_ec += SAMPLES[z];
    }
+    lcd.clear();
+    
+    lcd.setCursor(12,0);
+    agrilab();
+   
    lcd.setCursor(16,3);
    lcd.print(sum_ec/sample_size);
    delay(5000);
