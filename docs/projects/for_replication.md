@@ -748,6 +748,27 @@ Assemble the middle plate, using:
 
 ```
 
+/*
+This program uses the arduino IDE compile tools.
+
+This program plots an horizontal graph to visualize step response reading analog signals from PIN_04 with 12 bits resolution.
+On PIN_02 (DAC0) its emitted an analog signal that later will be transmitted using the probe board to liquids to measure the conductivity of it.  
+
+Conductivity increases or decreases depending in the substance so, its possible to observe a step response signal in the horizontal graph.
+The program runs a cycle of n number of samples, saves the results of every sample on an array and then shows the average value.
+
+It also shows a custom character for the AgriLab logo.
+
+IO pins:
+PA02 -> DAC0 analogWrite
+PA05 <- analogRead
+
+Autor: Antonio de Jesus Anaya Hernandez
+Year: 2021
+Org: Fab Academy
+Lab: AgriLab
+Country: France
+*/
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -997,7 +1018,9 @@ void die_read_02(){
 </figure>
 
 
+
 ## Original design files
+
 
 ### Solidworks
 
