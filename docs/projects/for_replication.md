@@ -317,7 +317,7 @@ subsection 3.2.
 
 ## BOM
 
-Tools:
+### Tools:
 
 | Tool | Specifications |
 | -- | -- |
@@ -327,7 +327,7 @@ Tools:
 | Weller Pu-81 Soldering iron or alike | Precision tip for maximum accuracy, tool folder for comfort and security |
 
 
-Supplies:
+### Supplies:
 
 | Material | Quantity | Specifications |
 | -- | -- | -- |
@@ -339,7 +339,7 @@ Supplies:
 | Double face tape | 1 roll | Stickiness should be enough to fix the FR1 to the sacrificial layer during the milling process |
 
 
-Wires:
+### Wires:
 
 | Color | Quantity | Specifications |
 | -- | -- | -- |
@@ -350,7 +350,7 @@ Wires:
 | 10 wires flat cable|  1.27 mm pitch JTAG connector |
 
 
-Connectors:
+### Connectors:
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
@@ -364,7 +364,7 @@ Connectors:
 | | 2x5 | 1 | female, 1.27 mm pitch |
 
 
-Joinery (plastic):
+### Joinery (plastic):
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
@@ -374,7 +374,7 @@ Joinery (plastic):
 | Nylon bolt | 4 | 12 mm height |
 
 
-Joinery (metal):
+### Joinery (metal):
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
@@ -667,9 +667,65 @@ Connectors on back side:
 
 
 
+### Buttons board
+
+Suggested order for soldering components:
+
+**Preferably use, lead free solder.**
+
+1. Resistors
+2. LEDs
+3. Push buttons
+4. Connector
+
+<img src="../../images/milq/buttons_01.jpg" alt="laser_01" width=100%/>
+
+
+
+### Electrical conductivity board
+
+Suggested order for soldering components:
+
+**Preferably use, lead free solder.**
+
+| PAD | Value | Wire color |
+| -- | -- | -- |
+| Left | VOUT | RED |
+| middle 2 | GND | WHITE |
+| middle 1 | GND | WHITE |
+| Right | AIN | GREEN |
+
+This image is from the back so the order of the colors is inverted.
+
+<img src="../../images/milq/ec_01.jpg" alt="laser_01" width=100%/>
+
 ## Assembly process
 
+Assemble the middle plate, using:
 
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Vinyl bolt 12 mm | 4 | [Ref](#joinery-plastic)
+| Vinyl hexagonal nut | 8 | [Ref](#joinery-plastic) | 4 to attach bolts to middle plate as down bellow, 4 more to fix LCD display to middle plate.
+
+<img src="../../images/milq/display_00.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/display_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/display_03.jpg" alt="laser_01" width=100%/>
+
+
+<img src="../../images/milq/asm_btns_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_btns_02.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_btns_03.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/asm_05.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_04.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/asm_00.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_02.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/asm_03.jpg" alt="laser_01" width=100%/>
+
+00%/>
 
 
 ### Code
