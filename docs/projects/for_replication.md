@@ -4,6 +4,14 @@
 
 <img src="../../images/milq/int_10.jpg" alt="laser_01" width=100%/>
 
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/ec_test_05.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
 ## Description
 
 MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector and plots a graph on its LCD display.
@@ -1070,9 +1078,19 @@ void die_read_02(){
 
 ## Test
 
+I've tested the Electro-conductivity probe in water and creme.
+
+On this video you can observe the step response in the horizontal graph.
+
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../images/milq/ec_test_02.mp4" type="video/mp4">
+	</video>
+</figure>
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/ec_test_05.mp4" type="video/mp4">
 	</video>
 </figure>
 

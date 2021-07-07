@@ -6,7 +6,7 @@
 
 LiquidCrystal_I2C lcd(0x27,20,4);
 
-char rfid_tag[26];
+//char rfid_tag[26];
 
 #define max_val 4000
 #define sample_size 100
@@ -74,13 +74,13 @@ void setup() {
 
   lcd.createChar(7, customChar);
 
-  //bootstart_msg();
-  //delay(1000);
+  bootstart_msg();
+  delay(1000);
   animation_01(50);
   lcd.clear();
   pinMode(4, INPUT);
   //pinMode(5, OUTPUT);
-  pinMode(5, INPUT);
+  //pinMode(5, INPUT);
   analogReadResolution(12);
   analogWriteResolution(12);
 }
@@ -116,6 +116,7 @@ void loop() {
   int mult = sample_size/20;
   lcd.setCursor(12,0);
   agrilab();
+  delay(2000);
 
   
   for(int s = 0; s < sample_size; s++){
@@ -140,6 +141,7 @@ void loop() {
     //digitalWrite(5, LOW);
     }
 
+/*
   int key = analogRead(5);
 
     lcd.setCursor(3,0);
@@ -158,20 +160,20 @@ void loop() {
     lcd.setCursor(5,0);
     lcd.print(key);
     
-    
+  */  
   int sum_ec = 0;
 
   for(int z = 0; z < sample_size; z++){
     sum_ec += SAMPLES[z];
    }
-   lcd.setCursor(17,3);
+   lcd.setCursor(16,3);
    lcd.print(sum_ec/sample_size);
    delay(3000);
 
    lcd.clear();
 }
 
-
+/*
 char* readRFIDtag() {
   byte id = Serial.read();
   rfid_tag[0] = id;
@@ -184,11 +186,18 @@ char* readRFIDtag() {
   }
   return rfid_tag;
   }
+*/
 
 void agrilab(){
   const char a[] = {"AgriLab"};
   lcd.print(a);
   lcd.write(7);
+  }
+
+void brand(){
+  const char b[] = {"MILQ"};
+  lcd.print(b);
+  lcd.write(95);
   }
 
 void bootstart_msg() {
@@ -219,6 +228,7 @@ void animation_01(int del_ay){
     }
   }
 
+/*
 void dieleric_01(){
   while(true){
     analogWrite(DAC0, 0xff);
@@ -236,6 +246,8 @@ String cal_msg(String ltr){
   return "Press the key " + ltr;
   } 
 
+*/
+/*
 String btn_cal(){
   String lts = "ABC";
   char btns[3] = {0};
@@ -271,3 +283,5 @@ String btn_cal(){
     }
   return btns;    
   }
+
+  */
