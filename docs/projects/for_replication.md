@@ -373,6 +373,8 @@ Joinery:
 
 #### Control board components:
 
+<img src="../../files/project/milling/control_ref.svg" alt="laser_01" width=100%/>
+
 |Reference|Value            |Footprint                                |Datasheet                                                                           |
 |---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
 |J3       |Conn_01x04_Female|digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
@@ -406,6 +408,8 @@ Joinery:
 
 
 #### Button board components
+
+<img src="../../files/project/milling/buttons_ref.svg" alt="laser_01" width=100%/>
 
 |Reference|Value            |Footprint                                |Datasheet                                                                           |
 |---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
@@ -543,6 +547,18 @@ Settings for FDM 1.75 mm heated bed printer:
 | -- | -- | -- | -- | -- | -- |
 | EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.svg) | | | [ec outline](../../files/project/milling/ec_outline.svg) |
 
+
+
+### Wiring
+
+#### Wire 1
+
+
+#### Wire 2
+#### Wire 3
+#### Wire 4
+#### Wire 5
+#### Wire 6
 
 
 ### Code
@@ -796,6 +812,7 @@ void die_read_02(){
 		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
+
 
 
 
