@@ -397,35 +397,35 @@ subsection 3.2.
 
 <img src="../../files/project/milling/control_ref.svg" alt="laser_01" width=100%/>
 
-|Reference|Value            |Footprint                                |Datasheet                                                                           |
-|---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
-|J3       |Conn_01x04_Female|digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
-|R2       |10K              |fabacademy2021:R_1206                    |~                                                                                   |
-|C7       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
-|C3       |1uF              |fabacademy2021:C_1206                    |                                                                                    |
-|J5       |Conn_01x04_Female|digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
-|D1       |LED              |fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
-|R7       |100              |fabacademy2021:R_1206                    |~                                                                                   |
-|C6       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
-|J6       |Conn_01x05_Female|digikey:PinHeader_1x5_P2.5mm_Drill1.1mm  |~                                                                                   |
-|U1       |Regulator_Linear_LM3480-3.3V-100mA|fabacademy2021:fab-SOT23                 |https://www.ti.com/lit/ds/symlink/lm3480.pdf                                        |
-|R10      |10k              |fabacademy2021:R_1206                    |~                                                                                   |
-|R9       |10k              |fabacademy2021:R_1206                    |~                                                                                   |
-|J1       |Conn_ARM_JTAG_SWD_10|fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
-|R11      |0                |fabacademy2021:R_1206                    |~                                                                                   |
-|R8       |10K              |fabacademy2021:R_1206                    |~                                                                                   |
-|U5       |ATSAMD11C14A-SS  |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                    |
-|J2       |Conn_01x02       |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
-|J4       |Conn_01x02       |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
-|R1       |0                |fabacademy2021:R_1206                    |~                                                                                   |
-|C9       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
-|U2       |Regulator_Linear_NCP1117-5.0V-1A|fabacademy2021:SOT-223-3_TabPin2         |https://www.onsemi.com/pub/Collateral/NCP1117-D.PDF                                 |
-|C2       |1uF              |fabacademy2021:C_1206                    |~                                                                                   |
-|J7       |Conn_01x02_Female|digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
-|R3       |150              |fabacademy2021:R_1206                    |~                                                                                   |
-|D2       |LED              |fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
-|Q1       |MOSFET_P-CH_30V_1.1A|fabacademy2021:fab-SOT-23                |https://www.onsemi.com/pub/Collateral/NDS356AP-D.PDF                                |
-|C1       |1uF              |fabacademy2021:C_1206                    |~                                                                                   |
+|Reference|Value            | Price | Buy |Footprint                                |Datasheet                                                                           |
+|---------|-----------------|--|--|-----------------------------------------|------------------------------------------------------------------------------------|
+|J3       |Conn_01x04_Female|  |  | digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R2       |10K              | 0.08 USD |  | fabacademy2021:R_1206                    |~                                                                                   |
+|C7       |0.1uF            | 0.30 USD |  | fabacademy2021:C_1206                    |                                                                                    |
+|C3       |1uF              | 0.30 USD |  | fabacademy2021:C_1206                    |                                                                                    |
+|J5       |Conn_01x04_Female|  |  | digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
+|D1       |LED              | 0.26 USD |  | fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
+|R7       |100              | 0.08 USD |  | fabacademy2021:R_1206                    |~                                                                                   |
+|C6       |0.1uF            | 0.30 USD |  | fabacademy2021:C_1206                    |                                                                                    |
+|J6       |Conn_01x05_Female|  |  | digikey:PinHeader_1x5_P2.5mm_Drill1.1mm  |~                                                                                   |
+|U1       |Regulator_Linear_LM3480-3.3V-100mA| 0.97 USD |  |fabacademy2021:fab-SOT23|https://www.ti.com/lit/ds/symlink/lm3480.pdf                                        |
+|R10      |10k              | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|R9       |10k              | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|J1       |Conn_ARM_JTAG_SWD_10|  |  |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
+|R11      |0                | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|R8       |10K              | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|U5       |ATSAMD11C14A-SS  | 1.39 USD |  |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                    |
+|J2       |Conn_01x02       |  |  |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|J4       |Conn_01x02       |  |  |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R1       |0                | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|C9       |0.1uF            | 0.30 USD |  |fabacademy2021:C_1206                    |                                                                                    |
+|U2       |Regulator_Linear_NCP1117-5.0V-1A| 0.97 USD |  |fabacademy2021:SOT-223-3_TabPin2         |https://www.onsemi.com/pub/Collateral/NCP1117-D.PDF                                 |
+|C2       |1uF              | 0.30 USD |  |fabacademy2021:C_1206                    |~                                                                                   |
+|J7       |Conn_01x02_Female|  |  |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R3       |150              | 0.08 USD |  |fabacademy2021:R_1206                    |~                                                                                   |
+|D2       |LED              | 0.26 USD |  |fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
+|Q1       |MOSFET_P-CH_30V_1.1A| 0.44 USD |  |fabacademy2021:fab-SOT-23                |https://www.onsemi.com/pub/Collateral/NDS356AP-D.PDF                                |
+|C1       |1uF              | 0.30 USD |  | fabacademy2021:C_1206                    |~                                                                                   |
 
 
 
@@ -433,22 +433,22 @@ subsection 3.2.
 
 <img src="../../files/project/milling/buttons_ref.svg" alt="laser_01" width=100%/>
 
-|Reference|Value            |Footprint                                |Datasheet                                                                           |
-|---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
-|SW1      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
-|R6       |100              |fabacademy2021:R_1206                    |~                                                                                   |
-|R2       |0                |fabacademy2021:R_1206                    |~                                                                                   |
-|R4       |50               |fabacademy2021:R_1206                    |~                                                                                   |
-|R8       |1k               |fabacademy2021:R_1206                    |~                                                                                   |
-|SW2      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
-|SW3      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
-|J1       |Conn_01x03_Female|digikey:PinHeader_1x3_P2.54mm_Drill1.02mm|~                                                                                   |
-|R7       |100              |fabacademy2021:R_1206                    |~                                                                                   |
-|D3       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
-|R5       |100              |fabacademy2021:R_1206                    |~                                                                                   |
-|D2       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
-|R3       |100              |fabacademy2021:R_1206                    |~                                                                                   |
-|D1       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
+|Reference|Value            | Price | Buy |Footprint                                |Datasheet                                                                           |
+|---------|-----------------| -- | -- |-----------------------------------------|------------------------------------------------------------------------------------|
+|SW1      |BUTTON_PTS636    | 1.02 USD | https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3SN-3012P/9717 |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|R6       |100              | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|R2       |0                | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|R4       |50               | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|R8       |1k               | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|SW2      |BUTTON_PTS636    | 1.02 USD | |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|SW3      |BUTTON_PTS636    | 1.02 USD | |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|J1       |Conn_01x03_Female| 1.02 USD | |digikey:PinHeader_1x3_P2.54mm_Drill1.02mm|~                                                                                   |
+|R7       |100              | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|D3       |LED              | 0.026 USD | |fabacademy2021:LED_1206                  |~                                                                                   |
+|R5       |100              | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|D2       |LED              | 0.026 USD | |fabacademy2021:LED_1206                  |~                                                                                   |
+|R3       |100              | 0.08 USD | |fabacademy2021:R_1206                    |~                                                                                   |
+|D1       |LED              | 0.026 USD | |fabacademy2021:LED_1206                  |~                                                                                   |
 
 
 
