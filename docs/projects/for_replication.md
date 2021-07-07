@@ -2,7 +2,7 @@
 
 <img src="../../presentation.png" alt="presentation" width=100%/>
 
-
+<img src="../../images/milq/int_10.jpg" alt="laser_01" width=100%/>
 
 ## Description
 
@@ -776,11 +776,29 @@ Then assemble front plate to the box.
 
 <img src="../../images/milq/int_01.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/int_02.jpg" alt="laser_01" width=100%/>
+
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| i2c wire | 1 | [Ref](#board-i2c-to-lcd-display)
+| Board buttons wire | 1 | [Ref](#board-5-pins-conn-to-buttons-board)
+
 <img src="../../images/milq/int_03.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/int_04.jpg" alt="laser_01" width=100%/>
+
+Wires and connector image reference.
+
 <img src="../../images/milq/int_05.jpg" alt="laser_01" width=100%/>
+
+Closing the box.
+
 <img src="../../images/milq/int_07.jpg" alt="laser_01" width=100%/>
+
+Adjusting bolts.
+
 <img src="../../images/milq/int_09.jpg" alt="laser_01" width=100%/>
+
+Final result.
+
 <img src="../../images/milq/int_10.jpg" alt="laser_01" width=100%/>
 
 
