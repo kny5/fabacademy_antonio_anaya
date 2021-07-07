@@ -701,37 +701,78 @@ This image is from the back so the order of the colors is inverted.
 
 ## Assembly process
 
-Assemble the middle plate, using:
+Assemble the middle plate with the LCD display, using:
 
 | Part | Quantity | Reference | Notes |
 | -- | -- | -- | -- |
 | Vinyl bolt 12 mm | 4 | [Ref](#joinery-plastic)
-| Vinyl hexagonal nut | 8 | [Ref](#joinery-plastic) | 4 to attach bolts to middle plate as down bellow, 4 more to fix LCD display to middle plate.
+| Vinyl hexagonal nut | 8 | [Ref](#joinery-plastic) | 4 to attach bolts to middle plate as shown bellow, 4 more to fix LCD display to middle plate. |
+| Middle plate | 1 | [Ref](#files-for-laser-cut)
 
 <img src="../../images/milq/display_00.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/display_01.jpg" alt="laser_01" width=100%/>
-<img src="../../images/milq/display_03.jpg" alt="laser_01" width=100%/>
 
+Assemble the buttons to the front place using:
+
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Vinyl bolt 12 mm | 2 | [Ref](#joinery-plastic)
+| Vinyl hexagonal nut | 4 | [Ref](#joinery-plastic) | 2 to attach 3D print buttons to front plate as shown bellow, 2 more to fix pcb board to 3d print.|
+| 3D print buttons | 1 | [Ref](#files-for-3d-printing) |
+| PCB board buttons | 1 | [Ref](#files-for-circuit-milling) |
 
 <img src="../../images/milq/asm_btns_01.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/asm_btns_02.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/asm_btns_03.jpg" alt="laser_01" width=100%/>
 
-<img src="../../images/milq/asm_05.jpg" alt="laser_01" width=100%/>
-<img src="../../images/milq/asm_04.jpg" alt="laser_01" width=100%/>
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Battery wire | 1 | [Ref](#battery-board-and-switch) |
+| Switch plate | 1 | [Ref](#files-for-laser-cut)
 
 <img src="../../images/milq/asm_00.jpg" alt="laser_01" width=100%/>
+
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Side plate | 3 | [Ref](#files-for-laser-cut) |
+
+<img src="../../images/milq/asm_05.jpg" alt="laser_01" width=100%/>
+
+Assemble LCD assemble to side plates and switch plate and make a box.
+
+<img src="../../images/milq/asm_04.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/display_03.jpg" alt="laser_01" width=100%/>
+
+Then assemble front plate to the box.
+
 <img src="../../images/milq/asm_01.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/asm_02.jpg" alt="laser_01" width=100%/>
-<img src="../../images/milq/asm_03.jpg" alt="laser_01" width=100%/>
 
+
+<!--img src="../../images/milq/asm_03.jpg" alt="laser_01" width=100%/-->
+
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Holder | 4 | [Ref](#files-for-3d-printing)
+| M2 Hexagonal nut | 8 | [REF](#joinery-metal)
+| Rear plate | 1 | [Ref](#files-for-laser-cut)
+| M2 bolt | 4 | [Ref](#joinery-metal)
 
 <img src="../../images/milq/holder_01.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/holder_02.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/holder_03.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/holder_04.jpg" alt="laser_01" width=100%/>
 
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Control board | 1 | [Ref](#files-for-circuit-milling)
+
 <img src="../../images/milq/rear_plate_01.jpg" alt="laser_01" width=100%/>
+
+| Part | Quantity | Reference | Notes |
+| -- | -- | -- | -- |
+| Electro conductive probe | 1 | [Ref](#electro-conductive-probe)
 
 <img src="../../images/milq/int_01.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/int_02.jpg" alt="laser_01" width=100%/>
