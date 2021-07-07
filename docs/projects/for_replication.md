@@ -6,7 +6,7 @@
 
 ## Description
 
-MILQ its a device for checking the freshness of a milk sample. It reads FDX RFID animal earrings too, and uses a disposable espresso cup as sample collector.
+MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector.
 
 
 
@@ -307,6 +307,8 @@ subsection 3.2.
 
 ```
 
+
+
 ## BOM
 
 Tools:
@@ -371,40 +373,56 @@ Joinery:
 
 #### Control board components:
 
-|Reference|Value                             |Footprint                                |Datasheet                                                                                      |
-|---------|----------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------|
-|U5       |ATSAMD11C14A-SS                   |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                               |
-|R8       |10K                               |fabacademy2021:R_1206                    |~                                                                                              |
-|C3       |1uF                               |fabacademy2021:C_1206                    |                                                                                               |
-|J5       |Conn_01x04_Female                 |digikey:PinHeader_1x4_P2.54mm_Drill1.02mm|~                                                                                              |
-|U1       |Regulator_Linear_LM3480-3.3V-100mA|fabacademy2021:fab-SOT23                 |https://www.ti.com/lit/ds/symlink/lm3480.pdf                                                   |
-|R10      |10k                               |fabacademy2021:R_1206                    |~                                                                                              |
-|R9       |10k                               |fabacademy2021:R_1206                    |~                                                                                              |
-|C6       |0.1uF                             |fabacademy2021:C_1206                    |                                                                                               |
-|J3       |Conn_01x04_Female                 |digikey:PinHeader_1x4_P2.54mm_Drill1.02mm|~                                                                                              |
-|J4       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
-|R3       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
-|R4       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
-|R5       |0                                 |fabacademy2021:R_1206                    |~                                                                                              |
-|U3       |Regulator_Linear_NCP1117-5.0V-1A  |fabacademy2021:fab-SOT223                |https://www.onsemi.com/pub/Collateral/NCP1117-D.PDF                                            |
-|C1       |C                                 |fabacademy2021:C_1206                    |~                                                                                              |
-|J6       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
-|J7       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
-|Q1       |PN2222A                           |fabacademy2021:fab-SOT23                 |https://www.onsemi.com/pub/Collateral/PN2222-D.PDF                                             |
-|C2       |1nF                               |fabacademy2021:C_1206                    |                                                                                               |
-|R1       |1K                                |fabacademy2021:R_1206                    |~                                                                                              |
-|R6       |100                               |fabacademy2021:R_1206                    |~                                                                                              |
-|R13      |100                               |fabacademy2021:R_1206                    |~                                                                                              |
-|R12      |1K                                |fabacademy2021:R_1206                    |~                                                                                              |
-|C4       |1nF                               |fabacademy2021:C_1206                    |                                                                                               |
-|Q2       |PN2222A                           |fabacademy2021:fab-SOT23                 |https://www.onsemi.com/pub/Collateral/PN2222-D.PDF                                             |
-|J2       |Conn_01x02                        |digikey:PinHeader_1x2_P2.54mm_Drill1.02mm|~                                                                                              |
-|J8       |Conn_ARM_JTAG_SWD_10              |fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
-|R2       |R                                 |fabacademy2021:R_1206                    |~                                                                                              |
+|Reference|Value            |Footprint                                |Datasheet                                                                           |
+|---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
+|J3       |Conn_01x04_Female|digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R2       |10K              |fabacademy2021:R_1206                    |~                                                                                   |
+|C7       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
+|C3       |1uF              |fabacademy2021:C_1206                    |                                                                                    |
+|J5       |Conn_01x04_Female|digikey:PinHeader_1x4_P2.5mm_Drill1.1mm  |~                                                                                   |
+|D1       |LED              |fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
+|R7       |100              |fabacademy2021:R_1206                    |~                                                                                   |
+|C6       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
+|J6       |Conn_01x05_Female|digikey:PinHeader_1x5_P2.5mm_Drill1.1mm  |~                                                                                   |
+|U1       |Regulator_Linear_LM3480-3.3V-100mA|fabacademy2021:fab-SOT23                 |https://www.ti.com/lit/ds/symlink/lm3480.pdf                                        |
+|R10      |10k              |fabacademy2021:R_1206                    |~                                                                                   |
+|R9       |10k              |fabacademy2021:R_1206                    |~                                                                                   |
+|J1       |Conn_ARM_JTAG_SWD_10|fabacademy2021:fab-SWD10pin127pitch.lib  |http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf|
+|R11      |0                |fabacademy2021:R_1206                    |~                                                                                   |
+|R8       |10K              |fabacademy2021:R_1206                    |~                                                                                   |
+|U5       |ATSAMD11C14A-SS  |fabacademy2021:SOIC-14_3.9x8.7mm_P1.27mm |                                                                                    |
+|J2       |Conn_01x02       |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|J4       |Conn_01x02       |digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R1       |0                |fabacademy2021:R_1206                    |~                                                                                   |
+|C9       |0.1uF            |fabacademy2021:C_1206                    |                                                                                    |
+|U2       |Regulator_Linear_NCP1117-5.0V-1A|fabacademy2021:SOT-223-3_TabPin2         |https://www.onsemi.com/pub/Collateral/NCP1117-D.PDF                                 |
+|C2       |1uF              |fabacademy2021:C_1206                    |~                                                                                   |
+|J7       |Conn_01x02_Female|digikey:PinHeader_1x2_P2.5mm_Drill1.1mm  |~                                                                                   |
+|R3       |150              |fabacademy2021:R_1206                    |~                                                                                   |
+|D2       |LED              |fabacademy2021:LED_1206                  |https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf   |
+|Q1       |MOSFET_P-CH_30V_1.1A|fabacademy2021:fab-SOT-23                |https://www.onsemi.com/pub/Collateral/NDS356AP-D.PDF                                |
+|C1       |1uF              |fabacademy2021:C_1206                    |~                                                                                   |
+
 
 
 #### Button board components
 
+|Reference|Value            |Footprint                                |Datasheet                                                                           |
+|---------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------|
+|SW1      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|R6       |100              |fabacademy2021:R_1206                    |~                                                                                   |
+|R2       |0                |fabacademy2021:R_1206                    |~                                                                                   |
+|R4       |50               |fabacademy2021:R_1206                    |~                                                                                   |
+|R8       |1k               |fabacademy2021:R_1206                    |~                                                                                   |
+|SW2      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|SW3      |BUTTON_PTS636    |fabacademy2021:Button_Omron_B3SN_6x6mm   |https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf|
+|J1       |Conn_01x03_Female|digikey:PinHeader_1x3_P2.54mm_Drill1.02mm|~                                                                                   |
+|R7       |100              |fabacademy2021:R_1206                    |~                                                                                   |
+|D3       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
+|R5       |100              |fabacademy2021:R_1206                    |~                                                                                   |
+|D2       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
+|R3       |100              |fabacademy2021:R_1206                    |~                                                                                   |
+|D1       |LED              |fabacademy2021:LED_1206                  |~                                                                                   |
 
 
 
@@ -419,12 +437,34 @@ Settings for 100 Watts CO2 laser cutter machine:
 
 Files for approximate kerf: 0.2 mm.
 
+<img src="../../images/milq/side_plate_01.jpg" alt="laser_01" width=50%/>
+
 | Piece | Quantity | File |
 | -- | -- | -- |
 | Side plate | 3 | [side plate](../../files/project/laser/side_plate.DXF)
+
+<img src="../../images/milq/switch_plate_01.jpg" alt="laser_01" width=50%/>
+
+| Piece | Quantity | File |
+| -- | -- | -- |
 | Switch plate | 1 | [switch plate](../../files/project/laser/switch_plate.DXF)
+
+<img src="../../images/milq/front_plate_01.jpg" alt="laser_01" width=50%/>
+
+| Piece | Quantity | File |
+| -- | -- | -- |
 | Front plate | 1 | [Front plate](../../files/project/laser/front_plate.DXF)
+
+<img src="../../images/milq/rear_plate_01.jpg" alt="laser_01" width=50%/>
+
+| Piece | Quantity | File |
+| -- | -- | -- |
 | Rear plate | 1 | [rear plate](../../files/project/laser/rear_plate.DXF)
+
+<img src="../../images/milq/middle_plate_01.jpg" alt="laser_01" width=50%/>
+
+| Piece | Quantity | File |
+| -- | -- | -- |
 | Middle plate | 1 | [middle plate](../../files/project/laser/middle_plate.DXF)
 
 
@@ -453,27 +493,59 @@ Settings for FDM 1.75 mm heated bed printer:
 
 [Download Prusa Slicer adjustments](../../files/project/3d/settings_01.ini)
 
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fproject%2F3d%2Fbuttons.STL" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
 | Piece | Quantity | File |
 | -- | -- | -- |
 | Buttons | 1 | [buttons](../../files/project/3d/buttons.STL) |
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fproject%2F3d%2Fholder.STL" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+
+| Piece | Quantity | File |
+| -- | -- | -- |
 | Holders | 4 | [Holders](../../files/project/3d/holder.STL) |
 
 
 
 ### Files for circuit milling
 
+#### Buttons
+
+<img src="../../files/project/milling/buttons.svg" alt="laser_01" width=50%/>
+
+[Download](../../files/project/milling/buttons.svg)
+
 | Piece | Quantity | Traces | Text | Holes | Outline |  
 | -- | -- | -- | -- | -- | -- |
-| Buttons board | 1 | [Button traces](../../files/project/milling/buttons_traces.SVG) | NO | [Buttons holes](../../files/project/milling/buttons_holes.SVG) | [Buttons outline](../../files/project/milling/buttons_outline.SVG) |
-| Control board | 1 | [control traces](../../files/project/milling/control_traces.SVG) | [control text](../../files/project/milling/control_txt.SVG) | [control holes](../../files/project/milling/control_holes.SVG) | [control outline](../../files/project/milling/control_outline.SVG) |
-| EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.SVG) | [ec text](../../files/project/milling/ec_txt.SVG) | [ec holes](../../files/project/milling/ec_holes.SVG) | [ec outline](../../files/project/milling/ec_outline.SVG) |
+| Buttons board | 1 | [Button traces](../../files/project/milling/buttons_traces.svg) | | [Buttons holes](../../files/project/milling/buttons_holes.svg) | [Buttons outline](../../files/project/milling/buttons_outline.svg) |
 
-![Board PCB Kicad](../../files/project/3d/settings_01.ini)
+
+
+#### Control
+
+<img src="../../files/project/milling/control.svg" alt="laser_01" width=100%/>
+
+[Download](../../files/project/milling/control.svg)
+
+| Piece | Quantity | Traces | Text | Holes | Outline |  
+| -- | -- | -- | -- | -- | -- |
+| Control board | 1 | [control traces](../../files/project/milling/control_traces.svg) | [control text](../../files/project/milling/control_txt.svg) | [control holes](../../files/project/milling/control_holes.svg) | [control outline](../../files/project/milling/control_outline.svg) |
+
+
+
+#### Electrical conductivity
+
+<img src="../../files/project/milling/ec.svg" alt="laser_01" width=30%/>
+
+[Download](../../files/project/milling/ec.svg)
+
+| Piece | Quantity | Traces | Text | Holes | Outline |  
+| -- | -- | -- | -- | -- | -- |
+| EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.svg) | | | [ec outline](../../files/project/milling/ec_outline.svg) |
 
 
 
 ### Code
-
 
 ```
 
@@ -706,9 +778,15 @@ void die_read_02(){
 [Download binary for ATSAMD11C14A](../../files/project/code/milq_firmware.bin)
 
 
+
 #### Flashing code with EDBG ATSAMD11C14A programmer
 
+<img src="../../images/milq/arduino_01.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/arduino_02.jpg" alt="laser_01" width=100%/>
+
 <script id="asciicast-7dRzmv1E9xrZKi30LasY9GCZF" src="https://asciinema.org/a/7dRzmv1E9xrZKi30LasY9GCZF.js" async></script>
+
 
 
 ## Assembly process
@@ -718,3 +796,7 @@ void die_read_02(){
 		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
+
+
+
+## How to use it
