@@ -997,6 +997,26 @@ void die_read_02(){
 </figure>
 
 
+## Original design files
+
+### Solidworks
+
+[Solidworks assembly ZIP](../../files/project/zip/solidworks.zip)
+
+
+
+### KiCAD
+
+[KiCAD, PCB, Schematic and netlist ZIP](../../files/project/zip/kicad.zip)
+
+
+
+### SVG
+
+[SVG design files](../../files/project/zip/svg.zip)
+
+
+
 ## Final presentation
 
 <figure class="video_container">
