@@ -6,7 +6,13 @@
 
 ## Description
 
-MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector.
+MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector and plots a graph on its LCD display.
+
+Characteristics:
+
+- Based on ATSAMD11C14A ARM 32 bits Microcontroller.
+- 800 Samples on 10 secs.
+- 9V battery
 
 
 
@@ -358,7 +364,7 @@ Connectors:
 | | 2x5 | 1 | female, 1.27 mm pitch |
 
 
-Joinery:
+Joinery (plastic):
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
@@ -366,6 +372,14 @@ Joinery:
 | Nylon hexagonal nuts | 14 | 3 mm height |
 | Nylon bolt | 2 | 6 mm height |
 | Nylon bolt | 4 | 12 mm height |
+
+
+Joinery (metal):
+
+| | Type | Quantity | Specifications |
+| -- | -- | -- | -- |
+| M2 precision bolt |  | 8 |
+| M2 hexagonal nut | | 8 |
 
 
 
@@ -551,14 +565,111 @@ Settings for FDM 1.75 mm heated bed printer:
 
 ### Wiring
 
-#### Wire 1
+#### Battery, board and switch
 
 
-#### Wire 2
-#### Wire 3
-#### Wire 4
+| Battery | board |  Switch |
+| -- | -- | -- |
+| 9V connector | 0x2 connector male | Solder to pins |
+
+
+<img src="../../images/milq/wire_01.jpg" alt="laser_01" width=100%/>
+
+
+
+#### Board i2c to LCD Display
+
+| LCD  | Board (TOP) |
+| -- | -- |
+| GND | 3.3V |
+| 3.3V | SDA |
+| SDA | SCL |
+| SCL | GND |
+
+<img src="../../images/milq/wire_02.jpg" alt="laser_01" width=100%/>
+
+
+
+#### Board 5 pins conn to buttons board
+
+Board (TOP):
+
+| PIN | VAL |
+| -- | -- |
+| 1 | 5 V |
+| 2 | Signal |
+| 3 | |
+| 4 | |
+| 5 | GND |
+
+
+Buttons (TOP):
+
+| PIN | VAL |
+| -- | -- |
+| 1 | 5 V |
+| 2 | Signal |
+| 3 | GND |
+
+<img src="../../images/milq/wire_03.jpg" alt="laser_01" width=100%/>
+
+
+
+#### Electro-conductive probe
+
+Connector VOUT (TOP):
+
+| PIN | VAL |
+| -- | -- |
+| 1 | GND |
+| 2 | VOUT |
+
+Connector AIN (TOP):
+
+| PIN | VAL |
+| -- | -- |
+| 1 | AIN |
+| 2 | GND |
+
+<img src="../../images/milq/wire_04.jpg" alt="laser_01" width=100%/>
+
+<!--
 #### Wire 5
 #### Wire 6
+-->
+
+## Soldering
+
+### Control board
+
+Suggested order for soldering components:
+
+**Preferably use, lead free solder.**
+
+1. Microcontroller
+1. Transistors
+2. Resistors
+3. Capacitors
+4. LEDs
+5. Connectors
+
+Milled board PCB:
+
+<img src="../../images/milq/control_00.jpg" alt="laser_01" width=100%/>
+
+Soldered components:
+
+<img src="../../images/milq/control_01.jpg" alt="laser_01" width=100%/>
+
+Connectors on back side:
+
+<img src="../../images/milq/control_02.jpg" alt="laser_01" width=100%/>
+
+
+
+## Assembly process
+
+
 
 
 ### Code
@@ -805,15 +916,13 @@ void die_read_02(){
 
 
 
-## Assembly process
+## How to use it
+
+
+## Final presentation
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
-
-
-
-
-## How to use it
