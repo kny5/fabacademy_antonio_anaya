@@ -725,7 +725,23 @@ Assemble the middle plate, using:
 <img src="../../images/milq/asm_02.jpg" alt="laser_01" width=100%/>
 <img src="../../images/milq/asm_03.jpg" alt="laser_01" width=100%/>
 
-00%/>
+
+<img src="../../images/milq/holder_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/holder_02.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/holder_03.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/holder_04.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/rear_plate_01.jpg" alt="laser_01" width=100%/>
+
+<img src="../../images/milq/int_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_02.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_03.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_04.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_05.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_07.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_09.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/int_10.jpg" alt="laser_01" width=100%/>
+
 
 
 ### Code
@@ -972,7 +988,13 @@ void die_read_02(){
 
 
 
-## How to use it
+## Test
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/ec_test_02.mp4" type="video/mp4">
+	</video>
+</figure>
 
 
 ## Final presentation
