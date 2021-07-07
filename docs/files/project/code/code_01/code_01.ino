@@ -168,7 +168,7 @@ void loop() {
    }
    lcd.setCursor(16,3);
    lcd.print(sum_ec/sample_size);
-   delay(3000);
+   delay(5000);
 
    lcd.clear();
 }
