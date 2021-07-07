@@ -2,13 +2,14 @@
 
 ## I'm currently working on:
 
-> [**16. Wildcard week**](./assignments/week16/)
+> Final project
 
-<!--img src="images/week14/lora_01.jpg" alt="hero_01.jpg" width=100%/-->
+
+<img src="images/milq/int_10.jpg" alt="laser_01" width=100%/>
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
-		<source src="images/week16/niryo_01.mp4" type="video/mp4">
+		<source src="images/milq/ec_test_02.mp4" type="video/mp4">
 	</video>
 </figure>
 
