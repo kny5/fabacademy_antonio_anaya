@@ -1172,6 +1172,18 @@ Connections:
 
 
 
+## User interface
+
+The layout in the display shows this information:
+
+<img src="../../images/milq/lcd_details_01.png" alt="laser_01" width=100%/>
+
+The animation in the row 4 changes by the current sample number.
+
+The MAX value its equal to 4000 the maximun number I could use for memory size and 12 bits resolution for the analogWrite function.
+
+
+
 ## Test
 
 I've tested the Electro-conductivity probe in water and creme.
@@ -1303,6 +1315,17 @@ Estimates cost: 42.47 USD
 		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
+
+
+
+### Unimplemented buttons
+
+Buttons were working thus the circuit design with LEDS made them way too much power consuming reducing battery life quickly.
+
+Also the buttons require a calibration due to a variation in the analogread value depending on the battery charge.
+
+RFID module wasn't integrated due to lac of time. But I hope to have a couple more days to integrated it properly on the device. The problem is that the RFID baord doesn't have any perforations to help me out attach the board to the device, so I've to design a holder fir the PCB and the antenna.
+
 
 
 ### Design changes
