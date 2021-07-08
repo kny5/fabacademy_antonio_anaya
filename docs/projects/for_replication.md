@@ -325,6 +325,8 @@ subsection 3.2.
 
 ## BOM
 
+All this material was found in the inventory of [Agrilab](https://agrilab.unilasalle.fr).
+
 ### Tools:
 
 | Tool | Specifications |
@@ -1143,11 +1145,24 @@ void die_read_02(){
 
 #### Flashing code with EDBG ATSAMD11C14A programmer
 
+To flash the firmware I used the [Arduino IDE](https://arduino.cc) selecting the **without bootloader** option and then finding the temporal location of the compiled files and flashing the **.bin** file using my SAMD11C14 programmer board from [week05 Electronics production](../../assignments/week05)
+
 <img src="../../images/milq/arduino_01.jpg" alt="laser_01" width=100%/>
 
 <img src="../../images/milq/arduino_02.jpg" alt="laser_01" width=100%/>
 
 <script id="asciicast-7dRzmv1E9xrZKi30LasY9GCZF" src="https://asciinema.org/a/7dRzmv1E9xrZKi30LasY9GCZF.js" async></script>
+
+Connections:
+
+<img src="../../images/milq/prog_01.jpg" alt="laser_01" width=100%/>
+<img src="../../images/milq/prog_02.jpg" alt="laser_01" width=100%/>
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/prog_01.mp4" type="video/mp4">
+	</video>
+</figure>
 
 
 
@@ -1203,6 +1218,16 @@ On this video you can observe the step response in the horizontal graph.
 | Expired  Bottled Pineapple Juice | 500 | 67 | 80 | 73.5 | 80, 67 |
 | Expired  Bottled Pineapple Juice | 500 | 17 | 225 | 121 |  132, 87, 17, 225 |
 | Bottled Orange juice | 500 | 202 | 214 | 208 | 202, 205, 208 |
+
+
+
+### Answers of the approach
+
+Bio sensors are difficult to design, and thus to manufacture, multiple things can change from one to other device with same designed parts.
+
+This approach took an incredible amount of time in the design process, plus the complications of nowadays COVID-19 pandemic, but I hope this brings to someone else a bootstrap project to start with step response sensors.
+
+After the week20 I've realized a lot of things like could change, like size, could be 60% less by using a smaller OLED display i2C, memory size of the SAMD11 wasn't a problem using the Arduino IDE without bootloader.
 
 
 
