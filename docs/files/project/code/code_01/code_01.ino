@@ -9,7 +9,7 @@ LiquidCrystal_I2C lcd(0x27,20,4);
 //char rfid_tag[26];
 
 #define max_val 4000
-#define sample_size 100
+#define sample_size 500
 #define duty_cycle 1
 #define lcd_scaler 2
 #define lcd_segments 8
