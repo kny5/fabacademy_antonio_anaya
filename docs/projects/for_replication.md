@@ -742,6 +742,22 @@ Connector AIN (TOP):
 
 
 
+## Thermistor (optional)
+
+<img src="../../images/milq/therm_01.jpg" alt="laser_01" width=100%/>
+
+This optional probe implements a 1K Thermistor and a voltage divider circuit.
+
+<img src="../../files/project/milling/therm.svg" alt="laser_01" width=30%/>
+
+[Download](../../files/project/milling/ec.svg)
+
+| Piece | Quantity | Traces | Text | Holes | Outline |  
+| -- | -- | -- | -- | -- | -- |
+| EC probe board | 1 | [ec traces](../../files/project/milling/therm_traces.svg) | | [ec traces](../../files/project/milling/ec_holes.svg) | [ec outline](../../files/project/milling/ec_outline.svg) |
+
+
+
 ## Soldering
 
 
@@ -1303,19 +1319,7 @@ The closing mechanism for the rear plate has been replaced by the holders, the r
 -->
 
 
-## Thermistor (optional)
 
-<img src="../../images/milq/therm_01.jpg" alt="laser_01" width=100%/>
-
-This optional probe implements a 1K Thermistor and a voltage divider circuit.
-
-<img src="../../files/project/milling/ec.svg" alt="laser_01" width=30%/>
-
-[Download](../../files/project/milling/ec.svg)
-
-| Piece | Quantity | Traces | Text | Holes | Outline |  
-| -- | -- | -- | -- | -- | -- |
-| EC probe board | 1 | [ec traces](../../files/project/milling/therm_traces.svg) | | [ec traces](../../files/project/milling/ec_holes.svg) | [ec outline](../../files/project/milling/ec_outline.svg) |
 
 
 
@@ -1357,7 +1361,15 @@ Estimates cost: 42.47 USD
 
 
 
+## Electronics design
+
+I've used parts of the circuits I've made on [week09](../../assignments/week09), [week11](../../assignments/week11) and [week14](../../assignments/week14).
+
+
+
 ## Original design files
+
+
 
 ### Solidworks
 
