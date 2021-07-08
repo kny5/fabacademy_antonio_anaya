@@ -1,12 +1,29 @@
-//#include <hd44780.h>
+/*
+This program uses the arduino IDE compile tools.
 
+This program plots an horizontal graph to visualize step response reading analog signals from PIN_04 with 12 bits resolution.
+On PIN_02 (DAC0) its emitted an analog signal that later will be transmitted using the probe board to liquids to measure the conductivity of it.
+
+Conductivity increases or decreases depending in the substance so, its possible to observe a step response signal in the horizontal graph.
+The program runs a cycle of n number of samples, saves the results of every sample on an array and then shows the average value.
+
+It also shows a custom character for the AgriLab logo.
+
+IO pins:
+PA02 -> DAC0 analogWrite
+PA05 <- analogRead
+
+Autor: Antonio de Jesus Anaya Hernandez
+Year: 2021
+Org: Fab Academy
+Lab: AgriLab
+Country: France
+*/
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27,20,4);
-
-char rfid_tag[26];
 
 #define max_val 4000
 #define sample_size 100
@@ -39,7 +56,7 @@ void mkr_chrs(){
 
 void plot(int a, int c_pos){
    int a_p = (max_val - a) / plot_mult;
-   
+
    lcd.home();
    lcd.print(a_p);
 
@@ -56,13 +73,6 @@ void plot(int a, int c_pos){
     lcd.write(a_p*lcd_scaler);}
    };
 
-void p_samples(){
-  for(int n = 0; n < 8; n++){
-    lcd.setCursor(2+n, 0);
-    lcd.write(n);
-    }
-  }
-
 void setup() {
   Wire.begin();
   Serial.begin(9600);
@@ -74,52 +84,31 @@ void setup() {
 
   lcd.createChar(7, customChar);
 
-  //bootstart_msg();
-  //delay(1000);
+  bootstart_msg();
+
   animation_01(50);
   lcd.clear();
   pinMode(4, INPUT);
-  //pinMode(5, OUTPUT);
-  pinMode(5, INPUT);
   analogReadResolution(12);
   analogWriteResolution(12);
 }
 
 void loop() {
 
-  /*if (Serial1.available()) {
-    animation_01(100);
-    lcd.setCursor(0,1);
-    char* rfid_val = readRFIDtag();
-    lcd.print(rfid_val);
-    delay(1000);
-  }
-  else{
-    lcd.print("nope");
-    }
-  */
-
-  //p_samples();
-
-
   byte SAMPLES[sample_size-1];
   int mult = sample_size/20;
   lcd.setCursor(12,0);
   agrilab();
 
-  
+
   for(int s = 0; s < sample_size; s++){
-    //digitalWrite(5, HIGH);
     analogWrite(DAC0, max_val);
     int ec_val = analogRead(4);
-    //analogWrite(DAC0, 0x0);
 
     lcd.setCursor(8,3);
     lcd.print(ec_val);
     SAMPLES[s] = ec_val;
 
-
-    //lcd.setCursor(s/mult,2);
     plot(ec_val, s/mult);
 
     lcd.setCursor(s/mult,3);
@@ -127,59 +116,27 @@ void loop() {
 
     lcd.setCursor(0,3);
     lcd.print(s+1);
-    //digitalWrite(5, LOW);
     }
 
-  int key = analogRead(5);
-
-    lcd.setCursor(3,0);
-    if(key > 3500){
-      lcd.print("c");
-      }
-    else if(key > 3190 && key < 3250){
-      lcd.print("b");
-      }
-    else if(key < 2340 && key > 2305){
-      lcd.print("a");
-      }
-    else{
-      lcd.print("?");
-      }
-    lcd.setCursor(5,0);
-    lcd.print(key);
-    
-    
   int sum_ec = 0;
 
   for(int z = 0; z < sample_size; z++){
     sum_ec += SAMPLES[z];
    }
+
    lcd.setCursor(17,3);
    lcd.print(sum_ec/sample_size);
    delay(3000);
-
    lcd.clear();
 }
 
-
-char* readRFIDtag() {
-  byte id = Serial.read();
-  rfid_tag[0] = id;
-
-  if (id == 2){
-    for (int c = 1; c < 26; c++){
-      byte bit_ = Serial.read();
-      rfid_tag[c] = bit_;
-      }
-  }
-  return rfid_tag;
-  }
 
 void agrilab(){
   const char a[] = {"AgriLab"};
   lcd.print(a);
   lcd.write(7);
   }
+
 
 void bootstart_msg() {
 
@@ -199,6 +156,7 @@ void bootstart_msg() {
   delay(3000);
   }
 
+
 void animation_01(int del_ay){
   int a;
   int b;
@@ -206,18 +164,5 @@ void animation_01(int del_ay){
     lcd.setCursor(a,3);
     lcd.print("/");
     delay(del_ay);
-    }
-  }
-
-void dieleric_01(){
-  while(true){
-    analogWrite(DAC0, 0xff);
-    analogWrite(DAC0, 0x0);
-    }
-  }
-
-void die_read_02(){
-  while(true){
-    lcd.print(analogRead(4));
     }
   }
