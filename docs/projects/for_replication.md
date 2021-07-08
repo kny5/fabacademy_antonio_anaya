@@ -25,7 +25,7 @@ MILQ its a device for checking the freshness of a milk sample by measuring elect
 Characteristics:
 
 - Based on ATSAMD11C14A ARM 32 bits Microcontroller.
-- 800 Samples on 10 secs.
+- up to 800 Samples on 10 secs.
 - 9V battery
 
 
@@ -1202,9 +1202,19 @@ On this video you can observe the step response in the horizontal graph.
 	</video>
 </figure>
 
+| Substance | Samples per cycle | Min | Max | Average |
+| -- | -- | -- | -- | -- |
+| Tap water | 100 | 25 | 27 | 26 |  
+| Creme Legere 12% | 100 | 202 | 214 | 208 |  
+
+Test results are: Tap water conducts less electricity than Creme legere.
 
 
 ## Evaluation
+
+For this process  I've used bottled orange juice to compared the measurements with expired bottled pineapple juice.
+
+<img src="../../images/milq/samples_01.jpg" alt="laser_01" width=100%/>
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
@@ -1218,34 +1228,57 @@ On this video you can observe the step response in the horizontal graph.
 	</video>
 </figure>
 
-| Substance | Samples per cycle | Min | Max | Average |
-| -- | -- | -- | -- | -- |
-| Tap water | 100 | 25 | 27 | 26 |  
-| Creme Legere 12% | 100 | 202 | 214 | 208 |  
-
-
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
 		<source src="../../images/milq/expired_500_10.mp4" type="video/mp4">
 	</video>
 </figure>
 
-
 | Substance | Samples per cycle | Min | Max | Average | Samples |
 | -- | -- | -- | -- | -- | -- |
 | Expired  Bottled Pineapple Juice | 500 | 67 | 80 | 73.5 | 80, 67 |
-| Expired  Bottled Pineapple Juice | 500 | 17 | 225 | 121 |  132, 87, 17, 225 |
+| 2nd Expired  Bottled Pineapple Juice | 500 | 17 | 225 | 121 |  132, 87, 17, 225 |
 | Bottled Orange juice | 500 | 202 | 214 | 208 | 202, 205, 208 |
 
+Results: The results show that there are variations depending on the sample composition, the first sample of expired pineapple juice was more watery.
+The first sample of expired pineapple juice was more concentrated.
+
+I think the probe could be improved in the wiring and position of the board inside the device so there could be less interference in the measurements.
 
 
-### Answers of the approach
+
+## Answers of the approach
 
 Bio sensors are difficult to design, and thus to manufacture, multiple things can change from one to other device with same designed parts.
 
 This approach took an incredible amount of time in the design process, plus the complications of nowadays COVID-19 pandemic, but I hope this brings to someone else a bootstrap project to start with step response sensors.
 
 After the week20 I've realized a lot of things like could change, like size, could be 60% less by using a smaller OLED display i2C, memory size of the SAMD11 wasn't a problem using the Arduino IDE without bootloader.
+
+The wired probe shows that there are variations depending on the position of the probe within the sample.
+
+I've found any correlation to the freshness of the sample that could be coherent and definitive, thus for this evaluation I've found that the "freshness" on the orange juice made it more conductive that the expired pineapple juice sample.
+
+The reason could be in the relationship between electrical conductivity and pH. substances close to neutral pH are less conductive we had the data from tap water showing low values in the test. And more acidic substances are more conductive due to the presence of more hydrogen ions.
+
+
+
+### Unimplemented buttons
+
+Buttons were working thus the circuit design with LEDS made them way too much power consuming reducing battery life quickly.
+
+Also the buttons require a calibration due to a variation in the analogread value depending on the battery charge.
+
+RFID module wasn't integrated due to lac of time. But I hope to have a couple more days to integrated it properly on the device. The problem is that the RFID baord doesn't have any perforations to help me out attach the board to the device, so I've to design a holder fir the PCB and the antenna.
+
+
+
+### Design changes
+
+Multivibrator circuit has been removed of the main control board, my plan its too add this to the probe as a module.
+
+The closing mechanism for the rear plate has been replaced by the holders, the reason its that it didn't work, the rear plate wasn't tight sealed.  
+
 
 
 
@@ -1315,21 +1348,3 @@ Estimates cost: 42.47 USD
 		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
-
-
-
-### Unimplemented buttons
-
-Buttons were working thus the circuit design with LEDS made them way too much power consuming reducing battery life quickly.
-
-Also the buttons require a calibration due to a variation in the analogread value depending on the battery charge.
-
-RFID module wasn't integrated due to lac of time. But I hope to have a couple more days to integrated it properly on the device. The problem is that the RFID baord doesn't have any perforations to help me out attach the board to the device, so I've to design a holder fir the PCB and the antenna.
-
-
-
-### Design changes
-
-Multivibrator circuit has been removed of the main control board, my plan its too add this to the probe as a module.
-
-The closing mechanism for the rear plate has been replaced by the holders, the reason its that it didn't work, the rear plate wasn't tight sealed.  
