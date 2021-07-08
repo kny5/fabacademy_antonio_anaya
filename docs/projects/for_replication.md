@@ -1176,9 +1176,9 @@ Connections:
 
 The layout in the display shows this information:
 
-<img src="../../images/milq/lcd_details_01.png" alt="laser_01" width=100%/>
-
 The animation in the row 4 changes by the current sample number.
+
+<img src="../../images/milq/lcd_details_02.png" alt="laser_01" width=100%/>
 
 The MAX value its equal to 4000 the maximun number I could use for memory size and 12 bits resolution for the analogWrite function.
 
