@@ -1150,6 +1150,13 @@ On this video you can observe the step response in the horizontal graph.
 | Creme Legere 12% | 100 | 202 | 214 | 208 |  
 
 
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/milq/expired_500_10.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
 | Substance | Samples per cycle | Min | Max | Average | Samples |
 | -- | -- | -- | -- | -- | -- |
 | Expired  Bottled Pineapple Juice | 500 | 67 | 80 | 73.5 | 80, 67 |
