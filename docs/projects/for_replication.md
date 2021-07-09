@@ -1379,13 +1379,52 @@ I've used parts of the circuits I've made on [week09](../../assignments/week09),
 
 ### KiCAD
 
-[KiCAD, PCB, Schematic and netlist ZIP](../../files/project/zip/kicad.zip)
-
-
+| Piece | Quantity | File |
+| -- | -- | -- |
+| Control board | 1 | [KiCAD, PCB, Schematic and netlist ZIP](../../files/project/zip/kicad.zip)
+| Button board | 1 |  [KiCAD, PCB, Schematic and netlist ZIP](../../files/project/zip/buttons_led.zip)
+| EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.svg) | | | [ec outline](../../files/project/milling/ec_outline.svg) |
 
 ### SVG
 
 [SVG design files](../../files/project/zip/svg.zip)
+
+
+
+### Files for laser cut
+
+Format: DXF
+
+| Piece | Quantity | File |
+| -- | -- | -- |
+| Side plate | 3 | [side plate](../../files/project/laser/side_plate.DXF)
+| Switch plate | 1 | [switch plate](../../files/project/laser/switch_plate.DXF)
+| Front plate | 1 | [Front plate](../../files/project/laser/front_plate.DXF)
+| Rear plate | 1 | [rear plate](../../files/project/laser/rear_plate.DXF)
+| Middle plate | 1 | [middle plate](../../files/project/laser/middle_plate.DXF)
+
+
+
+### Files for 3D printing
+
+Format: STL
+
+| Piece | Quantity | File |
+| -- | -- | -- |
+| Buttons | 1 | [buttons](../../files/project/3d/buttons.STL) |
+| Holders | 4 | [Holders](../../files/project/3d/holder.STL) |
+
+
+
+### Files for circuit milling
+
+Format: SVG
+
+| Piece | Quantity | Traces | Text | Holes | Outline |  
+| -- | -- | -- | -- | -- | -- |
+| Buttons board | 1 | [Button traces](../../files/project/milling/buttons_traces.svg) | | [Buttons holes](../../files/project/milling/buttons_holes.svg) | [Buttons outline](../../files/project/milling/buttons_outline.svg) |
+| Control board | 1 | [control traces](../../files/project/milling/control_traces.svg) | [control text](../../files/project/milling/control_txt.svg) | [control holes](../../files/project/milling/control_holes.svg) | [control outline](../../files/project/milling/control_outline.svg) |
+| EC probe board | 1 | [ec traces](../../files/project/milling/ec_traces.svg) | | | [ec outline](../../files/project/milling/ec_outline.svg) |
 
 
 
