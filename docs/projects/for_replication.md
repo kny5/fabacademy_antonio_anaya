@@ -349,10 +349,10 @@ All this material was found in the inventory of [Agrilab](https://agrilab.unilas
 
 | Tool | Specifications |
 | -- | -- |
-| Roland SRM-20 milling machine or alike | Sacrificial plate is needed for safety of the machine |
-| Prusa i3 Mk2 3D printer machine or alike | Resolution needed to 0.10 mm for maximum dimensional accuracy with 0.4 mm nozzle. |
-| Laser cutting machine | Effective working area more than 50 x 50 cms, power 150 Watts, CO2 and security protocol compliant trained operation, **Clean working space and Fire Extinguisher is mandatory** |
-| Weller Pu-81 Soldering iron or alike | Precision tip for maximum accuracy, tool folder for comfort and security |
+| [Roland SRM-20](https://www.rolanddga.com/es-la/productos/3d/srm-20-fresadora-compacta) milling machine or alike | Sacrificial plate is needed for safety of the machine |
+| [Prusa i3 Mk2](https://www.prusa3d.com/original-prusa-i3-mk3/) 3D printer machine or alike | Resolution needed to 0.10 mm for maximum dimensional accuracy with 0.4 mm nozzle. |
+| [Laser cutting machine](http://www.mllaser-co2.com/) | Effective working area more than 50 x 50 cms, power 150 Watts, CO2 and security protocol compliant trained operation, **Clean working space and Fire Extinguisher is mandatory** |
+| [Weller Pu-81](https://fr.rs-online.com/web/p/postes-a-souder/4310244/) Soldering iron or alike | Precision tip for maximum accuracy, tool folder for comfort and security |
 
 
 
@@ -360,23 +360,23 @@ All this material was found in the inventory of [Agrilab](https://agrilab.unilas
 
 | Material | Quantity | Price | Specifications |
 | -- | -- | -- | -- |
-| Plexiglass | 75 x 15 cms or 40 x 30 cms | 32.24 Euro/ m^2| 6 mm thickness transparent or translucent |
-| PLA Filament for 3D printer | > 10 grams | 1.75 diameter |
-| FR1 Electronic board for milling | > 14 x 9 cms | 1.8 mm thickness, **flat**, single sided |
-| 1.0 mm milling bit | Multiple | This tip is used for milling the FR1 electronic board, maximum quality the better for accurate trace milling |
-| 0.4 mm milling bit | Multiple x2 | This tip is used for milling the FR1 electronic board, maximum quality the better for accurate trace milling, this component its extremely fragile |
+| [Plexiglass](www.jfreeman.com) | 75 x 15 cms or 40 x 30 cms | 32.24 Euro/ m^2| 6 mm thickness transparent or translucent |
+| [PLA Filament for 3D printer](https://www.makershop.fr/197-colorfabb) | > 10 grams | 1.75 diameter |
+| [FR1 Electronic board](https://www.digikey.com/en/products/detail/bantam-tools/MT1004/8567212?s=N4IgjCBcoLQBxVAYygMwIYBsDOBTANCAPZQDa4AnAMwBMIAugL6OF2TkCyAKmAAy8AWBoyA) for milling | > 14 x 9 cms | 1.8 mm thickness, **flat**, single sided |
+| [1.0 mm milling bit](http://www.carbidedepot.com/) | Multiple | This tip is used for milling the FR1 electronic board, maximum quality the better for accurate trace milling |
+| [0.4 mm milling bit](http://www.carbidedepot.com/) | Multiple x2 | This tip is used for milling the FR1 electronic board, maximum quality the better for accurate trace milling, this component its extremely fragile |
 | Double face tape | 1 roll | Stickiness should be enough to fix the FR1 to the sacrificial layer during the milling process |
 
 
 
 ### Wires:
 
-| Color | Quantity | Specifications |
-| -- | -- | -- |
-| Red | > 80 centimeter | Caliber AWG 24 |    
-| Blue | > 80 centimeter | Caliber AWG 24 |    
-| Optional 1 | > 30 centimeter | Caliber AWG 24 |
-| Optional 2 | > 30 centimeter | Caliber AWG 24 |    
+| Color | Quantity | Specifications | Price
+| -- | -- | -- | -- |
+| [Red](https://www.digikey.com/en/products/detail/nte-electronics-inc/WT24-02-25/11654365) | > 80 centimeter | Caliber AWG 24 | 17.22 USD
+| [Blue](https://www.digikey.com/en/products/detail/pololu-corporation/2636/10451089) | > 80 centimeter | Caliber AWG 24 | 4.75 USD
+| [Optional 1](https://www.digikey.com/en/products/detail/pololu-corporation/2634/10451087) | > 30 centimeter | Caliber AWG 24 | 4.75 USD
+| [Optional 2](https://www.digikey.com/en/products/detail/pololu-corporation/2636/10451089) | > 30 centimeter | Caliber AWG 24 | 4.75 USD   
 | 10 wires flat cable|  1.27 mm pitch JTAG connector |
 
 
@@ -398,6 +398,8 @@ All this material was found in the inventory of [Agrilab](https://agrilab.unilas
 
 ### Joinery (plastic):
 
+[Link](https://www.amazon.com/Electronics-Salon-Spacer-Assortment-Screws-Plastic/dp/B014KISXAG) 9.90 USD
+
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
 | Nylon hexagonal spacers | 2 | 5 mm spacer |
@@ -408,6 +410,8 @@ All this material was found in the inventory of [Agrilab](https://agrilab.unilas
 
 
 ### Joinery (metal):
+
+[Link](https://www.amazon.com/-/es/NEWURBAN-piezas-inoxidable-tornillos-tuercas/dp/B08RZ219J3/ref=sr_1_28?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=m2+bolts+precision&qid=1626065802&sr=8-28) 19.99 USD
 
 | | Type | Quantity | Specifications |
 | -- | -- | -- | -- |
@@ -454,7 +458,7 @@ All this material was found in the inventory of [Agrilab](https://agrilab.unilas
 | Q1        | MOSFET_P-CH_30V_1.1A               | 0.47 USD | https://www.digikey.com/en/products/detail/on-semiconductor/NDS356AP/458900?s=N4IgTCBcDaIHIBEDKBmArANgIIAUDCAKgLSIgC6AvkA                              | fabacademy2021:fab-SOT-23                | https://www.onsemi.com/pub/Collateral/NDS356AP-D.PDF                                            |
 | C1        | 1uF                                | 0.30 USD | https://www.digikey.com/en/products/detail/tdk-corporation/C3216X7R1H105K160AB/569049?s=N4IgTCBcDaICxwKwFoCMcwGY3IHIBEQBdAXyA                          | fabacademy2021:C_1206                    | ~                                                                                               |
 
-Estimated cost: 6.64 USD with out connectors
+Estimated cost: 6.51 USD without connectors
 
 
 
@@ -478,7 +482,7 @@ Estimated cost: 6.64 USD with out connectors
 | D2        | LED               | 0.13 USD | https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C150CKT/269214?s=N4IgTCBcDaIIwDYAMBaOiDsaUDkAiIAugL5A          | fabacademy2021:LED_1206                   | ~                                                                                    |
 | R3        | 100               | 0.10 USD | N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                                | fabacademy2021:R_1206                     | ~                                                                                    |
 | D1        | LED               | 0.13 USD | https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C230TBKT/388531?s=N4IgTCBcDaIIwDYAMBaOAOdBONKByAIiALoC%2BQA    | fabacademy2021:LED_1206                   | ~                                                                                    
-Estimated cost: 3.698 USD with out connectors
+Estimated cost: 4.15 USD with out connectors
 
 
 
@@ -1315,35 +1319,46 @@ Estimated to be right now at:
 
 PCB total cost:
 
-Control board components: 6.64
-Buttons board components: 3.698
-Machining time: 0.67
+- Control board components: 6.51
+- Buttons board components: 4.15
+- Machining time: 0.67
 
-11.008 USD
+11.33 USD
 
 Laser cut cost:
 
-Material: 11.2
-Machining: 1.89
+- Material: 11.2
+- Machining: 1.89
 
 13.09 USD
 
 3D printing cost:
 
-Buttons: 2.32 USD
-Holders: 2.12 USD
+- Buttons: 2.32 USD
+- Holders: 2.12 USD
 
 4.44 USD
 
-Joinery approximate: 2 USD
+- Connectors Dupont: 1 USD*
+- Connectors Dupont jumper: 1 USD*
+- Joinery approximate: 1 USD*
+- Wiring approximate: 1 USD*
+- Battery 9V: 1 USD
+- LCD 20 x 4: 7 USD
 
-Wiring approximate: 2 USD
+Estimated cost: **40.86 USD** ***without cable packs, joinery pack and connectors pack.***
 
-Battery 9V: 1 USD
+Buying cables and joinery in packs:
 
-LCD 20 x 4: 7 USD
+- Cables: 31.47
+- Joinery plastic pack: 9.90 USD
+- Joinery metal pack: 19.29 USD
+- Connectors pack 1: 4 USD
+- Connectors pack 2: 4.18 USD
 
-Estimates cost: 42.47 USD
+Sub-total: 60.66 USD
+
+Total: 101.52 USD
 
 
 
