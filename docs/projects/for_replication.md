@@ -761,7 +761,11 @@ This optional probe implements a 1K Thermistor and a voltage divider circuit.
 
 [Download](../../files/project/milling/ec.svg)
 
-| Piece | Quantity | Traces | Text | Holes | Outline |  
+|  Component | Price | Vendor
+| -- | -- | -- |
+| 1K Thermistor |  | https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/PTS1206M1B1K00P100/5218662?s=N4IgTCBcDaIOwBYCcBaAjABgKxfSgcgCIAEIAugL5A 
+
+| Piece | Quantity | Traces | Text | Holes | Outline |
 | -- | -- | -- | -- | -- | -- |
 | EC probe board | 1 | [ec traces](../../files/project/milling/therm_traces.svg) | | [ec traces](../../files/project/milling/ec_holes.svg) | [ec outline](../../files/project/milling/ec_outline.svg) |
 
