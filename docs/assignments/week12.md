@@ -571,23 +571,30 @@ My time will be managed like this:
 | Original design | File |
 | -- | -- |
 | 3D Model SOLIDWORKS | [3D model](../../files/week12/buttons.sldprt) |  
-| Roland Modela 4 project file | [project for toolpath](../../files/week12/buttons.?) |  
+| Roland Modela 4 project file | [project for toolpath](../../files/week12/buttons.mpj) |  
+
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fweek12%2Fbuttons.STL&local" style="border:0;margin:0;width:100%;height:300px;"></iframe>
 
 | Requirement | File |
 | -- | -- |
-| 3D Model STL | [stl model](../../files/week12/buttons.stl) |
-| Milling path Rough | [Made with Roland Modela 4](../../files/week12/rough.rlm) |
-| Milling path finishing | [Made with Roland Modela 4](../../files/week12/finishing.rlm) |
+| 3D Model STL | [stl model](../../files/week12/buttons.STL) |
+| Milling path Rough | [Made with Roland Modela 4](../../files/week12/r_cut.prn) |
+| Milling path finishing | [Made with Roland Modela 4](../../files/week12/f_cut.prn) |
 
 
 
 #### Software Install
 
-For this rework I've chose to use Solidworks for modeling, and Roland MODELA v4 to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
+For this rework I've chose to use Solidworks for modeling, and [Roland MODELA v4](https://www.rolanddga.com/es-la/soporte/products/software/modela-player-4) to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
 
 To install Roland Modela I've used the links on the [documentation](http://yuichitamiya.fabcloud.io/fabacademy2020/projects/roland_modela_player4/) of [Yuichi Tamiya my global instructor.](http://archive.fabacademy.org/fabacademy2017/fablabkamakura/students/44/)
 
-- [Download Links on Google Drive](https://drive.google.com/drive/folders/1vT6Qu2YWHNU_4Q_TgWwoMA3wRYo0V9G0?usp=sharing)
+Software to install:
+
+- Modela player 4.
+- Virtual Modela.
+
+[Download Links on Google Drive](https://drive.google.com/drive/folders/1vT6Qu2YWHNU_4Q_TgWwoMA3wRYo0V9G0?usp=sharing)
 
 
 
@@ -615,11 +622,11 @@ Once Roland Modela 4 its installed we can start using it, since this is a window
 		- ![Finishing](../../images/week12/rework/finishing_01.jpg)
 		- ![Finishing](../../images/week12/rework/finishing_02.jpg)
 		- ![Finishing](../../images/week12/rework/finishing_03.jpg)
-7. Simulation:
+7. Simulation with virtual Modela software:
 		- ![Finishing](../../images/week12/rework/roland_03.jpg)
 		- ![Finishing](../../images/week12/rework/roland_02.jpg)
 		- ![Finishing](../../images/week12/rework/roland_01.jpg)
--
+
 
 
 ## Files
