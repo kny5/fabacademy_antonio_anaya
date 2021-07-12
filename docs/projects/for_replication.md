@@ -6,7 +6,7 @@
 
 <figure class="video_container">
 	<video controls="true" allowfullscreen="true">
-		<source src="presentation.mp4" type="video/mp4">
+		<source src="../../presentation.mp4" type="video/mp4">
 	</video>
 </figure>
 
@@ -476,11 +476,11 @@ Estimated cost: 6.51 USD without connectors
 | SW2       | BUTTON_PTS636     | 1.02 USD | https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3SN-3012P/9717                                   | fabacademy2021:Button_Omron_B3SN_6x6mm    | https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf |
 | SW3       | BUTTON_PTS636     | 1.02 USD | https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3SN-3012P/9717                                   | fabacademy2021:Button_Omron_B3SN_6x6mm    | https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS636/documents/datasheet.pdf |
 | J1        | Conn_01x03_Female | USD      |                                                                                                                            | digikey:PinHeader_1x3_P2.54mm_Drill1.02mm | ~                                                                                    |
-| R7        | 100               | 0.10 USD | N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                                | fabacademy2021:R_1206                     | ~                                                                                    |
+| R7        | 100               | 0.10 USD | https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100RL/728491?s=N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                            | fabacademy2021:R_1206                     | ~                                                                                    |
 | D3        | LED               | 0.13 USD | https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C230TBKT/388531?s=N4IgTCBcDaIIwDYAMBaOAOdBONKByAIiALoC%2BQA    | fabacademy2021:LED_1206                   | ~                                                                                    |
-| R5        | 100               | 0.10 USD | N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                                | fabacademy2021:R_1206                     | ~                                                                                    |
+| R5        | 100               | 0.10 USD | https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100RL/728491?s=N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                               | fabacademy2021:R_1206                     | ~                                                                                    |
 | D2        | LED               | 0.13 USD | https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C150CKT/269214?s=N4IgTCBcDaIIwDYAMBaOiDsaUDkAiIAugL5A          | fabacademy2021:LED_1206                   | ~                                                                                    |
-| R3        | 100               | 0.10 USD | N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                                | fabacademy2021:R_1206                     | ~                                                                                    |
+| R3        | 100               | 0.10 USD |https://www.digikey.com/en/products/detail/yageo/RC1206FR-07100RL/728491?s=N4IgTCBcDaIMwEYEFoEAY0DEBKBhAKsgHIAiIAugL5A                                                                               | fabacademy2021:R_1206                     | ~                                                                                    |
 | D1        | LED               | 0.13 USD | https://www.digikey.com/en/products/detail/lite-on-inc/LTST-C230TBKT/388531?s=N4IgTCBcDaIIwDYAMBaOAOdBONKByAIiALoC%2BQA    | fabacademy2021:LED_1206                   | ~                                                                                    
 Estimated cost: 4.15 USD with out connectors
 
