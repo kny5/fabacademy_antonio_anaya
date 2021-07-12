@@ -556,6 +556,72 @@ I've the idea to cast the entire body of my flow sensor, but since it's the firs
 
 
 
+### Rework for global review
+
+I've started to prepare a molded version of the buttons I've designed for my final project.
+
+My time will be managed like this:
+
+| Task | Date |
+| -- | -- |
+| Milling mold base | 13/07 |
+| Pouring silicone on wax mold | 13/07 |
+| Casting on silicone mold | 14/07 |
+
+| Original design | File |
+| -- | -- |
+| 3D Model SOLIDWORKS | [3D model](../../files/week12/buttons.sldprt) |  
+| Roland Modela 4 project file | [project for toolpath](../../files/week12/buttons.?) |  
+
+| Requirement | File |
+| -- | -- |
+| 3D Model STL | [stl model](../../files/week12/buttons.stl) |
+| Milling path Rough | [Made with Roland Modela 4](../../files/week12/rough.rlm) |
+| Milling path finishing | [Made with Roland Modela 4](../../files/week12/finishing.rlm) |
+
+
+
+#### Software Install
+
+For this rework I've chose to use Solidworks for modeling, and Roland MODELA v4 to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
+
+To install Roland Modela I've used the links on the [documentation](http://yuichitamiya.fabcloud.io/fabacademy2020/projects/roland_modela_player4/) of [Yuichi Tamiya my global instructor.](http://archive.fabacademy.org/fabacademy2017/fablabkamakura/students/44/)
+
+- [Download Links on Google Drive](https://drive.google.com/drive/folders/1vT6Qu2YWHNU_4Q_TgWwoMA3wRYo0V9G0?usp=sharing)
+
+
+
+#### Configuration
+
+Once Roland Modela 4 its installed we can start using it, since this is a windows program I've to switch to Windows OS to use it.
+
+1. Add Roland SRM-20 as the main machine.
+		- ![Machine add](../../images/week12/rework/tool_01.JPG)
+2. Add a new tool: I'll add the 1mm flat-head milling bit we use for cutting PCBs.
+		- ![Tool config](../../images/week12/rework/tool_00.JPG)
+3. Import the STL model.
+		- ![STL](../../images/week12/rework/roland_04.jpg)
+4. Add process:
+		- ![Process](../../images/week12/rework/tool_09.jpg))
+		- ![Process](../../images/week12/rework/tool_05.jpg))
+		- ![Process](../../images/week12/rework/tool_04.jpg))
+		- ![Process](../../images/week12/rework/tool_03.jpg))
+		- ![Process](../../images/week12/rework/tool_02.jpg))
+5. Rought cut:
+		- ![Rought cut](../../images/week12/rework/tool_08.jpg)
+		- ![Rought cut](../../images/week12/rework/tool_07.jpg)
+		- ![Rought cut](../../images/week12/rework/tool_06.jpg)
+6. Finishing:
+		- ![Finishing](../../images/week12/rework/finishing_01.jpg)
+		- ![Finishing](../../images/week12/rework/finishing_02.jpg)
+		- ![Finishing](../../images/week12/rework/finishing_03.jpg)
+7. Simulation:
+		- ![Finishing](../../images/week12/rework/roland_03.jpg)
+		- ![Finishing](../../images/week12/rework/roland_02.jpg)
+		- ![Finishing](../../images/week12/rework/roland_01.jpg)
+-
+
+
 ## Files
 
 <a href="../../files/week12/1_rotor_00.nc"> NC Rotor Rough Pocket process file. </a>
