@@ -556,7 +556,7 @@ I've the idea to cast the entire body of my flow sensor, but since it's the firs
 
 
 
-### Rework for global review
+## Rework for global review
 
 I've started to prepare a molded version of the buttons I've designed for my final project.
 
@@ -573,7 +573,7 @@ My time will be managed like this:
 | 3D Model SOLIDWORKS | [3D model](../../files/week12/buttons.sldprt) |  
 | Roland Modela 4 project file | [project for toolpath](../../files/week12/buttons.mpj) |  
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fweek12%2Fbuttons.STL&local" style="border:0;margin:0;width:100%;height:300px;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fweek12%2Fbuttons.STL" style="border:0;margin:0;width:100%;height:100%;"></iframe>
 
 | Requirement | File |
 | -- | -- |
@@ -583,7 +583,7 @@ My time will be managed like this:
 
 
 
-#### Software Install
+### Software Install
 
 For this rework I've chose to use Solidworks for modeling, and [Roland MODELA v4](https://www.rolanddga.com/es-la/soporte/products/software/modela-player-4) to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
 
@@ -598,7 +598,7 @@ Software to install:
 
 
 
-#### Configuration
+### Configuration
 
 Once Roland Modela 4 its installed we can start using it, since this is a windows program I've to switch to Windows OS to use it.
 
@@ -610,22 +610,22 @@ Once Roland Modela 4 its installed we can start using it, since this is a window
 		- ![STL](../../images/week12/rework/roland_04.jpg)
 4. Add process:
 		- ![Process](../../images/week12/rework/tool_09.jpg))
-		- ![Process](../../images/week12/rework/tool_05.jpg))
-		- ![Process](../../images/week12/rework/tool_04.jpg))
-		- ![Process](../../images/week12/rework/tool_03.jpg))
-		- ![Process](../../images/week12/rework/tool_02.jpg))
+		- ![Process](../../images/week12/rework/tool_05.JPG))
+		- ![Process](../../images/week12/rework/tool_04.JPG))
+		- ![Process](../../images/week12/rework/tool_03.JPG))
+		- ![Process](../../images/week12/rework/tool_02.JPG))
 5. Rought cut:
 		- ![Rought cut](../../images/week12/rework/tool_08.jpg)
-		- ![Rought cut](../../images/week12/rework/tool_07.jpg)
-		- ![Rought cut](../../images/week12/rework/tool_06.jpg)
+		- ![Rought cut](../../images/week12/rework/tool_07.JPG)
+		- ![Rought cut](../../images/week12/rework/tool_06.JPG)
 6. Finishing:
-		- ![Finishing](../../images/week12/rework/finishing_01.jpg)
-		- ![Finishing](../../images/week12/rework/finishing_02.jpg)
-		- ![Finishing](../../images/week12/rework/finishing_03.jpg)
+		- ![Finishing](../../images/week12/rework/finishing_01.JPG)
+		- ![Finishing](../../images/week12/rework/finishing_02.JPG)
+		- ![Finishing](../../images/week12/rework/finishing_03.JPG)
 7. Simulation with virtual Modela software:
-		- ![Finishing](../../images/week12/rework/roland_03.jpg)
-		- ![Finishing](../../images/week12/rework/roland_02.jpg)
-		- ![Finishing](../../images/week12/rework/roland_01.jpg)
+		- ![Finishing](../../images/week12/rework/roland_03.JPG)
+		- ![Finishing](../../images/week12/rework/roland_02.JPG)
+		- ![Finishing](../../images/week12/rework/roland_01.JPG)
 
 
 
