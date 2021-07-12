@@ -591,7 +591,9 @@ My time will be managed like this:
 
 ### Software Install
 
-For this rework I've chose to use Solidworks for modeling, and [Roland MODELA v4](https://www.rolanddga.com/es-la/soporte/products/software/modela-player-4) to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
+For this rework I've chose to use [Solidworks](https://www.solidworks.com/en) for modeling, and [Roland MODELA v4](https://www.rolanddga.com/es-la/soporte/products/software/modela-player-4) to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
+
+![Solidowrks](../../images/week12/rework/solidworks_00.jpg)
 
 To install Roland Modela I've used the links on the [documentation](http://yuichitamiya.fabcloud.io/fabacademy2020/projects/roland_modela_player4/) of [Yuichi Tamiya my global instructor.](http://archive.fabacademy.org/fabacademy2017/fablabkamakura/students/44/)
 
