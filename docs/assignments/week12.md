@@ -568,12 +568,14 @@ My time will be managed like this:
 | Pouring silicone on wax mold | 13/07 |
 | Casting on silicone mold | 14/07 |
 
+### Files
+
 | Original design | File |
 | -- | -- |
 | 3D Model SOLIDWORKS | [3D model](../../files/week12/buttons.sldprt) |  
 | Roland Modela 4 project file | [project for toolpath](../../files/week12/buttons.mpj) |  
 
-<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fweek12%2Fbuttons.STL" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+<iframe id="vs_iframe" src="https://www.viewstl.com/?embedded&url=http%3A%2F%2Ffabacademy.org%2F2021%2Flabs%2Fagrilab%2Fstudents%2Fantonio-anaya%2Ffiles%2Fweek12%2Fbuttons.STL&shading=flat&clean=yes&noborder=yes" style="border:0;margin:0;width:100%;height:485px;"></iframe>
 
 | Requirement | File |
 | -- | -- |
