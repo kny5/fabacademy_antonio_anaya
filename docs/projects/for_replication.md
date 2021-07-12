@@ -26,18 +26,18 @@
 
 ## Description
 
-MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector and plots a graph on its LCD display.
+MILQ its a device for checking the freshness of a milk sample by measuring electrical conductivity, it uses a disposable espresso cup as sample collector and plots a graph on its LCD display, and reads FDX RFID 134KHZ animal earring tags.
 
 Characteristics:
 
 - Based on ATSAMD11C14A ARM 32 bits Microcontroller.
 - up to 800 Samples on 10 secs.
 - 9V battery
+- Reads FDX Animal tag rfid.
 
 Results obtained:
 
-The device measures electrical conductivity of samples, thus it could be programmed to measure pH of substances.
-
+The device measures electrical conductivity of samples, thus it could be programmed to measure pH of substances. You can check this [tests](#test)
 
 
 ## License
@@ -341,7 +341,7 @@ subsection 3.2.
 
 ## BOM
 
-All this material was found in the inventory of [Agrilab](https://agrilab.unilasalle.fr).
+All this material was found in the inventory of [Agrilab](https://agrilab.unilasalle.fr) and was acquired from different vendors like [Digikey](https://www.digikey.com) check the lists bellow and find the suppliers in the links indicated.
 
 
 
