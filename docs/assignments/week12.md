@@ -3,6 +3,37 @@
 <img src="../../images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
 
 
+## **A Note about discrimination**
+
+>discrimination
+noun [ U ]
+us
+/dɪˌskrɪm·əˈneɪ·ʃən/
+discrimination noun [U] (WORSE TREATMENT)
+the treatment of a person or particular group of people differently, in a way that is worse than the way people are usually treated:
+Some immigrants were victims of discrimination.
+The law made racial discrimination in employment a serious crime.
+**Discrimination is also prejudice against people and a refusal to give them their rights.**
+
+During my stance in the Fab Academy in AgriLab I was denied multiple times the right to being involved in the instruction,
+The right of being listen with common respect,
+The right to be treated like a equal and not being prejudged,
+The right to use the machines and work freely with the same rights as the other students,
+The right of not being disrespected in the work place by my culture, and language,
+The right to learn from my instructors,
+The right to have a voice to defend myself from false accusations,
+The right of have a evaluation based on the quality of my work and not a personal point of view.
+The right to know the right information on time and not just before.  
+The right to receive an instruction without anger or disgust.
+The right to receive a fair evaluation and don't being left behind on purpose making me wait one week for a "too compressed image in your documentation or a typo or a false "missing file" allegation.
+
+It's wasn't just all the days with people not even saying good morning or ignoring me actively, or denying me specifically the instruction or even changing the code of a machine I was working on and saying nothing. Or ask for review and be told "yes today" and being ignored right after, or being treated "well" just in posts on Linkedin.
+
+The last week in AgriLab I was denied the use of the machines and being told of being immature for speaking out about this issues with the coordination.
+
+**NO** speak out loud about discrimination is the right thing to do.
+
+
 
 ## Introduction
 
@@ -635,6 +666,8 @@ Once Roland Modela 4 its installed we can start using it, since this is a window
 		- ![Finishing](../../images/week12/rework/roland_02.JPG)
 		- ![Finishing](../../images/week12/rework/roland_01.JPG)
 
+
+##
 
 
 ## Files
