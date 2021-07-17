@@ -587,7 +587,7 @@ I've the idea to cast the entire body of my flow sensor, but since it's the firs
 
 
 
-## Rework for global review
+## Rework for global review (AgriLab)
 
 I've started to prepare a molded version of the buttons I've designed for my final project.
 
@@ -624,7 +624,7 @@ My time will be managed like this:
 
 For this rework I've chose to use [Solidworks](https://www.solidworks.com/en) for modeling, and [Roland MODELA v4](https://www.rolanddga.com/es-la/soporte/products/software/modela-player-4) to generate the toolpaths for the machining. I'm using a version of the buttons I've designed for my final project.
 
-![Solidowrks](../../images/week12/rework/solidworks_00.jpg)
+![Solidworks](../../images/week12/rework/solidworks_00.jpg)
 
 To install Roland Modela I've used the links on the [documentation](http://yuichitamiya.fabcloud.io/fabacademy2020/projects/roland_modela_player4/) of [Yuichi Tamiya my global instructor.](http://archive.fabacademy.org/fabacademy2017/fablabkamakura/students/44/)
 
@@ -667,10 +667,31 @@ Once Roland Modela 4 its installed we can start using it, since this is a window
 		- ![Finishing](../../images/week12/rework/roland_01.JPG)
 
 
-##
+## Rework at Digiscope
+
+On July 16th I've received help from the [FabLab Digiscope](http://fablab.digiscope.fr/) in the [Université Paris-Eclay Campus](https://www.universite-paris-saclay.fr/en) the instructor [Jonah Marrs](http://fabacademy.org/2021/labs/digiscope/students/jonah-marrs/about/) guided me thorught the week12 Molding and casting process with the [Shopbot Desktop](https://www.shopbottools.com/products/desktop) for milling, the milling bits usage, [VCarve pro software for Gcode generation](https://www.vectric.com/products/vcarve-pro) and the [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/) for making a mold.
+
+The original plan was make a Chocolate mold but as the Silicone used is not Food safe contact I've determined to use it as a wax candle mold.
+
+
+
+### Equipment and materials
+
+- Shopbot Desktop
+- 1/8 in Flat-end mill
+- 1/16 Ball-end mill
+- Silicon Mold Max 29NV
+- Scale
+- Recipient for mixing
+- Globes
+-Googles
+
+
+
 
 
 ## Files
+
 
 <a href="../../files/week12/1_rotor_00.nc"> NC Rotor Rough Pocket process file. </a>
 
