@@ -66,9 +66,8 @@ Input data:
 
 1. Diameter
 2. Surface speed of WAX.
-3. etc.
 
-![Calculator img](../../images/week12/digiscope/calc_01.jpg)
+![Calculator img](../../images/week12/digiscope/calc_01.JPG)
 
 
 
@@ -151,7 +150,7 @@ The curing process takes about 6 hours at ambient temperature and I've translate
 
 I've demolded the silicon mold after 12 hours. I didn't use any releasing agents.
 
-![](../../images/week12/digiscope/silicon_01.jpg))
+![](../../images/week12/digiscope/silicon_01.jpg)
 
 
 
