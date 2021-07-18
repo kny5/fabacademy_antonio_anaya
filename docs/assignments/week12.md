@@ -35,11 +35,11 @@ The original plan was make a Chocolate mold but as the Silicone used is not Food
 
 I've designed my model using [Solidworks](https://www.solidworks.com/) and exported the file as [STL file format](https://en.wikipedia.org/wiki/STL_(file_format)).
 
-![](../../images/week12/digiscope/solidworks_01.jpg)
+![](../../images/week12/digiscope/solid_01.JPG)
 
 Then I've imported the STL file to Rhino to delete some surfaces, because Vcarve tried to mill all the wax brick and that could take a significant ammount of time, around 4 hours. Although I've committed a mistake by leaving the top surface.
 
-![](../../images/week12/digiscope/rhino_01.jpg)
+![](../../images/week12/digiscope/rhino_01.JPG)
 
 The configuration of [VCarve pro](https://www.vectric.com/products/vcarve-pro) is as follows:
 
