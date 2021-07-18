@@ -1,6 +1,194 @@
 # 12. Molding and casting
 
-<img src="../../images/week12/hero_01.jpg" alt="hero_01.jpg" width=100%/>
+<img src="../../images/week12/digiscope/hero.jpg" alt="hero.jpg" width=100%/>
+
+
+## Rework at Digiscope
+
+On July 16th I've received help from the [FabLab Digiscope](http://fablab.digiscope.fr/) in the [Université Paris-Eclay Campus](https://www.universite-paris-saclay.fr/en) the instructor [Jonah Marrs](http://fabacademy.org/2021/labs/digiscope/students/jonah-marrs/about/) guided me thorught the week12 Molding and casting process with the [Shopbot Desktop](https://www.shopbottools.com/products/desktop) for milling, the milling bits usage, [VCarve pro software for Gcode generation](https://www.vectric.com/products/vcarve-pro) and the [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/) for making a mold.
+
+The original plan was make a Chocolate mold but as the Silicone used is not Food safe contact I've determined to use it as a wax candle mold.
+
+
+
+### Equipment and materials
+
+- Shopbot Desktop
+		- ![Shopbot Desktop](../../images/week12/digiscope/shopbot_01.jpg)
+- 1/8 in Flat-end mill
+		- ![Shopbot Desktop](../../images/week12/digiscope/shopbot_02.jpg)
+- 1/16 Ball-end mill
+		- ![Shopbot Desktop](../../images/week12/digiscope/mill_02.jpg)
+- Silicon Mold Max 29NV
+		- ![Shopbot Desktop](../../images/week12/digiscope/silicon_00.jpg)
+- Scale
+- Recipient for mixing
+		- ![Shopbot Desktop](../../images/week12/digiscope/mixing_02.jpg)
+- Globes
+- Googles
+- Tool for mill change
+		- ![Shopbot Desktop](../../images/week12/digiscope/tool_01.jpg)
+
+
+
+### Processing files
+
+I've designed my model using [Solidworks](https://www.solidworks.com/) and exported the file as [STL file format](https://en.wikipedia.org/wiki/STL_(file_format)).
+
+![](../../images/week12/digiscope/solidworks_01.jpg)
+
+Then I've imported the STL file to Rhino to delete some surfaces, because Vcarve tried to mill all the wax brick and that could take a significant ammount of time, around 4 hours. Although I've committed a mistake by leaving the top surface.
+
+![](../../images/week12/digiscope/rhino_01.jpg)
+
+The configuration of [VCarve pro](https://www.vectric.com/products/vcarve-pro) is as follows:
+
+![](../../images/week12/digiscope/vcarve_00.jpg)
+
+
+1. Input the dimensions of the material in this case the wax brick dimensions are:
+		- x: 3 inches
+		- y: 7 inches
+		- z: 1.5 inches
+2. Import the STL model we have created for 3D milling.
+3. Create the end milling tools we are going to use.
+4. Create a Rough milling process
+5. Create a surface finishing process
+6. Export the files as **Shopbot opensbp** format.
+
+
+
+### Calculating Spindle speed
+
+For this process I've used as suggested by instructor [Jonah]() the [MIT](https://pub.pages.cba.mit.edu/feed_speeds/) spindle feed and speed calculator.
+
+Input data:
+
+1. Diameter
+2. Surface speed of WAX.
+3. etc.
+
+![Calculator img](../../images/week12/digiscope/calc_01.jpg)
+
+
+
+### Configuring the Shopbot desktop
+
+The shopbot desktop machine has a frequency control for the rotor spin that needs to be changes every time the spin speed is changed. And as any other CNC machine the axis origins need to be calibrated manually using the jogging control. The tools need to be changed manually. Frequency for the milling process were 177HZ and 55 Hz.
+
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/axis_check_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Milling Wax mold
+
+The GCODE files were exported in two parts:
+
+1. First part:
+	- Rough cut with 1/4 inch flat-end mill
+2. Second Part:
+	- Surface finishing along X axis with 1/16 ball-end mill  
+	- Surface finishing along Y axis with 1/16 ball-end mill  
+
+- Fixing wax brick with hot glue ![](../../images/week12/digiscope/milling_00.jpg)
+- Loading Files on shopbots UI. ![](../../images/week12/digiscope/milling_03.jpg)
+- Inserting flat-end milling bit. ![](../../images/week12/digiscope/milling_09.jpg)
+- Staring rough cut. ![](../../images/week12/digiscope/milling_05.jpg)
+- Changing to ball-end milling bit. ![](../../images/week12/digiscope/milling_07.jpg)
+- Chip sizes. ![](../../images/week12/digiscope/milling_10.jpg)
+- Rough cut result. ![](../../images/week12/digiscope/mold_rought2.jpg)
+- Finishing cut result. ![](../../images/week12/digiscope/milling_11.jpg)
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/finishing_00.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Mixing the silicon
+
+**Datasheet for Mold Max 29NV** [Link](https://www.smooth-on.com/tb/files/MOLD_MAX_14NV_29NV_TB.pdf)
+
+I've used the [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/).
+
+The mixing proportion is 10:1 in mass, the volume needed is around 72000 mm³ minus 19000 mm³ = 53000 mm³ the density of the material is 1.17 gram per cubic centimeter, the grams needed for the mold are: 62.01 of component A and 6 grams of component B.
+
+1. I've set the container as Zero reference in the balance and poor the silicon until reach 63.42 grams.
+	- ![](../../images/week12/digiscope/mixing_01.jpg)
+2. Then I've poured 6 grams of part B.
+	- ![](../../images/week12/digiscope/mixing_03.jpg)
+3. Finally, I've mixed with a stick both parts using [this technique](#mixing) to avoid introducing too many air bubbles into the mix.
+
+
+
+### Pouring Silicon
+
+I've cleaned the wax mold just by using the vacuum machine and then I've placed the mold in a flat leveled surface.
+
+1. Then I've started pouring the silicon into the milled cavity using [This technique to avoid introducing air bubbles](#puring).
+	- ![](../../images/week12/digiscope/pouring_02.jpg)
+2. I've stop until the cavity was filled.
+	- ![](../../images/week12/digiscope/pouring_04.jpg)
+	- ![](../../images/week12/digiscope/mixing_04.jpg)
+
+The curing process takes about 6 hours at ambient temperature and I've translated the mold in a ziplock bag since I need to travel the next day.
+
+1. Ziplock bag
+	- ![](../../images/week12/digiscope/curing_01.jpg)
+2. Waiting for the bus
+	- ![](../../images/week12/digiscope/curing_05.jpg)
+
+
+
+### Demolding
+
+I've demolded the silicon mold after 12 hours. I didn't use any releasing agents.
+
+![](../../images/week12/digiscope/silicon_01.jpg))
+
+
+
+### Casting candles
+
+After demolding the mold I've travelled and finished casting candles using the mold.
+
+- I've melted the candle wax using boiling water bath method using one big pot filled of water and a small pot containing a small piece of wax candle.
+![](../../images/week12/digiscope/candle_01.jpg) ![](../../images/week12/digiscope/candle_05.jpg)
+- Piece of wax candle. ![](../../images/week12/digiscope/candle_0.jpg)
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/candle_05.mp4" type="video/mp4">
+	</video>
+</figure>
+
+- Additionally I've added a few drops of this wax to add color to the mix. ![](../../images/week12/digiscope/candle_06.jpg)
+
+- Molded candle still hot. ![](../../images/week12/digiscope/candle_04.jpg)
+
+- Demolding the casted candle.
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/candle_06.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Conclusions
+
+This work has been made with the help of the [ Fablab Digiscope](http://www.digiscope.fr/fr/platforms/fablab), instructor [Jonah Marrs](http://fabacademy.org/2021/labs/digiscope/students/jonah-marrs/about/), [Romain Di Vozzo](https://romaindivozzo.wordpress.com/), [Selena Pere](http://fabacademy.org/2021/labs/digiscope/students/selena-pere/About.html) and [Lea Paymal](https://www.instagram.com/leapaymal/). Thanks for your support and kindness.
+
+Casting candles with [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/) its quick and simple, the shopbot and VCARVE combination is super quick and easy to learn. I've made all this rework in only a few hours on a Friday, before traveling, and that's why there are a lot o details missing on documentation and steps in the processes.
+
 
 
 ## **A Note about discrimination**
@@ -667,6 +855,7 @@ Once Roland Modela 4 its installed we can start using it, since this is a window
 		- ![Finishing](../../images/week12/rework/roland_01.JPG)
 
 
+
 ## Rework at Digiscope
 
 On July 16th I've received help from the [FabLab Digiscope](http://fablab.digiscope.fr/) in the [Université Paris-Eclay Campus](https://www.universite-paris-saclay.fr/en) the instructor [Jonah Marrs](http://fabacademy.org/2021/labs/digiscope/students/jonah-marrs/about/) guided me thorught the week12 Molding and casting process with the [Shopbot Desktop](https://www.shopbottools.com/products/desktop) for milling, the milling bits usage, [VCarve pro software for Gcode generation](https://www.vectric.com/products/vcarve-pro) and the [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/) for making a mold.
@@ -678,20 +867,194 @@ The original plan was make a Chocolate mold but as the Silicone used is not Food
 ### Equipment and materials
 
 - Shopbot Desktop
+		- ![Shopbot Desktop](../../images/week12/digiscope/shopbot_01.jpg)
 - 1/8 in Flat-end mill
+		- ![Shopbot Desktop](../../images/week12/digiscope/shopbot_02.jpg)
 - 1/16 Ball-end mill
+		- ![Shopbot Desktop](../../images/week12/digiscope/mill_02.jpg)
 - Silicon Mold Max 29NV
+		- ![Shopbot Desktop](../../images/week12/digiscope/silicon_00.jpg)
 - Scale
 - Recipient for mixing
+		- ![Shopbot Desktop](../../images/week12/digiscope/mixing_02.jpg)
 - Globes
--Googles
+- Googles
+- Tool for mill change
+		- ![Shopbot Desktop](../../images/week12/digiscope/tool_01.jpg)
 
 
+
+### Processing files
+
+I've designed my model using [Solidworks](https://www.solidworks.com/) and exported the file as [STL file format](https://en.wikipedia.org/wiki/STL_(file_format)).
+
+![](../../images/week12/digiscope/solidworks_01.jpg)
+
+Then I've imported the STL file to Rhino to delete some surfaces, because Vcarve tried to mill all the wax brick and that could take a significant ammount of time, around 4 hours. Although I've committed a mistake by leaving the top surface.
+
+![](../../images/week12/digiscope/rhino_01.jpg)
+
+The configuration of [VCarve pro](https://www.vectric.com/products/vcarve-pro) is as follows:
+
+![](../../images/week12/digiscope/vcarve_00.jpg)
+
+
+1. Input the dimensions of the material in this case the wax brick dimensions are:
+		- x: 3 inches
+		- y: 7 inches
+		- z: 1.5 inches
+2. Import the STL model we have created for 3D milling.
+3. Create the end milling tools we are going to use.
+4. Create a Rough milling process
+5. Create a surface finishing process
+6. Export the files as **Shopbot opensbp** format.
+
+
+
+### Calculating Spindle speed
+
+For this process I've used as suggested by instructor [Jonah]() the [MIT](https://pub.pages.cba.mit.edu/feed_speeds/) spindle feed and speed calculator.
+
+Input data:
+
+1. Diameter
+2. Surface speed of WAX.
+3. etc.
+
+![Calculator img](../../images/week12/digiscope/calc_01.jpg)
+
+
+
+### Configuring the Shopbot desktop
+
+The shopbot desktop machine has a frequency control for the rotor spin that needs to be changes every time the spin speed is changed. And as any other CNC machine the axis origins need to be calibrated manually using the jogging control. The tools need to be changed manually. Frequency for the milling process were 177HZ and 55 Hz.
+
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/axis_check_01.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Milling Wax mold
+
+The GCODE files were exported in two parts:
+
+1. First part:
+	- Rough cut with 1/4 inch flat-end mill
+2. Second Part:
+	- Surface finishing along X axis with 1/16 ball-end mill  
+	- Surface finishing along Y axis with 1/16 ball-end mill  
+
+- Fixing wax brick with hot glue ![](../../images/week12/digiscope/milling_00.jpg)
+- Loading Files on shopbots UI. ![](../../images/week12/digiscope/milling_03.jpg)
+- Inserting flat-end milling bit. ![](../../images/week12/digiscope/milling_09.jpg)
+- Staring rough cut. ![](../../images/week12/digiscope/milling_05.jpg)
+- Changing to ball-end milling bit. ![](../../images/week12/digiscope/milling_07.jpg)
+- Chip sizes. ![](../../images/week12/digiscope/milling_10.jpg)
+- Rough cut result. ![](../../images/week12/digiscope/mold_rought2.jpg)
+- Finishing cut result. ![](../../images/week12/digiscope/milling_11.jpg)
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/finishing_00.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Mixing the silicon
+
+**Datasheet for Mold Max 29NV** [Link](https://www.smooth-on.com/tb/files/MOLD_MAX_14NV_29NV_TB.pdf)
+
+I've used the [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/).
+
+The mixing proportion is 10:1 in mass, the volume needed is around 72000 mm³ minus 19000 mm³ = 53000 mm³ the density of the material is 1.17 gram per cubic centimeter, the grams needed for the mold are: 62.01 of component A and 6 grams of component B.
+
+1. I've set the container as Zero reference in the balance and poor the silicon until reach 63.42 grams.
+	- ![](../../images/week12/digiscope/mixing_01.jpg)
+2. Then I've poured 6 grams of part B.
+	- ![](../../images/week12/digiscope/mixing_03.jpg)
+3. Finally, I've mixed with a stick both parts using [this technique](#mixing) to avoid introducing too many air bubbles into the mix.
+
+
+
+### Pouring Silicon
+
+I've cleaned the wax mold just by using the vacuum machine and then I've placed the mold in a flat leveled surface.
+
+1. Then I've started pouring the silicon into the milled cavity using [This technique to avoid introducing air bubbles](#puring).
+	- ![](../../images/week12/digiscope/pouring_02.jpg)
+2. I've stop until the cavity was filled.
+	- ![](../../images/week12/digiscope/pouring_04.jpg)
+	- ![](../../images/week12/digiscope/mixing_04.jpg)
+
+The curing process takes about 6 hours at ambient temperature and I've translated the mold in a ziplock bag since I need to travel the next day.
+
+1. Ziplock bag
+	- ![](../../images/week12/digiscope/curing_01.jpg)
+2. Waiting for the bus
+	- ![](../../images/week12/digiscope/curing_05.jpg)
+
+
+
+### Demolding
+
+I've demolded the silicon mold after 12 hours. I didn't use any releasing agents.
+
+![](../../images/week12/digiscope/silicon_01.jpg))
+
+
+
+### Casting candles
+
+After demolding the mold I've travelled and finished casting candles using the mold.
+
+- I've melted the candle wax using boiling water bath method using one big pot filled of water and a small pot containing a small piece of wax candle.
+![](../../images/week12/digiscope/candle_01.jpg) ![](../../images/week12/digiscope/candle_05.jpg)
+- Piece of wax candle. ![](../../images/week12/digiscope/candle_0.jpg)
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/candle_05.mp4" type="video/mp4">
+	</video>
+</figure>
+
+- Additionally I've added a few drops of this wax to add color to the mix. ![](../../images/week12/digiscope/candle_06.jpg)
+
+- Molded candle still hot. ![](../../images/week12/digiscope/candle_04.jpg)
+
+- Demolding the casted candle.
+
+<figure class="video_container">
+	<video controls="true" allowfullscreen="true">
+		<source src="../../images/week12/digiscope/candle_06.mp4" type="video/mp4">
+	</video>
+</figure>
+
+
+
+### Conclusions
+
+This work has been made with the help of the [ Fablab Digiscope](http://www.digiscope.fr/fr/platforms/fablab), instructor [Jonah Marrs](http://fabacademy.org/2021/labs/digiscope/students/jonah-marrs/about/), [Romain Di Vozzo](https://romaindivozzo.wordpress.com/), [Selena Pere](http://fabacademy.org/2021/labs/digiscope/students/selena-pere/About.html) and [Lea Paymal](https://www.instagram.com/leapaymal/). Thanks for your support and kindness.
+
+Casting candles with [Smooth-on Mold max 29NV Silicone](https://www.smooth-on.com/products/mold-max-29nv/) its quick and simple, the shopbot and VCARVE combination is super quick and easy to learn. I've made all this rework in only a few hours on a Friday, before traveling, and that's why there are a lot o details missing on documentation and steps in the processes.
 
 
 
 ## Files
 
+### Final files
+
+- [Solidworks candle file](../../files/week12/candle.SLDPRT)
+- [STL candle file](../../files/week12/candle.stl)
+- [V Carve pro file](../../files/week12/candle.crv)
+
+
+
+### Past files
 
 <a href="../../files/week12/1_rotor_00.nc"> NC Rotor Rough Pocket process file. </a>
 
