@@ -1,0 +1,25 @@
+%
+(cake_test_01)
+(Machine)
+(  vendor: Autodesk)
+(  description: Generic Cutting Machine)
+G90 G94
+G17
+G21
+
+(2D Profile2)
+G54
+G0 S255 M4
+G0 X62.576 Y25.508
+G1 X61.576 Y23.776 F1000
+G1 X62.447 Y22.268
+G1 X131.498
+G1 X166.023 Y82.068
+G1 X131.498 Y141.868
+G1 X62.447
+G1 X27.921 Y82.068
+G1 X61.576 Y23.776
+G1 X63.576
+G1 S0
+M30
+%

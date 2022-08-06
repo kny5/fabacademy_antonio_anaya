@@ -1,0 +1,2055 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week07/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>7. Electronics design - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-electronics-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Electronics design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          7. Electronics design
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        7. Electronics design
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-components" class="md-nav__link">
+    Electronic components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electronic-schematics" class="md-nav__link">
+    Electronic Schematics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kicad" class="md-nav__link">
+    Kicad
+  </a>
+  
+    <nav class="md-nav" aria-label="Kicad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kicad-setup" class="md-nav__link">
+    Kicad Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic-layout-design" class="md-nav__link">
+    Schematic layout design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associate-footprints" class="md-nav__link">
+    Associate footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-netlist" class="md-nav__link">
+    Generate Netlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-layout-design" class="md-nav__link">
+    PCB Layout design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-outcome" class="md-nav__link">
+    Assignment Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    Schematic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-design" class="md-nav__link">
+    PCB design
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-rules-check" class="md-nav__link">
+    Design Rules check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-model" class="md-nav__link">
+    3D model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processing-files-with-mods" class="md-nav__link">
+    Processing files with mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milling" class="md-nav__link">
+    Milling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering" class="md-nav__link">
+    Soldering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-signals-with-the-oscilloscope" class="md-nav__link">
+    Inspecting signals with the Oscilloscope
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-speed-of-the-blink" class="md-nav__link">
+    Changing the speed of the blink
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-components" class="md-nav__link">
+    Electronic components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electronic-schematics" class="md-nav__link">
+    Electronic Schematics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kicad" class="md-nav__link">
+    Kicad
+  </a>
+  
+    <nav class="md-nav" aria-label="Kicad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kicad-setup" class="md-nav__link">
+    Kicad Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic-layout-design" class="md-nav__link">
+    Schematic layout design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associate-footprints" class="md-nav__link">
+    Associate footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-netlist" class="md-nav__link">
+    Generate Netlist
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-layout-design" class="md-nav__link">
+    PCB Layout design
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-outcome" class="md-nav__link">
+    Assignment Outcome
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    Schematic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-design" class="md-nav__link">
+    PCB design
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#design-rules-check" class="md-nav__link">
+    Design Rules check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-model" class="md-nav__link">
+    3D model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processing-files-with-mods" class="md-nav__link">
+    Processing files with mods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milling" class="md-nav__link">
+    Milling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering" class="md-nav__link">
+    Soldering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-signals-with-the-oscilloscope" class="md-nav__link">
+    Inspecting signals with the Oscilloscope
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-speed-of-the-blink" class="md-nav__link">
+    Changing the speed of the blink
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="7-electronics-design">7. Electronics design<a class="headerlink" href="#7-electronics-design" title="Permanent link">&para;</a></h1>
+<p><img src="../../images/week07/hero_00.jpg" alt="Render_01" width=100%/></p>
+<details closed>
+<summary>A few notes for this week about documentation:</summary>
+<p>
+
+I've made a list of recommendations to get easily into the documentation process to help me out to have a structure, and with the hope to help others struggling under similar conditions.
+
+<a href="../../Tips/documentation_tips" > [Check my notes on my new Tips section.]</a>
+
+</p>
+
+
+</details>
+
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This week I&rsquo;ve learn to use Kicad and design my own version of the <a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html#echo"><strong>ATSAMD11C hello.D11C.blink.reset.clock</strong></a> I&rsquo;ve added a switch button and a blue LED.</p>
+<p>I&rsquo;ve made two boards. The first one broke in one corner when I tried to make a hole to use it as a badge, and I used the wrong SMD button. For the second one I&rsquo;ve removed the hole in the design and used the correct button.</p>
+<p>For my board programming I&rsquo;ve used the programmer I&rsquo;ve made in the <a href="../../assignments/week05/">Electronics production week</a>. And I&rsquo;ve also used the oscilloscope to check the signals in my board as part of the group assignment, <a href="http://fabacademy.org/2021/labs/agrilab/group/week_7_electronics_design/">check it here</a>.</p>
+<h3 id="electronic-components">Electronic components<a class="headerlink" href="#electronic-components" title="Permanent link">&para;</a></h3>
+<p><strong>Resistor:</strong></p>
+<p><em>It&rsquo;s a passive electrical component that holds resistance to an electrical current.</em> <a href="https://youtu.be/rcSOcbu6pDM?t=189">Detailed information</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">Component</th>
+<th align="left">Resistor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">SMD 1206</td>
+</tr>
+<tr>
+<td align="left">Value</td>
+<td align="left">0 Ohms, 100 Ohms, 50 Ohms, 1 KOhms</td>
+</tr>
+<tr>
+<td align="left">Code</td>
+<td align="left"><strong>Check</strong></td>
+</tr>
+<tr>
+<td align="left">Digikey #</td>
+<td align="left">311-100FRCT-ND</td>
+</tr>
+<tr>
+<td align="left">Link</td>
+<td align="left"><a href="https://www.digikey.com/short/pd5fm4vp" target="_blank"> DigiKey </a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Formula:</p>
+<p>Ohms Law: <strong>Resistance = Voltage / Current</strong>
+Example for a 2V, 0.02A LED in a 5 Volts Power Supply: 5V - 2V = 3V; 3V / 0.02A = 150 Ohm</p>
+</blockquote>
+<p><strong>Capacitor:</strong></p>
+<p><em>It&rsquo;s a passive electrical device used to store temporally a charge, consisting of one or more pairs of conductors separated by an insulator.</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">Component</th>
+<th align="left">Capacitor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">SMD 1206</td>
+</tr>
+<tr>
+<td align="left">Value</td>
+<td align="left">1uF</td>
+</tr>
+<tr>
+<td align="left">Code</td>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Digikey #</td>
+<td align="left">C3216X7R1H105K160AB</td>
+</tr>
+<tr>
+<td align="left">Link</td>
+<td align="left"><a href="https://www.digikey.com/short/fnhmzvj5" target="_blank"> DigiKey </a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regulator:</strong></p>
+<p><em>Any electrical or electronic device that maintains the voltage of a power source within acceptable limits.</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">Component</th>
+<th align="left">Regulator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">SMD  SOT23</td>
+</tr>
+<tr>
+<td align="left">Value</td>
+<td align="left">3.3V 100mA</td>
+</tr>
+<tr>
+<td align="left">Code</td>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Digikey #</td>
+<td align="left">LM3480IM3-3.3/NOPB</td>
+</tr>
+<tr>
+<td align="left">Link</td>
+<td align="left"><a href="https://www.digikey.com/short/5mntwv4z" target="_blank"> DigiKey </a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Diode:</strong></p>
+<p><em>It&rsquo;s a semiconductor device with two terminals, typically allowing the flow of current in one direction only.</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">Component</th>
+<th align="left">light emitting diode (LED)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">SMD 1206</td>
+</tr>
+<tr>
+<td align="left">Value</td>
+<td align="left">1.8V 0.02A</td>
+</tr>
+<tr>
+<td align="left">Code</td>
+<td align="left">None</td>
+</tr>
+<tr>
+<td align="left">Digikey #</td>
+<td align="left">160-1167-1-ND</td>
+</tr>
+<tr>
+<td align="left">Link</td>
+<td align="left"><a href="https://www.digikey.com/short/8b9t5fjq" target="_blank"> DigiKey </a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Micro-controller</strong></p>
+<p><em>It&rsquo;s a compressed micro computer manufactured to control the functions of embedded systems</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">Component</th>
+<th align="left">ATMEL SAMD11C14A Microcontroller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">SMD 14 Pin</td>
+</tr>
+<tr>
+<td align="left">Value</td>
+<td align="left">32Bits 48MHz 1.62~3.63V</td>
+</tr>
+<tr>
+<td align="left">Code</td>
+<td align="left">ATSAMD11C14A</td>
+</tr>
+<tr>
+<td align="left">Digikey #</td>
+<td align="left">ATSAMD11C14A-SSUTCT-ND</td>
+</tr>
+<tr>
+<td align="left">Link</td>
+<td align="left"><a href="https://www.digikey.com/short/vv1nf30r" target="_blank"> DigiKey </a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="electronic-schematics">Electronic Schematics<a class="headerlink" href="#electronic-schematics" title="Permanent link">&para;</a></h3>
+<p><strong>Symbols</strong></p>
+<p><img alt="Example glossary" src="https://cdn.sparkfun.com/assets/6/8/6/d/1/51cdc767ce395f7558000002.png" /></p>
+<h2 id="kicad">Kicad<a class="headerlink" href="#kicad" title="Permanent link">&para;</a></h2>
+<p><strong>Requirements</strong></p>
+<ol>
+<li>Install <a href="https://kicad.org/about/kicad/" target="_blank">Kicad</a></li>
+<li>Download or clone Fab Academy Kicad Library.</li>
+<li>Add Symbol and Footprints libraries.</li>
+<li>Add <a href="https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/" target="_blank">Luc</a> and <a href="http://fabacademy.org/2020/labs/agrilab/students/florent-lemaire/about/" target="_blank">Florent</a> USB and JTAG KiCad footprint files.</li>
+<li><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Summary.pdf" target="_blank">SAMD11 datasheet.</a></li>
+<li><a href="https://github.com/mattairtech/ArduinoCore-samd/blob/master/variants/Generic_D11C14A/README.md" target="_blank">SAMD11 pinout information.</a></li>
+<li>Look for availability of components in your local inventory.</li>
+</ol>
+<p><strong>Software</strong></p>
+<p>On Fedora Linux:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install kicad
+</code></pre></div>
+
+<p>Download for any other platform <a href="https://kicad.org/download/" target="_blank">here.</a></p>
+<p>Cloning Fab Academy Kicad Library repository:</p>
+<div class="codehilite"><pre><span></span><code>git clone https://gitlab.fabcloud.org/pub/libraries/electronics/kicad.git
+</code></pre></div>
+
+<h3 id="kicad-setup"><strong>Kicad Setup</strong><a class="headerlink" href="#kicad-setup" title="Permanent link">&para;</a></h3>
+<p><strong>Add Symbol library</strong></p>
+<p><img src="../../images/week07/kicad_02.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Open Kicad, at the menu bar, click on: &ldquo;Preferences&rdquo;&gt;&rdquo;Manage symbol libraries&rdquo;&gt;&rdquo;Global libraries&rdquo;.</li>
+</ul>
+</blockquote>
+<p><img src="../../images/week07/kicad_03.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: &ldquo;Add a new empty row to table&rdquo;.</li>
+</ul>
+</blockquote>
+<p><img src="../../images/week07/kicad_04.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: &ldquo;Library Path&rdquo; and search-select the file <strong>&ldquo;fab.lib&rdquo;</strong> in Fab-Academy &ldquo;kicad&rdquo; repository.</li>
+<li>Click on: &ldquo;OK&rdquo; and close the manager window.</li>
+</ul>
+</blockquote>
+<p><strong>Add footprint library</strong></p>
+<ol>
+<li>Click on: &ldquo;Preferences&rdquo;&gt;&rdquo;Manage footprint libraries&rdquo;&gt;&rdquo;Global libraries&rdquo;.</li>
+<li>Click on: &ldquo;Add a new empty row to table&rdquo;.</li>
+<li>Click on: &ldquo;Library Path&rdquo; and search-select the file <strong>&ldquo;fab.pretty&rdquo;</strong> in Fab-Academy &ldquo;kicad&rdquo; repository.</li>
+<li>Click on: &ldquo;OK&rdquo; and close the manager window.</li>
+</ol>
+<p><strong>Add custom USB and JTAG footprints</strong></p>
+<ol>
+<li>Download this <a href="../../files/week07/footprints.zip">file</a></li>
+<li>Extract the content to your Kicad project directory</li>
+<li>Repeat the <strong>Add Symbol library</strong> and <strong>Add footprint library</strong> process using the files extracted.</li>
+</ol>
+<p><strong>Edit footprints:</strong></p>
+<p><strong>Make your own library:</strong></p>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
+<h4 id="schematic-layout-design">Schematic layout design<a class="headerlink" href="#schematic-layout-design" title="Permanent link">&para;</a></h4>
+<p><strong>Symbol:</strong></p>
+<p><img src="../../images/week07/kicad_09.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: <strong>&ldquo;Place symbol&rdquo;</strong> icon, pulse left click on canvas.</li>
+</ul>
+</blockquote>
+<p><img src="../../images/week07/kicad_10.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Select a component preferably from the <strong>Fab Academy library</strong></li>
+</ul>
+</blockquote>
+<p><strong>Global label:</strong></p>
+<p><img src="../../images/week07/kicad_07.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: <strong>&ldquo;Place global label&rdquo;</strong> icon, pulse left click on canvas.</li>
+</ul>
+</blockquote>
+<p><img src="../../images/week07/kicad_08.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Write the a new name for a label or select an existing one from the drop-down menu.</li>
+</ul>
+</blockquote>
+<p><strong>Wire:</strong></p>
+<p><img src="../../images/week07/kicad_05.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: <strong>&ldquo;Place wire&rdquo;</strong> icon, then left-click in the start and end points of the wire, you can connect symbols by clicking in their pin connection area, represented by a circle in the terminals.</li>
+</ul>
+</blockquote>
+<p><strong>No connection:</strong></p>
+<p><img src="../../images/week07/kicad_06.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: <strong>&ldquo;Place no connection flag&rdquo;</strong>, left-click on every unused connection. This is important to avoid errors in the electrical check tool.</li>
+</ul>
+</blockquote>
+<h4 id="associate-footprints">Associate footprints<a class="headerlink" href="#associate-footprints" title="Permanent link">&para;</a></h4>
+<p><img src="../../images/week07/workflow_06.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>Click on: <strong>&ldquo;Edit symbol fields&rdquo;</strong> icon in the toolbar.</li>
+</ul>
+</blockquote>
+<p><img src="../../images/week07/workflow_07.jpg" alt="Managers" width=100%/></p>
+<blockquote>
+<ul>
+<li>
+<p>Associate every symbol to the right footprint in the Fab-Academy footprint library by clicking in every footprint cell and search-find the footprints in the fabacademy footprint library.</p>
+</li>
+<li>
+<p>For the LED, Resistors, diode and Capacitor, select the <em>type 1206</em> footprint.</p>
+</li>
+<li>For the USB and JTAG connectors look into the custom library.</li>
+</ul>
+</blockquote>
+<h4 id="generate-netlist">Generate Netlist<a class="headerlink" href="#generate-netlist" title="Permanent link">&para;</a></h4>
+<p><img src="../../images/week07/workflow_05.jpg" alt="Managers" width=100%/></p>
+<ol>
+<li>Click on: Icon &ldquo;Generate Netlist&rdquo; in the top toolbar</li>
+<li>Click on: Button &ldquo;Generate Netlist&rdquo;</li>
+<li>Save the <strong>&rdquo;&ldquo;.net&rdquo;</strong> file</li>
+</ol>
+<h4 id="pcb-layout-design">PCB Layout design<a class="headerlink" href="#pcb-layout-design" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open the PCB layout editor.</li>
+<li>Click on &ldquo;Load netlist&rdquo;.</li>
+<li>Using the wire tool you can trace the tracks of the board.</li>
+<li>Follow the <a href="../../assignments/week05">design rules of the week05 assingment.</a></li>
+</ol>
+<h4 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h4>
+<p>During the documentation process I&rsquo;ve found multiple mistakes in my schematic tht could lead to malfunction or a small explosion.
+I&rsquo;ve found also a fliped led in my schematic image. That I&rsquo;ve corrected except in the screen capture.</p>
+<h2 id="assignment-outcome"><strong>Assignment Outcome</strong><a class="headerlink" href="#assignment-outcome" title="Permanent link">&para;</a></h2>
+<h3 id="schematic">Schematic<a class="headerlink" href="#schematic" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>For this process I&rsquo;ve selected the <a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html#echo"><strong>ATSAMD11C hello.D11C.blink.reset.clock</strong></a> board as the base of my design.</p>
+</blockquote>
+<ol>
+<li>Divided the work in four parts:<ul>
+<li>Regulator</li>
+<li>USB connector</li>
+<li>JTAG conector</li>
+<li>Microntroller</li>
+</ul>
+</li>
+<li>Placed the following list of symbols under the FabAcademy library:<ul>
+<li>ATSAMD11C14A</li>
+<li>Regulator</li>
+<li>USB connector</li>
+<li>JTAG connector</li>
+</ul>
+</li>
+</ol>
+<details closed>
+<summary>USB connector</summary>
+
+<img src="../../images/week07/workflow_01.jpg" alt="Managers" width=100%/>
+
+<pre>
+
+1. Wired the USB connector to the VCC and GNDREF symbols.
+2. Placed Global labels:
+    - VCC
+    - GND
+    - D+
+    - D-
+3. Wired the global labels to the USB connector:
+    - VCC  to pin 1
+    - D- to pin 2
+    - D+ to pin 3
+    - GND to pin 4
+
+</pre>
+
+</details>
+
+<details closed>
+<summary>Regulator</summary>
+
+<img src="../../images/week07/workflow_02.jpg" alt="Managers" width=100%/>
+
+<pre>
+
+1. Placed the following symbols:
+    - C1 capacitor 1uF
+2. Placed global label:
+    - VCC
+    - GND
+    - V3.3
+    - btn_v33
+3. Wired the sub-schema of the regulator.
+    - VCC to pin 2
+    - GND to pin 3
+    - V3.3 to pin 1
+    - pin 1 of C1 between GND and pin 3
+    - pin 2 of C1 between pin 1 and V3.3
+    - btn_v33 between pin 1 and V3.3
+
+</pre>
+
+</details>
+
+<details closed>
+<summary>JTAG connector</summary>
+
+<img src="../../images/week07/workflow_03.jpg" alt="Managers" width=100%/>
+
+<pre>
+
+
+
+1. Placed Global labels:
+    - V3.3
+    - GND
+    - CLK
+    - DIO
+    - RESET
+2. Wired the sub-schema of the JTAG connector.
+    - GND to pin 9 and pin 3
+    - DIO to pin 2
+    - CLK to pin 4
+    - RESET to pin 10
+    - VTref to V3.3
+
+
+</pre>
+
+</details>
+
+<details closed>
+<summary>Microcontroller</summary>
+
+<img src="../../images/week07/workflow_04.jpg" alt="Managers" width=100%/>
+
+
+<pre>
+
+
+1. Placed the following components:
+    - C2 0.1 uF
+    - R1 100 Ohms
+    - R4 100 Ohms
+    - R5 10 KOhms
+    - R6 10 KOhms
+    - LED1
+    - Button1
+2. Placed the following global labels:
+    - GND
+    - RESET
+    - V3.3
+    - CLK
+    - DIO
+3. Wired the left-side of the Microntroller sub-schema:
+    - GND to C2 to RESET and pin 6
+    - V3.3 to R5 to point between C2 and RESET
+    - V3.3 to R6 to pin 7
+    - CLK to point between R6 and pin 7
+4. Placed the following global labels:
+    - VCC
+    - GND
+    - btn_v33
+    - D+
+    - D-
+5. Wired the right-side of the Microntroller sub-schema:
+    - GND to Button1 to pin 13
+    - btn_v33 to point between Button1 and pin 13
+    - VCC to anode of LED1
+    - cathode of LED1 to R4
+    - R4 to pin 1
+
+</pre>
+
+</details>
+
+<p><img alt="schematic 1" src="../../images/week07/workflow_04.jpg" />
+<img alt="schematic 2" src="../../images/week07/outcome_sch_02.jpg" /></p>
+<h3 id="pcb-design">PCB design<a class="headerlink" href="#pcb-design" title="Permanent link">&para;</a></h3>
+<p><img alt="PCB footprints" src="../../images/week07/outcome_pcb.jpg" /></p>
+<ol>
+<li>At first the components appear disordered, so the first task it&rsquo;s to order all the components following the relationship established in the schematic.</li>
+<li>Then I&rsquo;ve used the pattern in the <strong>board I&rsquo;ve used as base</strong> to have a clear idea of the location of the components.</li>
+<li>The Microcontroller goes in the center.</li>
+<li>Regulator at left with its capacitor.</li>
+<li>JTAG conector at the bottom.</li>
+<li>LED at the lest close to the pin 5 of the Microcontroller.</li>
+<li>The clock and reset pull-down at the left.</li>
+<li>Button and pull-up resistor at the right.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Design</th>
+<th>Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Track</td>
+<td>0.4 mm</td>
+</tr>
+<tr>
+<td>Outline</td>
+<td>1.0 mm</td>
+</tr>
+<tr>
+<td>Clearance</td>
+<td>0.1 mm</td>
+</tr>
+</tbody>
+</table>
+<h4 id="design-rules-check">Design Rules check<a class="headerlink" href="#design-rules-check" title="Permanent link">&para;</a></h4>
+<p>Design rules check its a tool of PCBnew to detect violations to the design rules specified in the pcb design file. Its under the inspect menu of the top toolbar.</p>
+<p><img alt="PCB 3D" src="../../images/week07/drc_02.jpg" /></p>
+<p>My design didn&rsquo;t had any trouble in the traces as I&rsquo;ve made a very simple design, still in the future DRC will be an important tool for me to know if the design its suitable to process in MODS and also to have a functional milled circuit board.</p>
+<p><img alt="PCB 3D" src="../../images/week07/drc_01.jpg" /></p>
+<h3 id="3d-model">3D model<a class="headerlink" href="#3d-model" title="Permanent link">&para;</a></h3>
+<p>I&rsquo;ve made this capture by using the 3D tool in PCBnew in the view menu of the top toolbar.</p>
+<p><img alt="PCB 3D" src="../../images/week07/kicad_render_01.jpg" /></p>
+<h3 id="processing-files-with-mods">Processing files with mods<a class="headerlink" href="#processing-files-with-mods" title="Permanent link">&para;</a></h3>
+<p>Importing files as SVG.</p>
+<p><img src="../../images/week07/mods_05.jpg" alt="Render_01" width=45%/></p>
+<table>
+<thead>
+<tr>
+<th>Traces</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bit diameter</td>
+<td>0.4 mm</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>2 mm/s</td>
+</tr>
+<tr>
+<td>Depth</td>
+<td>0.1 mm</td>
+</tr>
+<tr>
+<td>Global speed</td>
+<td>80%</td>
+</tr>
+</tbody>
+</table>
+<p><img src="../../images/week07/mods_06.jpg" alt="Render_01" width=45%/></p>
+<table>
+<thead>
+<tr>
+<th>Outline</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bit diameter</td>
+<td>1.0 mm</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>3 mm/s</td>
+</tr>
+<tr>
+<td>Depth</td>
+<td>1.89 mm</td>
+</tr>
+<tr>
+<td>Step cut</td>
+<td>0.4 mm</td>
+</tr>
+<tr>
+<td>Global speed</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="milling">Milling<a class="headerlink" href="#milling" title="Permanent link">&para;</a></h3>
+<p><img src="../../images/week07/mill_01.jpg" alt="Render_01" width=100%/></p>
+<blockquote>
+<p>Milling time: 45 min.</p>
+</blockquote>
+<p>I&rsquo;ve broke one 0.4 mm and one FR1 PCB board, because the board was slightly curved and it didn&rsquo;t stick to the sacrificial plate.</p>
+<p>Solution:
+1. Remove the ailed board and clean up thoughtfully the sacrificial bed until all the debris and dust gets removed.
+2. Use two sides adhesive tape avoiding any bubble or</p>
+<p><img src="../../images/week07/mill_02.jpg" alt="Render_01" width=100%/></p>
+<h3 id="soldering">Soldering<a class="headerlink" href="#soldering" title="Permanent link">&para;</a></h3>
+<p>This is my favorite process.</p>
+<ol>
+<li>Stain one the footprints of every component in the board to use it as a mechanical placing connection.</li>
+<li>Solder the components from inside to the outside of the board.</li>
+<li>Place first the Microcontroller and hold it until it is fixed and aligned.</li>
+<li>Solder the remaining pins of the Microcontroller.</li>
+<li>Solder the JATG conector.</li>
+<li>Solder the button.</li>
+<li>Solder the resistances.</li>
+<li>Solder the regulator and capacitor.</li>
+<li>Solder all the remaining components.</li>
+</ol>
+<p><img src="../../images/week07/solder_01.jpg" alt="Render_01" width=100%/></p>
+<p>First board:</p>
+<p><img src="../../images/week07/hero_01.jpg" alt="Render_01" width=100%/></p>
+<p>Second board:</p>
+<p><img src="../../images/week07/solder_02.jpg" alt="Render_01" width=100%/></p>
+<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
+<p><img src="../../images/week07/debug_01.jpg" alt="Render_01" width=100%/></p>
+<p>After soldering I&rsquo;ve performed the <strong>Smoke test</strong> by connecting the board to a power supply at 5 V.
+The test passed without any issue. Then I used the multimeter for continuity test and for DC Volt check before and after the regulator and in the power input pin of the Microcontroller. I didn&rsquo;t found any issues.</p>
+<h4 id="inspecting-signals-with-the-oscilloscope">Inspecting signals with the Oscilloscope<a class="headerlink" href="#inspecting-signals-with-the-oscilloscope" title="Permanent link">&para;</a></h4>
+<p>I&rsquo;ve inspected the board using a oscilloscope and I&rsquo;ve observed a signal in the led output. I didn&rsquo;t find any other issue at that time.</p>
+<p>The oscilloscope is an instrument to visualize signals in cartesian coordinates.
+We have a <a href="https://fr.farnell.com/tektronix/tbs1052b-edu/oscilloscope-2ch-50mhz-education/dp/2383221">Tektronix TBS1052B-EDU</a></p>
+<p>For this exercise we inspected <a href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week07/">Antonio&rsquo;s board</a>.</p>
+<p><img alt="" src="../../images/week07/osc_2.jpg" /></p>
+<p>Every oscilloscope has different interaction, but the principles are the same you have the basic functions for:</p>
+<ol>
+<li>Scale the scope in X and Y axis.</li>
+<li>Change the pitch.</li>
+<li>Make a two channel graph.</li>
+<li>Auto-scale and focus the signal.</li>
+</ol>
+<h3 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">&para;</a></h3>
+<p>Download files from FabAcademy material:</p>
+<ol>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.make">Make file.</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.c">Blink.c</a></li>
+<li><a href="https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11C14A_SAMD11C14A.bin">Bootloader</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.ino">Blink.ino</a></li>
+</ol>
+<p>Clone ASF repository:</p>
+<div class="codehilite"><pre><span></span><code>git clone git clone https://github.com/avrxml/asf.git
+</code></pre></div>
+
+<p>Changing D11C/hello.D11C.blink.make code to point correctly to asf.</p>
+<p>I&rsquo;ve cloned the repository in a local directory <strong>~/repos/asf</strong></p>
+<script id="asciicast-UlNV8L9upUndPZmUwWoFP1GSM" src="https://asciinema.org/a/UlNV8L9upUndPZmUwWoFP1GSM.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<p>Install arm-none-eabi-gcc dependency:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install arm-none-eabi-gcc
+</code></pre></div>
+
+<p>Install newlib dependency:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install arm-none-eabi-newlib arm-none-eabi-gcc-cs-c++.x86_64 gcc-c++-arm-linux-gnu.x86_64
+</code></pre></div>
+
+<p>Connecting JTAG programmer board:</p>
+<p><img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/></p>
+<p>Flashing:</p>
+<div class="codehilite"><pre><span></span><code>make -f hello.D11C.blink.make edbg
+</code></pre></div>
+
+<p>If the command doesn&rsquo;t work, you can just used the generated bin file and use edbg like this:</p>
+<div class="codehilite"><pre><span></span><code>sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
+</code></pre></div>
+
+<script id="asciicast-44UvJQJOmUYlMv0DcYz8CpcFw" src="https://asciinema.org/a/44UvJQJOmUYlMv0DcYz8CpcFw.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h3 id="changing-the-speed-of-the-blink">Changing the speed of the blink<a class="headerlink" href="#changing-the-speed-of-the-blink" title="Permanent link">&para;</a></h3>
+<script id="asciicast-Dxsz3vGol202CMmPHPUfhViQ1" src="https://asciinema.org/a/Dxsz3vGol202CMmPHPUfhViQ1.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<p><a href="../../files/week07/kicad/antonio_lib.zip">Custom library 1</a></p>
+<ul>
+<li>Custom connector 1x04 male</li>
+<li>Custom SMD header 01x04</li>
+</ul>
+<p><a href="../../files/week07/kicad/antonio_lib.pretty.zip">Custom library 2</a></p>
+<ul>
+<li>fab-SWD10pin127pitch</li>
+<li>fab-USB_A male plug</li>
+<li>Header smd 1x04</li>
+</ul>
+<p><a href="../../files/week07/kicad/week07.zip">Kicad Files</a></p>
+<ul>
+<li>Week07 kicad project file</li>
+<li>Week07 kicad schematic file</li>
+<li>Week07 kicad net file</li>
+<li>Week07 kicad pcb file</li>
+</ul>
+<p><strong>Optionally you can use this link</strong></p>
+<p><a href="https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week07/kicad">Download kicad files from gitlab repository as Zip file</a></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week06/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6. 3D Scanning and printing" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              6. 3D Scanning and printing
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week08/" class="md-footer__link md-footer__link--next" aria-label="Next: 8. Computer controlled machining" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              8. Computer controlled machining
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

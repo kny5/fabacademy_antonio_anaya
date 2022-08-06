@@ -1,0 +1,1685 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week05/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>5. Electronics production - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-electronics-production" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5. Electronics production
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          5. Electronics production
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        5. Electronics production
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction:
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-board-types" class="md-nav__link">
+    Electronic board types:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    Equipment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manufacturing-methods" class="md-nav__link">
+    Manufacturing methods:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling" class="md-nav__link">
+    Milling:
+  </a>
+  
+    <nav class="md-nav" aria-label="Milling:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v-bits" class="md-nav__link">
+    V-Bits:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flat-head-bits" class="md-nav__link">
+    Flat head bits:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision" class="md-nav__link">
+    Precision:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roland-srm-20" class="md-nav__link">
+    Roland SRM-20:
+  </a>
+  
+    <nav class="md-nav" aria-label="Roland SRM-20:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-assessment" class="md-nav__link">
+    Security assessment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vpanel-configuration" class="md-nav__link">
+    Vpanel configuration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-process" class="md-nav__link">
+    Calibration process:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-cutting-process" class="md-nav__link">
+    Start cutting process:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-files-to-mill" class="md-nav__link">
+    Preparing files to mill:
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing files to mill:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-mods" class="md-nav__link">
+    Using Mods:
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Mods:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milling-the-board" class="md-nav__link">
+    Milling the board:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stuffing" class="md-nav__link">
+    Stuffing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering" class="md-nav__link">
+    Soldering:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging:
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electrical-continuity-test" class="md-nav__link">
+    Electrical continuity test:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hero-shot" class="md-nav__link">
+    Hero shot:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction:
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronic-board-types" class="md-nav__link">
+    Electronic board types:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equipment" class="md-nav__link">
+    Equipment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manufacturing-methods" class="md-nav__link">
+    Manufacturing methods:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling" class="md-nav__link">
+    Milling:
+  </a>
+  
+    <nav class="md-nav" aria-label="Milling:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v-bits" class="md-nav__link">
+    V-Bits:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flat-head-bits" class="md-nav__link">
+    Flat head bits:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision" class="md-nav__link">
+    Precision:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roland-srm-20" class="md-nav__link">
+    Roland SRM-20:
+  </a>
+  
+    <nav class="md-nav" aria-label="Roland SRM-20:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-assessment" class="md-nav__link">
+    Security assessment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    Maintenance:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vpanel-configuration" class="md-nav__link">
+    Vpanel configuration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-process" class="md-nav__link">
+    Calibration process:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-cutting-process" class="md-nav__link">
+    Start cutting process:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparing-files-to-mill" class="md-nav__link">
+    Preparing files to mill:
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing files to mill:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-mods" class="md-nav__link">
+    Using Mods:
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Mods:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milling-the-board" class="md-nav__link">
+    Milling the board:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stuffing" class="md-nav__link">
+    Stuffing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soldering" class="md-nav__link">
+    Soldering:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging:
+  </a>
+  
+    <nav class="md-nav" aria-label="Debugging:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electrical-continuity-test" class="md-nav__link">
+    Electrical continuity test:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hero-shot" class="md-nav__link">
+    Hero shot:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="5-electronics-production">5. Electronics production<a class="headerlink" href="#5-electronics-production" title="Permanent link">&para;</a></h1>
+<iframe src="https://www.youtube.com/embed/ijaYTjS-0R0?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<h2 id="introduction">Introduction:<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This week we started learning about electronics production. The assignment outcome it&rsquo;s to make a programmer board. There are for us three different types of programmer boards.</p>
+<ol>
+<li><a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi/all">SPI</a></li>
+<li><a href="https://microchipdeveloper.com/mplabx:avr-updi">UPDI</a></li>
+<li><a href="https://www.xjtag.com/about-jtag/jtag-a-technical-overview/">JTAG</a></li>
+</ol>
+<p>I&rsquo;ve been adviced to make the JTAG board as we&rsquo;re going to be able to program new efficient ARM micro-controllers for our next weeks projects.</p>
+<p>I&rsquo;ve contributed for the group assingment using the vbit find out more in the <a href="http://fabacademy.org/2021/labs/agrilab/group/week%205%20Electronics%20production/">group page</a>.</p>
+<h3 id="electronic-board-types">Electronic board types:<a class="headerlink" href="#electronic-board-types" title="Permanent link">&para;</a></h3>
+<p>We have seen two different types of boards in the lab, the FR1 and the FR4.</p>
+<p><a href="https://www.bestpcbs.com/blog/2016/08/whats-the-difference-for-fr1-fr2-fr3-and-fr4-materials/">You can code check the different FR standards here.</a></p>
+<p>We&rsquo;re going to use the FR1 type this week, this is basically due to the soldering process, we know that FR4 boards are capable to be soldered using the IR oven, but FR1 will get fire in the oven, so we&rsquo;re already adverted that we shouldn&rsquo;t by any means try to solder a FR1 in the oven.</p>
+<!-- ### Materials:
+
+1. Circuit board
+-->
+
+<h3 id="equipment">Equipment:<a class="headerlink" href="#equipment" title="Permanent link">&para;</a></h3>
+<p>Check list:</p>
+<ol>
+<li>Roland SRM-20</li>
+<li>Soldering iron</li>
+<li>Multimeter</li>
+<li>Microchip debugger (Flashing interface)</li>
+</ol>
+<h3 id="manufacturing-methods">Manufacturing methods:<a class="headerlink" href="#manufacturing-methods" title="Permanent link">&para;</a></h3>
+<p>Chemical etching:</p>
+<p>On this process we use a chemical reduction process to peel of the copper traces, it&rsquo;s a very precise method but the waste is very toxic and needs to be disposed carefully, we are discouraged to use this method because of this.   </p>
+<h2 id="milling">Milling:<a class="headerlink" href="#milling" title="Permanent link">&para;</a></h2>
+<p>This is the process we&rsquo;re going to use this week. It&rsquo;s very simple yet complex in the setting up. It requires a milling machine, those can be as expensive as many tens of thousands of dollars, lately there are some more affordable brands that produce small and precise versions for a few hundred dollars, a good option for home-brew electronics production.</p>
+<p>The consumables for this machine, are the board, the sacrificial plate, and the bits that are use to cut the copper out of the material. The bits are extremely fragile specially for flat heat small diameters, so we need to be very careful at the calibration process.</p>
+<h3 id="v-bits">V-Bits:<a class="headerlink" href="#v-bits" title="Permanent link">&para;</a></h3>
+<p>In the lab we have available 45, 15 and 10 degrees 0.1 mm VBits.</p>
+<p><img src="../../images/week05/vbits.jpg" alt="V shaped bit" width=50%/></p>
+<p>This type of bit is &ldquo;V&rdquo; shaped, it&rsquo;s imprecise but very cheap. As the bit goes low in the &ldquo;Z&rdquo; axis the diameter of the cut increases and this means it&rsquo;s impossible to produce small traces in the board, it means also the leveling needs to be very consistent in precision.</p>
+<p><img src="../../images/week05/vbit_1.jpg" alt="V shaped bit" width=50%/></p>
+<p>I&rsquo;ve made this drawing in XDesing to estimate the diameter along the bit that depends in the depth of the cut in the Z axis.</p>
+<h3 id="flat-head-bits">Flat head bits:<a class="headerlink" href="#flat-head-bits" title="Permanent link">&para;</a></h3>
+<p>This is the bit preferable for precise milling, the diameter is very consistent and this is important to keep consistency in the traces. It also means it&rsquo;s more expensive than &ldquo;V shaped&rdquo; bits.</p>
+<p><img src="../../images/week05/flute_detail_1.jpg" alt="Straight V shaped point bit and flute details" width=48%/>
+<img src="../../images/week05/flute_detail.jpg" alt="Straight V shaped point bit and flute details" width=48%/></p>
+<p>This bit also has a feature called &ldquo;Flute&rdquo; its a flap that cuts the material.</p>
+<p>In the lab we have this diameters available:</p>
+<p><strong>0.4 mm:</strong></p>
+<p>Used to mill the circuit paths, and it&rsquo;s pretty fragile.</p>
+<p><strong>1.0 mm:</strong></p>
+<p>This is used to drill the outline of the PCB at the end.</p>
+<h3 id="precision">Precision:<a class="headerlink" href="#precision" title="Permanent link">&para;</a></h3>
+<p>I&rsquo;ve tested the V bit and this is the result and comparative with the 0.4mm flat head bit:</p>
+<p><img src="../../images/week05/vbit_compared.jpg" alt="V shaped bit"/></p>
+<p>At the top its the board milled with the vbit. At the bottom the one machined with the flat head 0.4 mm.</p>
+<h2 id="roland-srm-20">Roland SRM-20:<a class="headerlink" href="#roland-srm-20" title="Permanent link">&para;</a></h2>
+<p><img src="../../images/week05/milling_3.jpg" alt="Machine at AgriLab" width="95%"/></p>
+<p>It&rsquo;s a desktop 3D milling machine, capable of cutting several soft materials including some metals like soft aluminum and FR1 PCBs.</p>
+<p>You can find more technical details <a href="https://www.rolanddg.co.uk/products/3d/srm-20-small-milling-machine">here</a>.</p>
+<p><strong>Check list:</strong></p>
+<ol>
+<li>Allen key to replace bits.</li>
+<li>Aligned and flat sacrificial plate.</li>
+<li>Vacuum cleaner.</li>
+<li>Multimeter for continuity test.</li>
+<li>Bits of good quality.</li>
+<li>VPanel software.</li>
+<li>Working computer.</li>
+<li>FR1 PCB.</li>
+<li>Double face tape.</li>
+</ol>
+<h3 id="security-assessment">Security assessment:<a class="headerlink" href="#security-assessment" title="Permanent link">&para;</a></h3>
+<p>They are a few rules for the usage of the Roland milling machine.</p>
+<p>Check list:</p>
+<ol>
+<li>Check for any obstacle that can collide with the cart.</li>
+<li>Clean thoughtfully using a mask and the vacuum cleaner any dust that can cause pollution.</li>
+<li>Use properly the machine, the spindle reaches nearly 8000 RPM so any fragment of the bit can cause damage if it&rsquo;s projected.</li>
+<li>Use eye protection like googles.</li>
+<li>Don&rsquo;t over-tight the holder&rsquo;s bolt.</li>
+<li>Don&rsquo;t try to cut any hard material like steel or hard aluminum.</li>
+<li>Check electrical connections and electricity reliability.</li>
+<li>Be careful to not hit any part of the machine while moving the XYZ cart.</li>
+</ol>
+<h3 id="maintenance">Maintenance:<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h3>
+<p>Check list:</p>
+<ol>
+<li>Cleaning dust every end of work.</li>
+<li>Change the sacrificial bed periodically.</li>
+<li>Don&rsquo;t over-tight the holder&rsquo;s bolt.</li>
+<li>Check periodically electrical reliability.</li>
+</ol>
+<h3 id="vpanel-configuration">Vpanel configuration:<a class="headerlink" href="#vpanel-configuration" title="Permanent link">&para;</a></h3>
+<p>Vpanel is the software made by Roland Inc. to control the milling machine.</p>
+<p>Main functions:</p>
+<ol>
+<li>Axis displacement and relative location.</li>
+<li>Axis Origin setup.</li>
+<li>Axis go to home.</li>
+<li>Spindle RPM indicator.</li>
+<li>Spindle speed control.</li>
+<li>Global job speed control.</li>
+<li>Axis movement arrows.</li>
+<li><strong>Step precision scale control.</strong></li>
+<li>File list job.</li>
+<li>Cancel job.</li>
+</ol>
+<p><img src="../../images/week05/vpanel_settings_1.jpg" alt="Machine at AgriLab" width="95%"/></p>
+<h3 id="calibration-process">Calibration process:<a class="headerlink" href="#calibration-process" title="Permanent link">&para;</a></h3>
+<p>Steps:</p>
+<ol>
+<li>Calibrate X and Y axis by moving the cart using the arrows in the VPanel software. to increase the precision chnge between continue, x100, x10 and x1.</li>
+<li>Once you&rsquo;re in the exact desired position you should press the  X/Y button under &ldquo;set origin point&rdquo; in Vpanel.</li>
+<li>To calibrate the Z axis it&rsquo;s a more complex process, first because we need to be able to precisely set the bit in touch of the PCB board. For this we need to use the continuity test in the multimeter, clamp the bit and move the Z axis carefully using the down arrow and changing the precision in this order: x100, x10 and x1, to prevent hitting the sacrificial bed with the bit, so you avoid breaking it.</li>
+<li>Check continuity until the indicator beeps or indicates that there&rsquo;s current continuity between the clamp in the bit and the PCB board.</li>
+<li>Remove the clamp, and everything else that&rsquo;s not required to stay inside the machine and close the lid.</li>
+</ol>
+<h3 id="start-cutting-process">Start cutting process:<a class="headerlink" href="#start-cutting-process" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Close the machine&rsquo;s lid.</li>
+<li>Click on the cut button on Vpanel.</li>
+<li>Select a .rml file.</li>
+<li>Press output button.</li>
+<li>Start the milling process.</li>
+</ol>
+<h2 id="preparing-files-to-mill">Preparing files to mill:<a class="headerlink" href="#preparing-files-to-mill" title="Permanent link">&para;</a></h2>
+<p>I&rsquo;ve choose to make the JTAG 10 pin board. To get the files of the board I went to the <a href="http://academy.cba.mit.edu/classes/embedded_programming/index.html#programmers">Fabcademy week5 material</a>. In the JTAG I used the next files to accomplish the board making:</p>
+<ol>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.traces.png">Traces file.</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.interior.png">Outline file.</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/free_dap_d11c_mini.bin">Binary file.(This one will be useful later for the flashing process)</a></li>
+</ol>
+<h3 id="using-mods">Using Mods:<a class="headerlink" href="#using-mods" title="Permanent link">&para;</a></h3>
+<p>Is a software made by Prf. Neil Gershenfeld that&rsquo;s is broadly use in the FabLab community to program easier and visually different processes and work-flows like convert PNG image files to Roland SRM-20 cut files.</p>
+<p><img src="../../images/week05/mods_overview.jpg" alt="Mods overview" width="95%"/></p>
+<p><strong>Procedure:</strong></p>
+<ol>
+<li>Access Mods <a href="http://mods.cba.mit.edu/">here.</a></li>
+<li>Right click and select, &ldquo;Programs&rdquo; and then &ldquo;Open server program&rdquo;</li>
+<li>Search in the list for &ldquo;Roland&rdquo; and &ldquo;SRM-20&rdquo;.</li>
+<li>Select &ldquo;PCB PNG&rdquo;</li>
+<li>Load a PNG image containing a PCB design. <a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.traces.png">I&rsquo;ve used this one.</a></li>
+<li>Configure the settings (details bellow)</li>
+<li>Download the roland milling file for the SRM-20.</li>
+<li>Repeat the process on another window prefereably for the outline of the PCB.</li>
+</ol>
+<h4 id="settings">Settings:<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h4>
+<p><strong>Configuration for the circuit paths:</strong></p>
+<ol>
+<li>Flat head 0.4 mm bit.</li>
+<li>Speed 1.5 mm/s</li>
+<li>Depth 0.1 mm</li>
+</ol>
+<p><img src="../../images/week05/mods_4.jpg" alt="Mods overview" width="45%"/>
+<img src="../../images/week05/mods_2.jpg" alt="Mods overview" width="45%"/></p>
+<p><strong>Configuration for the outline:</strong></p>
+<ol>
+<li>Flat head 1.0 mm bit.</li>
+<li>Speed 2 mm/s</li>
+<li>Depth 1.89 mm</li>
+<li>Cut depth 0.4 mm</li>
+</ol>
+<p><img src="../../images/week05/mods_5.jpg" alt="Mods overview" width="45%"/>
+<img src="../../images/week05/mods_3.jpg" alt="Mods overview" width="45%"/></p>
+<h3 id="milling-the-board">Milling the board:<a class="headerlink" href="#milling-the-board" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Followed risk assessment check lit</li>
+<li>Followed calibration process check list.</li>
+<li>Processed the files using Mods.</li>
+<li>Followed start cutting process check list.</li>
+</ol>
+<h3 id="stuffing">Stuffing:<a class="headerlink" href="#stuffing" title="Permanent link">&para;</a></h3>
+<p>In AgriLab&rsquo;s electrolab the components are located in labeled plastic trays.</p>
+<p>List of components:</p>
+<p><img src="../../images/week05/stuffing_1.jpg" alt="Mods" width="95%"/></p>
+<ol>
+<li>SAMD11 SMD-CHIP microprocesor. x1</li>
+<li>0 0 hms SMD-Resistor. x1</li>
+<li>1 microFarads Ceramic SMD-capacitor x1</li>
+<li>3.3 V 100 mA SMD-Regulator</li>
+<li>10 Pin SMD male conector. x2</li>
+</ol>
+<p><strong>SAMD11 Pinout:</strong></p>
+<p><img src="../../images/week05/pinout.jpg" alt="Mods" width="55%"/></p>
+<h3 id="soldering">Soldering:<a class="headerlink" href="#soldering" title="Permanent link">&para;</a></h3>
+<p>Materials:</p>
+<ol>
+<li>
+<p>Lead-free Solder.</p>
+</li>
+<li>
+<p>Components.</p>
+</li>
+<li>
+<p>Traced PCB.</p>
+</li>
+</ol>
+<p>Process:</p>
+<ol>
+<li>
+<p>Power on the soldering iron and select 350 Degrees of Temp.</p>
+</li>
+<li>
+<p>First cover with solder one of the pins in the PCB as a first step mechanical connection. This is helpful for SMD soldering since the components are very small and need a precise alignment.</p>
+</li>
+<li>
+<p>Place the SMD components starting with the ones in the center of the board and progressing from the inside to the outside and leaving at the end the Pin conectors.</p>
+</li>
+<li>
+<p>The soldering process it&rsquo;s very complex and requires expertise to handle the soldering iron.</p>
+</li>
+</ol>
+<p><img src="../../images/week05/soldering_3.jpg" alt="Desaturated and sharpen" width="45%"/>
+<img src="../../images/week05/soldering_4.jpg" alt="Desaturated and sharpen" width="45%"/></p>
+<p>Results:</p>
+<p><img src="../../images/week05/soldering_2.jpg" alt="Desaturated and sharpen" width="95%"/></p>
+<h3 id="flashing">Flashing:<a class="headerlink" href="#flashing" title="Permanent link">&para;</a></h3>
+<p>Conections:</p>
+<p><img src="../../images/week05/flashing_1.jpg" alt="Mods" width="90%"/>
+<img src="../../images/week05/flashing_2.jpg" alt="Mods" width="90%"/></p>
+<p>Device recognition in Linux:</p>
+<ul>
+<li>Using EDBG</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>./edbg -l
+</code></pre></div>
+
+<ul>
+<li>Using lsusb</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>lsusb
+</code></pre></div>
+
+<script id="asciicast-J006z8fvrMjIGsngs2DuBz3wo" src="https://asciinema.org/a/J006z8fvrMjIGsngs2DuBz3wo.js" async data-autoplay="true" data-size="small" data-loop=1 data-speed=1  data-rows=10></script>
+
+<p>Data:
+- Manufacturer: Alex Taradov
+- Serial: AC80EAC2</p>
+<p>Capture:</p>
+<p><img src="../../images/week05/device_01.jpg" alt="Device recognizen under linux" width="100%"/></p>
+<p>I&rsquo;ve used EDBG compiled from source.</p>
+<p>Clonning EDBG Github repository:</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/ataradov/edbg.git
+</code></pre></div>
+
+<p>Installing EDBG requirements for Fedora Linux:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install libudev-devel
+</code></pre></div>
+
+<p>Inside the EDBG directory executed:</p>
+<div class="codehilite"><pre><span></span><code>make all
+</code></pre></div>
+
+<p>To execute EDBG and see the help:</p>
+<div class="codehilite"><pre><span></span><code>./edbg -h
+</code></pre></div>
+
+<p>To access peripherals like the ATMEL USB interface debugger, Administrator rights are needed:</p>
+<script id="asciicast-hCsGpWuC8x9buPchYnUcHU1tT" src="https://asciinema.org/a/hCsGpWuC8x9buPchYnUcHU1tT.js" async data-autoplay="true" data-size="small" data-loop=1 data-t=23 data-speed=1  data-rows=10></script>
+
+<p>Parameters:</p>
+<div class="codehilite"><pre><span></span><code>-t samd11
+</code></pre></div>
+
+<ul>
+<li><strong>t</strong> is for Target and SAMD11 it&rsquo;s the family chip of the micro-processor used in the board.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>-bpv
+</code></pre></div>
+
+<ul>
+<li><strong>b</strong> is for Verbose it&rsquo;s meant to show all the output information in the process.</li>
+<li><strong>p</strong> is for Programming, we&rsquo;re going to &ldquo;flash&rdquo; the binary file we downloaded previously.</li>
+<li><strong>v</strong> is for Verify that the program was flashed correctly.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>-f free_dap_d11c_mini.bin
+</code></pre></div>
+
+<ul>
+<li><strong>f</strong> is for File and &ldquo;free_dap_d11c_mini.bin&rdquo; it&rsquo;s the name of the binary file that contains the instructions or program for our programmer.</li>
+</ul>
+<h3 id="debugging">Debugging:<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
+<h4 id="electrical-continuity-test">Electrical continuity test:<a class="headerlink" href="#electrical-continuity-test" title="Permanent link">&para;</a></h4>
+<p><img src="../../images/week05/debugging_1.jpg" alt="Mods" width="95%"/>
+<img src="../../images/week05/debugging_2.jpg" alt="Mods" width="50%"/>
+<img src="../../images/week05/debugging_3.jpg" alt="Mods" width="45%"/></p>
+<p>Equipment:</p>
+<ol>
+<li>Power source.</li>
+<li>Clamps.</li>
+<li>Multimeter.</li>
+</ol>
+<p>Procedure:</p>
+<ol>
+<li>
+<p>Attatch the clamps from the positive output of the power source to the positive side of the USB, check the PINOUT using <a href="http://academy.cba.mit.edu/classes/embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.png">this image</a>.</p>
+</li>
+<li>
+<p>Detect the VCC points and the expected voltage in each point, in this board we have a 5 Volts supply and in the circuit there are 3.3 Volts after the conections of the regulator. Test those points looking for a 3.3 Volts measure.</p>
+</li>
+<li>
+<p>Detect the ground points and check voltage continuity with them, similarly to the Z axis calibration process of the milling machine.</p>
+</li>
+<li>
+<p>Look for any missing component, damaged trace or shortcut.</p>
+</li>
+</ol>
+<h2 id="hero-shot">Hero shot:<a class="headerlink" href="#hero-shot" title="Permanent link">&para;</a></h2>
+<p><img src="../../images/week05/hero_1.jpg" alt="V shaped bit" width=95%/></p>
+<p><img src="../../images/week05/hero_2.jpg" alt="V shaped bit" width=95%/></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week04/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Computer controlled cutting" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              4. Computer controlled cutting
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week06/" class="md-footer__link md-footer__link--next" aria-label="Next: 6. 3D Scanning and printing" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              6. 3D Scanning and printing
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

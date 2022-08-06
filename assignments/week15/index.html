@@ -1,0 +1,1891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week15/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>15. Interface and application programming - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#15-interface-and-application-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              15. Interface and application programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          15. Interface and application programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        15. Interface and application programming
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#micro-controller" class="md-nav__link">
+    Micro-controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#about-python" class="md-nav__link">
+    About Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conda-environment" class="md-nav__link">
+    Conda environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-trial-code" class="md-nav__link">
+    First trial code:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-trial-code" class="md-nav__link">
+    Second trial code:
+  </a>
+  
+    <nav class="md-nav" aria-label="Second trial code:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#about-qt-graphic-user-interfaces" class="md-nav__link">
+    About Qt Graphic User Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyqt5" class="md-nav__link">
+    PyQt5
+  </a>
+  
+    <nav class="md-nav" aria-label="PyQt5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+    <nav class="md-nav" aria-label="UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-output" class="md-nav__link">
+    Console output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-code" class="md-nav__link">
+    Final code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcurses" class="md-nav__link">
+    MCurses
+  </a>
+  
+    <nav class="md-nav" aria-label="MCurses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ncurses-for-microcontrollers" class="md-nav__link">
+    Ncurses for microcontrollers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#micro-controller" class="md-nav__link">
+    Micro-controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+    <nav class="md-nav" aria-label="Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#about-python" class="md-nav__link">
+    About Python
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conda-environment" class="md-nav__link">
+    Conda environment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-trial-code" class="md-nav__link">
+    First trial code:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-trial-code" class="md-nav__link">
+    Second trial code:
+  </a>
+  
+    <nav class="md-nav" aria-label="Second trial code:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#about-qt-graphic-user-interfaces" class="md-nav__link">
+    About Qt Graphic User Interfaces
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyqt5" class="md-nav__link">
+    PyQt5
+  </a>
+  
+    <nav class="md-nav" aria-label="PyQt5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    UI
+  </a>
+  
+    <nav class="md-nav" aria-label="UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    Views
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#console-output" class="md-nav__link">
+    Console output
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-code" class="md-nav__link">
+    Final code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcurses" class="md-nav__link">
+    MCurses
+  </a>
+  
+    <nav class="md-nav" aria-label="MCurses">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ncurses-for-microcontrollers" class="md-nav__link">
+    Ncurses for microcontrollers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="15-interface-and-application-programming">15. Interface and application programming<a class="headerlink" href="#15-interface-and-application-programming" title="Permanent link">&para;</a></h1>
+<figure class="video_container">
+    <video controls="true" allowfullscreen="true">
+        <source src="../../images/week15/demo.mp4" type="video/mp4">
+    </video>
+</figure>
+
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Goals:</p>
+<p>For this week I&rsquo;ve decided to complete the minimum requirements. My tasks will be:</p>
+<ol>
+<li>Use the 134KHz RFID sensor.</li>
+<li>Optionally use an FDX and HDX sensor to read cow RFID tags used in France and Mexico.</li>
+<li>Give a format to the data received in the mircro-controller code, form the sensor.</li>
+<li>Establish serial communication between micro-controller and computer.</li>
+<li>Read and parse the data received from micro-controller using Python.</li>
+<li>Make a short basic UI. Using QT.</li>
+<li>Make a distributable version of the software using a packaging library.</li>
+<li><a href="http://fabacademy.org/2021/labs/agrilab/group/week15/">Group assignment UI comparison</a></li>
+</ol>
+<p>This is part of my final project RFID reader module.</p>
+<ol>
+<li>Micrcontroller reads RFID TAG and sends strings through SERIAL COM.</li>
+<li>Python RFID parses the data and detects error and manages it with exceptions.</li>
+<li>QT UI shows the data parsed.</li>
+<li>Python parser runs in a parallel Thread.</li>
+</ol>
+<h2 id="micro-controller">Micro-controller<a class="headerlink" href="#micro-controller" title="Permanent link">&para;</a></h2>
+<p>I&rsquo;ve used again my <a href="../../assignments/week11">board from week 11</a>.</p>
+<div class="codehilite"><pre><span></span><code>// This code uses:
+
+// Pin 31 for Serial communication at 9600 bauds
+// 5 Volts for RFID Tag reader board
+
+// Communication protocols: USB Serial abd &quot;Serial1 interface&quot; for RFID tag reader.
+
+// This code reads the RFID tag and prints the result in SERIAL.
+
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+
+/*#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+*/
+char rfid_tag [30];
+
+void setup() {
+  Serial1.begin(9600);
+  Serial.begin(9600);
+  /*
+  Wire.begin();
+  lcd.init();
+  lcd.backlight();
+  */
+}
+
+void loop() {
+  int id = Serial1.read();
+
+  if (id == 2){
+    //beep();
+    //rfid_tag[0] = id;
+    for (int c = 0; c &lt; 26; c++){
+      int bit_ = Serial1.read();
+      rfid_tag[c] = bit_;
+   }
+   Serial.println(rfid_tag);
+   }
+
+  /*
+  lcd.setCursor(0,0);
+  lcd.print(rfid_tag);
+  */
+
+  delay(200);
+
+}
+</code></pre></div>
+
+<p>Decoding issues:</p>
+<p><img alt="" src="../../images/week15/python_06.jpg" /></p>
+<p>Exception error with Python:</p>
+<p><img alt="" src="../../images/week15/python_05.jpg" /></p>
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<p>The Python programming language it&rsquo;s my favorite programming language. So I&rsquo;ve decided to skip a trial of multiple programming languages and just use the one I like the most.</p>
+<h3 id="about-python">About Python<a class="headerlink" href="#about-python" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><em>Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. It supports multiple programming paradigms beyond object-oriented programming, such as procedural and functional programming. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants including Linux and macOS, and on Windows.</em></p>
+</blockquote>
+<p><strong><a href="https://docs.python.org/3/faq/general.html#what-is-python">Fragment from Python&rsquo;s documentation.</a></strong></p>
+<h3 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">&para;</a></h3>
+<p>I&rsquo;m a Linux user and so my configuration follows this information.</p>
+<ol>
+<li>Linux Fedora 32</li>
+<li>Conda as Python environment version manager.</li>
+<li>Qt as User interface library.</li>
+</ol>
+<p>For this the Configuration process may change a bit for Windows and Mac users.</p>
+<h4 id="conda-environment">Conda environment<a class="headerlink" href="#conda-environment" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p><em>Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies. Conda easily creates, saves, loads and switches between environments on your local computer. It was created for Python programs, but it can package and distribute software for any language.</em></p>
+<p><em>Conda as a package manager helps you find and install packages. If you need a package that requires a different version of Python, you do not need to switch to a different environment manager, because conda is also an environment manager. With just a few commands, you can set up a totally separate environment to run that different version of Python, while continuing to run your usual version of Python in your normal environment</em></p>
+</blockquote>
+<p><a href="https://conda.io/en/latest/"><strong>Taken from Anaconda&rsquo;s documentation</strong></a></p>
+<p>Process overview:</p>
+<p>We need to:</p>
+<ol>
+<li>Install Python Anaconda compiler,</li>
+<li>Create a new environment just for this weeks assignment,</li>
+<li>Install PyQt5 and requirements packages,</li>
+<li>Install PySerial library</li>
+<li>Code a program with Python using PyQT5 and PySerial Libraries.</li>
+<li>Make a distributable version of the program.</li>
+</ol>
+<p>Creating a new environment:</p>
+<div class="codehilite"><pre><span></span><code>conda create -n week15
+</code></pre></div>
+
+<p>Activate environment:</p>
+<div class="codehilite"><pre><span></span><code>conda activate week15
+</code></pre></div>
+
+<p>Install pyserial:</p>
+<div class="codehilite"><pre><span></span><code>pip install pyserial
+</code></pre></div>
+
+<h2 id="first-trial-code">First trial code:<a class="headerlink" href="#first-trial-code" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>import serial
+baud_rate = 9600
+port = &#39;/dev/ttyUSB0&#39;
+
+
+# device = serial.Serial(port)
+with serial.Serial(port, baud_rate, timeout=1) as serial_device:
+    print(serial_device.name)
+    data = serial_device.readline()
+
+while(True):
+    print(data)
+</code></pre></div>
+
+<h2 id="second-trial-code">Second trial code:<a class="headerlink" href="#second-trial-code" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code>import serial
+import time
+
+print(&quot;This program reads the Serial port /dev/ttyACM0 at 9600 bauds and prints the output using the readline serial function on pyserial library. /dev/ttyACM0 its my board based on the ATSAMD11 microcontroller and it has connected in Serial2 the 134KHz RFID FDX tag reader board.&quot;)
+
+baud_rate = 9600
+port = &#39;/dev/ttyACM0&#39;
+milking = True
+
+def parse_rfid(rfid_code):
+    head = rfid_code[:1]
+    code = rfid_code[1:11]
+    country = rfid_code[11:14]
+    tail = rfid_code[14:]
+    return (head, code, country, tail)
+
+# device = serial.Serial(port)
+with serial.Serial(port, baud_rate, timeout=10) as serial_device:
+    dev_name = serial_device.name
+    print(dev_name)
+
+    while(milking):
+        time.sleep(0.5)
+        data = serial_device.readline()
+        if len(data) &gt; 3:
+            try:
+                data_decoded = data.decode(&#39;utf-8&#39;)
+                print(&quot;The RFID scanned tag code is: &quot;, parse_rfid(data_decoded))
+                data = None
+            except UnicodeDecodeError:
+                print(&quot;Scan again&quot;)
+        else:
+            print(&quot;No tags detected&quot;)
+</code></pre></div>
+
+<h3 id="about-qt-graphic-user-interfaces">About Qt Graphic User Interfaces<a class="headerlink" href="#about-qt-graphic-user-interfaces" title="Permanent link">&para;</a></h3>
+<p>In the past Computers used to have simple text based interfaces.</p>
+<p><img alt="" src="../../images/week15/interface_01.jpg" /></p>
+<p>Over the years this changed to have visual more interactive interfaces.</p>
+<p><img alt="" src="../../images/week15/interface_02.jpg" /></p>
+<h3 id="pyqt5">PyQt5<a class="headerlink" href="#pyqt5" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>*PyQt is one of the most popular Python bindings for the Qt cross-platform C++ framework. PyQt was developed by Riverbank Computing Limited. Qt itself is developed as part of the Qt Project. PyQt provides bindings for Qt 4 and Qt 5. PyQt is distributed under a choice of licences: GPL version 3 or a commercial license. *</p>
+</blockquote>
+<p><strong><a href="https://wiki.python.org/moin/PyQt">From Riverbank Computing Limited website</a></strong></p>
+<h4 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h4>
+<p>Install PyQt5 library:</p>
+<div class="codehilite"><pre><span></span><code>pip install PyQt5
+</code></pre></div>
+
+<p>Test code:</p>
+<p>Reference: <em>https://pythonbasics.org/pyqt-hello-world/</em></p>
+<div class="codehilite"><pre><span></span><code>import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+
+def window():
+   app = QApplication(sys.argv)
+   widget = QWidget()
+
+   textLabel = QLabel(widget)
+   textLabel.setText(&quot;Hello World!&quot;)
+   textLabel.move(110,85)
+
+   widget.setGeometry(50,50,320,200)
+   widget.setWindowTitle(&quot;PyQt5 Example&quot;)
+   widget.show()
+   sys.exit(app.exec_())
+
+if __name__ == &#39;__main__&#39;:
+   window()
+</code></pre></div>
+
+<p>Using it long side PySerial:</p>
+<div class="codehilite"><pre><span></span><code>import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+
+
+class MainWindow():
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.widget = QWidget()
+        self.text1 = &quot;Fab Academy 2021, week15&quot;
+        self.text2 = &quot;0&quot;
+
+    def setLabel(self):
+        self.label = QLabel(self.widget)
+        self.label.setText(self.text2)
+        self.label.move(110, 85)
+
+    def setTitle(self):
+        self.widget.setGeometry(50,50,320,200)
+        self.widget.setWindowTitle(self.text1)
+
+    def display(self):
+        self.widget.show()
+        sys.exit(self.app.exec_())
+
+
+def __run():
+    app = MainWindow()
+    app.setLabel()
+    app.setTitle()
+    app.display()
+
+def read_rfid():
+
+
+__run()
+</code></pre></div>
+
+<p>Using Threading:</p>
+<div class="codehilite"><pre><span></span><code>import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+from python_serial_01 import read_rfid, output
+import threading
+import time
+
+
+class MainWindow():
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.widget = QWidget()
+        self.text1 = &quot;Fab Academy 2021, week15&quot;
+        self.text2 = &quot;0&quot;
+        self.setLabel()
+        self.setTitle()
+
+    def setLabel(self):
+        self.label = QLabel(self.widget)
+        self.label.setText(self.text2)
+        self.label.move(110, 85)
+
+    def setTitle(self):
+        self.widget.setGeometry(50,50,320,200)
+        self.widget.setWindowTitle(self.text1)
+
+    def display(self):
+        self.widget.show()
+        sys.exit(self.app.exec_())
+
+
+a = MainWindow()
+
+
+def update_label(text):
+    while True:
+        print(&quot;loop1&quot;)
+        time.sleep(0.5)
+        a.label.setText(text)
+
+
+serial = threading.Thread(target=read_rfid)
+updater = threading.Thread(target=update_label, args=(output,))
+serial.start()
+updater.start()
+a.display()
+</code></pre></div>
+
+<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h2 id="ui">UI<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h2>
+<h3 id="views">Views<a class="headerlink" href="#views" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../images/week15/ui_01.jpg" />
+<img alt="" src="../../images/week15/ui_02.jpg" />
+<img alt="" src="../../images/week15/ui_03.jpg" />
+<img alt="" src="../../images/week15/ui_04.jpg" />
+<img alt="" src="../../images/week15/ui_05.jpg" /></p>
+<h3 id="console-output">Console output<a class="headerlink" href="#console-output" title="Permanent link">&para;</a></h3>
+<script i
+d="asciicast-QFRnhwoZco5bR6BXGPgW0TOPd" src="https://asciinema.org/a/QFRnhwoZco5bR6BXGPgW0TOPd.js" async></script>
+
+<h3 id="final-code">Final code<a class="headerlink" href="#final-code" title="Permanent link">&para;</a></h3>
+<p>View:</p>
+<div class="codehilite"><pre><span></span><code>import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+from PyQt5.QtGui import QPixmap
+from python_serial_01 import read_rfid, try_serial
+import threading
+import time
+
+
+class MainWindow():
+    height = 400
+    width = height * 1.618
+
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.widget = QWidget()
+        self.text1 = &quot;Fab Academy 2021, week15&quot;
+        self.text2 = &quot;0&quot;*45
+        self.setLabel()
+        self.setTitle()
+        self.setLogo()
+        self.setConnection_icon()
+        # self.setRFID_img()
+        self.setMilk_img()
+
+    def setLabel(self):
+        self.label = QLabel(self.widget)
+        self.label.setText(self.text2)
+        self.label.resize(500, 50)
+        self.label.move(200, 50)
+
+    def setTitle(self):
+        self.widget.setGeometry(50,50,self.width,self.height)
+        self.widget.setWindowTitle(self.text1)
+
+    def setConnection_icon(self):
+        self.con_icon_holder = QLabel(self.widget)
+        if try_serial():
+            self.con_icon = QPixmap(&#39;ok.png&#39;)
+        else:
+            self.con_icon = QPixmap(&#39;not.png&#39;)
+        self.con_icon_holder.setPixmap(self.con_icon)
+        self.con_icon_holder.resize(self.con_icon.width(), self.con_icon.height())
+        self.con_icon_holder.move(self.width -50, self.height-50 )
+
+    def setRFID_img(self):
+        self.rfid_icon_holder = QLabel(self.widget)
+        self.rfid_icon = QPixmap(&#39;tag.png&#39;)
+        self.rfid_icon_holder.setPixmap(self.rfid_icon)
+        self.rfid_icon_holder.resize(self.rfid_icon.width(), self.rfid_icon.height())
+        self.rfid_icon_holder.move(50, self.height -100)
+
+    def setMilk_img(self):
+        self.milk_icon_holder = QLabel(self.widget)
+        self.milk_icon = QPixmap(&#39;milk.png&#39;)
+        self.milk_icon_holder.setPixmap(self.milk_icon)
+        self.milk_icon_holder.resize(self.milk_icon.width(), self.milk_icon.height())
+        self.milk_icon_holder.move(50, (self.height-self.milk_icon.height())*0.5)
+
+    def setLogo(self):
+        self.logo = QPixmap(&#39;cow.png&#39;)
+        self.logo_holder = QLabel(self.widget)
+        self.logo_holder.setPixmap(self.logo)
+        self.logo_holder.resize(self.logo.width(), self.logo.height())
+        self.logo_holder.move(50, 50)
+
+
+    def display(self):
+        self.widget.show()
+        sys.exit(self.app.exec_())
+
+
+a = MainWindow()
+
+
+def update_label():
+    while True:
+        print(&quot;loop1&quot;)
+        time.sleep(0.5)
+        data = read_rfid()
+        a.label.setText(data)
+
+
+updater = threading.Thread(target=update_label)
+updater.start()
+a.display()
+</code></pre></div>
+
+<p>Rfid library:</p>
+<div class="codehilite"><pre><span></span><code># print(&quot;This program reads the Serial port /dev/ttyACM0 at 9600 bauds and prints the output using the readline serial function on pyserial library. /dev/ttyACM0 its my board based on the ATSAMD11 microcontroller and it has connected in Serial2 the 134KHz RFID FDX tag reader board.&quot;
+
+import serial
+import time
+import logging
+
+
+baud_rate = 9600
+port = &#39;/dev/ttyACM0&#39;
+output = &quot;Default&quot;
+
+
+def hex_to_dec(data):
+    reversed = data[::-1]
+    decimal = int(reversed, 16)
+    return str(decimal)
+
+
+def parse_rfid(rfid_code):
+    head = rfid_code[:1]
+    code = rfid_code[1:11]
+    country = rfid_code[11:14]
+    tail = rfid_code[14:]
+    return &quot;{code}, {country}&quot;.format(code=hex_to_dec(code), country=hex_to_dec(country))
+
+
+def try_serial():
+    try:
+        with serial.Serial(port, baud_rate, timeout=10) as serial_device:
+            dev_name = serial_device.name
+            print(dev_name)
+            serial_device.close()
+            return True
+    except:
+        print(&quot;No conection&quot;)
+        return False
+
+
+def read_rfid():
+    try:
+        with serial.Serial(port, baud_rate, timeout=10) as serial_device:
+            dev_name = serial_device.name
+            print(dev_name)
+            data = serial_device.readline()
+            if len(data) &gt; 3:
+                try:
+                    data_decoded = data.decode(&#39;utf-8&#39;)
+                    output = &quot;The RFID scanned tag code is: %s&quot; % parse_rfid(data_decoded)
+
+                except UnicodeDecodeError:
+                    output = &quot;Scan again&quot;
+            else:
+                output = &quot;No tags detected&quot;
+            print(output)
+            serial_device.close()
+            return output
+    except:
+        return &quot;Not connected&quot;
+</code></pre></div>
+
+<h2 id="mcurses">MCurses<a class="headerlink" href="#mcurses" title="Permanent link">&para;</a></h2>
+<p>NCurses it&rsquo;s a text based interface design standard, and Mcurses its a version for Micro-controllers.</p>
+<h3 id="ncurses-for-microcontrollers">Ncurses for microcontrollers<a class="headerlink" href="#ncurses-for-microcontrollers" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/ChrisMicro/mcurses
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>/*---------------------------------------------------------------------------------------------------------------------------------------------------
+   mcurses box demo
+
+   Copyright (c) 2011-2015 Frank Meyer - frank(at)fli4l.de
+
+   Revision History:
+   V1.0 2015 xx xx Frank Meyer, original version
+   V1.1 2017 01 14 ChrisMicro, converted to Arduino example
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   Modification for Fab Academy week09:
+
+   IO pins:
+   PA02 &lt;- Digital pull-up BUTTON input
+   PA05 -&gt; Digital LED output
+
+   Autor: Antonio de Jesus Anaya Hernandez
+   Year: 2021
+   Org: Fab Academy
+   Lab: AgriLab
+   Country: France
+
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+#include &quot;mcurses.h&quot;
+
+#define         myitoa(x,buf)                   itoa ((x), buf, 10)
+
+int buttonState = 0;
+
+char PROGMEM logoFab[] = &quot;\r\            ######## ########\n\
+\r\        ########          #######\n\
+\r\      ###################     ######\n\
+\r\     ##      ##############       ###\n\
+\r\   ((         #############         %%%\n\
+\r\  (((            /#####             %%%\n\
+\r\ ((((                               %%%%\n\
+\r\ ((((   (((((((           %%%%%%%%%%%%%%\n\
+\r\ ((((   (((((((((       &amp;%%%%%%%%%%%%%%%\n\
+\r\  (((   ((((((((((     &amp;%%%%%%%%%   %%%*\n\
+\r\   ((    (((((((((     %%%%%%%%%    %%%\n\
+\r\    (((   (((((((       (%%%%%    %%%\n\
+\r\      ((((((((((              %%%%%%\n\
+\r\        ((((((((          %%%%%%%\n\
+\r\            (((((((( %%%%%%%%\n\
+&quot;;
+
+void Arduino_putchar(uint8_t c)
+{
+  Serial.write(c);
+}
+
+void setup()
+{
+  Serial.begin(115200);
+
+  setFunction_putchar(Arduino_putchar); // tell the library which output channel shall be used
+
+  initscr();                  // initialize mcurses
+
+  pinMode(5, OUTPUT);
+  pinMode(2, INPUT);
+}
+
+void loop()
+{
+  buttonState = digitalRead(2);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == LOW) {
+    // turn LED on:
+    digitalWrite(5, HIGH);
+    mvaddstr_P (18, 0, PSTR(&quot;fabacademy.org&quot;));
+    mvaddstr_P (20, 0, PSTR(&quot;This is an example of MCURSES a NCURSES library for microcontrollers&quot;));
+  } else {
+    // turn LED off:
+    digitalWrite(5, LOW);
+
+  }
+  char    buf[10];
+  uint8_t idx;
+  mvaddstr_P (0, 0, PSTR(logoFab));
+  delay(500);
+  clear ();
+
+}
+</code></pre></div>
+
+<script id="asciicast-dDgFmfugIqAcCHOVTcJEl1tu5" src="https://asciinema.org/a/dDgFmfugIqAcCHOVTcJEl1tu5.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_05.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../files/week15/python_serial_01.py">Python Serial communication reader</a></li>
+<li><a href="../../files/week15/rfid_app_view.py">Python Pyqt User interface</a></li>
+<li><a href="../../files/week15/serial_rfid.ino">Arduino code for SAMD11C14 board microcontroller</a></li>
+<li><a href="../../files/week15/mcurses.ino"></a></li>
+</ul>
+<p>Icons from <a href="flaticon.com">flaticon</a>:</p>
+<ul>
+<li><a href="../../files/week15/cow.png">cow</a></li>
+<li><a href="../../files/week15/ok.png">ok</a></li>
+<li><a href="../../files/week15/not.png">not</a></li>
+<li><a href="../../files/week15/tag.png">rfid</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week14/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 14. Networking and communications" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              14. Networking and communications
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week16/" class="md-footer__link md-footer__link--next" aria-label="Next: 16. Wildcard week" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              16. Wildcard week
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

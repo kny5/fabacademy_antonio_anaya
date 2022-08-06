@@ -1,0 +1,2135 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week09/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>9. Embedded programming - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#9-embedded-programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              9. Embedded programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          9. Embedded programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        9. Embedded programming
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atsamd11c14-microcontroller" class="md-nav__link">
+    ATSAMD11C14 Microcontroller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebdg-workflow" class="md-nav__link">
+    EBDG workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="EBDG workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jtag-connection" class="md-nav__link">
+    JTAG connection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blink-demo" class="md-nav__link">
+    Blink Demo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparky-blink-demo" class="md-nav__link">
+    Sparky blink Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arduino-workflow" class="md-nav__link">
+    Arduino Workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Arduino Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-button-scroll-downup-controller" class="md-nav__link">
+    One button scroll-down/up controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ncurses-for-microcontrollers" class="md-nav__link">
+    Ncurses for microcontrollers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atsamd11c14-microcontroller" class="md-nav__link">
+    ATSAMD11C14 Microcontroller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ebdg-workflow" class="md-nav__link">
+    EBDG workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="EBDG workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jtag-connection" class="md-nav__link">
+    JTAG connection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" class="md-nav__link">
+    Flashing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blink-demo" class="md-nav__link">
+    Blink Demo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparky-blink-demo" class="md-nav__link">
+    Sparky blink Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arduino-workflow" class="md-nav__link">
+    Arduino Workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Arduino Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-button-scroll-downup-controller" class="md-nav__link">
+    One button scroll-down/up controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ncurses-for-microcontrollers" class="md-nav__link">
+    Ncurses for microcontrollers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="9-embedded-programming">9. Embedded programming<a class="headerlink" href="#9-embedded-programming" title="Permanent link">&para;</a></h1>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" loop>
+    <source src="../../images/week09/demo_04.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>The Micro-controller that I&rsquo;m using in my board. <a href="../../assignments/week07">Check this link for more information.</a>
+<a href="http://fabacademy.org/2021/labs/agrilab/group/week09/">This is the page for the group assignment.</a> I &lsquo;ve contributed with the <a href="https://www.raspberrypi.org/">Raspberry pi</a> board review.</p>
+<p>This week I&rsquo;ve learn how to program in bare-metal C using only the <a href="https://www.microchip.com/en-us/development-tools-tools-and-software/libraries-code-examples-and-more/advanced-software-framework-for-sam-devices">ASF library</a>, then I used <a href="https://www.rust-lang.org/">Rust Programming Language</a>, but I didn&rsquo;t have time to write down all the steps in the compiling process and eventually found out some difficulties with the build toolchain. I&rsquo;ve also tried Haskell and autopilot and Finally the <a href="https://www.arduino.cc/en/software">Arduino IDE.</a></p>
+<p>My board has only one Button as input in PA02 and one LED as output in PA05. So I was looking for something useful to make with only one button and one LED and the result is the one button Mouse Scroll that I&rsquo;ve made using the <a href="arduino.cc">Arduino IDE</a>, the Mouse library and event detection.</p>
+<p>Then I&rsquo;ve inspected using the oscilloscope</p>
+<h2 id="atsamd11c14-microcontroller">ATSAMD11C14 Microcontroller<a class="headerlink" href="#atsamd11c14-microcontroller" title="Permanent link">&para;</a></h2>
+<p>Its a low-power, high-performance ARM® Cortex®-M0+ based flash microcontroller.</p>
+<p>It&rsquo;s one of the ATSAMD available in the AgriLab ElectroLab aside the SAMD21D17.</p>
+<p>I&rsquo;ve selected this microcontroller on <a href="../../assignments/week07">week07 electronics design</a>. The following information was learned and collected by me over this assignment.</p>
+<p>Summary of specifications:</p>
+<ul>
+<li>
+<blockquote>
+<p><em>Information modified from <a href="https://www.microchip.com/wwwproducts/en/ATSAMD11C14">Atmel documentation page</a></em></p>
+</blockquote>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SAMD11C14 Specs</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Family</td>
+<td>SAMD11</td>
+</tr>
+<tr>
+<td>Max CPU speed</td>
+<td>48 MHz</td>
+</tr>
+<tr>
+<td>Programmable memory size</td>
+<td>16 KBytes</td>
+</tr>
+<tr>
+<td>SRAM</td>
+<td>4 KBytes</td>
+</tr>
+<tr>
+<td>Auxiliary flash memory</td>
+<td>64 Bytes</td>
+</tr>
+<tr>
+<td>Working Temperature range</td>
+<td>-40 to 105 C</td>
+</tr>
+<tr>
+<td>Operating Voltage range</td>
+<td>1.62 to 3.63 Volts</td>
+</tr>
+<tr>
+<td>Direct memory access channels</td>
+<td>6</td>
+</tr>
+<tr>
+<td>SPI ports</td>
+<td>2</td>
+</tr>
+<tr>
+<td>I2C ports</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Hardware touch periphereal</td>
+<td>PTC</td>
+</tr>
+<tr>
+<td>Periphereal pin select</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Native USB</td>
+<td>YES, Full speed</td>
+</tr>
+<tr>
+<td>Analog to Digital inputs (ADC)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>ADC resolution</td>
+<td>12 Bits</td>
+</tr>
+<tr>
+<td>ADC sampling rate</td>
+<td>350 K Samples per Second</td>
+</tr>
+<tr>
+<td>Digital to Analog Outputs (DAC)</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Input capture ports</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Standalone output compare/ Standard PWM ports</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Motor control PWM channels</td>
+<td>8</td>
+</tr>
+<tr>
+<td>16 Bit digital timers</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Parallel port type</td>
+<td>GPIO</td>
+</tr>
+<tr>
+<td>Comparators</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Internal Oscillator</td>
+<td>32KHz, 32KHz ULP, 8 MHz</td>
+</tr>
+<tr>
+<td>Hardware Realtime clock counter/Realtime Clock</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>IO Pins</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Pincount</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Low Power capability</td>
+<td>YES</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>*This tables were taken from <a href="https://github.com/mattairtech/ArduinoCore-samd/blob/master/variants/Generic_D11C14A/README.md">Mattairtech SAMD boards documentation.*</a></p>
+</blockquote>
+<p>Pinout table for Arduino IDE:</p>
+<table>
+<thead>
+<tr>
+<th>SAMD11</th>
+<th>Arduino</th>
+<th>PINOUT</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Other</td>
+<td>COM</td>
+<td>PWM</td>
+<td>Analog</td>
+<td>INT</td>
+<td>#</td>
+<td>PIN</td>
+<td>PIN</td>
+<td>#</td>
+<td>INT</td>
+<td>Analog</td>
+<td>PWM</td>
+<td>COM</td>
+<td>Other</td>
+</tr>
+<tr>
+<td></td>
+<td>SCK*/RX2</td>
+<td>TCC01</td>
+<td>*</td>
+<td>*</td>
+<td>5</td>
+<td>A5</td>
+<td>A4</td>
+<td>4</td>
+<td>*</td>
+<td>*</td>
+<td>TCC00</td>
+<td>MOSI*/TX2</td>
+<td>REF</td>
+</tr>
+<tr>
+<td></td>
+<td>MOSI*</td>
+<td>TCC02</td>
+<td></td>
+<td>*</td>
+<td>8</td>
+<td>A8 (XIN)</td>
+<td>A2</td>
+<td>2</td>
+<td>*</td>
+<td>*</td>
+<td></td>
+<td></td>
+<td>DAC</td>
+</tr>
+<tr>
+<td></td>
+<td>SCK*</td>
+<td>TCC03</td>
+<td></td>
+<td>*</td>
+<td>9</td>
+<td>A9 (XOUT)</td>
+<td>Vdd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SDA/MISO*</td>
+<td>TC10</td>
+<td>*</td>
+<td>NMI</td>
+<td>14</td>
+<td>A14</td>
+<td>Gnd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SCL/SS*</td>
+<td>TC11</td>
+<td>*</td>
+<td>*</td>
+<td>15</td>
+<td>A15</td>
+<td>A25</td>
+<td>25</td>
+<td></td>
+<td></td>
+<td></td>
+<td>USB/DP</td>
+<td></td>
+</tr>
+<tr>
+<td>BOOT</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>28</td>
+<td>A28/RST</td>
+<td>A24</td>
+<td>24</td>
+<td></td>
+<td></td>
+<td></td>
+<td>USB/DM</td>
+<td></td>
+</tr>
+<tr>
+<td>SWDCLK</td>
+<td>TX1/MISO*</td>
+<td></td>
+<td></td>
+<td></td>
+<td>30</td>
+<td>A30</td>
+<td>A31</td>
+<td>31</td>
+<td>*</td>
+<td></td>
+<td>RX1/SS*</td>
+<td></td>
+<td>SWDIO</td>
+</tr>
+<tr>
+<td>-------------------</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Detailed information:</p>
+<table>
+<thead>
+<tr>
+<th>Arduino</th>
+<th>Port</th>
+<th>Alternate Function</th>
+<th>Comments (! means not used with this peripheral assignment)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>1</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>2</td>
+<td>PA02</td>
+<td>DAC</td>
+<td>EIC/EXTINT[2] ADC/AIN[0] PTC/Y[0] DAC/VOUT</td>
+</tr>
+<tr>
+<td>3</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PA04</td>
+<td>REFB / TX2* / TCC00</td>
+<td>EIC/EXTINT[4] REF/ADC/VREFB ADC/AIN[2] AC/AIN[0] PTC/Y[2] SERCOM0/PAD[2] !SERCOM0/PAD[0] !TC1/WO[0] TCC0/WO[0]</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PA05</td>
+<td>RX2* / TCC01</td>
+<td>EIC/EXTINT[5] ADC/AIN[3] AC/AIN[1] PTC/Y[3] SERCOM0/PAD[3] !SERCOM0/PAD[1] !TC1/WO[1] TCC0/WO[1]</td>
+</tr>
+<tr>
+<td>6</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>7</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>8</td>
+<td>PA08</td>
+<td>TX1 / MOSI / TCC02</td>
+<td>EIC/EXTINT[6] SERCOM1/PAD[2] !SERCOM0/PAD[2] TCC0/WO[2] !TCC0/WO[4] Xin32 / Xin</td>
+</tr>
+<tr>
+<td>9</td>
+<td>PA09</td>
+<td>RX1 / SCK / TCC03</td>
+<td>EIC/EXTINT[7] SERCOM1/PAD[3] !SERCOM0/PAD[3] TCC0/WO[3] !TCC0/WO[5] Xout32 / Xout</td>
+</tr>
+<tr>
+<td>10</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>11</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>12</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>13</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>14</td>
+<td>PA14</td>
+<td>SDA / TC10</td>
+<td>EIC/NMI ADC/AIN[6] PTC/X[0] PTC/Y[6] SERCOM0/PAD[0] !SERCOM2/PAD[0] TC1/WO[0] !TCC0/WO[0]</td>
+</tr>
+<tr>
+<td>15</td>
+<td>PA15</td>
+<td>SCL / TC11</td>
+<td>EIC/EXTINT[1] ADC/AIN[7] PTC/X[1] PTC/Y[7] SERCOM0/PAD[1] !SERCOM2/PAD[1] TC1/WO[1] !TCC0/WO[1]</td>
+</tr>
+<tr>
+<td>16</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>17</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>18</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>19</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>20</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>21</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>22</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>23</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>24</td>
+<td>PA24</td>
+<td>USB_NEGATIVE</td>
+<td>USB/DM</td>
+</tr>
+<tr>
+<td>25</td>
+<td>PA25</td>
+<td>USB_POSITIVE</td>
+<td>USB/DP</td>
+</tr>
+<tr>
+<td>26</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>27</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>28</td>
+<td>PA28</td>
+<td>Reset</td>
+<td>Reset, BOOT (double tap bootloader entry)</td>
+</tr>
+<tr>
+<td>29</td>
+<td>----</td>
+<td>NOT A PIN</td>
+<td>NOT A PIN</td>
+</tr>
+<tr>
+<td>30</td>
+<td>PA30</td>
+<td>MISO / SWD CLK</td>
+<td>!EIC/EXTINT[2] SERCOM1/PAD[0] !SERCOM1/PAD[2] !TC2/WO[0] !TCC0/WO[2] SWD CLK, leave floating during boot</td>
+</tr>
+<tr>
+<td>31</td>
+<td>PA31</td>
+<td>SS / SWD IO</td>
+<td>EIC/EXTINT[3] SERCOM1/PAD[1] !SERCOM1/PAD[3] !TC2/WO[1] !TCC0/WO[3] SWD IO</td>
+</tr>
+</tbody>
+</table>
+<p>The SAMD11C14 its part of the SAMD family of microntrollers, its has multiple thing that are of the interest for my project including:</p>
+<ul>
+<li>Native USB connectors</li>
+<li>Digital to Analog Output</li>
+<li>Analog to Digital Input</li>
+<li>Communication<ul>
+<li>I2C</li>
+<li>ISP</li>
+<li>Serial</li>
+</ul>
+</li>
+</ul>
+<p>SAMD11C14 comes from:</p>
+<p><img alt="code name" src="../../images/week09/docs_01.jpg" /></p>
+<p>This is a reference for the PIN numbers of the SAMD11C14:</p>
+<p><img alt="code name" src="../../images/week09/docs_02.jpg" /></p>
+<p>And this is a schematic of the Digital to analog converter that I&rsquo;m interested to use for the Dielectric Spectroscopy module of my final project.</p>
+<p><img alt="code name" src="../../images/week09/docs_03.jpg" /></p>
+<p>The multiplexor table shows the pins and its capabilities for Communication and functions:</p>
+<p><img alt="code name" src="../../images/week09/mux_01.jpg" />
+<img alt="code name" src="../../images/week09/mux_02.jpg" /></p>
+<h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h2>
+<p>I&rsquo;ve found out the difference between pull-up and pull-down arrangements for floating point connections.</p>
+<p>So I&rsquo;ve the idea to inspect using the oscilloscope the pin PA_02 which is connected to a button on my <a href="../../assignments/week07">board designed in week07</a></p>
+<ul>
+<li>Inspecting button at PA02:</li>
+</ul>
+<p><img src="../../images/week09/debug_03.jpg" alt="Render_01" width=100%/></p>
+<ul>
+<li>Power source at 5V:</li>
+</ul>
+<p><img src="../../images/week09/debug_02.jpg" alt="Render_01" width=100%/></p>
+<ul>
+<li>Signal in the Oscilloscope:</li>
+</ul>
+<p><img src="../../images/week09/debug_01.jpg" alt="Render_01" width=100%/></p>
+<ul>
+<li>Program to estimate mV at input:</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>const int BTN = 2;
+int BTN_STATE = digitalRead(BTN);
+const long VIN_FACTOR = 3.3 / 1.023 ;
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(BTN, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+Serial.println(analogRead(BTN) * VIN_FACTOR);
+
+analogWrite(LED_BUILTIN, analogRead(BTN) );
+}
+</code></pre></div>
+
+<ul>
+<li>Arduino capture:</li>
+</ul>
+<p><img src="../../images/week09/arduino_05.jpg" alt="Render_01" width=100%/></p>
+<h2 id="ebdg-workflow">EBDG workflow<a class="headerlink" href="#ebdg-workflow" title="Permanent link">&para;</a></h2>
+<p>Introduction:</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+<p>Download files from FabAcademy material:</p>
+<ol>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.make">Make file.</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.c">Blink.c</a></li>
+<li><a href="https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11C14A_SAMD11C14A.bin">Bootloader</a></li>
+<li><a href="http://academy.cba.mit.edu/classes/embedded_programming/D11C/hello.D11C.blink.ino">Blink.ino</a></li>
+</ol>
+<p>Clone ASF repository:</p>
+<div class="codehilite"><pre><span></span><code>git clone git clone https://github.com/avrxml/asf.git
+</code></pre></div>
+
+<p>Changing D11C/hello.D11C.blink.make code to point correctly to asf.</p>
+<p>I&rsquo;ve cloned the repository in a local directory <strong>~/repos/asf</strong></p>
+<script id="asciicast-UlNV8L9upUndPZmUwWoFP1GSM" src="https://asciinema.org/a/UlNV8L9upUndPZmUwWoFP1GSM.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<p>Install arm-none-eabi-gcc dependency:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install arm-none-eabi-gcc
+</code></pre></div>
+
+<p>Install newlib dependency:</p>
+<div class="codehilite"><pre><span></span><code>sudo dnf install arm-none-eabi-newlib arm-none-eabi-gcc-cs-c++.x86_64 gcc-c++-arm-linux-gnu.x86_64
+</code></pre></div>
+
+<h3 id="jtag-connection">JTAG connection<a class="headerlink" href="#jtag-connection" title="Permanent link">&para;</a></h3>
+<p><img src="../../images/week07/jtag_01.jpg" alt="JTAG_01" width=100%/></p>
+<h3 id="flashing">Flashing<a class="headerlink" href="#flashing" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>make -f hello.D11C.blink.make edbg
+</code></pre></div>
+
+<p>If the command doesn&rsquo;t work, you can just used the generated bin file and use edbg like this:</p>
+<div class="codehilite"><pre><span></span><code>sudo ./edbg -t samd11 -bpv -f hello.D11C.blink.bin
+</code></pre></div>
+
+<script id="asciicast-44UvJQJOmUYlMv0DcYz8CpcFw" src="https://asciinema.org/a/44UvJQJOmUYlMv0DcYz8CpcFw.js" async data-autoplay="true" data-loop=1 data-t=23 data-speed=2></script>
+
+<h3 id="blink-demo">Blink Demo<a class="headerlink" href="#blink-demo" title="Permanent link">&para;</a></h3>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week07/flashed_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h3 id="sparky-blink-demo">Sparky blink Demo<a class="headerlink" href="#sparky-blink-demo" title="Permanent link">&para;</a></h3>
+<p>Context:</p>
+<p>Useful link:</p>
+<p><a href="https://microchipdeveloper.com/32arm:sam-bare-metal-c-programming">Tutorial for bare metal C programming for SAMD Microcontroller</a></p>
+<p>Pseudo-code:</p>
+<ul>
+<li>Nested while loops:</li>
+<li>Loop1: Runs the whole program.</li>
+<li>Loop2: Waits until PA02 state changes, the change is made by pulsating the button on the board.</li>
+<li>Loop3: Toggles the LED state reducing the period every time.</li>
+<li>Loop4: Toggles the LED state increasing the period every time.</li>
+<li>If2: Keeps the LED on or off depending on the st variable, saves the value every in every cycle.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
+<span class="cm">This program uses the SAM11.h library from the ASF programming repository at github.</span>
+<span class="cm">This program reads PA02 to turn on the LED at PA05, and makes a bouncing-blinky effect like an fluorescent old lamp.</span>
+
+<span class="cm">IO pins:</span>
+<span class="cm">PA02 &lt;- Digital pull-up button input</span>
+<span class="cm">PA05 -&gt; Digital LED output</span>
+
+<span class="cm">Autor: Antonio de Jesus Anaya Hernandez</span>
+<span class="cm">Year: 2021</span>
+<span class="cm">Org: Fab Academy</span>
+<span class="cm">Lab: AgriLab</span>
+<span class="cm">Country: France</span>
+
+<span class="cm">*/</span><span class="w"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;samd11.h&gt;</span><span class="cp"></span>
+<span class="cp">#define LED PORT_PA05</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">cb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200000</span><span class="p">;</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.7</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">st</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">delay</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="c1">//Clock Setup</span>
+<span class="w">   </span><span class="n">SYSCTRL</span><span class="o">-&gt;</span><span class="n">OSC8M</span><span class="p">.</span><span class="n">bit</span><span class="p">.</span><span class="n">PRESC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="c1">//Configure PIN PA02 as digital input</span>
+<span class="w">   </span><span class="n">PORT</span><span class="o">-&gt;</span><span class="n">Group</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">PINCFG</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">reg</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="n">PORT_PINCFG_INEN</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="n">PORT</span><span class="o">-&gt;</span><span class="n">Group</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">PINCFG</span><span class="p">[</span><span class="mi">2</span><span class="p">].</span><span class="n">reg</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="o">~</span><span class="n">PORT_PINCFG_PULLEN</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="c1">//Set LED pin PA05 as digital output</span>
+<span class="w">   </span><span class="n">REG_PORT_DIRSET0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LED</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">   </span><span class="c1">// Loop_1</span>
+<span class="w">   </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Loop_2</span>
+<span class="w">     </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">){</span><span class="w"></span>
+<span class="w">       </span><span class="c1">// Read PA02 state, halts the program until the button is pulsated</span>
+<span class="w">       </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">PORT</span><span class="o">-&gt;</span><span class="n">Group</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">IN</span><span class="p">.</span><span class="n">reg</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">PORT_PA02</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">){</span><span class="w"></span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">st</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span><span class="w"></span>
+<span class="w">           </span><span class="n">st</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">         </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">st</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">         </span><span class="k">break</span><span class="p">;</span><span class="w"> </span><span class="c1">//Break to loop_3</span>
+<span class="w">       </span><span class="p">}</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Loop_3</span>
+<span class="w">     </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cb</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="c1">// Decreases delay time</span>
+<span class="w">       </span><span class="n">cb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cb</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">cb</span><span class="o">*</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
+<span class="w">       </span><span class="c1">//Toggle LED</span>
+<span class="w">       </span><span class="n">REG_PORT_OUTTGL0</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="n">LED</span><span class="p">;</span><span class="w"></span>
+<span class="w">       </span><span class="n">delay</span><span class="p">(</span><span class="n">cb</span><span class="p">);</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="w">     </span><span class="c1">// Loop_4</span>
+<span class="w">     </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">cb</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">300000</span><span class="p">){</span><span class="w"></span>
+<span class="w">       </span><span class="c1">//Increases delay time</span>
+<span class="w">       </span><span class="n">cb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cb</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">cb</span><span class="o">*</span><span class="n">p</span><span class="p">);</span><span class="w"></span>
+<span class="w">       </span><span class="c1">// Toggle LED</span>
+<span class="w">       </span><span class="n">REG_PORT_OUTTGL0</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="n">LED</span><span class="p">;</span><span class="w"></span>
+<span class="w">       </span><span class="n">delay</span><span class="p">(</span><span class="n">cb</span><span class="p">);</span><span class="w"></span>
+<span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">st</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">){</span><span class="w"></span>
+<span class="w">       </span><span class="c1">// Turn LED on</span>
+<span class="w">       </span><span class="n">REG_PORT_OUTSET0</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="n">LED</span><span class="p">;</span><span class="w"></span>
+<span class="w">       </span><span class="c1">// Else turn LED off</span>
+<span class="w">     </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">REG_PORT_OUTCLR0</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="n">LED</span><span class="p">;}</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_02.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h2 id="arduino-workflow">Arduino Workflow<a class="headerlink" href="#arduino-workflow" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Installing mattairtech libraries:</li>
+</ul>
+<p><img src="../../images/week09/arduino_02.jpg" alt="Render_01" width=100%/></p>
+<ul>
+<li>Flashing Bootloader:</li>
+</ul>
+<script id="asciicast-bVs53JUItHgLdNUwZ5pnDpwCx" src="https://asciinema.org/a/bVs53JUItHgLdNUwZ5pnDpwCx.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
+
+<h3 id="one-button-scroll-downup-controller">One button scroll-down/up controller<a class="headerlink" href="#one-button-scroll-downup-controller" title="Permanent link">&para;</a></h3>
+<p>Configuration:</p>
+<p>To use <a href="https://www.wikiwand.com/en/Human_interface_device">Human Interface Devices</a> such as Mouse or keyboards on a computer, requires an special configuration of the ATSAMD11 bootloader programmed by Mattairtech.</p>
+<p><img alt="" src="../../images/week09/arduino_08.jpg" /></p>
+<p>And also import the library from the arduino library manager repository:</p>
+<p><img alt="" src="../../images/week09/arduino_09.jpg" /></p>
+<div class="codehilite"><pre><span></span><code>/*
+This program uses Arduino and Mouse library.
+This program reads the board button to scroll-down and after the release of the button waits for 4 seconds to scroll up. After 4 seconds the program waits for a new button push event.
+
+IO pins:
+PA02 &lt;- Digital pull-up BUTTON input
+PA05 -&gt; Digital LED output
+
+Autor: Antonio de Jesus Anaya Hernandez
+Year: 2021
+Org: Fab Academy
+Lab: AgriLab
+Country: France
+*/
+
+#include &lt;Mouse.h&gt;
+
+const int BTN = 2;
+const int LED =  5;
+int timer = 0;
+int btn_state = 0;
+int idle1 = 0;
+int idle2 = 0;
+
+void blink() {
+  for(int pw = 0; pw &lt; 255; pw++){
+      delay(1);
+      analogWrite(LED,pw);
+  }
+  analogWrite(LED,0);
+}
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(BTN, INPUT);
+  Mouse.begin();
+  //Serial.begin(9600);
+}
+
+void loop() {
+  analogWrite(LED,5);
+  btn_state = digitalRead(BTN);
+  if(btn_state == LOW){
+    while(btn_state == LOW){
+      delay(200);
+      analogWrite(LED, 100);
+      Mouse.move(0,0,-1);
+      btn_state = digitalRead(BTN);
+    }
+    for(int clicks = 0; clicks &lt; 10; clicks++){
+      delay(200);
+      //Serial.println(&quot;Clicked&quot;);
+      //Serial.print(clicks);
+      if(clicks &lt; 6){
+        //digitalWrite(LED, HIGH);
+        blink();
+      }
+      btn_state = digitalRead(BTN);
+      while(btn_state == LOW &amp;&amp; clicks &lt; 6){
+        delay(200);
+        analogWrite(LED,30);
+        Mouse.move(0,0,1);
+        btn_state = digitalRead(BTN);
+      }
+    }
+  }
+  delay(200);
+  //Serial.println(&quot;waitting&quot;);
+}
+</code></pre></div>
+
+<script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=10 data-rows=30 data-speed=2></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_03.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_04.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h3 id="ncurses-for-microcontrollers">Ncurses for microcontrollers<a class="headerlink" href="#ncurses-for-microcontrollers" title="Permanent link">&para;</a></h3>
+<p>About <a href="https://www.wikiwand.com/en/Ncurses">NCURSES</a>:</p>
+<p>Its a library for application programming interface, for text-based user interfaces:</p>
+<p>Like on this example:</p>
+<iframe src="http://www.youtube-nocookie.com/embed/KmSKwU-vc4g?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&theme=light&color=white&controls=0&disablekb=1" width="100%" height="315" frameborder="0"></iframe>
+
+<p>This is an example on <a href="https://ascinema.org">asciinema</a>:</p>
+<script id="asciicast-333393" src="https://asciinema.org/a/333393.js" async></script>
+
+<p>This next program produces an UI that&rsquo;s transmitted over SERIAL Communication to the computer and accesed by using minicon.</p>
+<p>By pressing the physical button on my board the interface shows a message.</p>
+<p>MCURSES its a version of NCURSES for embeded systems, it means that&rsquo;s small enough to fit in the memory of the SAMD11C14.</p>
+<p>To install MCURSES:</p>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/ChrisMicro/mcurses
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>/*---------------------------------------------------------------------------------------------------------------------------------------------------
+   mcurses box demo
+
+   Copyright (c) 2011-2015 Frank Meyer - frank(at)fli4l.de
+
+   Revision History:
+   V1.0 2015 xx xx Frank Meyer, original version
+   V1.1 2017 01 14 ChrisMicro, converted to Arduino example
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   Modification for Fab Academy week09:
+
+   IO pins:
+   PA02 &lt;- Digital pull-up BUTTON input
+   PA05 -&gt; Digital LED output
+
+   Autor: Antonio de Jesus Anaya Hernandez
+   Year: 2021
+   Org: Fab Academy
+   Lab: AgriLab
+   Country: France
+
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+#include &quot;mcurses.h&quot;
+
+#define         myitoa(x,buf)                   itoa ((x), buf, 10)
+
+int buttonState = 0;
+
+char PROGMEM logoFab[] = &quot;\r\            ######## ########\n\
+\r\        ########          #######\n\
+\r\      ###################     ######\n\
+\r\     ##      ##############       ###\n\
+\r\   ((         #############         %%%\n\
+\r\  (((            /#####             %%%\n\
+\r\ ((((                               %%%%\n\
+\r\ ((((   (((((((           %%%%%%%%%%%%%%\n\
+\r\ ((((   (((((((((       &amp;%%%%%%%%%%%%%%%\n\
+\r\  (((   ((((((((((     &amp;%%%%%%%%%   %%%*\n\
+\r\   ((    (((((((((     %%%%%%%%%    %%%\n\
+\r\    (((   (((((((       (%%%%%    %%%\n\
+\r\      ((((((((((              %%%%%%\n\
+\r\        ((((((((          %%%%%%%\n\
+\r\            (((((((( %%%%%%%%\n\
+&quot;;
+
+void Arduino_putchar(uint8_t c)
+{
+  Serial.write(c);
+}
+
+void setup()
+{
+  Serial.begin(115200);
+
+  setFunction_putchar(Arduino_putchar); // tell the library which output channel shall be used
+
+  initscr();                  // initialize mcurses
+
+  pinMode(5, OUTPUT);
+  pinMode(2, INPUT);
+}
+
+void loop()
+{
+  buttonState = digitalRead(2);
+
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == LOW) {
+    // turn LED on:
+    digitalWrite(5, HIGH);
+    mvaddstr_P (18, 0, PSTR(&quot;fabacademy.org&quot;));
+    mvaddstr_P (20, 0, PSTR(&quot;This is an example of MCURSES a NCURSES library for microcontrollers&quot;));
+  } else {
+    // turn LED off:
+    digitalWrite(5, LOW);
+
+  }
+  char    buf[10];
+  uint8_t idx;
+  mvaddstr_P (0, 0, PSTR(logoFab));
+  delay(500);
+  clear ();
+
+}
+</code></pre></div>
+
+<p>This is the result shown in asciinema:</p>
+<script id="asciicast-dDgFmfugIqAcCHOVTcJEl1tu5" src="https://asciinema.org/a/dDgFmfugIqAcCHOVTcJEl1tu5.js" async data-autoplay="true" data-loop=1 data-speed=1></script>
+
+<p>Video demo:</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_05.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<p>For Millivolts plotter:</p>
+<ul>
+<li><a href="../../files/week09/Blink_plot_millivolts/Blink_plot_millivolts.ino">blink.ino</a></li>
+</ul>
+<p>For blinky with ASF:</p>
+<ul>
+<li><a href="../../files/week09/blinky_ASF_SAMD11.c">blinky.c</a></li>
+<li><a href="../../files/week09/blinky_ASF_SAMD11.c">make file</a></li>
+</ul>
+<p>For Mouse controller:</p>
+<ul>
+<li><a href="../../files/week09/button_mouse/button_mouse.ino">Arduino Mouse Scroller</a></li>
+</ul>
+<p>For Mcurses on Microcontrollers example:</p>
+<ul>
+<li><a href="../../files/week09/fabacademy_logo/fabacademy_logo.ino">Arduino code</a></li>
+<li><a href="../../files/week09/fabacademy_logo/mcurses-config.h">mcurses-config.h</a></li>
+<li><a href="../../files/week09/fabacademy_logo/mcurses.c">mcurses.c</a></li>
+<li><a href="../../files/week09/fabacademy_logo/mcurses.h">mcurses.h</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week08/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 8. Computer controlled machining" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              8. Computer controlled machining
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week10/" class="md-footer__link md-footer__link--next" aria-label="Next: 10. Mechanical design / Machine design" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              10. Mechanical design / Machine design
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

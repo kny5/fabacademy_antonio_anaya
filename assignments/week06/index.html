@@ -1,0 +1,1733 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week06/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>6. 3D Scanning and printing - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-3d-scanning-and-printing" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. 3D Scanning and printing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          6. 3D Scanning and printing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        6. 3D Scanning and printing
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning" class="md-nav__link">
+    Scanning:
+  </a>
+  
+    <nav class="md-nav" aria-label="Scanning:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einscan-pro" class="md-nav__link">
+    EinScan Pro +:
+  </a>
+  
+    <nav class="md-nav" aria-label="EinScan Pro +:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meshlab" class="md-nav__link">
+    Meshlab:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xbox-kinect" class="md-nav__link">
+    Xbox Kinect:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdm" class="md-nav__link">
+    FDM:
+  </a>
+  
+    <nav class="md-nav" aria-label="FDM:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-assessment" class="md-nav__link">
+    Security assessment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    Calibration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fmd-work" class="md-nav__link">
+    FMD work:
+  </a>
+  
+    <nav class="md-nav" aria-label="FMD work:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing-using-cura" class="md-nav__link">
+    Slicing using Cura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla" class="md-nav__link">
+    SLA:
+  </a>
+  
+    <nav class="md-nav" aria-label="SLA:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sla-workflow-with-formlabs-form-2" class="md-nav__link">
+    SLA Workflow with Formlabs form 2:
+  </a>
+  
+    <nav class="md-nav" aria-label="SLA Workflow with Formlabs form 2:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-reference" class="md-nav__link">
+    Visual reference:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-outcome" class="md-nav__link">
+    Assignment Outcome:
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Outcome:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-model" class="md-nav__link">
+    3D model:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scanning" class="md-nav__link">
+    Scanning:
+  </a>
+  
+    <nav class="md-nav" aria-label="Scanning:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#einscan-pro" class="md-nav__link">
+    EinScan Pro +:
+  </a>
+  
+    <nav class="md-nav" aria-label="EinScan Pro +:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#meshlab" class="md-nav__link">
+    Meshlab:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xbox-kinect" class="md-nav__link">
+    Xbox Kinect:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fdm" class="md-nav__link">
+    FDM:
+  </a>
+  
+    <nav class="md-nav" aria-label="FDM:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-assessment" class="md-nav__link">
+    Security assessment:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    Calibration:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fmd-work" class="md-nav__link">
+    FMD work:
+  </a>
+  
+    <nav class="md-nav" aria-label="FMD work:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slicing-using-cura" class="md-nav__link">
+    Slicing using Cura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#result" class="md-nav__link">
+    Result:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sla" class="md-nav__link">
+    SLA:
+  </a>
+  
+    <nav class="md-nav" aria-label="SLA:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sla-workflow-with-formlabs-form-2" class="md-nav__link">
+    SLA Workflow with Formlabs form 2:
+  </a>
+  
+    <nav class="md-nav" aria-label="SLA Workflow with Formlabs form 2:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-reference" class="md-nav__link">
+    Visual reference:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assignment-outcome" class="md-nav__link">
+    Assignment Outcome:
+  </a>
+  
+    <nav class="md-nav" aria-label="Assignment Outcome:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-model" class="md-nav__link">
+    3D model:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="6-3d-scanning-and-printing">6. 3D Scanning and printing<a class="headerlink" href="#6-3d-scanning-and-printing" title="Permanent link">&para;</a></h1>
+<p><img alt="Hero." src="../../images/week06/hero.jpg" /></p>
+<h2 id="introduction">Introduction:<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This week we started on Friday to Print a benchmark model.</p>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/benchmark_5.jpg" /></p>
+<p><a href="http://fabacademy.org/2021/labs/agrilab/group/week06/">More details in the group assignment page.</a></p>
+<p>Then we had the chance to look at the 3D scanners available at the FabLab.</p>
+<h2 id="scanning">Scanning:<a class="headerlink" href="#scanning" title="Permanent link">&para;</a></h2>
+<p><strong>Introduction:</strong></p>
+<p>This is the process of digitizing the shape of a physical object, the size can be relative but some scanners are specialized to keep dimensional accuracy for reverse engineering.
+There are different technologies for scanning, in the FabLab we have optical light projection stereo scanners.</p>
+<p><strong>Optical line scanning devices in the lab:</strong></p>
+<p>Requirements:</p>
+<ol>
+<li>Einscan Pro Plus device.</li>
+<li>Rotation plate.</li>
+<li><a href="https://www.einscan.com/einscan-software/einscan-software-download-new-2/">Shinning 3D EinScan Software</a>.</li>
+<li><a href="https://www.meshlab.net/">Meshlab</a></li>
+</ol>
+<h3 id="einscan-pro">EinScan Pro +:<a class="headerlink" href="#einscan-pro" title="Permanent link">&para;</a></h3>
+<p><img alt="Scanning Device and rotatory platform" src="../../images/week06/scan_3.jpg" /></p>
+<ol>
+<li>If you have a small object, less than 20 * 20 * 20 cm, choose to scan with the rotation plate, if not choose the hand-held scanning.</li>
+<li>If your object is as big as a room, and use the tracking stickers, although sticker are also used to improve the scanning of small objects without enough surfaces for matching in the rebuild process.</li>
+<li>If you&rsquo;re using the rotation plate place the object to scan in a position with any curved face on top.</li>
+<li>If your object has transparent or reflective surfaces, coat the all those surfaces with a thin layer of baby powder. This is used to improve the reflection of the light of the scan.</li>
+<li>Open EinScan Software.</li>
+<li>Connect the EinScan Pro device to a computer using the USB cable. <a href="">Detailed computer specs here.</a></li>
+<li>Choose the &ldquo;Fixed scan&rdquo; option.</li>
+<li>Create a new project group.</li>
+<li>Start the scan by pressing the play button.</li>
+<li>Press play to start the scanning process.</li>
+<li>Configure the step angle, for a full detailed scan choose the higher number (180, a scan every 2 degrees.)</li>
+<li>Don&rsquo;t move the object during the scanning process, avoid any interference between the scanner and the object.</li>
+<li>Once the first scan pass has finished, change the position of the object preserving one or more faces from the first pass visible to the scanner, so the software can unify the next scan passes.</li>
+<li>During the scans it may be some noise or unwanted points in the model, use the selection tools to remove all the unwanted points, press shit and click to select and backspace to delete.</li>
+<li>Keep scanning and turning the object in the plate changing the position until all the model gets covered.</li>
+<li>Once the model gets completely scanned look for any green sphere and remove it, those are mark tracking points that can damage your model.</li>
+<li>Click on the mesh model button to create a mesh.</li>
+<li>Process the mesh in the post-processing step, you can reduce, smooth, simplify and cover holes in the model.</li>
+<li>Save the model as a STL file.</li>
+</ol>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/einscan_1.jpg" /></p>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/einscan_2.jpg" /></p>
+<h4 id="meshlab">Meshlab:<a class="headerlink" href="#meshlab" title="Permanent link">&para;</a></h4>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/meshlab_1.jpg" /></p>
+<ol>
+<li>Import the STL model output from the EinScan Software.</li>
+<li>Filter the model, under the menu Filters&gt;Cleaning and Repairing: Choose as many repair options as the model needs.</li>
+<li>save the new filtered STL file.</li>
+</ol>
+<p>Settings used:</p>
+<div class="highlight"><pre><span></span><code>- Surface reconstruction VCG:
+- Voxel side (absolute and %) = 1.0295, 1.000
+- Sub Volume splitting, 1.
+- Geodesic weighting, 2.
+- Show result, True.
+- Volume Laplacian iteration, 2.
+- Widering, 3.
+- Vertex splatting, False.
+- Post merge simplification, False.
+- Pre-smooth iteration, 3.
+</code></pre></div>
+<p><strong>Outcome:</strong></p>
+<p><img alt="Original." src="../../images/week06/scan_00.jpg" /></p>
+<p>Viewed using <a href="https://layouteditor.com/">Layout Editor 3D</a></p>
+<p><img alt="Scanned." src="../../images/week06/scan_01.jpg" /></p>
+<p>My file was about 110 MB, after Meshlab it was reduced to 100 MB, still to big to be uploaded to the GitLab Repo, even compressed it was about 57 MB.
+<a href="https://drive.google.com/file/d/1uwHDAUs1lqgR1rzgQH01UlVKgH_bD-8T/view?usp=sharing">Download file on drive.</a>
+complete.</p>
+<h3 id="xbox-kinect">Xbox Kinect:<a class="headerlink" href="#xbox-kinect" title="Permanent link">&para;</a></h3>
+<p><img alt="Kinect and skanect." src="http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/images/Week6/kinect.jpg" /></p>
+<p><em>Credits to <a href="http://fab.academany.org/2021/labs/agrilab/students/theo-gautier/">Theo Gautier for the photo.</a></em>
+<em>Note: We made this practice together.</em></p>
+<p>Requirements:</p>
+<ol>
+<li><a href="">Power supply 12 Volts.</a></li>
+<li><a href="">XBOX to USB and 12 Volts adapter.</a></li>
+<li><a href="">XBOX 360 kinect.</a></li>
+<li>Computer prefereably with at least 16 GB of RAM a dedicated GPU card.</li>
+<li>Skanect.</li>
+<li>Meshmixer.</li>
+</ol>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>Open Skanect and plug the USB converter to current and the a USB port in the computer.</li>
+<li>While on Skanect follow the steps to stand at a optimal distance from the scanned objective. If you&rsquo;re to close the color of the preview will change to blue, if you&rsquo;re too far it will change to red.</li>
+<li>Keep the distance until the color of the preview model stays at green color.</li>
+<li>Move around the object to scan until you cover all the sides and details.</li>
+<li>If Skanect loses track it will ask you to return to a specific position, so try to match the photo capture of the position and keep moving around the object to scan.</li>
+<li>Once you have finished the scan, process the points, create a mesh and export the model as STL.</li>
+</ol>
+<p>My team mate <a href="http://fab.academany.org/2021/labs/agrilab/students/theo-gautier/">Theo Gautier</a> was my model to scan, this is a photo of him before the process in the MediaLab of <a href="https://agrilab.unilasalle.fr">Agrilab Fablab</a></p>
+<p><img alt="issue_4." src="../../images/week06/theo_00.jpg" /></p>
+<p>And this is the model being processed in <a href="https://www.meshmixer.com/">Meshmixer.</a></p>
+<p><img alt="issue_4." src="../../images/week06/meshmixer_1.jpg" /></p>
+<h2 id="fdm">FDM:<a class="headerlink" href="#fdm" title="Permanent link">&para;</a></h2>
+<p><strong>Description:</strong></p>
+<p><img alt="3D printer at the lab." src="../../images/week06/creality_cr10s5_agrilab.jpg" /></p>
+<p>It&rsquo;s a modern manufacturing process that uses CNC machines to build 3D models, has recently gained a lot of attention due to the availability of desktop 3D print machines to make plastic models.</p>
+<p><strong>Parts:</strong></p>
+<ol>
+<li>General structure.</li>
+<li>Power supply and control unit.</li>
+<li>Stepper motors.</li>
+<li>Control board.</li>
+<li>Motor drivers.</li>
+<li>Build plate or bed.</li>
+<li>Cart.</li>
+<li>X, Y, Z. Rails.</li>
+<li>Spool holder.</li>
+<li>Filament spool.</li>
+<li>Nozzle.</li>
+<li>Heating unit for nozzle.</li>
+<li>Thermal sensors.</li>
+<li>Leveling sensors.</li>
+<li>Extruder unit.</li>
+</ol>
+<h3 id="security-assessment">Security assessment:<a class="headerlink" href="#security-assessment" title="Permanent link">&para;</a></h3>
+<p><strong>Plastic particles in air:</strong></p>
+<p>As in the printing process we are heating plastics and then use a fan to cool down the layers it&rsquo;s very important to know that we&rsquo;re actually emitting dangerous plastic particles to the air.</p>
+<p><img alt="Air quality study" src="https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-2-e1570468596874.png" /></p>
+<p><img alt="Air quality study" src="https://www.3dprintingmedia.network/wp-content/uploads/2019/10/emissions-study-1.jpeg" /></p>
+<p>So to prevent any hazardous environment follow this basic checklist:</p>
+<ol>
+<li>Avoid the use of dangerous materials like ABS, instead try to use PLA if the mechanical properties are not important for your piece.</li>
+<li>Use a HEPA air filter system in the room and keep it turn on while printing in the room. Keep a good maintenance of the filter, replacing or washing periodically the filter cartridges.</li>
+<li>Once your printing is running and everything seems working fine, stay away from the room.</li>
+<li>After every work ventilate the room by opening the windows.</li>
+<li>If possible work with a closed cased 3D printer.</li>
+<li>If you need to stay close in the same room of the printer for large amounts of time, use a face mask or particle gas mask.</li>
+</ol>
+<p><a href="https://www.3dprintingmedia.network/study-desktop-3d-printers-negatively-impact-indoor-air-quality/">Detailed information here.</a></p>
+<p><strong>Fire risk:</strong></p>
+<p>As the FDM printing process requires high temperatures to melt the plastic, there&rsquo;s some risk associated to the usage of the machine.</p>
+<p>Although current 3D printers incorporate overheating control to prevent fires using thermo-couple wire sensors located in the heating extrude elements and the heating bed, its still a safety assurance to have extra preventing measures.</p>
+<p><img alt="Fire example." src="https://hackaday.com/wp-content/uploads/2018/03/fire.png?w=800 =250x" /></p>
+<p>Checklist to prevent fires while 3D printing:</p>
+<ol>
+<li>Check that the heat sensors work correctly.</li>
+<li>Look for any sign of wearing of the insulation that covers the nozzle.</li>
+<li>Look for any melted parts of the 3D printer that can indicate a over-high temperature.</li>
+<li>Take a look at the board components and try to identify any over heating on the motor drivers.</li>
+<li>Use safe temperature materials, there are some exotic mixes that require higher temperatures.</li>
+<li>Check that all the cooling fans are working correctly.</li>
+<li>Check if you have the right settings for the material.</li>
+<li>Try to split large models into ~8 to 10 hours parts.</li>
+<li>Avoid prints that are very long.</li>
+<li>Install <a href="https://octoprint.org/">Octoprint</a> or <a href="https://www.astroprint.com/">astroprint</a> to monitor online your prints.</li>
+<li>Place the 3D printer in a safe environment far away from any fast combustion materials or any other temperature sensitive chemicals.</li>
+<li>Have a fire extinguisher at hand.</li>
+</ol>
+<p><a href="https://www.thissmarthouse.net/dont-burn-your-house-down-3d-printing-a-cautionary-tale/">Detailed information here.</a></p>
+<p><strong>Cross contamination:</strong></p>
+<p>There are some people interested on food-safe or bio-medical 3D printing parts. But there&rsquo;s some risk associated to the FDM process that makes very difficult to make safe printed parts.</p>
+<p>Food-safe manufacturing checklist:</p>
+<ol>
+<li>Change the brass extruder nozzle for one made of lead-free stainless steel.</li>
+<li>Use a closed cased 3D printer.</li>
+<li>Use a lead-free glass for the printer bed.</li>
+<li>Use a lead-free material.</li>
+<li>Print with the higher resolution to reduce the amount of porosity on the part surface.</li>
+<li>For pos-processing you can cover the part with Teflon, Transparent resin or try electroplating.</li>
+</ol>
+<p>Food-safe use of 3D printed parts:</p>
+<ol>
+<li>Clean immediately after every usage, to avoid the food impregnate on the part surface.</li>
+<li>Don&rsquo;t put any reactive substance in the 3D printed part.</li>
+<li>If you&rsquo;re using a dish washing machine, check the temperatures to avoid any deformation on the part.</li>
+<li>Be conscious that there&rsquo;s no possibility to have a long-lasting 3D print part, so you need to dispose the part after it shows signs of wearing in the food-safe coating.</li>
+</ol>
+<p><a href="https://formlabs.com/blog/guide-to-food-safe-3d-printing/">Detailed information here.</a></p>
+<p><strong>Disposing and recycling:</strong></p>
+<p>The process of recycling 3D printed plastics requires the use of equipment to crush, melt and extrude new filament or other objects.</p>
+<p><a href="https://bitfab.io/blog/3d-printing-plastic-recycling/">Detailed information here.</a></p>
+<p><a href="https://preciousplastic.com/">Precious plastic</a> its also a project that shares machine building blueprints and methods to establish a plastic recycling station.</p>
+<p>The objective of recycling 3D printed residues its to decrease the environmental impact of the process. <a href="https://www.sciencedirect.com/science/article/pii/S2352940720301360">More information about this topic here on this research paper.</a></p>
+<h3 id="calibration">Calibration:<a class="headerlink" href="#calibration" title="Permanent link">&para;</a></h3>
+<p>Checklist:</p>
+<ol>
+<li>Turn on the printer.</li>
+<li>Make the cart go to the home position.</li>
+<li>Disable steppers.</li>
+<li>Move the cart to the closest corner of the build plate.</li>
+<li>Using a small piece of normal bond paper, check the Z axis distance to the plate by passing through the nozzle and the build platform.</li>
+<li>If you feel the paper passing too tight, lose the Z axis bolt, until the paper passes with a slight friction resistance.</li>
+<li>Move to the next corner and repeat the steps 3 to 5.</li>
+<li>Once all the corners are adjusted move to the center.</li>
+<li>Enable steppers again and make a test print.</li>
+<li>If the print sticks to the printing bed the calibration was successful.</li>
+<li>If not, repeat the process, until it&rsquo;s successful.</li>
+</ol>
+<h3 id="troubleshooting">Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
+<p>Print not sticking to build plate:</p>
+<p>When the machine Z axis is far from the build plate it&rsquo;s very likely that the printing is not going to stick to the bed. If that happens you need to check the Z axis calibration, follow the checklist.</p>
+<p><img alt="issue_0." src="../../images/week06/issue_0.jpg" /></p>
+<p>Warp:</p>
+<p>When the build plate is too cold, the plastic shrinks quickly and the difference of contraction between the first layers and the current ones it makes the piece to warp and detach to the build plate.</p>
+<p><img alt="issue_1." src="../../images/week06/issue_1.jpg" /></p>
+<p>Elephant feet:</p>
+<p>When the Z axis is too close to the bed, the fused filament can make a bigger base that looks that a elephant feet.
+<img alt="issue_3." src="../../images/week06/cube_2.jpg" /></p>
+<p>Melted points:</p>
+<p>When the temperature it&rsquo;s too high and the speed it&rsquo;s too slow, the filament will look very low detailed and melted looking.</p>
+<p><img alt="issue_4." src="../../images/week06/benchmark_2.jpg" /></p>
+<h3 id="fmd-work">FMD work:<a class="headerlink" href="#fmd-work" title="Permanent link">&para;</a></h3>
+<p><strong>Requirements:</strong></p>
+<ol>
+<li>STL 3D model.</li>
+<li>Slicing software.</li>
+<li>Filament material spool.</li>
+</ol>
+<p><img alt="issue_4." src="../../images/week06/printer_2.jpg" /></p>
+<h4 id="slicing-using-cura">Slicing using Cura<a class="headerlink" href="#slicing-using-cura" title="Permanent link">&para;</a></h4>
+<p><a href="https://ultimaker.com/es/software/ultimaker-cura">Cura</a> is a software that converts STL files into GCODE that&rsquo;s used by the 3D printing.</p>
+<ol>
+<li>Import the STL file to print.</li>
+<li>Place it in to the build plated in one plain side.</li>
+<li>Choose the orientation avoiding the largest side in the Z or Y axis. <strong>Although my instructor <a href="http://fabacademy.org/2020/labs/agrilab/students/florent-lemaire/about/">Florent Lemaire</a> pointed that this is not a completely correct answer.</strong></li>
+<li>Set the layer thickness optimizing time and material.</li>
+<li>Set the temperature of the nozzle following the material recommendations.</li>
+<li>Set the build plate temperature depending on the temperature of the room and following the material labeled recommendations.</li>
+<li>Set the speed of the printing process.</li>
+<li>Set the infill to a conservative percentage to avoid material wasting, but optimizing mechanical properties of the part.</li>
+<li>Slice</li>
+<li>Save the GCODE file in a SD card or USB drive to upload it to the machine.</li>
+</ol>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/cura_00.jpg" /></p>
+<p><strong>Settings:</strong></p>
+<ul>
+<li>Resolution 0.10 mm layer.</li>
+<li>No supports.</li>
+<li>Skirt width 10 mm.</li>
+<li>Skirt distance from object 0.0mm</li>
+<li>Skirt layers, 1.</li>
+<li>Skirt layer height 0.1 mm.</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ol>
+<li>Ensure the machine is calibrated.</li>
+<li>Ensure that there&rsquo;s enough material for the printing job.</li>
+<li>Clean the build plate.</li>
+<li>Load the GCODE file.</li>
+<li>Start the printing process.</li>
+<li>Take care of any extruded filament during the pre-heating process. Those can mess up the first layer of the printing.</li>
+<li>Once the process started, take care of the temperature of the room and follow the risk assessment checklists.</li>
+<li>Once the process has finished, separate the printed part from the build platform using a clean spatula.</li>
+<li>Check dimension accuracy if needed.</li>
+<li>Take notes of the configurations you used on a document to keep a quality control data base.</li>
+</ol>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/fdm_1.jpg" />
+<img alt="FDM Benchmark 3D model." src="../../images/week06/fdm_2.jpg" />
+<img alt="FDM Benchmark 3D model." src="../../images/week06/fdm_3.jpg" /></p>
+<p>On this picture, my instructor <a href="http://fabacademy.org/2020/labs/agrilab/students/florent-lemaire/about">Florent Lemaire</a> pointed the skipped layers in the printing.</p>
+<p>The printing process was made overnight on Friday so I didn&rsquo;t had the chance to inspect the final result until next Monday, it could be due to a clogged nozzle or over-tighten Z axis.</p>
+<p>Unfortunately I didn&rsquo;t perform an extrusion purge test on the machine before starting the process.</p>
+<h4 id="result">Result:<a class="headerlink" href="#result" title="Permanent link">&para;</a></h4>
+<p><img alt="FDM Benchmark 3D model." src="../../images/week06/fdm_4.jpg" />
+<img alt="FDM Benchmark 3D model." src="../../images/week06/benchmark_5.jpg" />
+<img alt="FDM Benchmark 3D model." src="../../images/week06/issue_3.jpg" /></p>
+<h2 id="sla">SLA:<a class="headerlink" href="#sla" title="Permanent link">&para;</a></h2>
+<p><strong>Introduction:</strong></p>
+<p>Stereo-lithography it&rsquo;s a manufacturing process that makes use of photo-reactive resins and light in a specific wavelength, to build 3D models.</p>
+<h3 id="sla-workflow-with-formlabs-form-2">SLA Workflow with <strong>Formlabs form 2</strong>:<a class="headerlink" href="#sla-workflow-with-formlabs-form-2" title="Permanent link">&para;</a></h3>
+<p><img alt="issue_4." src="../../images/week06/sla_1.jpg" /></p>
+<p><strong>Machine:</strong></p>
+<p><a href="https://formlabs.com/3d-printers/form-2/">Formlabs Form 2</a></p>
+<p><strong>Material:</strong></p>
+<p><a href="https://formlabs.com/materials/standard/#greyscale">Grey standard Formlabs UV resin</a></p>
+<p><strong>Software:</strong></p>
+<p><a href="https://formlabs.com/software/#preform">Formlabs preform</a></p>
+<p><strong>Requirements:</strong></p>
+<ol>
+<li>SLA printer (Formlabs form 2).</li>
+<li>Resin cartridge.</li>
+<li>Isopropyl alcohol.</li>
+<li>Plastic Container.</li>
+<li>Paper towels.</li>
+<li>Disposable globes.</li>
+<li>Clean Spatula.</li>
+<li>Fabric Tissue.</li>
+<li>UV curing chamber.</li>
+<li>Washer for Automatically washing.</li>
+<li>Slicer software for SLA.</li>
+<li>USB cable or SD memory to load files.</li>
+</ol>
+<p><strong>Preparing files:</strong></p>
+<ol>
+<li>Desing a model and export it as a STL file.</li>
+<li>Open Preform.</li>
+<li>Click on the &ldquo;magick wand button&rdquo;</li>
+<li>Save the file and send it to the machine.</li>
+</ol>
+<p><img alt="preform." src="../../images/week06/preform_1.jpg" /></p>
+<p><strong>Process:</strong></p>
+<ol>
+<li>Turn on the printer. Pulsing the power button.</li>
+<li>Keep the lid closed as much as possible, light contaminates the resin by curing it. Be quick at open and manipulating anything inside the print chamber.</li>
+<li>Remove the tank cover.</li>
+<li>Open the vent in the cartridge by pushing the mechanical vent button.</li>
+<li>Place the building plate in the holder.</li>
+<li>Upload the file to print using a USB memory stick, USB cable or network using Preform software.</li>
+<li>Check before confirming that the chamber is free of any obstacles and the resin is flowing as expected.</li>
+<li>Start the printing process.</li>
+<li>If after the first layers you detect any anomaly in the printing like lose supports or detached parts, stop the printing.</li>
+<li>If the printing its successful, proceed to remove the building plate.</li>
+<li>Use paper towels to clean the excess of liquid in the building plate, not in the model.</li>
+<li>Don&rsquo;t pour any of the residual resin in the tank.</li>
+<li>Remove the printed part carefully using a clean spatula.</li>
+<li>Place the part in the washing machine.</li>
+<li>Set the time depending on the size and resin type.</li>
+<li>Once the washing process has finished, remove carefully the part from the machine using globes and avoiding breathing or touching the Isopropyl alcohol.</li>
+<li>Place the part inside the curing chamber.</li>
+<li>Set the temperature and time using the information available <a href="https://support.formlabs.com/s/article/Form-Cure-Time-and-Temperature-Settings?language=en_US">here</a>.</li>
+<li>Once the curing process has finished, carefully remove the supports using a pincer or knife cutter.</li>
+<li>The print has finished.</li>
+</ol>
+<h4 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h4>
+<ul>
+<li>0.1 resolution.</li>
+<li>31 C temperature.</li>
+<li>Material: standard grey resin formlabs.</li>
+<li>Washing time 15 mins.</li>
+<li>Used 2-propanol Isopropyl Alcohol.</li>
+<li>Curing time 20 mins at 60 C.</li>
+</ul>
+<h4 id="visual-reference"><strong>Visual reference:</strong><a class="headerlink" href="#visual-reference" title="Permanent link">&para;</a></h4>
+<p>Estimated printing time:
+<img alt="" src="../../images/week06/sla_007.jpg" /></p>
+<p>Opening valve:
+<img alt="" src="../../images/week06/sla_002.jpg" /></p>
+<p>Build plate:
+<img alt="" src="../../images/week06/sla_006.jpg" /></p>
+<p>Globes and paper towels are needed at any moment to manipulate the prints:
+<img alt="" src="../../images/week06/sla_004.jpg" /></p>
+<p>Raising bed holder lock:
+<img alt="" src="../../images/week06/sla_003.jpg" /></p>
+<p>3D Printer chamber opened:
+<img alt="" src="../../images/week06/sla_005.jpg" /></p>
+<p>Printing temperature of resin 31 C:
+<img alt="" src="../../images/week06/sla_001.jpg" /></p>
+<p>Building plate with piece:
+<img alt="" src="../../images/week06/sla_0013.jpg" /></p>
+<p>Removing printed part from build plate with spatula:
+<img alt="" src="../../images/week06/sla_0011.jpg" />
+<img alt="" src="../../images/week06/sla_0010.jpg" /></p>
+<p>Cleaning build plate with paper towels:
+<img alt="" src="../../images/week06/0012.jpg" /></p>
+<p>Isopropyl alcohol for the washing machine 2-propanol:
+<img alt="" src="../../images/week06/sla_008.jpg" /></p>
+<p>About to submerge the printing in the washing machine:
+<img alt="" src="../../images/week06/sla_009.jpg" /></p>
+<p>Washing machine time elapse:
+<img alt="" src="../../images/week06/sla_0014.jpg" /></p>
+<p>Final result:
+<img alt="" src="../../images/week06/sla_final.jpg" /></p>
+<p><img alt="issue_4." src="../../images/week06/sla_2.jpg" /></p>
+<p><strong>Cleaning and chemical disposing:</strong></p>
+<ol>
+<li>Do not wash the resin with water or Isopropyl alcohol in the sink.</li>
+<li>Use paper towels, and don&rsquo;t dispose any of it in the paper recycling.</li>
+<li>Expose the used towers to sunlight to cure the plastic.</li>
+<li>Find a chemical disposal container to dispose the paper towels.</li>
+</ol>
+<h2 id="assignment-outcome">Assignment Outcome:<a class="headerlink" href="#assignment-outcome" title="Permanent link">&para;</a></h2>
+<h3 id="3d-model">3D model:<a class="headerlink" href="#3d-model" title="Permanent link">&para;</a></h3>
+<p>This is the first prototype of the electro-conductive sensor for my final project. As I need the part to be watertight I choose SLA printing, then as We don&rsquo;t have transparent resin available I made a window on my part to place a transparent plate. I followed design principles using nerves and reinforcing the unions using chamflers or rounding. It will be very difficult for a 5 axis milling machine to reproduce the shape, but it&rsquo;s possible to make 2 parts mold of course.</p>
+<p><a href="../../projects/final-project/">More info about my project here.</a></p>
+<p>Part for printing:</p>
+<p><img alt="issue_4." src="../../images/week06/solidworks_1.jpg" /></p>
+<p>Assembly on 3D:</p>
+<p><img alt="issue_4." src="../../images/week06/solidworks_2.jpg" /></p>
+<p>Preform:</p>
+<p><img alt="issue_4." src="../../images/week06/preform_1.jpg" /></p>
+<p>Printing:</p>
+<p><img alt="issue_4." src="../../images/week06/sla_3.jpg" /></p>
+<p>Parameters:</p>
+<p>| Material  | Grey V4 |
+| Printing time  | 89 min |
+| Washing time | 30 min |
+| Curing time | 36 min |
+| Curing temperature  | 60 C |</p>
+<h3 id="assembly">Assembly:<a class="headerlink" href="#assembly" title="Permanent link">&para;</a></h3>
+<p>Parts:</p>
+<p><img alt="issue_4." src="../../images/week06/assembly.jpg" /></p>
+<ol>
+<li>Printed part.</li>
+<li>Laser cutted window.</li>
+<li>6 M3 15 mm Bolts.</li>
+<li>6 M3 rubber spacers.</li>
+<li>6 M3 hexagonal nuts.</li>
+</ol>
+<p>View 1:
+<img alt="issue_4." src="../../images/week06/hero.jpg" /></p>
+<p>View 2:
+<img alt="issue_4." src="../../images/week06/hero_3.jpg" /></p>
+<p>With Electrodes:
+<img alt="issue_4." src="../../images/week06/hero_2.jpg" /></p>
+<p>Design fails:</p>
+<p>The rubber seal holder it&rsquo;s too small, the electrode holders are too big and the nuts can&rsquo;t touch the piece so I&rsquo;ll need to make it wider. For the next iteration.</p>
+<h3 id="files">Files:<a class="headerlink" href="#files" title="Permanent link">&para;</a></h3>
+<p><a href="../../files/week06/week06.zip">Download</a></p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week05/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5. Electronics production" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              5. Electronics production
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week07/" class="md-footer__link md-footer__link--next" aria-label="Next: 7. Electronics design" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              7. Electronics design
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

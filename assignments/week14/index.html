@@ -1,0 +1,2187 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week14/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>14. Networking and communications - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#14-networking-and-communications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              14. Networking and communications
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week08/" class="md-nav__link">
+        8. Computer controlled machining
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          14. Networking and communications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        14. Networking and communications
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issues-with-lora-thethingsnetwork" class="md-nav__link">
+    Issues with LORA, thethingsnetwork.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-sodaq-explorer-lora-development-board" class="md-nav__link">
+    Using SODAQ Explorer LORA development board.
+  </a>
+  
+    <nav class="md-nav" aria-label="Using SODAQ Explorer LORA development board.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-design-for-week14" class="md-nav__link">
+    Circuit design for week14
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit design for week14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#differential-amplifier" class="md-nav__link">
+    Differential amplifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dac-amplifier" class="md-nav__link">
+    DAC amplifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-filters" class="md-nav__link">
+    Noise filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusions" class="md-nav__link">
+    Conclusions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communications" class="md-nav__link">
+    Communications:
+  </a>
+  
+    <nav class="md-nav" aria-label="Communications:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samd11-mux-table" class="md-nav__link">
+    SAMD11 MUX table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfid-and-serial-communication" class="md-nav__link">
+    RFID and serial communication.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-communication" class="md-nav__link">
+    Serial communication:
+  </a>
+  
+    <nav class="md-nav" aria-label="Serial communication:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparkfun-spectral-sensor" class="md-nav__link">
+    Sparkfun spectral sensor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    i2c
+  </a>
+  
+    <nav class="md-nav" aria-label="i2c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lcd-display" class="md-nav__link">
+    LCD Display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i2c-bus" class="md-nav__link">
+    i2c bus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo_1" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit" class="md-nav__link">
+    Circuit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issues-with-lora-thethingsnetwork" class="md-nav__link">
+    Issues with LORA, thethingsnetwork.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-sodaq-explorer-lora-development-board" class="md-nav__link">
+    Using SODAQ Explorer LORA development board.
+  </a>
+  
+    <nav class="md-nav" aria-label="Using SODAQ Explorer LORA development board.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit-design-for-week14" class="md-nav__link">
+    Circuit design for week14
+  </a>
+  
+    <nav class="md-nav" aria-label="Circuit design for week14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#differential-amplifier" class="md-nav__link">
+    Differential amplifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dac-amplifier" class="md-nav__link">
+    DAC amplifier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-filters" class="md-nav__link">
+    Noise filters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusions" class="md-nav__link">
+    Conclusions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communications" class="md-nav__link">
+    Communications:
+  </a>
+  
+    <nav class="md-nav" aria-label="Communications:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samd11-mux-table" class="md-nav__link">
+    SAMD11 MUX table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rfid-and-serial-communication" class="md-nav__link">
+    RFID and serial communication.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-communication" class="md-nav__link">
+    Serial communication:
+  </a>
+  
+    <nav class="md-nav" aria-label="Serial communication:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparkfun-spectral-sensor" class="md-nav__link">
+    Sparkfun spectral sensor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i2c" class="md-nav__link">
+    i2c
+  </a>
+  
+    <nav class="md-nav" aria-label="i2c">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lcd-display" class="md-nav__link">
+    LCD Display
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#i2c-bus" class="md-nav__link">
+    i2c bus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo_1" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circuit" class="md-nav__link">
+    Circuit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="14-networking-and-communications">14. Networking and communications<a class="headerlink" href="#14-networking-and-communications" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>For this week I&rsquo;ve started to learn about:</p>
+<ul>
+<li>LORA and LORAWAN:</li>
+<li>Microchip, LORA ExpLoRer board.<ul>
+<li>Arduino SODAQ firmware libraries.</li>
+</ul>
+</li>
+<li><a href="https://thethingsnetwork.org">thethingsnetwork.org</a></li>
+<li>AM stands for Amplitude modulation.</li>
+<li>FM stands for Frequency modulation.<ul>
+<li>More immune to noise than AM.</li>
+</ul>
+</li>
+<li>LORA modulation:</li>
+<li>Payload.</li>
+<li>Encoding.<ul>
+<li>Counter element</li>
+</ul>
+</li>
+<li>Decoding, on thethingsnetwork app.</li>
+<li>868 MHz Band for Europe.</li>
+<li>902-927 Band for US and Mexico.</li>
+<li>Spread Factor.<ul>
+<li>SF7 it&rsquo;s it&rsquo;s for energy efficient,</li>
+<li>SF12 it&rsquo;s for decoding easiness.</li>
+</ul>
+</li>
+<li>Chirp.</li>
+<li>Byte broadcast.</li>
+<li>Duty cycle for thethingsnetwork.<ul>
+<li>max 30 seconds every 24 hrs.</li>
+<li>band shifting.</li>
+</ul>
+</li>
+<li>Power consumption: 1 dBm = 1mW.</li>
+<li>dB it&rsquo;s and scale not an unit.</li>
+</ul>
+<p><img alt="" src="../../images/week14/lora_01.jpg" /></p>
+<p><a href="https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/">My instructor Luc Hanneuse</a> explained LORA, LORAWAN and thethingsnetwork.org to me on Thursday morning.</p>
+<p>For the <a href="http://fabacademy.org/2021/labs/agrilab/group/week14/">group assignment</a> I have asked <a href="http://fabacademy.org/2021/labs/agrilab/students/theo-gautier">Theo</a> to use i2c protocol to communicate our boards.</p>
+<p><img alt="Theo's week12 board" src="http://fabacademy.org/2021/labs/agrilab/students/theo-gautier/images/week11/42.jpg" /></p>
+<p><img alt="My boad from week11" src="../../images/week11/hero_00.jpg" /></p>
+<h2 id="issues-with-lora-thethingsnetwork">Issues with LORA, thethingsnetwork.<a class="headerlink" href="#issues-with-lora-thethingsnetwork" title="Permanent link">&para;</a></h2>
+<p>So far I&rsquo;ve made and account on thethingsnetwork.org, and sadly on the last week a bug made it impossible to access to the network in agrilab&rsquo;s node.</p>
+<p>Also I&rsquo;ve tried to use the arduino resources following Luc&rsquo;s tutorial but the references don&rsquo;t work so far.</p>
+<p>I&rsquo;ll try this again on Tuesday.</p>
+<h2 id="using-sodaq-explorer-lora-development-board">Using <strong>SODAQ Explorer</strong> LORA development board.<a class="headerlink" href="#using-sodaq-explorer-lora-development-board" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.thethingsnetwork.org/docs/devices/node/quick-start/index.html">Following this tutorial</a></p>
+<p>Important info from SODAQ/orange documentation:</p>
+<p><a href="https://github.com/Orange-OpenSource/Orange-ExpLoRer-Kit-for-LoRa">Link</a></p>
+<ul>
+<li>SerialUSB for debugSerial</li>
+<li>Serial1 for Bluetooth</li>
+<li>Serial for pins D0/RX and D1/TX</li>
+<li>Serial2 for loraSerial</li>
+<li>TTN_FP_EU868 for freqPlan</li>
+<li>appEui: Provided by thethingsnetwork</li>
+<li>appKey: Provided by thethingsnetwork</li>
+</ul>
+<blockquote>
+<p>I&rsquo;ve created an account on <a href="https://thethingsnetwork.org/">thethingsnetwork</a></p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_03.jpg" /></p>
+<blockquote>
+<p>Then added a new application</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_04.jpg" /></p>
+<blockquote>
+<p>This form gives applications a</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_05.jpg" /></p>
+<blockquote>
+<p>After finishing the app creation I&rsquo;ve added a new device</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_06.jpg" /></p>
+<blockquote>
+<p>For this I&rsquo;ve used the the things network library on Arduino
+Here there&rsquo;s the process to add the library from the Arduino Library manager.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_09.jpg" /></p>
+<blockquote>
+<p>Here there&rsquo;s the boards manager to add SODAQ SAMD boards.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_14.jpg" /></p>
+<blockquote>
+<p>Here this sketch shows the device EUI.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_15.jpg" /></p>
+<blockquote>
+<p>This sketch in the examples apart, its a simple test to send &ldquo;00&rdquo; to the thethingsnetwork app.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_10.jpg" /></p>
+<blockquote>
+<p>We need to add appEUI and appKey, I&rsquo;ve find this data in the thethingsnetwork console.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_11.jpg" /></p>
+<blockquote>
+<p>Selecting the SODAQ ExpLoRer board.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_12.jpg" /></p>
+<p><img alt="" src="../../images/week14/lora_02.jpg" /></p>
+<blockquote>
+<p>New device added.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_07.jpg" /></p>
+<blockquote>
+<p>Device information.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_08.jpg" /></p>
+<blockquote>
+<p>Data sent.</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_13.jpg" /></p>
+<h3 id="results">Results<a class="headerlink" href="#results" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Location</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_15.jpg" /></p>
+<blockquote>
+<p>Data</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_16.jpg" /></p>
+<blockquote>
+<p>Response on serialdebug</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_17.jpg" /></p>
+<blockquote>
+<p>Testing</p>
+</blockquote>
+<p><img alt="" src="../../images/week14/lora_18.jpg" /></p>
+<p><img alt="" src="../../images/week14/lora_19.jpg" /></p>
+<p>The SODAQ ExpLoRer board, it&rsquo;s an easy to setup and start hardware, once I&rsquo;ve understand the process It went extremely quick with the Arduino IDE.</p>
+<p>I&rsquo;ll like to use LORA and the thethingsnetwork for my communications of my final project.</p>
+<h2 id="circuit-design-for-week14">Circuit design for week14<a class="headerlink" href="#circuit-design-for-week14" title="Permanent link">&para;</a></h2>
+<p>For this weeks assignment I&rsquo;ve worked on a circuit integrating an improved hall effect sensor circuit alongside a <strong>DAC</strong> output that I&rsquo;ll use for my final project Dielectric Spectroscopy sensor.</p>
+<p>The original plan was to make two of this boards and communicate with i2c protocol.</p>
+<p>I&rsquo;ve also the next objectives:</p>
+<ul>
+<li>Use different connectors for USB and JTAG.</li>
+<li>Use a 3.3 and 5 Volts i2c connectors.</li>
+<li>Keep using the SAMD11C14 micro controller.</li>
+<li>Make an SAMD21 based board for central processing of data.</li>
+</ul>
+<p>This are the Characteristics for my SAMD11C14 board.</p>
+<p>Connectors:</p>
+<p><img alt="" src="../../images/week14/kicad_01.jpg" />
+<img alt="" src="../../images/week14/kicad_02.jpg" /></p>
+<ul>
+<li>1x05 connector for JTAG programming.</li>
+<li>1x04 connector for 12c 3.3 Volts communication.</li>
+<li>1x04 connector for 12c 5 Volts communication.</li>
+<li>1x04 connector for USB communication.</li>
+<li>1x05 connector for PIN_05, PIN_08 and PIN_09.</li>
+</ul>
+<p>Power:</p>
+<ul>
+<li>3.3 Volts linear regulator.</li>
+<li>5 Volts from USB.</li>
+</ul>
+<p>Outputs:</p>
+<ul>
+<li>LED output at PA_05.</li>
+<li>DAC output with AD8605 Operational amplifier at PA_02.</li>
+</ul>
+<p><img alt="" src="../../images/week14/kicad_03.jpg" /></p>
+<p>Micro-controller:</p>
+<p><img alt="" src="../../images/week14/kicad_05.jpg" /></p>
+<ul>
+<li>SAMD11C14 microcontroller with power input noise filter.</li>
+<li>SDA and SCL pull ups at PA_14 and PA_15.</li>
+<li>Reset button.</li>
+</ul>
+<p>Sensors:</p>
+<p><img alt="" src="../../images/week14/kicad_04.jpg" /></p>
+<ul>
+<li>HALL effect sensor with power input filter arrangement.</li>
+<li>Differential amplification with AD8605 for HALL effect output.</li>
+</ul>
+<p>List of components used:</p>
+<p><em>I&rsquo;ve made this table by:</em></p>
+<ul>
+<li>Exporting a BOM from Kicad <em>Generate Bill of materials in the tools menu</em></li>
+<li>Importing the txt BOM file in this <a href="https://www.convertcsv.com/csv-to-markdown.htm">csv to markdown converter page</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Value</th>
+<th>Datasheet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U5</td>
+<td>ATSAMD11C14A-SS</td>
+<td></td>
+</tr>
+<tr>
+<td>J4</td>
+<td>Conn_01x04_Female</td>
+<td>~</td>
+</tr>
+<tr>
+<td>J3</td>
+<td>Conn_01x04_Female</td>
+<td>~</td>
+</tr>
+<tr>
+<td>SW1</td>
+<td>BUTTON_B3SN</td>
+<td>https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3sn.pdf</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>10K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>R8</td>
+<td>10K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>J1</td>
+<td>Conn_01x05_Female</td>
+<td>~</td>
+</tr>
+<tr>
+<td>U3</td>
+<td>Sensor_Hall-Effect_Analog_A1324LLHLT-T</td>
+<td>https://www.allegromicro.com/~/media/Files/Datasheets/A1324-5-6-Datasheet.ashx</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>0.1 uF</td>
+<td></td>
+</tr>
+<tr>
+<td>J5</td>
+<td>Conn_01x04_Female</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>0.1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>C1</td>
+<td>10uF</td>
+<td></td>
+</tr>
+<tr>
+<td>D1</td>
+<td>LED</td>
+<td>https://optoelectronics.liteon.com/upload/download/DS-22-98-0002/LTST-C150CKT.pdf</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>100</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>0.1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>C10</td>
+<td>0.1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>J2</td>
+<td>Conn_01x02</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>0.1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>C9</td>
+<td>0.1uF</td>
+<td></td>
+</tr>
+<tr>
+<td>U4</td>
+<td>OPAMP_AD8605</td>
+<td>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>10K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>1K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>10K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>1K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>U2</td>
+<td>OPAMP_AD8605</td>
+<td>https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf</td>
+</tr>
+<tr>
+<td>R1</td>
+<td>10K</td>
+<td>~</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>10pF</td>
+<td></td>
+</tr>
+<tr>
+<td>J6</td>
+<td>Conn_01x05_Female</td>
+<td>~</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>0</td>
+<td>~</td>
+</tr>
+<tr>
+<td>U1</td>
+<td>Regulator_Linear_LM3480-3.3V-100mA</td>
+<td>https://www.ti.com/lit/ds/symlink/lm3480.pdf</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>10k</td>
+<td>~</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>10k</td>
+<td>~</td>
+</tr>
+</tbody>
+</table>
+<h3 id="differential-amplifier">Differential amplifier<a class="headerlink" href="#differential-amplifier" title="Permanent link">&para;</a></h3>
+<p>Differential amplifier is a type of electronic amplifier that amplifies the difference between two input voltages but suppresses any voltage common to the two inputs.</p>
+<p>I need a this electronic component for the Hall effect sensor, to amplify the signal output because the signal it&rsquo;s just 100 mV and can by difficult to filter, instead of measuring the 100 mV I&rsquo;ll use the differential amplifier to measure 5 - 0.001 = 4.999 Volts pulses which are notably easy to detect.</p>
+<blockquote>
+<p><a href="../../assignments/week11">From week11 input devices work</a>
+Using Arduino&rsquo;s serial plotter I&rsquo;ve found the sensor sends a lot of noise, and I&rsquo;ve learn that&rsquo;s normal because of the materials of the board.</p>
+</blockquote>
+<p><img src="../../images/week11/arduino_01.jpg" alt="hero_01" width=100%/></p>
+<p>This is the signal response when an magnet passes 3 times over the sensor at 3mm distance.  </p>
+<p><img src="../../images/week11/step_01.jpg" alt="hero_01" width=100%/></p>
+<p>For this I&rsquo;ve consulted the references shown:</p>
+<ul>
+<li><a href="https://www.sciencedirect.com/topics/engineering/differential-amplifier">Overview of differential amplifiers on science direct by multiple autors</a></li>
+</ul>
+<p><img alt="" src="../../images/week14/ref_01.jpg" />
+<img alt="" src="../../images/week14/vda_01.jpg" /></p>
+<h3 id="dac-amplifier">DAC amplifier<a class="headerlink" href="#dac-amplifier" title="Permanent link">&para;</a></h3>
+<p>DAC stands for Digital to analog converter and it&rsquo;s part of my Dielectric Spectroscopy Sensor for my final project. I&rsquo;m going to use this to identify fat and protein proportions in milk samples.</p>
+<p>I&rsquo;m using DAC from the SAMD11C14, in the datasheet DAC it&rsquo;s on the pin PA_02. And its capable to perform at 350000 samples per second.</p>
+<p>I want to use this capability of the SAMD11C14 to produce a signal and then measure the difference by passing the signal trough a milk sample.</p>
+<p>This is in order to detect the molecular structure of the milk sample.</p>
+<p>For this I&rsquo;ve used the next reference:</p>
+<ul>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8605_8606_8608.pdf">AD8605 Datasheet</a></li>
+</ul>
+<p><img alt="" src="../../images/week14/ref_02.jpg" />
+<img alt="" src="../../images/week14/dac_01.jpg" /></p>
+<h3 id="noise-filters">Noise filters<a class="headerlink" href="#noise-filters" title="Permanent link">&para;</a></h3>
+<p>For this I&rsquo;ve used the next references:</p>
+<ul>
+<li>
+<p><a href="https://www.st.com/resource/en/application_note/cd00003833-designing-with-microcontrollers-in-noisy-environments-stmicroelectronics.pdf">ST electronics designing for noisy environments handbook</a></p>
+</li>
+<li>
+<p><a href="https://www.arrow.com/en/research-and-events/articles/using-capacitors-to-filter-electrical-noise">Using capacitors to filter electrical noise</a></p>
+</li>
+</ul>
+<p>I&rsquo;ve used noise filtering for:</p>
+<ul>
+<li>ATSAMD11C14A micro-controller.</li>
+<li>A1324 Hall effect sensor.</li>
+</ul>
+<p>The plan its too reduce the noise observed during in week 11.</p>
+<p><img alt="Noise" src="../../images/week11/arduino_01.jpg" /></p>
+<ul>
+<li><a href="../../assignments/week11/#hall-effect-fluid-sensor">Week 11 oscilloscope</a></li>
+</ul>
+<p><img alt="" src="../../images/week14/filters_01.jpg" /></p>
+<p>After the local review my instructor <a href="https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/">Luc Hanneuse</a>) has helped me to understand that I&rsquo;m not implementing noise filters in my circuit but only parallel connected capacitors, this helps only to prevent voltage drops while operating the device.</p>
+<p>So certainly I&rsquo;ll have to work more on the circuits design og my project for the next steps.</p>
+<h3 id="conclusions">Conclusions<a class="headerlink" href="#conclusions" title="Permanent link">&para;</a></h3>
+<p>I&rsquo;ve been working on this but unfortunately I didn&rsquo;t have the time to manufacture the board.</p>
+<h2 id="communications">Communications:<a class="headerlink" href="#communications" title="Permanent link">&para;</a></h2>
+<p>In the last weeks I&rsquo;ve use multiple communication protocols. I&rsquo;ll shown this work and then the final one.</p>
+<h3 id="samd11-mux-table">SAMD11 MUX table<a class="headerlink" href="#samd11-mux-table" title="Permanent link">&para;</a></h3>
+<p>Under the Arduino IDE we can select the number and types of com protocols to be used in our program and bootloader. To understand this more in detail I had to check the MUX table in the <a href="http://ww1.microchip.com/downloads/en/devicedoc/atmel-42363-sam-d11_datasheet.pdf">ATSAMD11 documentation</a>.</p>
+<p><img src="../../images/week13/uart_01.jpg" alt="tran_01" width=100%/></p>
+<p><img src="../../images/week13/mux_01.jpg" alt="transistor_01" width=100%/></p>
+<p><img src="../../images/week13/mux_02.jpg" alt="transistor_01" width=100%/></p>
+<h3 id="usb">USB<a class="headerlink" href="#usb" title="Permanent link">&para;</a></h3>
+<p>I&rsquo;ve made this program originally on week09 Embedded programming.</p>
+<p>Check more details <a href="../../assignments/week09">here.</a></p>
+<p>One button scroll-down/up controller.</p>
+<div class="codehilite"><pre><span></span><code>/*
+This program uses Arduino and Mouse library.
+This program reads the board button to scroll-down and after the release of the button waits for 4 seconds to scroll up. After 4 seconds the program waits for a new button push event.
+
+IO pins:
+PA02 &lt;- Digital pull-up BUTTON input
+PA05 -&gt; Digital LED output
+
+Autor: Antonio de Jesus Anaya Hernandez
+Year: 2021
+Org: Fab Academy
+Lab: AgriLab
+Country: France
+*/
+
+#include &lt;Mouse.h&gt;
+
+const int BTN = 2;
+const int LED =  5;
+int timer = 0;
+int btn_state = 0;
+int idle1 = 0;
+int idle2 = 0;
+
+void blink() {
+  for(int pw = 0; pw &lt; 255; pw++){
+      delay(1);
+      analogWrite(LED,pw);
+  }
+  analogWrite(LED,0);
+}
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(BTN, INPUT);
+  Mouse.begin();
+  //Serial.begin(9600);
+}
+
+void loop() {
+  analogWrite(LED,5);
+  btn_state = digitalRead(BTN);
+  if(btn_state == LOW){
+    while(btn_state == LOW){
+      delay(200);
+      analogWrite(LED, 100);
+      Mouse.move(0,0,-1);
+      btn_state = digitalRead(BTN);
+    }
+    for(int clicks = 0; clicks &lt; 10; clicks++){
+      delay(200);
+      //Serial.println(&quot;Clicked&quot;);
+      //Serial.print(clicks);
+      if(clicks &lt; 6){
+        //digitalWrite(LED, HIGH);
+        blink();
+      }
+      btn_state = digitalRead(BTN);
+      while(btn_state == LOW &amp;&amp; clicks &lt; 6){
+        delay(200);
+        analogWrite(LED,30);
+        Mouse.move(0,0,1);
+        btn_state = digitalRead(BTN);
+      }
+    }
+  }
+  delay(200);
+  //Serial.println(&quot;waitting&quot;);
+}
+</code></pre></div>
+
+<script id="asciicast-KlMq6gvI0W46eSBIU6cVzsP86" src="https://asciinema.org/a/KlMq6gvI0W46eSBIU6cVzsP86.js" async data-autoplay="true" data-loop=1 data-t=10 data-rows=30 data-speed=2></script>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week09/demo_04.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h3 id="rfid-and-serial-communication">RFID and serial communication.<a class="headerlink" href="#rfid-and-serial-communication" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>/*
+This program reads the TX output of the RFID ISO11784 for animal Tag FDX reading board, using the Serial1 interface of the SAMD11 micro-controller.
+
+TX to RX on pin 31 Serial1
+
+
+Autor: Antonio de Jesus Anaya Hernandez
+Agrilab, France.
+Fabacademy week 11.
+*/
+
+void setup() {
+  Serial.begin(9600);
+  Serial1.begin(9600);
+}
+
+void loop() {
+  char id = Serial1.read();
+  Serial.println(id);
+  delay(100);
+}
+</code></pre></div>
+
+<p>Flashing</p>
+<script id="asciicast-9uphJuuU7P0OiTTZe8sKLbwrr" src="https://asciinema.org/a/9uphJuuU7P0OiTTZe8sKLbwrr.js" async></script>
+
+<p>Serial output</p>
+<script id="asciicast-wSqG449cNzomrx4QNRKXbDJVJ" src="https://asciinema.org/a/wSqG449cNzomrx4QNRKXbDJVJ.js" async></script>
+
+<p>Video</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png" width=100% loop>
+    <source src="../../images/week11/demo_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h3 id="serial-communication">Serial communication:<a class="headerlink" href="#serial-communication" title="Permanent link">&para;</a></h3>
+<h4 id="sparkfun-spectral-sensor">Sparkfun spectral sensor<a class="headerlink" href="#sparkfun-spectral-sensor" title="Permanent link">&para;</a></h4>
+<p>I&rsquo;ve been stuck on this due to the library size. I&rsquo;ve above 7000 bytes of the flash memory.</p>
+<p>So I&rsquo;ve been looking to the <a href="https://cdn.sparkfun.com/assets/parts/1/2/2/4/9/AS7262_Datasheet.pdf#G1006885">AS7262 datasheet</a></p>
+<p>So I&rsquo;ve learn that its possible to use i2c protocol by writing bytes to the sensor or UART by sending commands.</p>
+<p>To read the device temperature:
+- i2c: 0x06 bit 7:0
+- UART: ATTEMP</p>
+<p>Things I&rsquo;ve to do to enable UART communication:</p>
+<ul>
+<li>Remove the solder from the Jp1 jumper</li>
+<li>Add a older to the jp2 jumper.</li>
+</ul>
+<p><img src="../../images/week11/sparkfun_01.jpg" alt="hero_01" width=80%/>
+<img src="../../images/week11/sparkfun_02.jpg" alt="hero_01" width=40%/>
+<img src="../../images/week11/sparkfun_03.jpg" alt="hero_01" width=40%/></p>
+<p>code</p>
+<div class="codehilite"><pre><span></span><code>/*
+This program reads the TX output of the Sparkfun As7262 board, writes a command to blink the LED light of the sensor, the baudrate and command ATLED0=100 were found in the sensor datasheet using the Serial1 interface of the SAMD11 micro-controller.
+
+TX to RX on pins 10, 31 Serial1
+
+
+Autor: Antonio de Jesus Anaya Hernandez
+Agrilab, France.
+Fabacademy week 11.
+*/
+
+void setup() {
+  // initialize serial:-------------------------------
+  Serial.begin(115200);
+  Serial1.begin(115200);
+  delay(200);
+  Serial1.write(&quot;ATLED0=100&quot;);
+  delay(500);
+  Serial.println(Serial.read());
+}
+
+void loop() {
+
+Serial1.write(Serial.read());
+
+Serial.println(Serial1.read());
+
+delay(100);
+}
+</code></pre></div>
+
+<h3 id="i2c">i2c<a class="headerlink" href="#i2c" title="Permanent link">&para;</a></h3>
+<h4 id="lcd-display">LCD Display<a class="headerlink" href="#lcd-display" title="Permanent link">&para;</a></h4>
+<p>Circuit</p>
+<p>I&rsquo;m using here pull-up resistors to solve floating point inputs in SDA and SCL pins.</p>
+<p><img src="../../images/week13/pull_up_01.jpg" alt="transistor_01" width=100%/></p>
+<p>Code</p>
+<div class="codehilite"><pre><span></span><code>//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// This code makes the i2c display blink its backlight for 1 second and writes &quot;hello&quot; during setup and &quot;world&quot; during loop.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+void setup() {
+  Wire.begin();
+  //setup lcd and write hello
+  lcd.init();
+  lcd.setCursor(1,1);
+  lcd.print(&quot;Hello&quot;);
+}
+
+void loop() {
+  lcd.backlight();
+  lcd.setCursor(1,2);
+  lcd.print(&quot;world&quot;);
+  delay(1000);
+  lcd.noBacklight();
+  delay(1000);
+}
+</code></pre></div>
+
+<h4 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h4>
+<figure class="video_container">
+    <video controls="true" allowfullscreen="true">
+        <source src="../../images/week13/display_02.mp4" type="video/mp4">
+    </video>
+</figure>
+
+<h2 id="networking">Networking<a class="headerlink" href="#networking" title="Permanent link">&para;</a></h2>
+<h3 id="i2c-bus">i2c bus<a class="headerlink" href="#i2c-bus" title="Permanent link">&para;</a></h3>
+<p>Explain about communication on deep.</p>
+<ul>
+<li>SDA</li>
+<li>SCL</li>
+<li>Show data from the network analyzer</li>
+<li>Bytes</li>
+</ul>
+<p>For this I&rsquo;ve used:</p>
+<ul>
+<li>my board from <a href="../../assignments/week11.">week11</a></li>
+<li>2 Arduinos UNO.</li>
+<li>An i2c LCD display.</li>
+</ul>
+<p><img alt="" src="../../images/week11/hero_00.jpg" /></p>
+<p>Description:</p>
+<ul>
+<li>Teacher sets the LCD display,</li>
+<li>Teacher sends x and y values to students 4 and 17,</li>
+<li>i2c addresses are 4, 17 and master address its optional, and LCD address it&rsquo;s 0x27.</li>
+<li>Student 4 prints x value using the LCD screen and serial communication,</li>
+<li>Student 17 prints y value using the LCD screen and serial communication.</li>
+</ul>
+<h3 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
+<p>Teacher:
+I&rsquo;ve use my own board as Teacher.</p>
+<div class="codehilite"><pre><span></span><code>//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// This code is the teacher in the &quot;teacher/student&quot; i2c configuration. It sends messages to device 4 and 17.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+// Taken parts from Wire M/S receiver
+// by Nicholas Zambetti &lt;http://www.zambetti.com&gt;
+
+
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+void setup()
+{
+  Serial.begin(9600);
+  Wire.begin(); // join i2c bus (address optional for master)
+  lcd.init();
+  lcd.setCursor(1,1);
+  lcd.clear();
+  lcd.print(&quot;Students board:&quot;);
+  lcd.backlight();
+}
+
+byte x = 0;
+byte y = 255;
+
+void loop()
+{
+  Wire.begin();
+  Wire.beginTransmission(4); // transmit to device #4
+  Wire.write(&quot;x is &quot;);        // sends five bytes
+  Wire.write(x);              // sends one byte
+  x++;
+  Wire.beginTransmission(17); // transmit to device #17
+  Wire.write(&quot;y is &quot;);        // sends five bytes
+  Wire.write(y);              // sends one byte  
+  Wire.endTransmission();    // stop transmitting
+  y--;
+  delay(500);
+}
+</code></pre></div>
+
+<p>Student 4 Arduino UNO board:</p>
+<div class="codehilite"><pre><span></span><code>//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// This code is the teacher in the &quot;teacher/student&quot; i2c configuration. It sends messages to device 4 and 17.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+// Taken parts from Wire M/S receiver
+// by Nicholas Zambetti &lt;http://www.zambetti.com&gt;
+
+
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+
+void setup()
+{
+  Wire.begin(4);                // join i2c bus with address #4
+  Wire.onReceive(receiveEvent); // register event
+  Serial.begin(9600);           // start serial for output
+}
+
+void loop()
+{
+  delay(100);
+}
+
+// function that executes whenever data is received from master
+// this function is registered as an event, see setup()
+void receiveEvent(int howMany)
+{
+  while(1 &lt; Wire.available()) // loop through all but the last
+  {
+    char c = Wire.read(); // receive byte as a character
+    Serial.print(c);         // print the character
+  }
+  int x = Wire.read();    // receive byte as an integer
+  Serial.println(x);         // print the integer
+
+  lcd.setCursor(1,2);
+  lcd.clear();
+  lcd.print(x);
+</code></pre></div>
+
+<p>Student 17 Arduino UNO board:</p>
+<div class="codehilite"><pre><span></span><code>//This code uses:
+// LiquidCrystal_I2C and Wire library.
+// Pins 14 and 15 as SDA and SCL.
+// This code is the teacher in the &quot;teacher/student&quot; i2c configuration. It sends messages to device 4 and 17.
+// Autor: Antonio de Jesus Anaya Hernandez
+// Fab-Academy: 2021 Agrilab
+// Country: France
+// Taken parts from Wire M/S receiver
+// by Nicholas Zambetti &lt;http://www.zambetti.com&gt;
+
+
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
+LiquidCrystal_I2C lcd(0x27,20,4);
+
+void setup()
+{
+  Wire.begin(17);                // join i2c bus with address #4
+  Wire.onReceive(receiveEvent); // register event
+  Serial.begin(9600);           // start serial for output
+}
+
+void loop()
+{
+  delay(100);
+}
+
+// function that executes whenever data is received from master
+// this function is registered as an event, see setup()
+void receiveEvent(int howMany)
+{
+  while(1 &lt; Wire.available()) // loop through all but the last
+  {
+    char c = Wire.read(); // receive byte as a character
+    Serial.print(c);         // print the character
+  }
+  int y = Wire.read();    // receive byte as an integer
+  Serial.println(y);         // print the integer
+  lcd.setCursor(1,3);
+  lcd.clear();
+  lcd.print(y);
+</code></pre></div>
+
+<h2 id="demo_1">Demo<a class="headerlink" href="#demo_1" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/week14/i2c_01.jpg" />
+<img alt="" src="../../images/week14/i2c_02.jpg" /></p>
+<h2 id="circuit">Circuit<a class="headerlink" href="#circuit" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/week14/diagram_01.png" /></p>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../files/week14/spectral_test.ino">Spectral_test.ino</a></li>
+<li><a href="../../files/week14/student.ino">student.ino</a></li>
+<li><a href="../../files/week14/teacher.ino">teacher.ino</a></li>
+<li><a href="../../files/week09/button_mouse/button_mouse.ino">Arduino Mouse Scroller</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week13/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 13. Output Devices" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              13. Output Devices
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week15/" class="md-footer__link md-footer__link--next" aria-label="Next: 15. Interface and application programming" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              15. Interface and application programming
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>

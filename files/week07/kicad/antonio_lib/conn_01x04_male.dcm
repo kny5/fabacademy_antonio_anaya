@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_01x04_Male
+D Male connector, single row
+K single row male connector
+F ~
+$ENDCMP
+#
+#End Doc Library

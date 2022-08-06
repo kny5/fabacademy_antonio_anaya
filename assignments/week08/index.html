@@ -1,0 +1,1417 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Fab Academy documentation site for Antonio de Jesus Anaya Hernandez">
+      
+      
+        <meta name="author" content="Antonio de Jesus Anaya Hernandez">
+      
+      
+        <link rel="canonical" href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week08/">
+      
+      <link rel="icon" href="../../material/school">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>8. Computer controlled machining - Antonio de Jesus Anaya Hernandez - Fab Academy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Ubuntu Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="black">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8-computer-controlled-machining" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-header__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Antonio de Jesus Anaya Hernandez - Fab Academy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              8. Computer controlled machining
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Tips/documentation_tips/" class="md-tabs__link">
+        Tips
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../week01/" class="md-tabs__link md-tabs__link--active">
+        Assignments
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../projects/final-project/" class="md-tabs__link">
+        Projects
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Antonio de Jesus Anaya Hernandez - Fab Academy" class="md-nav__button md-logo" aria-label="Antonio de Jesus Anaya Hernandez - Fab Academy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
+
+    </a>
+    Antonio de Jesus Anaya Hernandez - Fab Academy
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Tips
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tips/documentation_tips/" class="md-nav__link">
+        Advice for a succesfull documentation process:
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About me
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/agreement/" class="md-nav__link">
+        Student Agreement
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Assignments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Assignments" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Assignments
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week01/" class="md-nav__link">
+        1. Principles and practices.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week02/" class="md-nav__link">
+        	2. Project management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week03/" class="md-nav__link">
+        3. Computer Aided Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week04/" class="md-nav__link">
+        4. Computer controlled cutting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week05/" class="md-nav__link">
+        5. Electronics production
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week06/" class="md-nav__link">
+        6. 3D Scanning and printing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week07/" class="md-nav__link">
+        7. Electronics design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          8. Computer controlled machining
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        8. Computer controlled machining
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment" class="md-nav__link">
+    Risk assessment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-with-fusion-360" class="md-nav__link">
+    CAM with Fusion 360
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling-machine-check-list" class="md-nav__link">
+    Milling machine check list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow" class="md-nav__link">
+    Basic Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling-with-the-cnc-machine" class="md-nav__link">
+    Milling with the CNC machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-the-bench" class="md-nav__link">
+    Testing the bench
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week09/" class="md-nav__link">
+        9. Embedded programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week10/" class="md-nav__link">
+        10. Mechanical design / Machine design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week11/" class="md-nav__link">
+        11. Input devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week12/" class="md-nav__link">
+        12. Molding and casting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week13/" class="md-nav__link">
+        13. Output Devices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week14/" class="md-nav__link">
+        14. Networking and communications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week15/" class="md-nav__link">
+        15. Interface and application programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week16/" class="md-nav__link">
+        16. Wildcard week
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week17/" class="md-nav__link">
+        17. Applications and Implications.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week18/" class="md-nav__link">
+        18. Invention, Intellectual Property and Business Models.
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../week19/" class="md-nav__link">
+        19. Project development.
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Projects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Projects" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Projects
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/final-project/" class="md-nav__link">
+        Final Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/for_replication/" class="md-nav__link">
+        Final project: MILQ
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#risk-assessment" class="md-nav__link">
+    Risk assessment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-process" class="md-nav__link">
+    Design process
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-with-fusion-360" class="md-nav__link">
+    CAM with Fusion 360
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling-machine-check-list" class="md-nav__link">
+    Milling machine check list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-workflow" class="md-nav__link">
+    Basic Workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#milling-with-the-cnc-machine" class="md-nav__link">
+    Milling with the CNC machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly" class="md-nav__link">
+    Assembly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-the-bench" class="md-nav__link">
+    Testing the bench
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="8-computer-controlled-machining">8. Computer controlled machining<a class="headerlink" href="#8-computer-controlled-machining" title="Permanent link">&para;</a></h1>
+<p><img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/></p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>CNC stands for Computer Controlled Machining and the modern predecessors were developed at the beginning of 1950 at the MIT servomechanism lab. Through the years this technology has became more precise and affordable, so we can have a tabletop <a href="http://fabacademy.org/2021/labs/agrilab/students/antonio-anaya/assignments/week05/">Roland SRM-20</a> with a 0.01 mm precision or any <a href="http://fabacademy.org/2021/labs/agrilab/group/week_6_3D_printing/#description-of-ultimaker-3-extended">SLM 3D printer</a>.</p>
+<p>The process needs a hardware capable of following a series of instructions with the encoded geometrical position in 2, 3 or more axis of the tool so as the tool type, the cut-rate, the tolerance, and the speed of any movement.</p>
+<p>For this week our individual task is to design, encode, manufacture and assemble a large object. And our group assignment is to document our security training to use the CNC machine workshop at <a href="http://agrilab.unilasalle.fr/">AgriLab</a>, you can check our work <a href="http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/">here.</a></p>
+<h3 id="risk-assessment">Risk assessment<a class="headerlink" href="#risk-assessment" title="Permanent link">&para;</a></h3>
+<p><a href="http://fabacademy.org/2021/labs/agrilab/group/week_8_cnc/#risk-assessment-check-list">Check my entry to the group assignment to find this information here.</a></p>
+<p><a href="https://www.dysoncentre.eng.cam.ac.uk/mills-folder/documents/manual-mill-risk-assessment-pdf">Check this risk assessment document to find out detailed information</a></p>
+<h2 id="design-process">Design process<a class="headerlink" href="#design-process" title="Permanent link">&para;</a></h2>
+<p>I&rsquo;ve used <a href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&amp;support=null">Fusion 360</a> (under Windows) to design my project. I&rsquo;ve been trying to run Fusion on Linux but it has some complications due to my Nvidia driver configuration.</p>
+<p>The idea is just very simple yet useful. I got a very bad back pain everytime I solder in the ElectroLab, the reason is that there&rsquo;s no a right size bench. You can get one very tall bench or a very low chair. So I think a good cheap bench design will help us a little in the upcoming weeks.</p>
+<p>This is my first sketch.</p>
+<p><img src="../../images/week08/sketch_00.jpg" alt="Render_01" width=50%/></p>
+<p>Then I started drawing it in Fusion.
+<img src="../../images/week08/fusion_02.jpg" alt="Render_02" width=100%/></p>
+<p>This is the parametric table.
+<img src="../../images/week08/fusion_01.jpg" alt="Render_01" width=100%/></p>
+<p>These are the three parts of the sketch. To make the second part of the body for the bench I&rsquo;ve copy pasted the first sketch into a new one, and then modify the groove to coincide and serve as join mechanism.
+<img src="../../images/week08/fusion_03_0.jpg" alt="Render_01" width=100%/></p>
+<p>These are the three parts extruded by 18 mm which is the width of the material.
+<img src="../../images/week08/fusion_03_1.jpg" alt="Render_01" width=100%/></p>
+<p>On the Render environment of Fusion I&rsquo;ve used Oak as a material for the appearance of the model.
+<img src="../../images/week08/render_02.jpg" alt="Render_01" width=100%/></p>
+<p>This is render I&rsquo;ve made using the basic render options of Fusion 360.
+To virtually assemble the parts I&rsquo;ve using the move/rotate tools under the design environment.
+<img src="../../images/week08/render_01.jpg" alt="Render_01" width=100%/></p>
+<h2 id="cam-with-fusion-360">CAM with Fusion 360<a class="headerlink" href="#cam-with-fusion-360" title="Permanent link">&para;</a></h2>
+<p>After the design has been completed the next steps to generate <strong>&rdquo;&ldquo;*.NC&rdquo;</strong> files for our CNC machine are:</p>
+<p><strong>1.</strong> Configure the tool size measuring the tool available in the lab.</p>
+<ul>
+<li>I&rsquo;ve chose a 10 mm diameter 32 mm two flutes flat-end mill.</li>
+<li>For now all the other parameters of the milling tools like the shaft and holder are not very important, because the milling depth is only about 18 mm.</li>
+</ul>
+<p><img src="../../images/week08/fusion_03.jpg" alt="Render_02" width=100%/></p>
+<p><strong>2.</strong> Then under the manufacture environment of Fusion select setup to configure the machine, orientation, models and tool for the manufacturing process.</p>
+<ul>
+<li>Select Milling.</li>
+<li>Selecte Z as the vertical axis for your model, be aware of you machine axis too, in this case Y is the longest axis in the machine so as in the model.</li>
+</ul>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width=100%>
+    <source src="../../images/week08/setup_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<p><strong>3.</strong> Under the 2D strategy I&rsquo;ve selected <strong>2D contour</strong> as my milling process. The reason is because in the test I&rsquo;ve found that as the quickest and simplest process for milling.</p>
+<ul>
+<li>Select the lower contour of your model.</li>
+<li>Select the right tool.</li>
+<li>Select the multi-height passes and use about hald the diameter of your milling bit.</li>
+</ul>
+<p><img src="../../images/week08/fusion_04.jpg" alt="Render_02" width=100%/></p>
+<p><strong>4.</strong> Contour parameters I&rsquo;ve selected:</p>
+<ul>
+<li>The <strong>feedrate was too high</strong> and during the manufacturing process <a href="https://fabacademy.org/2019/labs/sorbonne/students/hanneuse-luc/about/">Luc</a> had to lower the travel and cutting feedrate and increased the spindle RPM to reduce vibrations in the machine. So I&rsquo;ll advice to use 2000 or 2200 Feedrate for 18mm OSB sheets.</li>
+</ul>
+<p><img src="../../images/week08/fusion_05.jpg" alt="Render_02" width=50%/></p>
+<p><strong>5.</strong> I&rsquo;ve used tabs to reduce vibration and the risk of detached parts during the process.</p>
+<ul>
+<li>Tabs are placed every 125.0 mm</li>
+<li>Tabs are rectangular</li>
+<li>Height 2.5 mm</li>
+<li>Width 10.0 mm</li>
+</ul>
+<p><img src="../../images/week08/fusion_06.jpg" alt="Render_02" width=100%/></p>
+<p><strong>6.</strong> The tolerance was just enough and the parts fitted perfectly in place after the manufacturing.</p>
+<ul>
+<li>Tolerance was set as 0.125 mm</li>
+</ul>
+<p><img src="../../images/week08/fusion_07.jpg" alt="Render_02" width=50%/></p>
+<p><strong>7.</strong> Multiple depths were configured</p>
+<ul>
+<li>Maximum roughing step-down was set to 5 mm</li>
+<li>Finishing step-down for a clean edge is 0.1 mm</li>
+</ul>
+<p><img src="../../images/week08/fusion_08.jpg" alt="Render_02" width=50%/></p>
+<p><strong>8.</strong> The contour operation is finished and the program shows the cut path way.</p>
+<p><img src="../../images/week08/fusion_09.jpg" alt="Render_02" width=100%/></p>
+<ul>
+<li>The video shows the complete process</li>
+</ul>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width=100%>
+    <source src="../../images/week08/cam_02.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<p><strong>9.</strong> Repeat the &ldquo;2D contour&rdquo; process for all the parts of the model.</p>
+<p><strong>10.</strong> Click in the post process button to find the next window to generate the GCODE for the CNC milling machine.</p>
+<ul>
+<li>I&rsquo;ve selected &ldquo;Mach2Mill / mach2mill&rdquo; option which is the one we need in our lab for our CNC machine.</li>
+</ul>
+<p><img src="../../images/week08/fusion_10.jpg" alt="Render_02" width=100%/></p>
+<p><strong>11.</strong> In the &ldquo;operations tab&rdquo; select the process you&rsquo;ll like to include in the output file.</p>
+<ul>
+<li>I&rsquo;ve selected only one output file for every operation to have a better control of the whole process.</li>
+<li>It means I&rsquo;ll have to launch a File for every process in the machine.</li>
+</ul>
+<p><img src="../../images/week08/fusion_11.jpg" alt="Render_02" width=100%/></p>
+<p><strong>12.</strong> After the output file is written, look for the code <strong>G43 Z15. H8</strong> approximately at line 19 and delete that line.</p>
+<ul>
+<li>The CNC machine at the lab uses this code to compensate the Z axis height by 15 mm and it means your cuts will happen 15 mm above your Z axis origin.</li>
+</ul>
+<p><img src="../../images/week08/fusion_12.jpg" alt="Render_02" width=50%/></p>
+<p><strong>13.</strong> You can see here a simulation of the process that I&rsquo;ve made using the &ldquo;simulation&rdquo; tools in Fusion 360.</p>
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" width=100%>
+    <source src="../../images/week08/sim_01.mp4" type="video/mp4">
+  </video>
+</figure>
+
+<h2 id="preparation">Preparation<a class="headerlink" href="#preparation" title="Permanent link">&para;</a></h2>
+<p>I&rsquo;ve used OSB trying to minimize the cost of my design.</p>
+<p><img src="../../images/week08/preparation_01.jpg" alt="Render_01" width=100%/></p>
+<p>The sheet should be maximum 2.0m, so we should cut it using the saw by 40 cm.</p>
+<p><img src="../../images/week08/preparation_02.jpg" alt="Render_01" width=100%/></p>
+<p>Finally we need to measure in different points the thickness of the material.</p>
+<ul>
+<li>17.6 mm</li>
+<li>17.8 mm</li>
+<li>17.5 mm</li>
+</ul>
+<p>So I&rsquo;ve used 17.5 mm as the thickness measurement.</p>
+<p><img src="../../images/week08/preparation_03.jpg" alt="Render_01" width=100%/></p>
+<h2 id="milling-machine-check-list">Milling machine check list<a class="headerlink" href="#milling-machine-check-list" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Power on the machine.</li>
+<li>Start Depression.</li>
+<li>Start Vacuum dust aspiration.</li>
+<li>Setup the Z axis connecting the electrode and the clamps, make a small test pressing &ldquo;toolset&rdquo; in the remote.</li>
+<li>
+<p>Place the electrode at the top of the material. It&rsquo;s always useful to remember that the &ldquo;Depression&rdquo; should be activated to make this step as the height will change because a small compression caused by the vacuum.</p>
+</li>
+<li>
+<p>Lower the brush: To lower the brush go into &ldquo;inputs menu&rdquo; and look for <strong>&ldquo;06&rdquo;</strong> check it to red color and press &ldquo;ok&rdquo;.</p>
+</li>
+<li>Ensure that there&rsquo;s no obstacles in the build area.</li>
+<li>Ensure that you are using ear protections.</li>
+</ol>
+<h2 id="basic-workflow">Basic Workflow<a class="headerlink" href="#basic-workflow" title="Permanent link">&para;</a></h2>
+<p>Power on:</p>
+<ol>
+<li>Open the compressed air valve.</li>
+<li>Push the power on button.</li>
+<li>In the remote accept &ldquo;Go home XYZ&rdquo; option.</li>
+<li>Press Ok.</li>
+</ol>
+<iframe src="https://www.youtube.com/embed/57srurq6RSI?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<p>Fixing dust collector bug:</p>
+<p>The machine at the lab has a bug in the software that need to be corrected in order to lower the dust collector brush.</p>
+<ol>
+<li>In the menu go to the &ldquo;inputs and outputs&rdquo; option.</li>
+<li>Find the &ldquo;06&rdquo; input control</li>
+<li>Press Run to change the icon to &ldquo;Red&rdquo; color.</li>
+<li>Go to the main screen using the menu.</li>
+<li>Now the dust collector interrupter is enabled.</li>
+</ol>
+<iframe src="https://www.youtube.com/embed/PShWyMkXsJQ?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<p>X and Y axis calibration:</p>
+<p>On this process we need to set the center in the mill to the top left corner of the material to cut in our milling process.</p>
+<ol>
+<li>Move the axis by using the movement arrows in the remote.</li>
+<li>You can use the slow or fast movements to be more precise, press the slow button in the remote for this.</li>
+<li>Position the mid point of the mill in the top left corner.</li>
+</ol>
+<iframe src="https://www.youtube.com/embed/zrY48mux4Gc?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<p>Z axis calibration:</p>
+<p>This process is very important for the correct operation of the machine. Be careful while setting up the Z axis.</p>
+<ol>
+<li>Pick the test probe and connect it to the port in the milling cart head.</li>
+<li>Connect the clam to the mill holder.</li>
+<li>Make an &ldquo;air&rdquo; test to check if the system works correctly.</li>
+<li>Pose the Z axis at a high level</li>
+<li>With help of your companion be prepared to touch the probe and the mill.</li>
+<li>Press the &ldquo;toolset&rdquo; button in the remote.</li>
+<li>Wear the ear protection</li>
+<li>Activate the &ldquo;depression&rdquo; to hold the material in place</li>
+<li>Run the &ldquo;toolset&rdquo; test.</li>
+<li>Be prepared to stop the process if anything goes wrong.</li>
+</ol>
+<iframe src="https://www.youtube.com/embed/fWRaxg3zjwU?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<p>Load file:</p>
+<ol>
+<li>Connect the USB memory to the remote.</li>
+<li>press the &ldquo;file&rdquo; button.</li>
+<li>Find and select the file with the arrow buttons in the remote.</li>
+<li>Press ok to load.</li>
+<li>Press Run the start the work.</li>
+<li>Select the global speeds and press Ok to start working.</li>
+</ol>
+<iframe src="https://www.youtube.com/embed/9wtutoxJ-hQ?modestbranding=1&showinfo=0&rel=0&theme=light&color=white" width="100%" height="315" frameborder="0"></iframe>
+
+<h2 id="milling-with-the-cnc-machine">Milling with the CNC machine<a class="headerlink" href="#milling-with-the-cnc-machine" title="Permanent link">&para;</a></h2>
+<p>First process:</p>
+<ul>
+<li>I&rsquo;ve followed the same logic as the milling process by first cutting the interior contours to avoid misplaced cuts.</li>
+</ul>
+<p><img src="../../images/week08/outcome_02.jpg" alt="Render_01" width=50%/>
+<img src="../../images/week08/outcome_01.jpg" alt="Render_01" width=50%/></p>
+<p>Second process:</p>
+<ul>
+<li>This is the seat of the bench.</li>
+</ul>
+<p><img src="../../images/week08/outcome_03.jpg" alt="Render_01" width=50%/></p>
+<p>Third process:</p>
+<ul>
+<li>This is the &ldquo;A&rdquo; part of the body.</li>
+</ul>
+<p><img src="../../images/week08/outcome_05.jpg" alt="Render_01" width=50%/></p>
+<p>Last process:</p>
+<ul>
+<li>This is the &ldquo;B&rdquo; part of the body.</li>
+</ul>
+<p>I&rsquo;ve missed to take a photo of this because I&rsquo;ve some problems while milling.</p>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<ol>
+<li>The feedrate is speed was too high in relationship of the spindle speed. It was set to <strong>3500</strong> mm/s in Fusion 360. And the spindle speed to 10000 RPM.</li>
+<li>My instructor changed the spindle speed to 15000 RPM.</li>
+<li>
+<p>The feedrate and movements speed were set to 30% and the whole process moved from 10 mins in the simulation to 30 mins in realtime work.</p>
+</li>
+<li>
+<p>I didn&rsquo;t have a companion.</p>
+</li>
+<li>I&rsquo;ve asked my instructor to assist me.</li>
+</ol>
+<h2 id="assembly">Assembly<a class="headerlink" href="#assembly" title="Permanent link">&para;</a></h2>
+<ul>
+<li>This is how the OSB sheet looked like after removing it from the machine.</li>
+</ul>
+<p><img src="../../images/week08/assembly_01.jpg" alt="Render_01" width=70%/></p>
+<ul>
+<li>Here you can see the dogbones I&rsquo;ve used in my design.</li>
+</ul>
+<p><img src="../../images/week08/assembly_02.jpg" alt="Render_01" width=70%/></p>
+<ul>
+<li>This is how the seat looks like assembled.</li>
+</ul>
+<p><img src="../../images/week08/assembly_03.jpg" alt="Render_01" width=70%/></p>
+<ul>
+<li>And this is the final result.</li>
+</ul>
+<p><img src="../../images/week08/hero_01.jpg" alt="Render_01" width=100%/></p>
+<ul>
+<li>I&rsquo;d like to add a video of the assembly process in the next days.</li>
+</ul>
+<h2 id="testing-the-bench">Testing the bench<a class="headerlink" href="#testing-the-bench" title="Permanent link">&para;</a></h2>
+<p>We can see here my back getting extremely curved while soldering at the soldering station.</p>
+<p><img src="../../images/week08/test_04.JPG" alt="Render_01" width=49%/></p>
+<p>Here I&rsquo;m quite relaxed thanks to the support in the back of the chair but still it&rsquo;s not a good position for my back.</p>
+<p><img src="../../images/week08/test_02.JPG" alt="Render_01" width=49%/></p>
+<p>Here I&rsquo;m using my bench and my back feels in a better position for long-time soldering.</p>
+<p><img src="../../images/week08/test_03.JPG" alt="Render_01" width=49%/></p>
+<p>Here you can compare the height of every seat available at the lab.</p>
+<p><img src="../../images/week08/test_01.JPG" alt="Render_01" width=49%/></p>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
+<p><a href="https://gitlab.fabcloud.org/academany/fabacademy/2021/labs/agrilab/students/antonio-anaya/-/archive/master/antonio-anaya-master.zip?path=docs/files/week08">Download Zip with all files from Fabcloud gitlab</a></p>
+<p>Download files individually:</p>
+<ul>
+<li><a href="../../files/week08/week08_cnc_bench.f3d">Fusion file</a></li>
+<li><a href="../../files/week08/a.nc">NC file 1 Cross</a></li>
+<li><a href="../../files/week08/b.nc">NC file 2 Seat</a></li>
+<li><a href="../../files/week08/circle.nc">NC file 1 Body A</a></li>
+<li><a href="../../files/week08/cross.nc">NC file 1 Body B</a></li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2022</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../week07/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Electronics design" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              7. Electronics design
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../week09/" class="md-footer__link md-footer__link--next" aria-label="Next: 9. Embedded programming" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              9. Embedded programming
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2021 Antonio de Jesus Anaya Hernandez - Creative Commons Attribution Non Commercial
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/le_anayeau/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/antonio.anayahernande" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/AnayaAntonio4" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/antonio-anaya-62586a1a8/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
